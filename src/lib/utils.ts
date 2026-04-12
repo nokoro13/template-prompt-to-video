@@ -59,6 +59,29 @@ export const calculateBlur = ({
   return 0;
 };
 
+const ASPECT_SUFFIXES = new Set(["9-16", "16-9"]);
+
+/**
+ * Composition id is the project slug (e.g. `my-story`). Assets live under `content/my-story/`.
+ * Legacy ids with `--9-16` / `--16-9` or `__` suffixes are still normalized to the slug.
+ */
+export function getProjectSlugFromCompositionId(compositionId: string): string {
+  const legacySep = "__";
+  const legacyIdx = compositionId.indexOf(legacySep);
+  if (legacyIdx !== -1) {
+    return compositionId.slice(0, legacyIdx);
+  }
+
+  const parts = compositionId.split("--");
+  if (parts.length >= 2) {
+    const aspect = parts[parts.length - 1] ?? "";
+    if (ASPECT_SUFFIXES.has(aspect)) {
+      return parts.slice(0, -1).join("--");
+    }
+  }
+  return compositionId;
+}
+
 export const getTimelinePath = (proj: string) =>
   `content/${proj}/timeline.json`;
 

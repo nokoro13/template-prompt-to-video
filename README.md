@@ -9,11 +9,9 @@
 
 Using this template you can create high quality **AI videos for TikTok or Instagram**.
 
-It includes a CLI that will generate a story script, images and voiceover using OpenAI and ElevenLabs.
+It includes a **Next.js web app** (dashboard + video editor) and a **CLI** that generate a story script, images (Google Gemini), voiceover (ElevenLabs), and structured text (OpenAI).
 
 ## Getting started
-
-Set up the demo story:
 
 **Install Dependencies**
 
@@ -21,10 +19,18 @@ Set up the demo story:
 npm install
 ```
 
-**Start Preview**
+**Web UI (dashboard & video editor)**
 
 ```console
 npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000). Use **Video editor** in the left sidebar to generate a project (requires `OPENAI_API_KEY`, `NANO_BANANA_API_KEY` (Gemini images), and `ELEVENLABS_API_KEY` in `.env`, or paste keys in the form).
+
+**Remotion Studio (preview timelines)**
+
+```console
+npm run dev:studio
 ```
 
 **Render video**
@@ -47,6 +53,7 @@ Create .env file with following env vars (you can also find them in .env.example
 
 ```
 OPENAI_API_KEY=
+NANO_BANANA_API_KEY=
 ELEVENLABS_API_KEY=
 ```
 
@@ -60,7 +67,7 @@ In [`generateVoice()`](cli/service.ts) replace the voice id from ElevenLabs with
 https://elevenlabs.io/app/voice-library?voiceId=aTxZrSrp47xsP6Ot4Kgd
 ```
 
-**Generate story timeline**
+**Generate story timeline (CLI)**
 
 ```console
 npm run gen

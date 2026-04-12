@@ -1,0 +1,53 @@
+{
+  "styles": {
+    "pov": {
+      "id": "pov",
+      "name": "POV",
+      "videoAspectRatio": "16:9",
+      "thumbnailUrl": "/channel-styles/pov/thumbnail.png",
+      "referenceCount": 7,
+      "characterCount": 0,
+      "createdAt": "2026-04-12T05:33:06.151Z",
+      "references": {
+        "images": [
+          "/channel-styles/pov/references/image-0.png",
+          "/channel-styles/pov/references/image-1.png",
+          "/channel-styles/pov/references/image-2.png",
+          "/channel-styles/pov/references/image-3.png",
+          "/channel-styles/pov/references/image-070a677e-8.png",
+          "/channel-styles/pov/references/image-c41c9b20-7.png"
+        ],
+        "transcripts": [
+          {
+            "id": "dd2ef881-7dd2-4bb3-9655-61c4e32e8e36",
+            "filename": "Your-Life-as-Every-SWAT-Rank-dd2ef881.txt",
+            "path": "/channel-styles/pov/transcripts/Your-Life-as-Every-SWAT-Rank-dd2ef881.txt",
+            "title": "Your Life as Every SWAT Rank"
+          }
+        ]
+      },
+      "extractedFormat": {
+        "structure": "The script is organized as a clear chronological progression through the stages of a SWAT officer's career, using the framing device of 'levels' (Level one, Level two, etc.) to mark each phase. Each section focuses on milestone moments and key lessons, building a unified narrative from recruit to retirement. The transitions between levels serve as both structural and emotional pivots, propelling the story forward.",
+        "tone": "The tone is serious, contemplative, and immersive, adopting a second-person perspective to place the viewer in the role of the subject. It often borders on literary, with understated emotion and a focus on realism and introspection, eschewing melodrama or sensationalism.",
+        "pacing": "Pacing is measured and deliberate, with generally short, clipped sentences that create a feeling of immediacy, especially in action sequences. Periods of action are balanced with reflection, and frequent use of fragments or brief statements imparts a staccato, almost breathless rhythm that periodically slows for more descriptive or philosophical moments.",
+        "hooks": [
+          "Second-person narrative puts the viewer in the protagonist's position",
+          "Specific age/time markers create a sense of progression and anticipation",
+          "Vivid scene-setting ('You knock. The door opens 6 in...') draws the audience in",
+          "Repeated use of silence, pauses, and understated moments to build tension",
+          "Intriguing details about procedures and real-life events anchor authenticity",
+          "Open-ended or unresolved events keep viewers emotionally invested"
+        ],
+        "sentencePatterns": [
+          "Short declarative statements ('You learn what the silence costs you.')",
+          "Commands or imperatives ('Report to the academy. Monday, 0500 hours.')",
+          "Fragments and single-word sentences ('Silent.')",
+          "Direct address in the second-person ('You are now a full SWAT operator.')",
+          "Parallel construction for emphasis ('You become fluent in all of it.')"
+        ],
+        "vocabularyStyle": "The vocabulary is largely plain, concrete, and unadorned, with occasional terms of police or SWAT jargon integrated naturally. Repetition of simple words and phrases ('You learn...', 'You understand...') imparts a rhythmic, almost mantra-like feel, while the language generally remains accessible and avoids dense technical lingo except when illustrating key moments."
+      },
+      "characters": []
+    }
+  }
+}

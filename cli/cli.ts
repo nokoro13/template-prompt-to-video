@@ -6,87 +6,23 @@ import prompts from "prompts";
 import ora from "ora";
 import chalk from "chalk";
 import * as dotenv from "dotenv";
-import {
-  generateAiImage,
-  generateVoice,
-  getGenerateImageDescriptionPrompt,
-  getGenerateStoryPrompt,
-  openaiStructuredCompletion,
-  setApiKey,
-} from "./service";
-import {
-  ContentItemWithDetails,
-  StoryMetadataWithDetails,
-  StoryScript,
-  StoryWithImages,
-  Timeline,
-} from "../src/lib/types";
-import { v4 as uuidv4 } from "uuid";
-import * as fs from "fs";
-import * as path from "path";
-import { createTimeLineFromStoryWithDetails } from "./timeline";
+import { runSimpleGenerate } from "../lib/generate-simple-story";
 
 dotenv.config({ quiet: true });
 
 interface GenerateOptions {
   apiKey?: string;
+  geminiApiKey?: string;
   elevenlabsApiKey?: string;
   title?: string;
   topic?: string;
 }
 
-class ContentFS {
-  title: string;
-  slug: string;
-
-  constructor(title: string) {
-    this.title = title;
-    this.slug = this.getSlug();
-  }
-
-  saveDescriptor(descriptor: StoryMetadataWithDetails) {
-    const dirPath = this.getDir();
-    const filePath = path.join(dirPath, "descriptor.json");
-    fs.writeFileSync(filePath, JSON.stringify(descriptor, null, 2));
-  }
-
-  saveTimeline(timeline: Timeline) {
-    const dirPath = this.getDir();
-    const filePath = path.join(dirPath, "timeline.json");
-    fs.writeFileSync(filePath, JSON.stringify(timeline, null, 2));
-  }
-
-  getDir(dir?: string): string {
-    const segments = ["public", "content", this.slug];
-    if (dir) {
-      segments.push(dir);
-    }
-    const p = path.join(process.cwd(), ...segments);
-    fs.mkdirSync(p, { recursive: true });
-    return p;
-  }
-
-  getImagePath(uid: string): string {
-    const dirPath = this.getDir("images");
-    return path.join(dirPath, `${uid}.png`);
-  }
-
-  getAudioPath(uid: string): string {
-    const dirPath = this.getDir("audio");
-    return path.join(dirPath, `${uid}.mp3`);
-  }
-
-  getSlug(): string {
-    return this.title
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-+|-+$/g, "");
-  }
-}
-
 async function generateStory(options: GenerateOptions) {
   try {
     let apiKey = options.apiKey || process.env.OPENAI_API_KEY;
+    let geminiApiKey =
+      options.geminiApiKey || process.env.NANO_BANANA_API_KEY;
     let elevenlabsApiKey =
       options.elevenlabsApiKey || process.env.ELEVENLABS_API_KEY;
 
@@ -104,6 +40,23 @@ async function generateStory(options: GenerateOptions) {
       }
 
       apiKey = response.apiKey;
+    }
+
+    if (!geminiApiKey) {
+      const response = await prompts({
+        type: "password",
+        name: "geminiApiKey",
+        message: "Enter your Google Gemini API key (NANO_BANANA / image generation):",
+        validate: (value) =>
+          value.length > 0 || "Gemini API key is required",
+      });
+
+      if (!response.geminiApiKey) {
+        console.log(chalk.red("Gemini API key is required. Exiting..."));
+        process.exit(1);
+      }
+
+      geminiApiKey = response.geminiApiKey;
     }
 
     if (!elevenlabsApiKey) {
@@ -155,70 +108,26 @@ async function generateStory(options: GenerateOptions) {
     console.log(chalk.blue(`\n📖 Creating story: "${title}"`));
     console.log(chalk.blue(`📝 Topic: ${topic}\n`));
 
-    const storyWithDetails: StoryMetadataWithDetails = {
-      shortTitle: title!,
-      content: [],
-    };
-
-    const storySpinner = ora("Generating story...").start();
-    setApiKey(apiKey!);
-    const storyRes = await openaiStructuredCompletion(
-      getGenerateStoryPrompt(title!, topic!),
-      StoryScript,
-    );
-    storySpinner.succeed(chalk.green("Story generated!"));
-
-    const descriptionsSpinner = ora("Generating image descriptions...").start();
-    const storyWithImagesRes = await openaiStructuredCompletion(
-      getGenerateImageDescriptionPrompt(storyRes.text),
-      StoryWithImages,
-    );
-    descriptionsSpinner.succeed(chalk.green("Image descriptions generated!"));
-
-    for (const item of storyWithImagesRes.result) {
-      const contentWithDetails: ContentItemWithDetails = {
-        text: item.text,
-        imageDescription: item.imageDescription,
-        uid: uuidv4(),
-        audioTimestamps: {
-          characters: [],
-          characterStartTimesSeconds: [],
-          characterEndTimesSeconds: [],
-        },
-      };
-
-      storyWithDetails.content.push(contentWithDetails);
-    }
-
-    const contentFs = new ContentFS(title!);
-    contentFs.saveDescriptor(storyWithDetails);
-
-    const imagesSpinner = ora("Generating images and voice...").start();
-    for (let i = 0; i < storyWithDetails.content.length; i++) {
-      const storyItem = storyWithDetails.content[i];
-      imagesSpinner.text = `[${i * 2 + 1}/${storyWithDetails.content.length * 2}] Generating image for ${storyItem.text}`;
-      await generateAiImage({
-        prompt: storyItem.imageDescription,
-        path: contentFs.getImagePath(storyItem.uid),
-        onRetry: (attempt) => {
-          imagesSpinner.text = `[${i * 2 + 1}/${storyWithDetails.content.length * 2}] Generating image for ${storyItem.text} (retry ${attempt + 1})`;
-        },
-      });
-      imagesSpinner.text = `[${i * 2 + 2}/${storyWithDetails.content.length * 2}] Generating voice for ${storyItem.text}`;
-      const timings = await generateVoice(
-        storyItem.text,
-        elevenlabsApiKey!,
-        contentFs.getAudioPath(storyItem.uid),
-      );
-      storyItem.audioTimestamps = timings;
-    }
-    contentFs.saveDescriptor(storyWithDetails);
-    imagesSpinner.succeed(chalk.green("Images generated!"));
-
-    const finalSpinner = ora("Generating final result...").start();
-    const timeline = createTimeLineFromStoryWithDetails(storyWithDetails);
-    contentFs.saveTimeline(timeline);
-    finalSpinner.succeed(chalk.green("Final result generated!"));
+    const spinner = ora("Starting generation...").start();
+    await runSimpleGenerate({
+      title: title!,
+      topic: topic!,
+      openaiApiKey: apiKey!,
+      geminiApiKey: geminiApiKey!,
+      elevenlabsApiKey: elevenlabsApiKey!,
+      onProgress: (p) => {
+        if (p.stage === "story") {
+          spinner.text = "Generating story...";
+        } else if (p.stage === "descriptions") {
+          spinner.text = "Generating image descriptions...";
+        } else if (p.stage === "assets") {
+          const label =
+            p.phase === "image" ? "image" : "voice";
+          spinner.text = `[${p.current}/${p.total}] Generating ${label}...`;
+        }
+      },
+    });
+    spinner.succeed(chalk.green("Generation finished."));
 
     console.log(chalk.green.bold("\n✨ Story generation complete!\n"));
     console.log("Run " + chalk.blue("npm run dev") + " to preview the story");
@@ -241,6 +150,12 @@ yargs(hideBin(process.argv))
           type: "string",
           description: "OpenAI API key",
         })
+        .option("gemini-key", {
+          alias: "g",
+          type: "string",
+          description:
+            "Google Gemini API key (NANO_BANANA_API_KEY) for image generation",
+        })
         .option("title", {
           alias: "t",
           type: "string",
@@ -256,6 +171,7 @@ yargs(hideBin(process.argv))
     async (argv) => {
       await generateStory({
         apiKey: argv["api-key"],
+        geminiApiKey: argv["gemini-key"],
         title: argv.title,
         topic: argv.topic,
       });
@@ -271,6 +187,12 @@ yargs(hideBin(process.argv))
           type: "string",
           description: "OpenAI API key",
         })
+        .option("gemini-key", {
+          alias: "g",
+          type: "string",
+          description:
+            "Google Gemini API key (NANO_BANANA_API_KEY) for image generation",
+        })
         .option("title", {
           alias: "t",
           type: "string",
@@ -286,6 +208,7 @@ yargs(hideBin(process.argv))
     async (argv) => {
       await generateStory({
         apiKey: argv["api-key"],
+        geminiApiKey: argv["gemini-key"],
         title: argv.title,
         topic: argv.topic,
       });

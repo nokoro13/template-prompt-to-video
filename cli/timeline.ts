@@ -17,7 +17,6 @@ export const createTimeLineFromStoryWithDetails = (
   };
 
   let durationMs = 0;
-  let zoomIn = true;
 
   for (let i = 0; i < storyWithDetails.content.length; i++) {
     const content = storyWithDetails.content[i];
@@ -34,7 +33,7 @@ export const createTimeLineFromStoryWithDetails = (
       imageUrl: content.uid,
       enterTransition: "blur",
       exitTransition: "blur",
-      animations: getBgAnimations(lenMs, zoomIn),
+      animations: getBgAnimations(),
     };
 
     timeline.elements.push(bgElem);
@@ -51,7 +50,7 @@ export const createTimeLineFromStoryWithDetails = (
       characterEndTimesSeconds: character_end_times_seconds,
     } = content.audioTimestamps;
 
-    const MaxSentenseSizeChars = 14;
+    const MaxSentenseSizeChars = 21;
 
     let currentText = "";
     let currentStartMs = character_start_times_seconds[0] * 1000 + durationMs;
@@ -102,8 +101,6 @@ export const createTimeLineFromStoryWithDetails = (
     }
 
     durationMs += lenMs;
-
-    zoomIn = !zoomIn;
   }
 
   return timeline;
@@ -119,25 +116,8 @@ export function findAllSpaceIndexes(str: string) {
   return indexes;
 }
 
-export const getBgAnimations = (durationMs: number, zoomIn: boolean) => {
-  const animations: ElementAnimation[] = [];
-
-  const startMs = 0;
-  const endMs = durationMs;
-
-  const scaleFrom = zoomIn ? 1.5 : 1;
-  const scaleTo = zoomIn ? 1 : 1.5;
-
-  animations.push({
-    type: "scale",
-    from: scaleFrom,
-    to: scaleTo,
-    startMs,
-    endMs,
-  });
-
-  return animations;
-};
+/** Background Ken Burns zoom disabled — return no scale animations. */
+export const getBgAnimations = (): ElementAnimation[] => [];
 
 export const getTextAnimations = () => {
   const animations: ElementAnimation[] = [];

@@ -10,16 +10,19 @@ export const Word: React.FC<{
   stroke: boolean;
 }> = ({ enterProgress, text, stroke }) => {
   const { fontFamily } = loadFont();
-  const { width } = useVideoConfig();
-  const desiredFontSize = 120;
+  const { width: frameWidth, height: frameHeight } = useVideoConfig();
+  const desiredFontSize = Math.min(64, Math.round(frameWidth * 0.1));
 
   const fittedText = fitText({
     fontFamily,
     text,
-    withinWidth: width * 0.8,
+    withinWidth: frameWidth * 0.85,
   });
 
   const fontSize = Math.min(desiredFontSize, fittedText.fontSize);
+  const bottomOffset = Math.round(frameHeight * 0.08);
+  const captionBand = Math.max(100, Math.round(frameHeight * 0.12));
+  const strokePx = Math.min(12, Math.max(10, Math.round(frameWidth * 0.012)));
 
   return (
     <AbsoluteFill
@@ -27,18 +30,23 @@ export const Word: React.FC<{
         justifyContent: "center",
         alignItems: "center",
         top: undefined,
-        bottom: 350,
-        height: 150,
+        bottom: bottomOffset,
+        height: captionBand,
       }}
     >
       <div
         style={{
           fontSize,
           color: "white",
-          WebkitTextStroke: stroke ? "20px black" : undefined,
+          WebkitTextStroke: stroke ? `${strokePx}px black` : undefined,
           transform: makeTransform([
             scale(interpolate(enterProgress, [0, 1], [0.8, 1])),
-            translateY(interpolate(enterProgress, [0, 1], [50, 0])),
+            translateY(
+              interpolate(enterProgress, [0, 1], [
+                Math.round(frameHeight * 0.001),
+                0,
+              ]),
+            ),
           ]),
           fontFamily,
           textTransform: "uppercase",

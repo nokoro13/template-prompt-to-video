@@ -4,24 +4,36 @@ import { AbsoluteFill, Sequence, staticFile, useVideoConfig } from "remotion";
 import { z } from "zod";
 import { FPS, INTRO_DURATION } from "../lib/constants";
 import { TimelineSchema } from "../lib/types";
-import { calculateFrameTiming, getAudioPath } from "../lib/utils";
+import {
+  calculateFrameTiming,
+  getAudioPath,
+  getProjectSlugFromCompositionId,
+} from "../lib/utils";
 import { Background } from "./Background";
 import Subtitle from "./Subtitle";
 
 export const aiVideoSchema = z.object({
   timeline: TimelineSchema.nullable(),
+  /** Set in Remotion Studio → Props to switch preview & render size. */
+  aspectRatio: z.enum(["9:16", "16:9"]),
+  /** When using @remotion/player, pass the content slug so asset paths resolve. */
+  projectSlug: z.string().optional(),
 });
 
 const { fontFamily } = loadFont();
 
 export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
   timeline,
+  projectSlug,
 }) => {
   if (!timeline) {
     throw new Error("Expected timeline to be fetched");
   }
 
-  const { id } = useVideoConfig();
+  const { id, width: frameWidth } = useVideoConfig();
+  const project =
+    projectSlug ?? getProjectSlugFromCompositionId(id);
+  const titleFontSize = Math.min(120, Math.round(frameWidth * 0.11));
 
   return (
     <AbsoluteFill style={{ backgroundColor: "white" }}>
@@ -37,8 +49,8 @@ export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
         >
           <div
             style={{
-              fontSize: 120,
-              lineHeight: "122px",
+              fontSize: titleFontSize,
+              lineHeight: `${titleFontSize + 2}px`,
               width: "87%",
               color: "black",
               fontFamily,
@@ -68,7 +80,7 @@ export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
             durationInFrames={duration}
             premountFor={3 * FPS}
           >
-            <Background project={id} item={element} />
+            <Background project={project} item={element} />
           </Sequence>
         );
       })}
@@ -105,7 +117,7 @@ export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
             durationInFrames={duration}
             premountFor={3 * FPS}
           >
-            <Audio src={staticFile(getAudioPath(id, element.audioUrl))} />
+            <Audio src={staticFile(getAudioPath(project, element.audioUrl))} />
           </Sequence>
         );
       })}
