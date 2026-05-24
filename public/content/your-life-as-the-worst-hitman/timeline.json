@@ -1,0 +1,3804 @@
+{
+  "elements": [
+    {
+      "startMs": 0,
+      "endMs": 21037,
+      "imageUrl": "df5c3259-9130-4ecb-a48e-5d328199199a",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 21037,
+      "endMs": 40403,
+      "imageUrl": "898e1b32-ec3a-4798-9cb8-d86d6bf1a605",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 40403,
+      "endMs": 51920,
+      "imageUrl": "b29b9a47-236d-4e33-9699-412aa53de929",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 51920,
+      "endMs": 69892,
+      "imageUrl": "73d1a073-bbc8-4ded-8ed8-614511d29997",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 69892,
+      "endMs": 86007,
+      "imageUrl": "b180f577-308f-4634-b2b2-5da203991bcf",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 86007,
+      "endMs": 97988,
+      "imageUrl": "6847387e-7455-4cc3-a0c7-dcf5c99730b1",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 97988,
+      "endMs": 118701,
+      "imageUrl": "c708ce6d-e4a2-4b0d-8ec1-bacf7b18218f",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 118701,
+      "endMs": 134537,
+      "imageUrl": "ee3c9238-4d85-4274-88f8-75014a5b9062",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 134537,
+      "endMs": 148748,
+      "imageUrl": "f88936f5-2033-494f-b833-3f3e8bb50e9f",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 148748,
+      "endMs": 166488,
+      "imageUrl": "be03af9b-bf4d-4f53-a5ce-212e8b183d80",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 166488,
+      "endMs": 181581,
+      "imageUrl": "8dfd1fe9-23eb-4acd-ad09-a2a0d3b88f2d",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 181581,
+      "endMs": 198764,
+      "imageUrl": "c7a20d91-00c2-4b85-ac04-fb3bdcea48b2",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    }
+  ],
+  "text": [
+    {
+      "startMs": 0,
+      "endMs": 1451,
+      "text": "This is you. Cold",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 1451,
+      "endMs": 2635,
+      "text": "night, numb fingers",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6867834888120161,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 2635,
+      "endMs": 3564,
+      "text": "clutching a silenced",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 3564,
+      "endMs": 4923,
+      "text": ".22 in a rain-soaked",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 4923,
+      "endMs": 5817,
+      "text": "alley. You keep",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 5817,
+      "endMs": 6362,
+      "text": "replaying the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6628649045517729,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 6362,
+      "endMs": 7303,
+      "text": "target’s face from",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 7303,
+      "endMs": 8394,
+      "text": "the grainy photo.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 8394,
+      "endMs": 10159,
+      "text": "Gray suit. Red scarf.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6787779465630128,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 10159,
+      "endMs": 11227,
+      "text": "Easy money, they",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6488960826658082,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 11227,
+      "endMs": 12492,
+      "text": "said. All you have to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 12492,
+      "endMs": 13293,
+      "text": "do is wait for the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5672857737133036,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 13293,
+      "endMs": 14210,
+      "text": "curb light to flick",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6941497999822475,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 14210,
+      "endMs": 16126.000000000002,
+      "text": "on. In, out, gone",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 16126.000000000002,
+      "endMs": 17008,
+      "text": "before the cops get",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6708382998459209,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 17008,
+      "endMs": 18169,
+      "text": "their donuts. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5966901608859706,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 18169,
+      "endMs": 18738,
+      "text": "laugh under your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.692181301984672,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 18738,
+      "endMs": 19748,
+      "text": "breath—like anything",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 19748,
+      "endMs": 20445,
+      "text": "ever goes how you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 20445,
+      "endMs": 21037,
+      "text": "planned.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 21037,
+      "endMs": 21757,
+      "text": "You run through the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5587538291771731,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 21757,
+      "endMs": 22651,
+      "text": "checklist over and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5865398844780944,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 22651,
+      "endMs": 23626,
+      "text": "over. Bullet in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5038378962158441,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 23626,
+      "endMs": 24590,
+      "text": "chamber. Gloves",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6771779164258829,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 24590,
+      "endMs": 26029,
+      "text": "tight. Escaped routes",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 26029,
+      "endMs": 26645,
+      "text": "burned into your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 26645,
+      "endMs": 27991,
+      "text": "brain like scars.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.632598043319078,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 27991,
+      "endMs": 28943,
+      "text": "Then, the first",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6837731196030933,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 28943,
+      "endMs": 30453,
+      "text": "shadow appears. Is it",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5952431944073082,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 30453,
+      "endMs": 32392,
+      "text": "him? No—just another",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6567865192937213,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 32392,
+      "endMs": 33320,
+      "text": "drunk, muttering",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 33320,
+      "endMs": 33971,
+      "text": "curses at his",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.573238298856174,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 33971,
+      "endMs": 35201,
+      "text": "umbrella. You almost",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 35201,
+      "endMs": 35840,
+      "text": "pull the trigger",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 35840,
+      "endMs": 36815,
+      "text": "anyway, nerves",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6911650495213908,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 36815,
+      "endMs": 37930,
+      "text": "twitching like live",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5055833953218706,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 37930,
+      "endMs": 39613,
+      "text": "wires. Focus. Don’t",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 39613,
+      "endMs": 40403,
+      "text": "choke now.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5997153572399305,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 40403,
+      "endMs": 41169,
+      "text": "You tell yourself",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5092391498359252,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 41169,
+      "endMs": 42226,
+      "text": "you’re invisible. A",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 42226,
+      "endMs": 43387,
+      "text": "ghost. Nobody knows",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 43387,
+      "endMs": 44246,
+      "text": "who you are. But",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5279442962853468,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 44246,
+      "endMs": 45163,
+      "text": "really, you stick out",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 45163,
+      "endMs": 45918,
+      "text": "like a clown in a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.602851864464949,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 45918,
+      "endMs": 46997,
+      "text": "morgue: one shoe",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6447462387774623,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 46997,
+      "endMs": 47729,
+      "text": "squeaks with every",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 47729,
+      "endMs": 48565,
+      "text": "step, the wallet in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5798915667999134,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 48565,
+      "endMs": 49319,
+      "text": "your pocket pokes",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5612274567456172,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 49319,
+      "endMs": 50051,
+      "text": "your hip because you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5399339257852056,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 50051,
+      "endMs": 50771,
+      "text": "left your bag in the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 50771,
+      "endMs": 51920,
+      "text": "cab—again.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5263763000901094,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 51920,
+      "endMs": 52651,
+      "text": "You spot the red",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 52651,
+      "endMs": 54486,
+      "text": "scarf. Heart lurches.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6115476766139878,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 54486,
+      "endMs": 55960,
+      "text": "Showtime. The mark",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6563781461789805,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 55960,
+      "endMs": 56889,
+      "text": "walks faster than you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6779303700325191,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 56889,
+      "endMs": 58027,
+      "text": "expect, half-jogging",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5719344150429662,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 58027,
+      "endMs": 59327,
+      "text": "across puddles. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6085936740615172,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 59327,
+      "endMs": 60012,
+      "text": "move after him,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 60012,
+      "endMs": 60999,
+      "text": "keeping low.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 60999,
+      "endMs": 62079,
+      "text": "Suddenly, some street",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 62079,
+      "endMs": 63077,
+      "text": "kid on a skateboard",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 63077,
+      "endMs": 64563,
+      "text": "rockets past, knocks",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5138274393846535,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 64563,
+      "endMs": 65747,
+      "text": "your arm, gun tumbles",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5338130305218567,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 65747,
+      "endMs": 66873,
+      "text": "into a gutter. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5391632555681758,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 66873,
+      "endMs": 68069,
+      "text": "freeze, hope no one",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 68069,
+      "endMs": 69393,
+      "text": "saw. Wrong night for",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 69393,
+      "endMs": 69892,
+      "text": "luck.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5462107750152215,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 69892,
+      "endMs": 70751,
+      "text": "You dive for the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6669857996784996,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 70751,
+      "endMs": 71866,
+      "text": "weapon, ignoring your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6124531898691425,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 71866,
+      "endMs": 73189,
+      "text": "aching knees. Fingers",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 73189,
+      "endMs": 74014,
+      "text": "wrap around cold",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 74014,
+      "endMs": 75221,
+      "text": "metal. When you look",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6986969882947277,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 75221,
+      "endMs": 76069,
+      "text": "up, the target’s",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.564840707126268,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 76069,
+      "endMs": 76928,
+      "text": "already twenty yards",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 76928,
+      "endMs": 78228,
+      "text": "ahead. You sprint,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 78228,
+      "endMs": 79157,
+      "text": "trying to play it off",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 79157,
+      "endMs": 79702,
+      "text": "like you’re just",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5584866422512722,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 79702,
+      "endMs": 80236,
+      "text": "another late",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.603088629672621,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 80236,
+      "endMs": 81351,
+      "text": "commuter, rain",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6863361919499019,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 81351,
+      "endMs": 82002,
+      "text": "flicking in your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.697142742818508,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 82002,
+      "endMs": 83093,
+      "text": "face. Your pulse",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6820762966262621,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 83093,
+      "endMs": 84045,
+      "text": "deafens you. Even",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.527884408134413,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 84045,
+      "endMs": 84951,
+      "text": "your breath feels too",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5284393263483458,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 84951,
+      "endMs": 86007,
+      "text": "loud for this world.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5085673151418562,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 86007,
+      "endMs": 86878,
+      "text": "Somehow you catch up",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 86878,
+      "endMs": 88062,
+      "text": "at the crosswalk. The",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5213150855581444,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 88062,
+      "endMs": 89351,
+      "text": "light flashes green.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6220452173893931,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 89351,
+      "endMs": 90256,
+      "text": "You cross, pulling",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6419952978784584,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 90256,
+      "endMs": 91127,
+      "text": "your jacket tight,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 91127,
+      "endMs": 91963,
+      "text": "hand buried in your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 91963,
+      "endMs": 92892,
+      "text": "pocket. Two feet",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6186145966005245,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 92892,
+      "endMs": 94238,
+      "text": "away. This city’s so",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 94238,
+      "endMs": 95295,
+      "text": "loud no one notices a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 95295,
+      "endMs": 96479,
+      "text": "thing—except for the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 96479,
+      "endMs": 97245,
+      "text": "one time you wish",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5951409772499214,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 97245,
+      "endMs": 97988,
+      "text": "they wouldn't.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6008978800792295,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 97988,
+      "endMs": 99161,
+      "text": "You pull the trigger.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.687803284653594,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 99161,
+      "endMs": 100240,
+      "text": "Click. Nothing.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 100240,
+      "endMs": 101494,
+      "text": "Safety on. In your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 101494,
+      "endMs": 102713,
+      "text": "panic, you fumble,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6427011264649092,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 102713,
+      "endMs": 103921,
+      "text": "hands shaking. The",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5797327002166831,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 103921,
+      "endMs": 105500,
+      "text": "mark spins, stares at",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6928516602361053,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 105500,
+      "endMs": 107044,
+      "text": "you. His eyes narrow,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6351469247136975,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 107044,
+      "endMs": 108379,
+      "text": "confusion morphs into",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 108379,
+      "endMs": 109586,
+      "text": "alarm. He bolts into",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 109586,
+      "endMs": 110829,
+      "text": "the crowd. You give",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5570530527559336,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 110829,
+      "endMs": 112094,
+      "text": "chase—what choice do",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6146969199040764,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 112094,
+      "endMs": 113348,
+      "text": "you have now? Boots",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6381202724819749,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 113348,
+      "endMs": 114242,
+      "text": "slipping, heart",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.669481546936745,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 114242,
+      "endMs": 115392,
+      "text": "pounding, visions of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6773436571340394,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 115392,
+      "endMs": 116344,
+      "text": "easy money screaming",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 116344,
+      "endMs": 117157,
+      "text": "in your skull until",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 117157,
+      "endMs": 118074,
+      "text": "they become distant",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 118074,
+      "endMs": 118701,
+      "text": "noise.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 118701,
+      "endMs": 119734,
+      "text": "Every step is a slap",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 119734,
+      "endMs": 120686,
+      "text": "in the face. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 120686,
+      "endMs": 121603,
+      "text": "knock into a tourist",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.611314937577373,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 121603,
+      "endMs": 122463,
+      "text": "snapping photos,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 122463,
+      "endMs": 123519,
+      "text": "camera flashes blind",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5983068622577624,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 123519,
+      "endMs": 125040,
+      "text": "you. Apologies spiral",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5783014289446435,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 125040,
+      "endMs": 126155,
+      "text": "in every language.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5794918267087725,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 126155,
+      "endMs": 127130,
+      "text": "The scarf vanishes",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5125628599783951,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 127130,
+      "endMs": 128210,
+      "text": "behind a food cart.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 128210,
+      "endMs": 129022,
+      "text": "You barrel through,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5655474948167408,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 129022,
+      "endMs": 130009,
+      "text": "scattering hot dogs",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5744339620461587,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 130009,
+      "endMs": 131135,
+      "text": "and curses, vendors",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6442742354301932,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 131135,
+      "endMs": 132053,
+      "text": "shaking fists at your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5286307039098812,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 132053,
+      "endMs": 133388,
+      "text": "back. Stomach knots",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6560333485158041,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 133388,
+      "endMs": 134038,
+      "text": "with hunger and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6741307090208478,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 134038,
+      "endMs": 134537,
+      "text": "dread.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 134537,
+      "endMs": 135338,
+      "text": "Suddenly, you trip",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6355662406926931,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 135338,
+      "endMs": 136278,
+      "text": "over a leash. Some",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 136278,
+      "endMs": 137277,
+      "text": "tiny, yapping dog",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 137277,
+      "endMs": 138310,
+      "text": "snaps at your ankle.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 138310,
+      "endMs": 139262,
+      "text": "You fall, arms",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6888678840780421,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 139262,
+      "endMs": 140191,
+      "text": "splayed in the oily",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5827999015026268,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 140191,
+      "endMs": 141387,
+      "text": "puddle, shirt ruined,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 141387,
+      "endMs": 142513,
+      "text": "pride in pieces. By",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 142513,
+      "endMs": 143291,
+      "text": "the time you stagger",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6420835513967196,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 143291,
+      "endMs": 144022,
+      "text": "to your feet, the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5298982153913299,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 144022,
+      "endMs": 144777,
+      "text": "mark’s nowhere in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.699600878110029,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 144777,
+      "endMs": 145532,
+      "text": "sight. You hear",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 145532,
+      "endMs": 146739,
+      "text": "sirens—maybe real,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 146739,
+      "endMs": 147772,
+      "text": "maybe just paranoia",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 147772,
+      "endMs": 148748,
+      "text": "curling in your head.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6638553540643705,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 148748,
+      "endMs": 149572,
+      "text": "You find yourself",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 149572,
+      "endMs": 150582,
+      "text": "wandering, rain in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6143037306985474,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 150582,
+      "endMs": 151500,
+      "text": "your eyes like bitter",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5276930772706018,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 151500,
+      "endMs": 152591,
+      "text": "tears. You mutter",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5421261400411187,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 152591,
+      "endMs": 154019,
+      "text": "every curse you know.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5244969656232803,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 154019,
+      "endMs": 155029,
+      "text": "Somewhere, a window",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6791468322010791,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 155029,
+      "endMs": 155795,
+      "text": "glows warm with",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 155795,
+      "endMs": 156550,
+      "text": "laughter. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6588440395321717,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 156550,
+      "endMs": 157630,
+      "text": "remember something—a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 157630,
+      "endMs": 158454,
+      "text": "promise you made to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6875675783109945,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 158454,
+      "endMs": 159406,
+      "text": "yourself, to never",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5450575092848895,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 159406,
+      "endMs": 160254,
+      "text": "screw up this bad",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 160254,
+      "endMs": 161392,
+      "text": "again. But here you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5060931679729116,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 161392,
+      "endMs": 162855,
+      "text": "are, a soggy, broke",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 162855,
+      "endMs": 164259,
+      "text": "hitman, weapon wet",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6814958888513727,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 164259,
+      "endMs": 165084,
+      "text": "and useless,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5710894044087926,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 165084,
+      "endMs": 166488,
+      "text": "reputation more so.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 166488,
+      "endMs": 167684,
+      "text": "You find an alley,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 167684,
+      "endMs": 168322,
+      "text": "press your back",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 168322,
+      "endMs": 169240,
+      "text": "against cold brick.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 169240,
+      "endMs": 170447,
+      "text": "You can’t quit, not",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 170447,
+      "endMs": 171631,
+      "text": "for one botched job.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6483311449863722,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 171631,
+      "endMs": 172479,
+      "text": "Maybe tomorrow you’ll",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 172479,
+      "endMs": 173384,
+      "text": "find the mark again,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6817903637034196,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 173384,
+      "endMs": 174638,
+      "text": "maybe you won’t. The",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 174638,
+      "endMs": 175555,
+      "text": "street eats men like",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 175555,
+      "endMs": 176507,
+      "text": "you for breakfast.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5776600839981716,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 176507,
+      "endMs": 177367,
+      "text": "But tonight, you’re",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5155870366861542,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 177367,
+      "endMs": 178284,
+      "text": "just another shadow",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.660797293482414,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 178284,
+      "endMs": 178934,
+      "text": "retreating into",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 178934,
+      "endMs": 179979,
+      "text": "darkness, badge of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5353723904329367,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 179979,
+      "endMs": 180780,
+      "text": "failure aching in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5939480423102219,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 180780,
+      "endMs": 181581,
+      "text": "your pocket.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6034492853294496,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 181581,
+      "endMs": 182997,
+      "text": "You ask yourself: If",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 182997,
+      "endMs": 183822,
+      "text": "you can’t even pull",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 183822,
+      "endMs": 184669,
+      "text": "off a hit, what the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 184669,
+      "endMs": 185366,
+      "text": "hell are you doing",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 185366,
+      "endMs": 186411,
+      "text": "out here? Yet you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 186411,
+      "endMs": 187618,
+      "text": "know—against every",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 187618,
+      "endMs": 188919,
+      "text": "ounce of logic—you’ll",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 188919,
+      "endMs": 190103,
+      "text": "try again. Because",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5106689911712669,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 190103,
+      "endMs": 190904,
+      "text": "that’s what the worst",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6241267708641955,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 190904,
+      "endMs": 192425,
+      "text": "hitman does. They",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5142915499435003,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 192425,
+      "endMs": 193400,
+      "text": "keep showing up,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6635969083534521,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 193400,
+      "endMs": 194294,
+      "text": "hoping luck gets",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6004891438568558,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 194294,
+      "endMs": 195385,
+      "text": "tired of laughing at",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 195385,
+      "endMs": 196268,
+      "text": "them, even as the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.617678151385083,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 196268,
+      "endMs": 197185,
+      "text": "city whispers stay",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5072844912135344,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 197185,
+      "endMs": 198288,
+      "text": "down. But you never",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 198288,
+      "endMs": 198764,
+      "text": "do.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5854591480800527,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "startMs": 0,
+      "endMs": 21037,
+      "audioUrl": "df5c3259-9130-4ecb-a48e-5d328199199a"
+    },
+    {
+      "startMs": 21037,
+      "endMs": 40403,
+      "audioUrl": "898e1b32-ec3a-4798-9cb8-d86d6bf1a605"
+    },
+    {
+      "startMs": 40403,
+      "endMs": 51920,
+      "audioUrl": "b29b9a47-236d-4e33-9699-412aa53de929"
+    },
+    {
+      "startMs": 51920,
+      "endMs": 69892,
+      "audioUrl": "73d1a073-bbc8-4ded-8ed8-614511d29997"
+    },
+    {
+      "startMs": 69892,
+      "endMs": 86007,
+      "audioUrl": "b180f577-308f-4634-b2b2-5da203991bcf"
+    },
+    {
+      "startMs": 86007,
+      "endMs": 97988,
+      "audioUrl": "6847387e-7455-4cc3-a0c7-dcf5c99730b1"
+    },
+    {
+      "startMs": 97988,
+      "endMs": 118701,
+      "audioUrl": "c708ce6d-e4a2-4b0d-8ec1-bacf7b18218f"
+    },
+    {
+      "startMs": 118701,
+      "endMs": 134537,
+      "audioUrl": "ee3c9238-4d85-4274-88f8-75014a5b9062"
+    },
+    {
+      "startMs": 134537,
+      "endMs": 148748,
+      "audioUrl": "f88936f5-2033-494f-b833-3f3e8bb50e9f"
+    },
+    {
+      "startMs": 148748,
+      "endMs": 166488,
+      "audioUrl": "be03af9b-bf4d-4f53-a5ce-212e8b183d80"
+    },
+    {
+      "startMs": 166488,
+      "endMs": 181581,
+      "audioUrl": "8dfd1fe9-23eb-4acd-ad09-a2a0d3b88f2d"
+    },
+    {
+      "startMs": 181581,
+      "endMs": 198764,
+      "audioUrl": "c7a20d91-00c2-4b85-ac04-fb3bdcea48b2"
+    }
+  ],
+  "shortTitle": "Your Life As The Worst Hitman"
+}

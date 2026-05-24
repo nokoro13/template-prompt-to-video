@@ -21,8 +21,8 @@ export function AppShell({ children }: { children: ReactNode }) {
       <SidebarProvider defaultOpen className="flex h-svh min-h-0 w-full overflow-hidden">
         <AppSidebar />
         <SidebarInset className="flex min-h-0 flex-1 flex-col overflow-hidden bg-background">
-          <header className="sticky top-0 z-50 flex h-14 shrink-0 items-center gap-2 border-b border-border bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/80 md:px-6">
-            <SidebarTrigger className="-ml-1" />
+          <header className="sticky top-0 z-50 flex h-14 shrink-0 items-center gap-2 border-b border-border bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/80 md:px-2">
+            <SidebarTrigger />
             <TopBar />
           </header>
           <div

@@ -1,0 +1,2168 @@
+{
+  "elements": [
+    {
+      "startMs": 0,
+      "endMs": 6920,
+      "imageUrl": "0746d808-d5fc-486d-b41e-0cd0664f4c8e",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 6920,
+      "endMs": 19319,
+      "imageUrl": "4732286f-e554-4968-8df3-f33a5e0d2d15",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 19319,
+      "endMs": 30418,
+      "imageUrl": "d657821b-4787-4e36-9942-afa09f7333dc",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 30418,
+      "endMs": 36641,
+      "imageUrl": "4e6e9d31-bf8d-4f7f-9b1b-56d67cf028be",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 36641,
+      "endMs": 42400,
+      "imageUrl": "7fbd28eb-9c7f-425f-9cb4-9e9719dc389d",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 42400,
+      "endMs": 50945,
+      "imageUrl": "74bfafc9-75fb-449a-b12b-d04709dd5351",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 50945,
+      "endMs": 65806,
+      "imageUrl": "c50642ba-437f-437f-a67c-0d4d70b1fc93",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 65806,
+      "endMs": 75326,
+      "imageUrl": "851872f5-bed2-4df3-8050-58d9a5abccf3",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 75326,
+      "endMs": 91023,
+      "imageUrl": "4c754010-1e57-463a-b373-e6e540b65a7c",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 91023,
+      "endMs": 108392,
+      "imageUrl": "c8bee3e8-ac05-41c9-ba1d-fbe672053fb6",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    }
+  ],
+  "text": [
+    {
+      "startMs": 0,
+      "endMs": 615,
+      "text": "You join the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6960164884347952,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 615,
+      "endMs": 1300,
+      "text": "hazardous spill",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5742678551544335,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 1300,
+      "endMs": 2821,
+      "text": "response team at 22,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5422376838900888,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 2821,
+      "endMs": 4331,
+      "text": "entry-level, eager,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5753152866895981,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 4331,
+      "endMs": 5120,
+      "text": "and convinced all",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 5120,
+      "endMs": 5782,
+      "text": "spills are just",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6756715479294221,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 5782,
+      "endMs": 6269,
+      "text": "puddles with",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 6269,
+      "endMs": 6920,
+      "text": "ambition.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6647078541731155,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 6920,
+      "endMs": 7779,
+      "text": "The first call is a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 7779,
+      "endMs": 8557,
+      "text": "tipped-over mop",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5402759950018071,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 8557,
+      "endMs": 9486,
+      "text": "bucket in a quiet",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 9486,
+      "endMs": 10566,
+      "text": "hallway, water",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6225094508288446,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 10566,
+      "endMs": 11425,
+      "text": "diluted with so",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5435318382650137,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 11425,
+      "endMs": 12307,
+      "text": "little soap you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5582545286628593,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 12307,
+      "endMs": 13189,
+      "text": "debate calling for a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 13189,
+      "endMs": 14594,
+      "text": "biohazard sticker.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6972723452818264,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 14594,
+      "endMs": 16115,
+      "text": "You mop. You nap. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6297261830122979,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 16115,
+      "endMs": 17056,
+      "text": "leave a caution sign",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5998677971347222,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 17056,
+      "endMs": 17775,
+      "text": "like it’s a warning",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 17775,
+      "endMs": 18263,
+      "text": "for future",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 18263,
+      "endMs": 19319,
+      "text": "civilizations.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6800789460179714,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 19319,
+      "endMs": 20550,
+      "text": "Rank two, paint in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.612251333584995,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 20550,
+      "endMs": 21223,
+      "text": "the breakroom,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 21223,
+      "endMs": 22059,
+      "text": "nothing hazardous",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.667316613576489,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 22059,
+      "endMs": 22767,
+      "text": "except the color",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 22767,
+      "endMs": 24311,
+      "text": "choice. Rank three,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6732295278673532,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 24311,
+      "endMs": 25345,
+      "text": "an abandoned sandwich",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.560489345694662,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 25345,
+      "endMs": 26784,
+      "text": "in the lab minus its",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6774282027110534,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 26784,
+      "endMs": 27771,
+      "text": "plastic—your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6694834355258665,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 27771,
+      "endMs": 28804,
+      "text": "supervisor declares",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5301990680692443,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 28804,
+      "endMs": 29408,
+      "text": "it technically",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 29408,
+      "endMs": 30418,
+      "text": "organic waste.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5979482156739839,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 30418,
+      "endMs": 31173,
+      "text": "Rank four is a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 31173,
+      "endMs": 32043,
+      "text": "chemistry student’s",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5950791708824394,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 32043,
+      "endMs": 33030,
+      "text": "failed experiment,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5046503272858304,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 33030,
+      "endMs": 33878,
+      "text": "foam oozing from a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 33878,
+      "endMs": 34853,
+      "text": "beaker, pink and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 34853,
+      "endMs": 35759,
+      "text": "fizzing like a melted",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 35759,
+      "endMs": 36641,
+      "text": "birthday cake.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5226024890855668,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 36641,
+      "endMs": 37686,
+      "text": "Rank five, the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5669981849017003,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 37686,
+      "endMs": 38510,
+      "text": "ammonia spill in the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 38510,
+      "endMs": 39369,
+      "text": "boiler room, your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6562702221197072,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 39369,
+      "endMs": 40333,
+      "text": "mask fogs so you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 40333,
+      "endMs": 41088,
+      "text": "pretend your vision",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 41088,
+      "endMs": 41738,
+      "text": "was always this",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6290473363202717,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 41738,
+      "endMs": 42400,
+      "text": "blurry.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 42400,
+      "endMs": 43921,
+      "text": "Rank six, fractured",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 43921,
+      "endMs": 45082,
+      "text": "mercury thermometer,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6521648353531632,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 45082,
+      "endMs": 45848,
+      "text": "silver beads on",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 45848,
+      "endMs": 47056,
+      "text": "linoleum, everyone",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5975707129833557,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 47056,
+      "endMs": 47833,
+      "text": "suddenly recalls",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6797267214602343,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 47833,
+      "endMs": 48832,
+      "text": "third-grade science",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5912284909590696,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 48832,
+      "endMs": 49935,
+      "text": "and no one volunteers",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5842177862491489,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 49935,
+      "endMs": 50945,
+      "text": "for tongs duty.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 50945,
+      "endMs": 51700,
+      "text": "Rank seven,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 51700,
+      "endMs": 52710,
+      "text": "industrial bleach and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5560792003645052,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 52710,
+      "endMs": 53534,
+      "text": "acid tango in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5604952121059137,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 53534,
+      "endMs": 54823,
+      "text": "storage, a chemical",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5774734056744338,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 54823,
+      "endMs": 55775,
+      "text": "romance you break up",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 55775,
+      "endMs": 56587,
+      "text": "with three rolls of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5489131764660335,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 56587,
+      "endMs": 57539,
+      "text": "absorbent pads and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5688907393064871,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 57539,
+      "endMs": 58967,
+      "text": "misplaced confidence.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.681368534082529,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 58967,
+      "endMs": 59861,
+      "text": "Rank eight, old",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5802551865950698,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 59861,
+      "endMs": 60918,
+      "text": "pesticides leaking",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6703488763874844,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 60918,
+      "endMs": 62207,
+      "text": "from a barrel, labels",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 62207,
+      "endMs": 63194,
+      "text": "faded, the smell",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.529221071948448,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 63194,
+      "endMs": 64146,
+      "text": "hints of apocalypse",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5829345261401493,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 64146,
+      "endMs": 65039,
+      "text": "and last Tuesday’s",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 65039,
+      "endMs": 65806,
+      "text": "coleslaw.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 65806,
+      "endMs": 67153,
+      "text": "Rank nine, reactor",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 67153,
+      "endMs": 68082,
+      "text": "coolant, alarms",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 68082,
+      "endMs": 68813,
+      "text": "sounding,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6711632768990021,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 68813,
+      "endMs": 69869,
+      "text": "instructions printed",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5702183749160207,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 69869,
+      "endMs": 70845,
+      "text": "in size eight font",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 70845,
+      "endMs": 72389,
+      "text": "from the 1980s; your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 72389,
+      "endMs": 72946,
+      "text": "training didn’t",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 72946,
+      "endMs": 73689,
+      "text": "mention how cold",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6328800968390513,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 73689,
+      "endMs": 74502,
+      "text": "panic feels through",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 74502,
+      "endMs": 75326,
+      "text": "rubber gloves.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 75326,
+      "endMs": 76696,
+      "text": "Rank ten, midnight, a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5299654597880854,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 76696,
+      "endMs": 77915,
+      "text": "tank rupture, sirens",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5479413730891242,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 77915,
+      "endMs": 79227,
+      "text": "pulsing, street empty",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 79227,
+      "endMs": 80283,
+      "text": "except for you, blue",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5502921140594171,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 80283,
+      "endMs": 81247,
+      "text": "lights, half the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5253562306274248,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 81247,
+      "endMs": 82199,
+      "text": "city’s water sour",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5448114821065361,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 82199,
+      "endMs": 82965,
+      "text": "with something even",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 82965,
+      "endMs": 83604,
+      "text": "the pros can’t",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6444363773399198,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 83604,
+      "endMs": 84568,
+      "text": "pronounce. You stand",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5129335339158871,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 84568,
+      "endMs": 85392,
+      "text": "in the spill, suit",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.624655882489967,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 85392,
+      "endMs": 86297,
+      "text": "buzzing, not sure if",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5662071885984807,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 86297,
+      "endMs": 87018,
+      "text": "the tingling means",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 87018,
+      "endMs": 88028,
+      "text": "exposure or just",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 88028,
+      "endMs": 88887,
+      "text": "adrenaline. It",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 88887,
+      "endMs": 89665,
+      "text": "started with mop",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 89665,
+      "endMs": 91023,
+      "text": "water. It ends here.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 91023,
+      "endMs": 92463,
+      "text": "Response team, ten",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5638287616818205,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 92463,
+      "endMs": 93624,
+      "text": "levels. You climbed",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6241977856703083,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 93624,
+      "endMs": 95261,
+      "text": "them all, one spill,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6409947180306129,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 95261,
+      "endMs": 96991,
+      "text": "one joke, one silent,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 96991,
+      "endMs": 97884,
+      "text": "shivering breath at a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 97884,
+      "endMs": 99127,
+      "text": "time. Some hazards",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6995515973493054,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 99127,
+      "endMs": 99696,
+      "text": "are measured in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 99696,
+      "endMs": 100787,
+      "text": "liters. Some in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 100787,
+      "endMs": 101925,
+      "text": "sleepless nights.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6462135809373187,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 101925,
+      "endMs": 103121,
+      "text": "Both leave a mark.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5852182093651508,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 103121,
+      "endMs": 103840,
+      "text": "Which rank would you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5638823639432734,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 103840,
+      "endMs": 104386,
+      "text": "have answered the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 104386,
+      "endMs": 105617,
+      "text": "call for? Drop it",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6748169894190581,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 105617,
+      "endMs": 107219,
+      "text": "below. Stay safe. See",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6164441895037427,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 107219,
+      "endMs": 107776,
+      "text": "you at the next",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6237412389116885,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 107776,
+      "endMs": 108392,
+      "text": "alarm.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "startMs": 0,
+      "endMs": 6920,
+      "audioUrl": "0746d808-d5fc-486d-b41e-0cd0664f4c8e"
+    },
+    {
+      "startMs": 6920,
+      "endMs": 19319,
+      "audioUrl": "4732286f-e554-4968-8df3-f33a5e0d2d15"
+    },
+    {
+      "startMs": 19319,
+      "endMs": 30418,
+      "audioUrl": "d657821b-4787-4e36-9942-afa09f7333dc"
+    },
+    {
+      "startMs": 30418,
+      "endMs": 36641,
+      "audioUrl": "4e6e9d31-bf8d-4f7f-9b1b-56d67cf028be"
+    },
+    {
+      "startMs": 36641,
+      "endMs": 42400,
+      "audioUrl": "7fbd28eb-9c7f-425f-9cb4-9e9719dc389d"
+    },
+    {
+      "startMs": 42400,
+      "endMs": 50945,
+      "audioUrl": "74bfafc9-75fb-449a-b12b-d04709dd5351"
+    },
+    {
+      "startMs": 50945,
+      "endMs": 65806,
+      "audioUrl": "c50642ba-437f-437f-a67c-0d4d70b1fc93"
+    },
+    {
+      "startMs": 65806,
+      "endMs": 75326,
+      "audioUrl": "851872f5-bed2-4df3-8050-58d9a5abccf3"
+    },
+    {
+      "startMs": 75326,
+      "endMs": 91023,
+      "audioUrl": "4c754010-1e57-463a-b373-e6e540b65a7c"
+    },
+    {
+      "startMs": 91023,
+      "endMs": 108392,
+      "audioUrl": "c8bee3e8-ac05-41c9-ba1d-fbe672053fb6"
+    }
+  ],
+  "shortTitle": "Pov: You're Life as EVERY Spill Response Rank"
+}

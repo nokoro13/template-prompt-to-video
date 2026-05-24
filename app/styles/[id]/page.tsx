@@ -195,7 +195,7 @@ export default function StyleDetailPage() {
   };
 
   const removeImage = async (imagePath: string) => {
-    if (!id || !confirm("Remove this reference image?")) return;
+    if (!id || !confirm("Remove this style reference image?")) return;
     setSaving(true);
     setError(null);
     try {
@@ -279,6 +279,72 @@ export default function StyleDetailPage() {
 
   const [newTTitle, setNewTTitle] = useState("");
   const [newTContent, setNewTContent] = useState("");
+  const [charImageBusy, setCharImageBusy] = useState<string | null>(null);
+
+  /** Persist characters to the server so character ids exist before image upload/remove. */
+  const persistCharacters = async (): Promise<void> => {
+    if (!id) throw new Error("Missing style id");
+    const res = await fetch(`/api/styles/${id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ characters: chars }),
+    });
+    const data = (await res.json()) as { style?: ChannelStyleRecord; error?: string };
+    if (!res.ok) throw new Error(data.error || "Could not save characters");
+    if (data.style) {
+      setStyle(data.style);
+      setChars(data.style.characters ?? []);
+    }
+  };
+
+  const uploadCharacterImage = async (characterId: string, files: FileList | null) => {
+    const file = files?.[0];
+    if (!id || !file) return;
+    setCharImageBusy(characterId);
+    setError(null);
+    try {
+      await persistCharacters();
+      const form = new FormData();
+      form.set("image", file);
+      const res = await fetch(
+        `/api/styles/${id}/characters/${encodeURIComponent(characterId)}/image`,
+        { method: "POST", body: form },
+      );
+      const data = (await res.json()) as { style?: ChannelStyleRecord; error?: string };
+      if (!res.ok) throw new Error(data.error || "Upload failed");
+      if (data.style) {
+        setStyle(data.style);
+        setChars(data.style.characters ?? []);
+      }
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Upload failed");
+    } finally {
+      setCharImageBusy(null);
+    }
+  };
+
+  const clearCharacterImage = async (characterId: string) => {
+    if (!id || !confirm("Remove this character reference image?")) return;
+    setCharImageBusy(characterId);
+    setError(null);
+    try {
+      await persistCharacters();
+      const res = await fetch(
+        `/api/styles/${id}/characters/${encodeURIComponent(characterId)}/image`,
+        { method: "DELETE" },
+      );
+      const data = (await res.json()) as { style?: ChannelStyleRecord; error?: string };
+      if (!res.ok) throw new Error(data.error || "Remove failed");
+      if (data.style) {
+        setStyle(data.style);
+        setChars(data.style.characters ?? []);
+      }
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Remove failed");
+    } finally {
+      setCharImageBusy(null);
+    }
+  };
 
   const deleteStyle = async () => {
     if (!id) return;
@@ -328,7 +394,7 @@ export default function StyleDetailPage() {
   ];
 
   return (
-    <div className="mx-auto max-w-4xl">
+    <div className="mx-auto w-full">
       <Link
         href="/styles"
         className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
@@ -458,7 +524,13 @@ export default function StyleDetailPage() {
         {tab === "references" && (
           <div className="space-y-8">
             <div>
-              <h3 className="font-semibold">Reference images</h3>
+              <h3 className="font-semibold">Style reference images</h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                These images teach the model <strong>art style only</strong> (how
+                things are drawn). They are not used for character likeness—add
+                characters separately. Use clean images without watermarks or site
+                branding when possible.
+              </p>
               <div className="mt-3 grid gap-3 sm:grid-cols-2">
                 {style.references.images.map((src) => (
                   <div
@@ -487,7 +559,7 @@ export default function StyleDetailPage() {
                 ))}
               </div>
               <div className="mt-4">
-                <Label>Add images</Label>
+                <Label>Add style reference images</Label>
                 <input
                   type="file"
                   accept="image/*"
@@ -586,13 +658,17 @@ export default function StyleDetailPage() {
         {tab === "characters" && (
           <div className="space-y-4 rounded-xl border border-border bg-card p-6">
             <p className="text-sm text-muted-foreground">
-              Recurring characters for this channel style (used for future
-              features).
+              Name recurring characters and optionally upload one portrait per
+              character for likeness (uploading again replaces it). Scene generation
+              sends <strong>style</strong> reference images (art style only) first,
+              then character portraits (up to 14 images total to Gemini). Uploading or
+              removing a character image saves the character list first so new rows
+              exist on the server.
             </p>
             {chars.map((c, i) => (
               <div
                 key={c.id}
-                className="grid gap-2 rounded-lg border p-3 sm:grid-cols-2"
+                className="grid gap-3 rounded-lg border p-3 sm:grid-cols-2"
               >
                 <div>
                   <Label>Name</Label>
@@ -616,6 +692,68 @@ export default function StyleDetailPage() {
                     }}
                   />
                 </div>
+                <div className="sm:col-span-2 space-y-2">
+                  <Label>Reference image (likeness)</Label>
+                  {c.imageUrl ? (
+                    <div className="space-y-4">
+                      <div className="relative max-w-md overflow-hidden rounded-lg border bg-muted">
+                        <div className="relative aspect-video w-full">
+                          <Image
+                            src={c.imageUrl}
+                            alt=""
+                            fill
+                            className="object-cover"
+                            sizes="(max-width:640px) 100vw, 50vw"
+                          />
+                        </div>
+                        <Button
+                          type="button"
+                          variant="destructive"
+                          size="sm"
+                          className="absolute right-2 top-2"
+                          disabled={charImageBusy === c.id}
+                          onClick={() => void clearCharacterImage(c.id)}
+                        >
+                          {charImageBusy === c.id ? (
+                            <Loader2 className="size-4 animate-spin" />
+                          ) : (
+                            <Trash2 className="size-4" />
+                          )}
+                        </Button>
+                      </div>
+                      <div>
+                        <Label>Replace image</Label>
+                        <input
+                          type="file"
+                          accept="image/*"
+                          className="mt-1 block text-sm"
+                          disabled={charImageBusy === c.id}
+                          onChange={(e) =>
+                            void uploadCharacterImage(c.id, e.target.files)
+                          }
+                        />
+                      </div>
+                    </div>
+                  ) : (
+                    <div>
+                      <Label>Add image</Label>
+                      <div className="mt-1 flex flex-wrap items-center gap-2">
+                        <input
+                          type="file"
+                          accept="image/*"
+                          className="block text-sm"
+                          disabled={charImageBusy === c.id}
+                          onChange={(e) =>
+                            void uploadCharacterImage(c.id, e.target.files)
+                          }
+                        />
+                        {charImageBusy === c.id ? (
+                          <Loader2 className="size-4 animate-spin text-muted-foreground" />
+                        ) : null}
+                      </div>
+                    </div>
+                  )}
+                </div>
                 <Button
                   type="button"
                   variant="ghost"
@@ -625,7 +763,7 @@ export default function StyleDetailPage() {
                     setChars((prev) => prev.filter((_, j) => j !== i))
                   }
                 >
-                  Remove
+                  Remove character
                 </Button>
               </div>
             ))}

@@ -12,11 +12,7 @@ import { VideoPlayer } from "@/components/studio/VideoPlayer";
 import { getTotalDurationInFrames } from "@/lib/studio/timeline";
 import { FPS } from "@/src/lib/constants";
 import type { VideoAspectRatio } from "@/src/lib/aspect-compositions";
-import {
-  TimelineSchema,
-  type CaptionAnimation,
-  type Timeline,
-} from "@/src/lib/types";
+import { TimelineSchema, type Timeline } from "@/src/lib/types";
 
 type CompositionSummary = {
   id: string;
@@ -36,8 +32,6 @@ export default function StudioPage() {
   const [timeline, setTimeline] = useState<Timeline | null>(null);
   const [timelineError, setTimelineError] = useState<string | null>(null);
   const [aspectRatio, setAspectRatio] = useState<VideoAspectRatio>("9:16");
-  const [captionAnimation, setCaptionAnimation] =
-    useState<CaptionAnimation>("spring-pop");
   const [playbackRate, setPlaybackRate] = useState(1);
   const [currentFrame, setCurrentFrame] = useState(0);
 
@@ -255,6 +249,9 @@ export default function StudioPage() {
           onSelect={setSelectedId}
           onDelete={handleDeleteProject}
           deletingId={deletingId}
+          getEditHref={(c) =>
+            `/video-editor?slug=${encodeURIComponent(c.id)}&step=3`
+          }
           className="max-h-[320px] lg:max-h-none"
         />
 
@@ -263,14 +260,11 @@ export default function StudioPage() {
             <PropsPanel
               aspectRatio={aspectRatio}
               onAspectRatioChange={setAspectRatio}
-              captionAnimation={captionAnimation}
-              onCaptionAnimationChange={setCaptionAnimation}
               disabled={!ready}
             />
             <RenderPanel
               compositionId={selectedId}
               aspectRatio={aspectRatio}
-              captionAnimation={captionAnimation}
               disabled={!ready}
             />
           </div>
@@ -286,7 +280,6 @@ export default function StudioPage() {
                 compositionId={selectedId!}
                 timeline={timeline}
                 aspectRatio={aspectRatio}
-                captionAnimation={captionAnimation}
                 durationInFrames={durationInFrames}
                 fps={FPS}
                 playbackRate={playbackRate}

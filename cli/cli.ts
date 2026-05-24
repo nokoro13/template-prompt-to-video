@@ -16,6 +16,8 @@ interface GenerateOptions {
   elevenlabsApiKey?: string;
   title?: string;
   topic?: string;
+  /** OpenAI Responses API + web_search for the main script. */
+  useWebSearch?: boolean;
 }
 
 async function generateStory(options: GenerateOptions) {
@@ -115,6 +117,7 @@ async function generateStory(options: GenerateOptions) {
       openaiApiKey: apiKey!,
       geminiApiKey: geminiApiKey!,
       elevenlabsApiKey: elevenlabsApiKey!,
+      useWebSearch: options.useWebSearch === true,
       onProgress: (p) => {
         if (p.stage === "story") {
           spinner.text = "Generating story...";
@@ -166,6 +169,12 @@ yargs(hideBin(process.argv))
           type: "string",
           description:
             "Topic of the story (e.g. Interesting Facts, History, etc.)",
+        })
+        .option("web-search", {
+          type: "boolean",
+          default: false,
+          description:
+            "Use OpenAI web search for the main script (Responses API; slower)",
         });
     },
     async (argv) => {
@@ -174,6 +183,7 @@ yargs(hideBin(process.argv))
         geminiApiKey: argv["gemini-key"],
         title: argv.title,
         topic: argv.topic,
+        useWebSearch: argv["web-search"] === true,
       });
     },
   )
@@ -203,6 +213,12 @@ yargs(hideBin(process.argv))
           type: "string",
           description:
             "Topic of the story (e.g. Interesting Facts, History, etc.)",
+        })
+        .option("web-search", {
+          type: "boolean",
+          default: false,
+          description:
+            "Use OpenAI web search for the main script (Responses API; slower)",
         });
     },
     async (argv) => {
@@ -211,6 +227,7 @@ yargs(hideBin(process.argv))
         geminiApiKey: argv["gemini-key"],
         title: argv.title,
         topic: argv.topic,
+        useWebSearch: argv["web-search"] === true,
       });
     },
   )

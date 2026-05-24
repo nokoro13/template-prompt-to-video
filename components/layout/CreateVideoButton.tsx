@@ -46,7 +46,6 @@ export function CreateVideoButton({ variant }: CreateVideoButtonProps) {
         <SidebarMenuButton
           type="button"
           className="bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary/90 hover:text-sidebar-primary-foreground"
-          tooltip="Create video"
           onClick={() => setOpen(true)}
         >
           <Plus />
@@ -56,7 +55,7 @@ export function CreateVideoButton({ variant }: CreateVideoButtonProps) {
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="flex flex-col justify-between rounded-2xl bg-brand-600 p-6 text-left text-white shadow-lg transition hover:bg-brand-700"
+          className="flex flex-col justify-between rounded-2xl bg-brand-600 p-4 text-left text-white shadow-lg transition hover:bg-brand-700"
         >
           <span className="text-lg font-semibold">Create video</span>
           <span className="mt-4 inline-flex w-fit rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium">

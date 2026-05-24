@@ -4,8 +4,10 @@ import { randomUUID } from "crypto";
 import type { ChannelStyleRecord, TranscriptEntry } from "./types";
 import { ChannelStyleRecordSchema } from "./types";
 import { getStyle, saveStyle, styleDir } from "../storage/styles";
-
-const MAX_TRANSCRIPT_BYTES = 100 * 1024;
+import {
+  MAX_TRANSCRIPT_BYTES,
+  transcriptTooLargeMessage,
+} from "./transcript-limits";
 const MAX_TRANSCRIPTS_PER_STYLE = 5;
 
 export function appendStyleTranscripts(
@@ -24,7 +26,7 @@ export function appendStyleTranscripts(
   }
   for (const t of transcripts) {
     if (Buffer.byteLength(t.content, "utf8") > MAX_TRANSCRIPT_BYTES) {
-      throw new Error("Transcript too large (max 100KB each)");
+      throw new Error(transcriptTooLargeMessage());
     }
   }
 

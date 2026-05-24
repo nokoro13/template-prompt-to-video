@@ -76,6 +76,15 @@ export function patchStyleRecord(
     }
   }
   if (updates.characters !== undefined) {
+    const newIds = new Set(updates.characters.map((c) => c.id));
+    for (const c of existing.characters ?? []) {
+      if (!newIds.has(c.id) && c.imageUrl?.trim()) {
+        const fsPath = publicPathToFs(c.imageUrl);
+        if (fs.existsSync(fsPath)) {
+          fs.unlinkSync(fsPath);
+        }
+      }
+    }
     style.characters = updates.characters;
   }
   if (updates.extractedFormat !== undefined) {

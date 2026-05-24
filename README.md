@@ -61,7 +61,7 @@ If you don't create an env file, you will be prompted for these variables when u
 
 **Select voice**
 
-In [`generateVoice()`](cli/service.ts) replace the voice id from ElevenLabs with the one you like. You can use their API for this. Alternatively, you can open any voice on their website and extract the Voice ID from the url (id comes after `voiceId=`).
+In the **Create video** flow (voiceover step), pick a voice from the dropdown (loaded from your account via the [voices API](https://elevenlabs.io/docs/api-reference/voices/get)). For CLI or server defaults, set `ELEVENLABS_DEFAULT_VOICE_ID` or pass a voice id into [`generateVoice()`](cli/service.ts). You can also copy a voice id from the ElevenLabs app URL (`voiceId=`).
 
 ```console
 https://elevenlabs.io/app/voice-library?voiceId=aTxZrSrp47xsP6Ot4Kgd

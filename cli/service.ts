@@ -4,7 +4,16 @@ import * as path from "path";
 import { ElevenLabsClient } from "@elevenlabs/elevenlabs-js";
 import { CharacterAlignmentResponseModel } from "@elevenlabs/elevenlabs-js/api";
 import type { VideoAspectRatio } from "../lib/channel-styles/types";
-import { generateImageWithGemini } from "../lib/generation/generate-with-gemini";
+import { DEFAULT_ELEVENLABS_VOICE_ID } from "../lib/elevenlabs/constants";
+import {
+  generateImageWithGemini,
+  parseGeminiImageSize,
+  type GeminiImageSize,
+  type GeminiReferenceMeta,
+  type GeminiResponseModality,
+} from "../lib/generation/generate-with-gemini";
+
+export type { GeminiImageSize };
 
 let apiKey: string | null = null;
 let geminiApiKey: string | null = null;
@@ -66,18 +75,30 @@ export const generateAiImage = async ({
   path,
   onRetry,
   referenceImagePaths,
+  referenceMeta,
   transcriptContext,
   videoAspectRatio,
+  imageSize,
+  responseModalities,
+  consistencyBlock,
 }: {
   prompt: string;
   path: string;
   onRetry: (attempt: number) => void;
-  /** When non-empty paths exist on disk, Gemini uses them as style references (up to 14). */
+  /** When non-empty paths exist on disk, Gemini uses them as style/character references (up to 14). */
   referenceImagePaths?: string[];
+  /** Which images are style vs character refs (order matches `referenceImagePaths`). */
+  referenceMeta?: GeminiReferenceMeta;
   /** Narration for this scene — paired with `prompt` when using style references. */
   transcriptContext?: string;
   /** From channel style: portrait 9:16 vs landscape 16:9 for Gemini image output. */
   videoAspectRatio?: VideoAspectRatio;
+  /** Default from `GEMINI_IMAGE_SIZE` env (1K) when omitted. */
+  imageSize?: GeminiImageSize;
+  /** Default `["IMAGE"]` — omit TEXT if you do not use model text output. */
+  responseModalities?: GeminiResponseModality[];
+  /** Prior-scene character/location lines for visual continuity. */
+  consistencyBlock?: string;
 }) => {
   if (!geminiApiKey) {
     throw new Error(
@@ -92,9 +113,13 @@ export const generateAiImage = async ({
 
   if (stylePathsRequested && existingRefs.length === 0) {
     throw new Error(
-      "Style reference images were configured but no image files were found on disk. Check paths under public/channel-styles/.",
+      "Reference images were configured but no image files were found on disk. Check paths under public/channel-styles/.",
     );
   }
+
+  const resolvedImageSize =
+    imageSize ?? parseGeminiImageSize(process.env.GEMINI_IMAGE_SIZE);
+  const resolvedModalities = responseModalities ?? ["IMAGE"];
 
   const maxAttempts = 3;
   let lastError: Error | null = null;
@@ -108,6 +133,10 @@ export const generateAiImage = async ({
         imageDescription: prompt,
         outputPath: path,
         videoAspectRatio: videoAspectRatio ?? "9:16",
+        imageSize: resolvedImageSize,
+        responseModalities: resolvedModalities,
+        referenceMeta,
+        consistencyBlock,
       });
       return;
     } catch (e) {
@@ -140,19 +169,28 @@ export const getGenerateStoryPrompt = (title: string, topic: string) => {
 };
 
 export type ImageDescriptionPromptOptions = {
-  /** Extra instructions when channel style reference images exist. */
+  /** Extra instructions when channel **style** reference images (art look) exist. */
   styleVisualNotes?: string;
   /**
    * When true, imageDescription must describe only subject/action/framing — not art style.
-   * Use when reference images define the look (avoids generic “illustration” language fighting the style model).
+   * Use when style reference images define rendering (avoids generic “illustration” language fighting the style model).
    */
   omitArtStyleInDescriptions?: boolean;
 };
+
+/** Hard cap so the JSON response stays bounded; splits should be story-driven, not padded to this number. */
+const MAX_SCENE_PROMPT_ITEMS = 70;
+
+function countStoryWords(storyText: string): number {
+  return storyText.trim().split(/\s+/).filter(Boolean).length;
+}
 
 export const getGenerateImageDescriptionPrompt = (
   storyText: string,
   options?: ImageDescriptionPromptOptions,
 ) => {
+  const wordCount = countStoryWords(storyText);
+
   const styleBlock = options?.styleVisualNotes
     ? `
 Channel context:
@@ -162,33 +200,45 @@ ${options.styleVisualNotes}
 
   const noStyleBlock = options?.omitArtStyleInDescriptions
     ? `
-CRITICAL — reference images (not you) define the art style:
-- In each "imageDescription", describe ONLY what to show: subjects, setting, action, props, and camera/framing (e.g. wide shot, close-up).
+CRITICAL — the channel's **style reference images** (not you) define **art style only** (how frames are rendered). They do not define scene content; never assume subjects or layout from them.
+- In each "imageDescription", describe ONLY what to show for this beat: subjects, setting, action, props, and camera/framing (e.g. wide shot, close-up).
 - Do NOT name or imply any art style, medium, or rendering (no words like: photorealistic, cinematic, illustration, digital painting, 3D render, vector, comic book, anime, sketch, watercolor, oil painting, glossy, film grain, etc.).
-- Do NOT prescribe lighting/mood/color grading as a style — the pipeline copies look from reference images.
+- Do NOT prescribe lighting/mood/color grading as a style — the image pipeline copies look from those style reference images.
 `
     : "";
 
-  const prompt = `You are given story text.
-  Generate (in English) 5-8 very detailed image descriptions  for this story. 
-  Return their description as json array with story sentences matched to images. 
-  Story sentences must be in the same order as in the story and their content must be preserved.
-  Each image must match 1-2 sentence from the story.
-  Images must show story content in a way that is visually appealing and engaging, not just characters.
-  ${styleBlock}
-  ${noStyleBlock}
-  Give output in json format:
+  const prompt = `You are given full story narration text (${wordCount} words).
 
-  [
-    {
-      "text": "....",
-      "imageDescription": "..."
-    }
-  ]
+Your job: split the ENTIRE story into scenes for a video. Return a JSON array where each item has "text" (the exact narration lines for that scene, copied verbatim from the story) and "imageDescription" (a detailed visual description for that beat).
 
-  <story>
-  ${storyText}
-  </story>`;
+HOW TO CHOOSE SCENE BOUNDARIES (narrative logic — not word counts):
+- Split when the story moves: new beat, change of time or place, shift in action, a reveal or turn, or a clear emotional / tonal shift that would call for a different shot.
+- Start a new scene when a reasonable viewer would expect the on-screen image to change (new framing, new focus, new characters or props in play).
+- Keep beats together when they are one continuous moment or thought; do not split mid-sentence or mid-idea just to add cuts.
+- Do not target a fixed number of words per scene. Short scripts may have few scenes; dense, eventful scripts may have many.
+- Cover the full story through the final sentence — do not stop early, summarize, or drop the ending.
+
+TECHNICAL LIMIT: at most ${MAX_SCENE_PROMPT_ITEMS} scenes total. If the story would need more, merge only adjacent fragments that are truly the same uninterrupted moment (keep wording intact when merging).
+
+RULES:
+1. Concatenating every "text" field in array order (with a single space between items) must reproduce the full story wording in order — no omitted paragraphs, no merged-summary replacement.
+2. Each "text" is one or more consecutive sentences from the story; keep original order.
+3. Each "imageDescription" must match what happens in that scene's "text" only — vivid, specific, visually engaging (not generic stock poses).
+4. Write every "imageDescription" in English.
+${styleBlock}
+${noStyleBlock}
+Give output in json format:
+
+[
+  {
+    "text": "....",
+    "imageDescription": "..."
+  }
+]
+
+<story>
+${storyText}
+</story>`;
 
   return prompt;
 };
@@ -202,15 +252,16 @@ export const generateVoice = async (
   text: string,
   apiKey: string,
   path: string,
+  voiceId: string = DEFAULT_ELEVENLABS_VOICE_ID,
 ): Promise<CharacterAlignmentResponseModel> => {
   const client = new ElevenLabsClient({
     environment: "https://api.elevenlabs.io",
     apiKey,
   });
 
-  const voiceId = "hpp4J3VqNfWAUOO0d1Us";
+  const id = voiceId.trim() || DEFAULT_ELEVENLABS_VOICE_ID;
 
-  const data = await client.textToSpeech.convertWithTimestamps(voiceId, {
+  const data = await client.textToSpeech.convertWithTimestamps(id, {
     text,
   });
 

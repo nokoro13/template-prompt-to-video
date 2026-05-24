@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
   Compass,
+  House,
   LayoutGrid,
   MonitorPlay,
   Palette,
@@ -42,13 +43,12 @@ export function AppSidebar() {
             <SidebarMenuButton
               size="lg"
               render={<Link href="/" />}
-              tooltip="PoioAI — Home"
               className="p-0"
             >
-              <span className="flex size-8 shrink-0 items-center justify-center rounded-lg bg-sidebar-primary text-sm font-bold text-sidebar-primary-foreground">
-                P
+              <span className="relative flex size-8 shrink-0 overflow-hidden rounded-lg bg-black justify-center items-center">
+                <House color="white" />
               </span>
-              <span className="truncate font-semibold">PoioAI</span>
+              <span className="truncate font-semibold">cli<span className="text-brand-600">PNG</span></span>
             </SidebarMenuButton>
           </SidebarMenuItem>
         </SidebarMenu>
@@ -75,7 +75,7 @@ export function AppSidebar() {
                     <SidebarMenuButton
                       render={<Link href={item.href} />}
                       isActive={active}
-                      tooltip={item.label}
+                      // tooltip={item.label}
                     >
                       <Icon />
                       <span>{item.label}</span>

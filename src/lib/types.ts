@@ -87,9 +87,26 @@ export const VoiceDescriptorSchema = z.object({
 
 export type VoiceDescriptor = z.infer<typeof VoiceDescriptorSchema>;
 
+/** One tracked character or location for cross-scene image consistency. */
+export interface ConsistencyEntityEntry {
+  description: string;
+  /** 0-based scene index where this look was first established. */
+  firstScene: number;
+}
+
+/** Persisted in descriptor.json — used to inject prior visual descriptions into later scenes. */
+export interface ConsistencyData {
+  characters: Record<string, ConsistencyEntityEntry>;
+  locations: Record<string, ConsistencyEntityEntry>;
+}
+
 export interface StoryMetadataWithDetails {
   shortTitle: string;
   content: ContentItemWithDetails[];
+  /** Set when video was created with a channel style (used for later image generation). */
+  channelStyleId?: string;
+  /** Built during image generation; reused on partial scene regenerates. */
+  consistencyData?: ConsistencyData;
 }
 
 export interface ContentItemWithDetails {

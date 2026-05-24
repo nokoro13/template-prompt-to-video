@@ -12,7 +12,12 @@ import { cn } from "@/lib/utils";
 
 type TranscriptDraft = { id: string; title: string; content: string };
 
-const STEPS = ["Basic info", "Reference images", "Transcripts", "Create"] as const;
+const STEPS = [
+  "Basic info",
+  "Style reference images",
+  "Transcripts",
+  "Create",
+] as const;
 
 export default function NewStylePage() {
   const router = useRouter();
@@ -95,7 +100,7 @@ export default function NewStylePage() {
       .map((t) => ({ title: t.title.trim(), content: t.content.trim() }));
 
     if (images.length < 1) {
-      setError("Add at least one reference image.");
+      setError("Add at least one style reference image.");
       return;
     }
     if (validTranscripts.length < 1) {
@@ -145,7 +150,7 @@ export default function NewStylePage() {
   };
 
   return (
-    <div className="mx-auto max-w-2xl">
+    <div className="mx-auto w-full">
       <Link
         href="/styles"
         className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground"
@@ -156,8 +161,8 @@ export default function NewStylePage() {
 
       <h1 className="mt-6 text-3xl font-bold tracking-tight">Create style</h1>
       <p className="mt-2 text-muted-foreground">
-        Add a name, reference images, and at least one transcript. We&apos;ll
-        analyze the transcript to capture format and pacing.
+        Add a name, style-only reference images, and at least one transcript.
+        We&apos;ll analyze the transcript to capture format and pacing.
       </p>
 
       <div className="mt-8 flex gap-2 border-b border-border pb-4">
@@ -251,8 +256,12 @@ export default function NewStylePage() {
         {step === 1 && (
           <div>
             <p className="text-sm text-muted-foreground">
-              Upload at least one image that represents the visual style (up to
-              10MB each).
+              Upload images that show <strong>only how the art should look</strong>{" "}
+              (line work, color, texture, stylization). Use neutral or varied
+              subjects—do not rely on these frames to define who appears or what
+              happens; character consistency uses the Characters tab after the
+              style exists. Prefer images without watermarks or logos (up to 10MB
+              each).
             </p>
             <div
               onDragOver={(e) => e.preventDefault()}

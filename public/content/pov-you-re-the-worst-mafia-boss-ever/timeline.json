@@ -1,0 +1,1313 @@
+{
+  "elements": [
+    {
+      "startMs": 0,
+      "endMs": 6269,
+      "imageUrl": "de104b0c-3cc3-4337-a969-95eae4e95c24",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 6269,
+      "endMs": 23034,
+      "imageUrl": "dc68c426-a2fe-45b5-bcd9-0241b92831a1",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 23034,
+      "endMs": 30789,
+      "imageUrl": "932f9f97-5cb0-4a41-9904-e467e4362a78",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 30789,
+      "endMs": 42167,
+      "imageUrl": "1a31527a-d2b2-421f-8aec-85fd85a359a6",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 42167,
+      "endMs": 48761,
+      "imageUrl": "6fbe3596-3e03-4375-a204-7ac200fe7137",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 48761,
+      "endMs": 62554,
+      "imageUrl": "3446a0ff-6efd-43b4-b633-3e63676a0b76",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    }
+  ],
+  "text": [
+    {
+      "startMs": 0,
+      "endMs": 789,
+      "text": "This is what it feels",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.599707766825732,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 789,
+      "endMs": 2009,
+      "text": "like. You’re the boss",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 2009,
+      "endMs": 2914,
+      "text": "now, the one they say",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6414171976963344,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 2914,
+      "endMs": 3413,
+      "text": "runs the whole",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 3413,
+      "endMs": 4899,
+      "text": "city—the kingpin, the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 4899,
+      "endMs": 5735,
+      "text": "nightmare under every",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6457778135805381,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 5735,
+      "endMs": 6269,
+      "text": "bed.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5600334726083649,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 6269,
+      "endMs": 7372,
+      "text": "But sunrise comes,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 7372,
+      "endMs": 8208,
+      "text": "and your first order",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 8208,
+      "endMs": 9497,
+      "text": "of business? You lose",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6698948562511737,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 9497,
+      "endMs": 10600,
+      "text": "the ledgers. Not to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5167012921637225,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 10600,
+      "endMs": 11772,
+      "text": "the police, not to a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 11772,
+      "endMs": 13119,
+      "text": "rival—just misplace",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6121299445883327,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 13119,
+      "endMs": 14257,
+      "text": "them, left inside the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5325348291660104,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 14257,
+      "endMs": 15127,
+      "text": "trunk of a car you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6631724651009125,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 15127,
+      "endMs": 15917,
+      "text": "can’t remember where",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 15917,
+      "endMs": 17136,
+      "text": "you parked. Your crew",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5390131500127183,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 17136,
+      "endMs": 17949,
+      "text": "stares at you like",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5174331652488342,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 17949,
+      "endMs": 19435,
+      "text": "you’ve got two heads.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.63207259163394,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 19435,
+      "endMs": 20340,
+      "text": "Ice forms in your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5338171454080056,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 20340,
+      "endMs": 22001,
+      "text": "gut, cold, heavy,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6261456237662786,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 22001,
+      "endMs": 23034,
+      "text": "humiliating.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6519633840497461,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 23034,
+      "endMs": 24172,
+      "text": "Next, a new recruit,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6430970902818476,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 24172,
+      "endMs": 25112,
+      "text": "eager to impress,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5594135757666552,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 25112,
+      "endMs": 25646,
+      "text": "asks for your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5199687312351677,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 25646,
+      "endMs": 26749,
+      "text": "signature on a hit.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 26749,
+      "endMs": 27643,
+      "text": "You give permission,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6431354833623821,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 27643,
+      "endMs": 28456,
+      "text": "not realizing he’s",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6997864134889343,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 28456,
+      "endMs": 28967,
+      "text": "written it on a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 28967,
+      "endMs": 29849,
+      "text": "coffee receipt and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5135196521810613,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 29849,
+      "endMs": 30789,
+      "text": "now it’s evidence.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 30789,
+      "endMs": 31590,
+      "text": "You want to scream,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5766144656588236,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 31590,
+      "endMs": 32844,
+      "text": "throw something, sack",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 32844,
+      "endMs": 34168,
+      "text": "the whole crew. But",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 34168,
+      "endMs": 35201,
+      "text": "you can’t. Your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 35201,
+      "endMs": 36304,
+      "text": "underbosses know.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 36304,
+      "endMs": 37256,
+      "text": "They smell the doubt,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6189224710733108,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 37256,
+      "endMs": 38614,
+      "text": "the hesitation—blood",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6743328960975307,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 38614,
+      "endMs": 39555,
+      "text": "in the water. Your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6998279043333903,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 39555,
+      "endMs": 40541,
+      "text": "consigliere starts",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5937297984452075,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 40541,
+      "endMs": 41493,
+      "text": "making calls behind",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5094240073060117,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 41493,
+      "endMs": 42167,
+      "text": "your back.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6907265611647185,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 42167,
+      "endMs": 43316,
+      "text": "Paranoia steeps your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5289689655883384,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 43316,
+      "endMs": 44164,
+      "text": "mind, turns your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 44164,
+      "endMs": 44733,
+      "text": "sleep into",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.627614954813577,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 44733,
+      "endMs": 45441,
+      "text": "sweat-drenched",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 45441,
+      "endMs": 46544,
+      "text": "nightmares. Your own",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5164180049594177,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 46544,
+      "endMs": 47275,
+      "text": "cousin is paying",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6243870410782203,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 47275,
+      "endMs": 48239,
+      "text": "protection to another",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5129438337695462,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 48239,
+      "endMs": 48761,
+      "text": "crew.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6462410285186397,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 48761,
+      "endMs": 49876,
+      "text": "You try to rally:",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5106335839878946,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 49876,
+      "endMs": 50920,
+      "text": "shout, pound your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5870133162731465,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 50920,
+      "endMs": 52476,
+      "text": "fist, demand fear.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 52476,
+      "endMs": 53718,
+      "text": "Nobody listens. Not",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 53718,
+      "endMs": 54670,
+      "text": "really. The street",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6195330491358659,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 54670,
+      "endMs": 55913,
+      "text": "hustlers just laugh.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 55913,
+      "endMs": 56865,
+      "text": "You realize the truth",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 56865,
+      "endMs": 57759,
+      "text": "stings sharper than a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 57759,
+      "endMs": 58885,
+      "text": "bullet. Power isn’t",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.676435091300383,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 58885,
+      "endMs": 59849,
+      "text": "handed—it has to be",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5348933401823753,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 59849,
+      "endMs": 60603,
+      "text": "earned, and tonight,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6320297836290893,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 60603,
+      "endMs": 61300,
+      "text": "you’re nothing but a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6433050451165568,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 61300,
+      "endMs": 62066,
+      "text": "joke in an empty",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 62066,
+      "endMs": 62554,
+      "text": "suit.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6672631802915442,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "startMs": 0,
+      "endMs": 6269,
+      "audioUrl": "de104b0c-3cc3-4337-a969-95eae4e95c24"
+    },
+    {
+      "startMs": 6269,
+      "endMs": 23034,
+      "audioUrl": "dc68c426-a2fe-45b5-bcd9-0241b92831a1"
+    },
+    {
+      "startMs": 23034,
+      "endMs": 30789,
+      "audioUrl": "932f9f97-5cb0-4a41-9904-e467e4362a78"
+    },
+    {
+      "startMs": 30789,
+      "endMs": 42167,
+      "audioUrl": "1a31527a-d2b2-421f-8aec-85fd85a359a6"
+    },
+    {
+      "startMs": 42167,
+      "endMs": 48761,
+      "audioUrl": "6fbe3596-3e03-4375-a204-7ac200fe7137"
+    },
+    {
+      "startMs": 48761,
+      "endMs": 62554,
+      "audioUrl": "3446a0ff-6efd-43b4-b633-3e63676a0b76"
+    }
+  ],
+  "shortTitle": "Pov: You're The Worst Mafia Boss Ever"
+}

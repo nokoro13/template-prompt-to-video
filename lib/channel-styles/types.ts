@@ -16,6 +16,8 @@ export const StyleCharacterSchema = z.object({
   id: z.string(),
   name: z.string(),
   notes: z.string().optional(),
+  /** Public URL under /channel-styles/.../characters/ — reference for consistent character look. */
+  imageUrl: z.string().optional(),
 });
 
 export type StyleCharacter = z.infer<typeof StyleCharacterSchema>;
@@ -51,6 +53,7 @@ export const ChannelStyleRecordSchema = z.object({
   characterCount: z.number(),
   createdAt: z.string(),
   references: z.object({
+    /** Art-style reference frames only — not for character likeness (use characters on the style). */
     images: z.array(z.string()),
     transcripts: z.array(TranscriptEntrySchema),
   }),

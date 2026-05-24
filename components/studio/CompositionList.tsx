@@ -1,9 +1,10 @@
 "use client";
 
-import { Film, Search, Trash2 } from "lucide-react";
+import { Film, Pencil, Search, Trash2 } from "lucide-react";
+import Link from "next/link";
 import { useMemo, useState } from "react";
 
-import { Button } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import {
   Dialog,
   DialogContent,
@@ -29,6 +30,8 @@ export type CompositionListProps = {
   onDelete?: (id: string) => Promise<void>;
   /** When matching a row id, that delete action is in progress. */
   deletingId?: string | null;
+  /** If set, shows an edit control that links here (e.g. back to Create video for this project). */
+  getEditHref?: (item: CompositionListItem) => string | null | undefined;
   disabled?: boolean;
   className?: string;
 };
@@ -39,6 +42,7 @@ export function CompositionList({
   onSelect,
   onDelete,
   deletingId,
+  getEditHref,
   disabled,
   className,
 }: CompositionListProps) {
@@ -102,6 +106,7 @@ export function CompositionList({
             filtered.map((c) => {
               const selected = c.id === selectedId;
               const seconds = Math.round(c.durationInFrames / c.fps);
+              const editHref = getEditHref?.(c) ?? null;
               return (
                 <div
                   key={c.id}
@@ -127,6 +132,23 @@ export function CompositionList({
                       </span>
                     </span>
                   </Button>
+                  {editHref ? (
+                    <Link
+                      href={editHref}
+                      className={cn(
+                        buttonVariants({
+                          variant: "ghost",
+                          size: "icon-sm",
+                        }),
+                        "shrink-0 self-stretch text-muted-foreground hover:text-brand-600",
+                      )}
+                      aria-label={`Edit ${c.shortTitle} in Create video`}
+                      title="Edit in Create video"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <Pencil className="size-4" />
+                    </Link>
+                  ) : null}
                   {onDelete ? (
                     <Button
                       type="button"

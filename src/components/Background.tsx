@@ -3,6 +3,7 @@ import {
   Img,
   staticFile,
   useCurrentFrame,
+  useRemotionEnvironment,
 } from "remotion";
 import { FPS } from "../lib/constants";
 import { BackgroundElement } from "../lib/types";
@@ -14,6 +15,7 @@ export const Background: React.FC<{
   item: BackgroundElement;
   project: string;
 }> = ({ item, project }) => {
+  const { isRendering } = useRemotionEnvironment();
   const frame = useCurrentFrame();
   const localMs = (frame / FPS) * 1000;
 
@@ -43,6 +45,7 @@ export const Background: React.FC<{
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <Img
         src={staticFile(getImagePath(project, item.imageUrl))}
+        pauseWhenLoading={!isRendering}
         style={{
           position: "absolute",
           inset: 0,

@@ -1,0 +1,938 @@
+{
+  "elements": [
+    {
+      "startMs": 0,
+      "endMs": 3437,
+      "imageUrl": "af297c52-22d5-4f6c-ba9e-2a4426477ef6",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 3437,
+      "endMs": 12214,
+      "imageUrl": "8db0b1d8-6e8d-4549-8a62-6138c2eb07e2",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 12214,
+      "endMs": 18298,
+      "imageUrl": "8d234ef2-8be7-4ee6-a72d-bc0f19f9296b",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 18298,
+      "endMs": 23639,
+      "imageUrl": "b27d9a1d-5fc0-4f6c-a1fa-0d26ec9d789e",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 23639,
+      "endMs": 36131,
+      "imageUrl": "d0f58bd1-6d82-40a5-a93b-4dd86951f0f9",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 36131,
+      "endMs": 45790,
+      "imageUrl": "bebd05b8-9cbd-4c76-818d-551a91de9dd3",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    }
+  ],
+  "text": [
+    {
+      "startMs": 0,
+      "endMs": 1474,
+      "text": "Let’s begin. Gravity,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5033864568705329,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 1474,
+      "endMs": 2032,
+      "text": "the invisible",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6122016554188895,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 2032,
+      "endMs": 2635,
+      "text": "architect of the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 2635,
+      "endMs": 3437,
+      "text": "cosmos.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5392797413281756,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 3437,
+      "endMs": 4389,
+      "text": "In the first scene,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 4389,
+      "endMs": 6328,
+      "text": "Isaac Newton in 1687:",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5829921372330582,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 6328,
+      "endMs": 7106,
+      "text": "he proposes that",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 7106,
+      "endMs": 8162,
+      "text": "every mass pulls on",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6369116064471846,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 8162,
+      "endMs": 9021,
+      "text": "every other, an",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 9021,
+      "endMs": 9892,
+      "text": "unseeable tether",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 9892,
+      "endMs": 10658,
+      "text": "binding apple to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5040531266146974,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 10658,
+      "endMs": 11680,
+      "text": "Earth and planet to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 11680,
+      "endMs": 12214,
+      "text": "Sun.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 12214,
+      "endMs": 12911,
+      "text": "But Einstein",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 12911,
+      "endMs": 13712,
+      "text": "shattered this calm",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5593886902213708,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 13712,
+      "endMs": 14524,
+      "text": "with the revelation",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.681256998603186,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 14524,
+      "endMs": 15442,
+      "text": "that gravity is not a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6955021355270239,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 15442,
+      "endMs": 16463,
+      "text": "force, but the very",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5385736278992497,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 16463,
+      "endMs": 17044,
+      "text": "curvature of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 17044,
+      "endMs": 18298,
+      "text": "spacetime itself.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 18298,
+      "endMs": 19680,
+      "text": "Mass bends space, and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6778106408135295,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 19680,
+      "endMs": 20539,
+      "text": "space tells matter",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5078204969515402,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 20539,
+      "endMs": 21793,
+      "text": "how to move—a cosmic",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 21793,
+      "endMs": 22640,
+      "text": "dance we can’t opt",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 22640,
+      "endMs": 23639,
+      "text": "out of, even now.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 23639,
+      "endMs": 24521,
+      "text": "What makes gravity",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 24521,
+      "endMs": 25253,
+      "text": "particularly",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 25253,
+      "endMs": 26298,
+      "text": "unsettling is its",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5844627758825278,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 26298,
+      "endMs": 27679,
+      "text": "relentless reach:",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5490010015457538,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 27679,
+      "endMs": 29119,
+      "text": "every star, galaxy,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5207501618418512,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 29119,
+      "endMs": 30442,
+      "text": "and atom is entangled",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5839040464809009,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 30442,
+      "endMs": 32079,
+      "text": "by its grasp. It can",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 32079,
+      "endMs": 33380,
+      "text": "warp time, swallow",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.63541690907379,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 33380,
+      "endMs": 34239,
+      "text": "light, and forge",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6940779947137605,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 34239,
+      "endMs": 34994,
+      "text": "black holes where",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6022331108940605,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 34994,
+      "endMs": 36131,
+      "text": "physics dissolves.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5944698381382728,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 36131,
+      "endMs": 37141,
+      "text": "Gravity shapes the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.58592211452294,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 37141,
+      "endMs": 38465,
+      "text": "universe, and yet,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.594940524384197,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 38465,
+      "endMs": 39312,
+      "text": "its true nature",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5849686394760958,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 39312,
+      "endMs": 40473,
+      "text": "remains elusive. We",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6576700525271031,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 40473,
+      "endMs": 41274,
+      "text": "are prisoners of a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 41274,
+      "endMs": 42029,
+      "text": "law we barely",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6735945134551142,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 42029,
+      "endMs": 43190,
+      "text": "understand, forever",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 43190,
+      "endMs": 44316,
+      "text": "weighing us down, and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6615471281880266,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 44316,
+      "endMs": 45140,
+      "text": "forever holding us",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 45140,
+      "endMs": 45790,
+      "text": "together.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "startMs": 0,
+      "endMs": 3437,
+      "audioUrl": "af297c52-22d5-4f6c-ba9e-2a4426477ef6"
+    },
+    {
+      "startMs": 3437,
+      "endMs": 12214,
+      "audioUrl": "8db0b1d8-6e8d-4549-8a62-6138c2eb07e2"
+    },
+    {
+      "startMs": 12214,
+      "endMs": 18298,
+      "audioUrl": "8d234ef2-8be7-4ee6-a72d-bc0f19f9296b"
+    },
+    {
+      "startMs": 18298,
+      "endMs": 23639,
+      "audioUrl": "b27d9a1d-5fc0-4f6c-a1fa-0d26ec9d789e"
+    },
+    {
+      "startMs": 23639,
+      "endMs": 36131,
+      "audioUrl": "d0f58bd1-6d82-40a5-a93b-4dd86951f0f9"
+    },
+    {
+      "startMs": 36131,
+      "endMs": 45790,
+      "audioUrl": "bebd05b8-9cbd-4c76-818d-551a91de9dd3"
+    }
+  ],
+  "shortTitle": "Gravity Explained"
+}

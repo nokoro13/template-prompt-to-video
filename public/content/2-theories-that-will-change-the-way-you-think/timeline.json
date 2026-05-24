@@ -1,0 +1,1420 @@
+{
+  "elements": [
+    {
+      "startMs": 0,
+      "endMs": 13142,
+      "imageUrl": "a6985375-8141-49d2-a1dc-3931eb6547ad",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 13142,
+      "endMs": 17879,
+      "imageUrl": "3af9e157-68a8-4154-a97e-4276216df742",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 17879,
+      "endMs": 24056,
+      "imageUrl": "12958314-27a3-4591-b5ff-4163c2599a84",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 24056,
+      "endMs": 32601,
+      "imageUrl": "66c5e3a9-2433-44db-8eb6-14f244f429b0",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 32601,
+      "endMs": 50713,
+      "imageUrl": "32794af6-94d9-4fbc-9a51-1fcdd2256e3a",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 50713,
+      "endMs": 69382,
+      "imageUrl": "9c8830e2-13f1-4a6f-b326-9330691baf3d",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    }
+  ],
+  "text": [
+    {
+      "startMs": 0,
+      "endMs": 1091,
+      "text": "Let’s get started.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.635571911580407,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 1091,
+      "endMs": 1695,
+      "text": "First, the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 1695,
+      "endMs": 2694,
+      "text": "psychological immune",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.69190555666756,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 2694,
+      "endMs": 3820,
+      "text": "system. Coined by",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 3820,
+      "endMs": 4783,
+      "text": "Harvard psychologist",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 4783,
+      "endMs": 5886,
+      "text": "Daniel Gilbert, this",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 5886,
+      "endMs": 6931,
+      "text": "concept reveals your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6560736976268607,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 6931,
+      "endMs": 7976,
+      "text": "mind’s secret ability",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5563248079917914,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 7976,
+      "endMs": 8847,
+      "text": "to unconsciously",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5775666110593511,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 8847,
+      "endMs": 9462,
+      "text": "rationalize",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.584500084327982,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 9462,
+      "endMs": 10670,
+      "text": "adversity, protecting",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 10670,
+      "endMs": 11505,
+      "text": "your happiness from",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 11505,
+      "endMs": 12481,
+      "text": "even life’s harshest",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5603282620249762,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 12481,
+      "endMs": 13142,
+      "text": "blows.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6031715386978922,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 13142,
+      "endMs": 13908,
+      "text": "You think you know",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6974744169281484,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 13908,
+      "endMs": 14593,
+      "text": "what will make you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 14593,
+      "endMs": 15963,
+      "text": "happy or devastated,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5213391601627986,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 15963,
+      "endMs": 16892,
+      "text": "but research shows",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6901080280781443,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 16892,
+      "endMs": 17879,
+      "text": "you’re often wrong.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6398944004015512,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 17879,
+      "endMs": 19040,
+      "text": "After trauma, loss,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6208678045345224,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 19040,
+      "endMs": 19911,
+      "text": "or failure, your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.524190692449132,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 19911,
+      "endMs": 20828,
+      "text": "brain quietly edits",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6868747043507639,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 20828,
+      "endMs": 22035,
+      "text": "your story, reframing",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6042844858963978,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 22035,
+      "endMs": 22860,
+      "text": "events to preserve",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 22860,
+      "endMs": 23336,
+      "text": "your sense of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6554848704398355,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 23336,
+      "endMs": 24056,
+      "text": "wellbeing.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 24056,
+      "endMs": 24660,
+      "text": "What makes this",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5536367291809384,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 24660,
+      "endMs": 25275,
+      "text": "theory deeply",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 25275,
+      "endMs": 26088,
+      "text": "unsettling is that",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6246001051079894,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 26088,
+      "endMs": 26622,
+      "text": "your greatest",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 26622,
+      "endMs": 27574,
+      "text": "misfortunes may be",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 27574,
+      "endMs": 28166,
+      "text": "edited into",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.657523983926008,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 28166,
+      "endMs": 28665,
+      "text": "forgettable",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6418933368125765,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 28665,
+      "endMs": 29571,
+      "text": "footnotes—and your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6564053488196735,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 29571,
+      "endMs": 30592,
+      "text": "happiest endings may",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5014644797081461,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 30592,
+      "endMs": 31649,
+      "text": "be illusions of post",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5043834210930114,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 31649,
+      "endMs": 32601,
+      "text": "hoc narrative.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 32601,
+      "endMs": 33774,
+      "text": "Second, predictive",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 33774,
+      "endMs": 35178,
+      "text": "processing. This",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 35178,
+      "endMs": 36188,
+      "text": "radical neuroscience",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 36188,
+      "endMs": 37199,
+      "text": "model upends your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5984718501300706,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 37199,
+      "endMs": 38569,
+      "text": "idea of perception,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6052691904760151,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 38569,
+      "endMs": 39474,
+      "text": "asserting the brain",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6858641597341923,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 39474,
+      "endMs": 40426,
+      "text": "doesn’t passively",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 40426,
+      "endMs": 41784,
+      "text": "receive the world—it",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 41784,
+      "endMs": 42829,
+      "text": "constantly predicts",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5292509928426008,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 42829,
+      "endMs": 44048,
+      "text": "it. Everything you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 44048,
+      "endMs": 45476,
+      "text": "see, feel, and hear",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5633619946173472,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 45476,
+      "endMs": 46417,
+      "text": "is shaped by neural",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6931678723334438,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 46417,
+      "endMs": 47729,
+      "text": "forecasts, only",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6927559748135477,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 47729,
+      "endMs": 48809,
+      "text": "updated when reality",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 48809,
+      "endMs": 49738,
+      "text": "drifts too far from",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5071515279522896,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 49738,
+      "endMs": 50713,
+      "text": "expectation.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5547231105811521,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 50713,
+      "endMs": 51619,
+      "text": "If consciousness is",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 51619,
+      "endMs": 52536,
+      "text": "mainly the product of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6722894514785286,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 52536,
+      "endMs": 53546,
+      "text": "expectation rather",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.668226563259819,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 53546,
+      "endMs": 54684,
+      "text": "than sensation, then",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 54684,
+      "endMs": 55461,
+      "text": "your experience of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 55461,
+      "endMs": 56170,
+      "text": "reality is a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5100696921595631,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 56170,
+      "endMs": 57516,
+      "text": "hallucination—one you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5766554247435511,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 57516,
+      "endMs": 58329,
+      "text": "happen to share with",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 58329,
+      "endMs": 59641,
+      "text": "others. What you deem",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5145794825631725,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 59641,
+      "endMs": 60640,
+      "text": "obvious truth might",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6881506332143041,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 60640,
+      "endMs": 61417,
+      "text": "just be skilled",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 61417,
+      "endMs": 62404,
+      "text": "guesswork. These",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 62404,
+      "endMs": 63205,
+      "text": "theories force you to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.628145053600863,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 63205,
+      "endMs": 63960,
+      "text": "question the very",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.618773368738298,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 63960,
+      "endMs": 64668,
+      "text": "foundation of your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5162898376860128,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 64668,
+      "endMs": 65632,
+      "text": "thoughts—are you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5470562081058699,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 65632,
+      "endMs": 66386,
+      "text": "truly seeing the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 66386,
+      "endMs": 67246,
+      "text": "world, or just what",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.694522376361045,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 67246,
+      "endMs": 68140,
+      "text": "your mind lets slip",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5973210168969153,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 68140,
+      "endMs": 69382,
+      "text": "past its filters?",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5877147669631355,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "startMs": 0,
+      "endMs": 13142,
+      "audioUrl": "a6985375-8141-49d2-a1dc-3931eb6547ad"
+    },
+    {
+      "startMs": 13142,
+      "endMs": 17879,
+      "audioUrl": "3af9e157-68a8-4154-a97e-4276216df742"
+    },
+    {
+      "startMs": 17879,
+      "endMs": 24056,
+      "audioUrl": "12958314-27a3-4591-b5ff-4163c2599a84"
+    },
+    {
+      "startMs": 24056,
+      "endMs": 32601,
+      "audioUrl": "66c5e3a9-2433-44db-8eb6-14f244f429b0"
+    },
+    {
+      "startMs": 32601,
+      "endMs": 50713,
+      "audioUrl": "32794af6-94d9-4fbc-9a51-1fcdd2256e3a"
+    },
+    {
+      "startMs": 50713,
+      "endMs": 69382,
+      "audioUrl": "9c8830e2-13f1-4a6f-b326-9330691baf3d"
+    }
+  ],
+  "shortTitle": "2 Theories That Will Change The Way You Think"
+}

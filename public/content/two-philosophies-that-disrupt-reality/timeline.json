@@ -1,0 +1,1607 @@
+{
+  "elements": [
+    {
+      "startMs": 0,
+      "endMs": 15186,
+      "imageUrl": "990b1440-87d2-4a3f-8711-a53822d423d4",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 15186,
+      "endMs": 28375,
+      "imageUrl": "da3a52dd-d90c-4683-a16b-c4b9f3b594d0",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 28375,
+      "endMs": 38963,
+      "imageUrl": "a7dd2dfe-9f16-4581-9c61-3c30a56244ab",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 38963,
+      "endMs": 54520,
+      "imageUrl": "541681cd-c924-45c7-b088-07bc1d9e8ed4",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 54520,
+      "endMs": 69241,
+      "imageUrl": "03d0b52f-3661-4b5f-a50c-fcd7dfe626c5",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 69241,
+      "endMs": 82012,
+      "imageUrl": "4ca132c9-1da6-4672-b541-0b9008f09d73",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    }
+  ],
+  "text": [
+    {
+      "startMs": 0,
+      "endMs": 755,
+      "text": "All right, let’s",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 755,
+      "endMs": 2171,
+      "text": "begin. First:",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6344585406441166,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 2171,
+      "endMs": 3483,
+      "text": "solipsism. This",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 3483,
+      "endMs": 4249,
+      "text": "ancient doctrine",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6447179746987555,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 4249,
+      "endMs": 5399,
+      "text": "insists only your own",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 5399,
+      "endMs": 6339,
+      "text": "mind is certain to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5167238809783449,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 6339,
+      "endMs": 7628,
+      "text": "exist. Everything",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 7628,
+      "endMs": 9021,
+      "text": "outside — friends,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 9021,
+      "endMs": 10286,
+      "text": "landscapes, even this",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6458886784054195,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 10286,
+      "endMs": 11540,
+      "text": "video — could be mere",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 11540,
+      "endMs": 12376,
+      "text": "projections of your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6705642134278759,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 12376,
+      "endMs": 13363,
+      "text": "consciousness with no",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.569581771995541,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 13363,
+      "endMs": 14385,
+      "text": "external reality",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6162467018022839,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 14385,
+      "endMs": 15186,
+      "text": "required.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 15186,
+      "endMs": 16777,
+      "text": "If solipsism is true,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 16777,
+      "endMs": 17647,
+      "text": "the world itself",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 17647,
+      "endMs": 18402,
+      "text": "dissolves into a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 18402,
+      "endMs": 19389,
+      "text": "theater of the mind,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5498271062841615,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 19389,
+      "endMs": 20143,
+      "text": "and the challenge",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 20143,
+      "endMs": 21409,
+      "text": "becomes overwhelming:",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6399642813396568,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 21409,
+      "endMs": 22117,
+      "text": "how could you ever",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5702448918085044,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 22117,
+      "endMs": 23092,
+      "text": "prove anything else",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5155921527865772,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 23092,
+      "endMs": 24311,
+      "text": "exists? Every test",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5984006834198151,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 24311,
+      "endMs": 25333,
+      "text": "you devise, each",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6555706361845043,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 25333,
+      "endMs": 26099,
+      "text": "conversation you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 26099,
+      "endMs": 27295,
+      "text": "have, could simply be",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 27295,
+      "endMs": 28375,
+      "text": "the echo of thought.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 28375,
+      "endMs": 29548,
+      "text": "What makes solipsism",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5064581944952015,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 29548,
+      "endMs": 30732,
+      "text": "profoundly unsettling",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5574627058495303,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 30732,
+      "endMs": 31812,
+      "text": "is the isolation it",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5340069396344738,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 31812,
+      "endMs": 33216,
+      "text": "renders absolute; you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 33216,
+      "endMs": 34168,
+      "text": "may be alone in an",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5446440326412758,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 34168,
+      "endMs": 34610,
+      "text": "intricate",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 34610,
+      "endMs": 35353,
+      "text": "hallucination",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 35353,
+      "endMs": 36189,
+      "text": "constructed by your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5888419962233502,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 36189,
+      "endMs": 37268,
+      "text": "own mind, with no",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 37268,
+      "endMs": 38220,
+      "text": "objective bridge to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5137981236370529,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 38220,
+      "endMs": 38963,
+      "text": "reality.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 38963,
+      "endMs": 40345,
+      "text": "Next: eliminative",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5862676011264907,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 40345,
+      "endMs": 41877,
+      "text": "materialism. This",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 41877,
+      "endMs": 42876,
+      "text": "philosophy claims",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6558001123899634,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 42876,
+      "endMs": 43688,
+      "text": "mental states —",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6107452122255881,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 43688,
+      "endMs": 44756,
+      "text": "beliefs, feelings,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5505677200504411,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 44756,
+      "endMs": 45813,
+      "text": "desires — don’t",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 45813,
+      "endMs": 47171,
+      "text": "actually exist.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 47171,
+      "endMs": 48216,
+      "text": "Instead, only",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5364360800495656,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 48216,
+      "endMs": 49354,
+      "text": "physical processes in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 49354,
+      "endMs": 50561,
+      "text": "the brain are real;",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5303724862877645,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 50561,
+      "endMs": 51479,
+      "text": "consciousness is an",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5165350848793391,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 51479,
+      "endMs": 52686,
+      "text": "illusion, our inner",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 52686,
+      "endMs": 53475,
+      "text": "life reduced to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5987319826931077,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 53475,
+      "endMs": 54520,
+      "text": "neural patterns.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6170633883254403,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 54520,
+      "endMs": 55774,
+      "text": "If eliminativism is",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6410721444166156,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 55774,
+      "endMs": 56842,
+      "text": "correct, everything",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5389654197500903,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 56842,
+      "endMs": 57550,
+      "text": "that feels most",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 57550,
+      "endMs": 58943,
+      "text": "intimate — pain,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 58943,
+      "endMs": 60429,
+      "text": "love, wonder —",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 60429,
+      "endMs": 61405,
+      "text": "becomes nothing more",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6060139147709923,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 61405,
+      "endMs": 62113,
+      "text": "than electrical",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5427510473682895,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 62113,
+      "endMs": 63297,
+      "text": "signals with no",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 63297,
+      "endMs": 64110,
+      "text": "meaning beyond their",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5417615465369396,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 64110,
+      "endMs": 65573,
+      "text": "mechanics. What makes",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 65573,
+      "endMs": 66769,
+      "text": "this view disturbing",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6715548422086928,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 66769,
+      "endMs": 67744,
+      "text": "is the annihilation",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5552893682211064,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 67744,
+      "endMs": 68371,
+      "text": "of subjective",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 68371,
+      "endMs": 69241,
+      "text": "experience.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5794074067690559,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 69241,
+      "endMs": 70030,
+      "text": "You become not a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 70030,
+      "endMs": 70936,
+      "text": "self, but a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5412409453968686,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 70936,
+      "endMs": 71911,
+      "text": "collection of firing",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5320387328944596,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 71911,
+      "endMs": 73026,
+      "text": "neurons, stripped of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5421791134799124,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 73026,
+      "endMs": 73676,
+      "text": "any genuine",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5442909217852901,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 73676,
+      "endMs": 74918,
+      "text": "awareness. Under",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 74918,
+      "endMs": 75928,
+      "text": "eliminativism,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 75928,
+      "endMs": 77055,
+      "text": "identity, meaning,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 77055,
+      "endMs": 78552,
+      "text": "even reality itself,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 78552,
+      "endMs": 79702,
+      "text": "become fragile,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6480617725224458,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 79702,
+      "endMs": 81222,
+      "text": "replaceable, denied",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6579542788079753,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 81222,
+      "endMs": 82012,
+      "text": "from within.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6773297716723015,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "startMs": 0,
+      "endMs": 15186,
+      "audioUrl": "990b1440-87d2-4a3f-8711-a53822d423d4"
+    },
+    {
+      "startMs": 15186,
+      "endMs": 28375,
+      "audioUrl": "da3a52dd-d90c-4683-a16b-c4b9f3b594d0"
+    },
+    {
+      "startMs": 28375,
+      "endMs": 38963,
+      "audioUrl": "a7dd2dfe-9f16-4581-9c61-3c30a56244ab"
+    },
+    {
+      "startMs": 38963,
+      "endMs": 54520,
+      "audioUrl": "541681cd-c924-45c7-b088-07bc1d9e8ed4"
+    },
+    {
+      "startMs": 54520,
+      "endMs": 69241,
+      "audioUrl": "03d0b52f-3661-4b5f-a50c-fcd7dfe626c5"
+    },
+    {
+      "startMs": 69241,
+      "endMs": 82012,
+      "audioUrl": "4ca132c9-1da6-4672-b541-0b9008f09d73"
+    }
+  ],
+  "shortTitle": "Two Philosophies That Disrupt Reality"
+}

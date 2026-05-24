@@ -1,0 +1,8069 @@
+{
+  "elements": [
+    {
+      "startMs": 0,
+      "endMs": 10356,
+      "imageUrl": "dad802c4-bdfa-43b8-974c-e0dbd88d75cc",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 10356,
+      "endMs": 18251,
+      "imageUrl": "8470c6e3-ed07-428b-88ce-7218899958f9",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 18251,
+      "endMs": 22849,
+      "imageUrl": "0f7191b9-36d9-4149-b9ae-adb34a12d9c4",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 22849,
+      "endMs": 27168,
+      "imageUrl": "0726158a-309f-4998-9439-5a53503d9879",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 27168,
+      "endMs": 33623,
+      "imageUrl": "5e9d393b-f912-4a99-94d1-08ead6363394",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 33623,
+      "endMs": 49785,
+      "imageUrl": "94989058-08c2-4295-987b-dcbbd3f76291",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 49785,
+      "endMs": 57866,
+      "imageUrl": "fcf44eac-eca6-467a-9a7c-b80aa4531a41",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 57866,
+      "endMs": 62882,
+      "imageUrl": "c186f5d8-1952-458f-8e09-8869a47ba1ed",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 62882,
+      "endMs": 75142,
+      "imageUrl": "d3b18afb-c34c-4885-9115-54b99dd4ac5b",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 75142,
+      "endMs": 91814,
+      "imageUrl": "98397806-2537-4b32-bfb1-eb96986124d1",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 91814,
+      "endMs": 100730,
+      "imageUrl": "a00be882-9a3e-43e4-936d-3034854e1b6c",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 100730,
+      "endMs": 108671,
+      "imageUrl": "689ea825-b478-4003-8458-25f63fc04332",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 108671,
+      "endMs": 117959,
+      "imageUrl": "180b66fe-b4ba-46dd-9e19-fe4acbbcc0ac",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 117959,
+      "endMs": 124832,
+      "imageUrl": "0f0a9d59-2d2a-40a0-bfca-6e4a010cdc1e",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 124832,
+      "endMs": 138160,
+      "imageUrl": "64fe81cb-0aa9-4f3c-b8ac-0c82b5eae567",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 138160,
+      "endMs": 141364,
+      "imageUrl": "b075c391-7589-43dc-89bf-4f47f93ca02a",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 141364,
+      "endMs": 160357,
+      "imageUrl": "dd291caf-6254-46c7-8480-4735c2b700d4",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 160357,
+      "endMs": 189011,
+      "imageUrl": "968187ff-c5b8-4fc4-92da-2a70571a282f",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 189011,
+      "endMs": 203825,
+      "imageUrl": "d726f7ba-a9e0-43f6-a827-1979be792e81",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 203825,
+      "endMs": 221751,
+      "imageUrl": "809c68a1-0193-473d-8135-6365309f2b49",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 221751,
+      "endMs": 229506,
+      "imageUrl": "d86f9201-984a-4587-897d-35763818d72c",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 229506,
+      "endMs": 249196,
+      "imageUrl": "309f1540-b890-44d8-8853-7b2fb973b5f0",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 249196,
+      "endMs": 277571,
+      "imageUrl": "10fe14bf-e997-43cd-83c5-a817783c7622",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 277571,
+      "endMs": 309429,
+      "imageUrl": "af537435-90b7-4967-8777-b6ac9cee5355",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 309429,
+      "endMs": 335807,
+      "imageUrl": "f9abf4bb-bea4-424c-8f1f-a0635273d20e",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 335807,
+      "endMs": 366504,
+      "imageUrl": "53f81876-cf16-4ac1-9217-a64032905eaa",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 366504,
+      "endMs": 404864,
+      "imageUrl": "a5905cfb-a3b5-4f54-8024-22e3fa8c5d3f",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 404864,
+      "endMs": 431241,
+      "imageUrl": "e598558f-5569-43b3-91cb-84ca76729236",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    }
+  ],
+  "text": [
+    {
+      "startMs": 0,
+      "endMs": 871,
+      "text": "You join a debate",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.601308710869517,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 871,
+      "endMs": 2276,
+      "text": "club at 12 because",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6695685444836684,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 2276,
+      "endMs": 3158,
+      "text": "your cousin, Jamie,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5286670064587937,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 3158,
+      "endMs": 4133,
+      "text": "said that’s how you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5005792038842394,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 4133,
+      "endMs": 5364,
+      "text": "get into college. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5211382905360906,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 5364,
+      "endMs": 6014,
+      "text": "don’t care about",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.545753243260257,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 6014,
+      "endMs": 7059,
+      "text": "college. You care",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6124057695755348,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 7059,
+      "endMs": 7651,
+      "text": "that Jamie’s",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 7651,
+      "endMs": 8986,
+      "text": "confident and people",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 8986,
+      "endMs": 9683,
+      "text": "listen when she",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6571096250736052,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 9683,
+      "endMs": 10356,
+      "text": "talks.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6238388856627217,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 10356,
+      "endMs": 11285,
+      "text": "The first debate is",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6414314653791011,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 11285,
+      "endMs": 12492,
+      "text": "about social media.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6241461492131016,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 12492,
+      "endMs": 13317,
+      "text": "You memorize the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6531649743780771,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 13317,
+      "endMs": 14164,
+      "text": "opinion your team",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 14164,
+      "endMs": 14942,
+      "text": "leader sends in the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5632641405165788,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 14942,
+      "endMs": 15964,
+      "text": "group chat. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 15964,
+      "endMs": 16881,
+      "text": "recite it word for",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5451704374466517,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 16881,
+      "endMs": 18251,
+      "text": "word. You win.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6266894539319078,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 18251,
+      "endMs": 19087,
+      "text": "Your trophy looks",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6299407528187781,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 19087,
+      "endMs": 19853,
+      "text": "plastic but it’s",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6556681959668492,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 19853,
+      "endMs": 20782,
+      "text": "heavy, like maybe it",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5243533544868035,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 20782,
+      "endMs": 22013,
+      "text": "matters. Jamie says",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 22013,
+      "endMs": 22849,
+      "text": "you did great.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 22849,
+      "endMs": 23940,
+      "text": "You google how to win",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6954117639641966,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 23940,
+      "endMs": 25067,
+      "text": "every argument. The",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 25067,
+      "endMs": 26262,
+      "text": "first result says:",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6929103182907205,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 26262,
+      "endMs": 27168,
+      "text": "sound certain.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 27168,
+      "endMs": 28166,
+      "text": "You practice talking",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5550157565881104,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 28166,
+      "endMs": 29409,
+      "text": "with zero doubt, even",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.60809538371862,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 29409,
+      "endMs": 30094,
+      "text": "when you have all the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5479963238887614,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 30094,
+      "endMs": 31023,
+      "text": "doubt in the world.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5983332042256085,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 31023,
+      "endMs": 31975,
+      "text": "You like how easy it",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 31975,
+      "endMs": 32868,
+      "text": "is to sound like you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 32868,
+      "endMs": 33623,
+      "text": "know things.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6313813122121475,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 33623,
+      "endMs": 34656,
+      "text": "You scroll forums",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 34656,
+      "endMs": 35724,
+      "text": "full of bold text and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 35724,
+      "endMs": 37269,
+      "text": "stock images; someone",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5496156415946215,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 37269,
+      "endMs": 38441,
+      "text": "posts a thread called",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 38441,
+      "endMs": 39985,
+      "text": "“NASA’s Biggest Lie.”",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 39985,
+      "endMs": 40670,
+      "text": "You click without",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 40670,
+      "endMs": 41843,
+      "text": "even thinking. It’s a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6719282869226907,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 41843,
+      "endMs": 43224,
+      "text": "video: watercolor",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6769508344275551,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 43224,
+      "endMs": 44316,
+      "text": "animation, British",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 44316,
+      "endMs": 45581,
+      "text": "accent. The earth is",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 45581,
+      "endMs": 46591,
+      "text": "flat and round is a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 46591,
+      "endMs": 47857,
+      "text": "scam. Gravity is a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.579019203326582,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 47857,
+      "endMs": 49099,
+      "text": "story. You watch it",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5792968098638744,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 49099,
+      "endMs": 49784,
+      "text": "twice.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5071358806596573,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 49785,
+      "endMs": 50505,
+      "text": "There are links in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 50505,
+      "endMs": 51399,
+      "text": "the description,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 51399,
+      "endMs": 52722,
+      "text": "suggested readings,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 52722,
+      "endMs": 53837,
+      "text": "testimonials in all",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 53837,
+      "endMs": 55172,
+      "text": "caps. People say",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6408859591270843,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 55172,
+      "endMs": 56008,
+      "text": "their eyes are open",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 56008,
+      "endMs": 56937,
+      "text": "now. You want your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 56937,
+      "endMs": 57866,
+      "text": "eyes open too.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6948445076320399,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 57866,
+      "endMs": 59271,
+      "text": "You tell Jamie. She",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5383292596754907,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 59271,
+      "endMs": 60339,
+      "text": "laughs. You laugh too",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 60339,
+      "endMs": 61407,
+      "text": "but google “is the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6456671941124592,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 61407,
+      "endMs": 62243,
+      "text": "earth flat” when you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6450646177641977,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 62243,
+      "endMs": 62882,
+      "text": "get home.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5672609634899962,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 62882,
+      "endMs": 64113,
+      "text": "Endless pages.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5220917535302206,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 64113,
+      "endMs": 65134,
+      "text": "Algorithms nudge you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6827938299236489,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 65134,
+      "endMs": 66795,
+      "text": "along. Dots connect:",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.588170232112414,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 66795,
+      "endMs": 68234,
+      "text": "Antarctica is a wall,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6605110074324745,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 68234,
+      "endMs": 69314,
+      "text": "pilots are in on it,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.625551212881081,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 69314,
+      "endMs": 70103,
+      "text": "look how airplanes",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 70103,
+      "endMs": 71462,
+      "text": "actually fly. Ten",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 71462,
+      "endMs": 72274,
+      "text": "minutes turns into",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 72274,
+      "endMs": 73041,
+      "text": "two hours, then",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6916720032120013,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 73041,
+      "endMs": 74051,
+      "text": "three. You don’t",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 74051,
+      "endMs": 75142,
+      "text": "notice the sun set.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 75142,
+      "endMs": 76303,
+      "text": "In class, someone",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6150850888197076,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 76303,
+      "endMs": 77069,
+      "text": "asks what you’re",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 77069,
+      "endMs": 77638,
+      "text": "reading on your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 77638,
+      "endMs": 79380,
+      "text": "phone. You say, “Did",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 79380,
+      "endMs": 80599,
+      "text": "you know photos from",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5607712584265536,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 80599,
+      "endMs": 82619,
+      "text": "space are just CGI?”",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5763945890254084,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 82619,
+      "endMs": 84140,
+      "text": "It comes out smooth.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.680144883272174,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 84140,
+      "endMs": 85103,
+      "text": "The sentence sounds",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5583098331362333,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 85103,
+      "endMs": 85962,
+      "text": "like someone else’s",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6745272190558598,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 85962,
+      "endMs": 86949,
+      "text": "voice, but no one",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5619895442915679,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 86949,
+      "endMs": 88459,
+      "text": "stops you. You repeat",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5158574830323528,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 88459,
+      "endMs": 89759,
+      "text": "it at lunch. It gets",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 89759,
+      "endMs": 90699,
+      "text": "laughs. You’re",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6360964113749614,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 90699,
+      "endMs": 91814,
+      "text": "confident anyway.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5384378445518945,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 91814,
+      "endMs": 92499,
+      "text": "Someone shares a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 92499,
+      "endMs": 93985,
+      "text": "meme: globe defenders",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6380340028977092,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 93985,
+      "endMs": 95506,
+      "text": "eating fake food. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6528644351194985,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 95506,
+      "endMs": 96562,
+      "text": "laugh, share it in a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6921990364566998,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 96562,
+      "endMs": 97770,
+      "text": "group chat. Two",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 97770,
+      "endMs": 98617,
+      "text": "people reply with",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5650619754840317,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 98617,
+      "endMs": 99686,
+      "text": "yeses, one with a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5496325497068484,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 99686,
+      "endMs": 100730,
+      "text": "laughing emoji.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 100730,
+      "endMs": 101531,
+      "text": "You start seeing the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6275996612053757,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 101531,
+      "endMs": 101810,
+      "text": "world",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5552538504485922,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 101810,
+      "endMs": 102831,
+      "text": "differently—edges,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6444171628172042,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 102831,
+      "endMs": 104445,
+      "text": "corners, not curves.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5024839766434974,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 104445,
+      "endMs": 105722,
+      "text": "Maps look suspicious.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6760252359927363,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 105722,
+      "endMs": 106349,
+      "text": "The globe in your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.632431733796327,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 106349,
+      "endMs": 107220,
+      "text": "science classroom",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 107220,
+      "endMs": 107917,
+      "text": "seems vaguely",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5481158904719637,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 107917,
+      "endMs": 108671,
+      "text": "threatening.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6335948976855832,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 108671,
+      "endMs": 109693,
+      "text": "Your browser history",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6348252319984726,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 109693,
+      "endMs": 110668,
+      "text": "fills up with forums",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5403259975880214,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 110668,
+      "endMs": 111620,
+      "text": "and YouTube channels",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6399749310664975,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 111620,
+      "endMs": 112932,
+      "text": "that say GPS is just",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 112932,
+      "endMs": 114174,
+      "text": "triangulation, and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 114174,
+      "endMs": 115509,
+      "text": "water doesn’t curve.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5177147314913503,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 115509,
+      "endMs": 116310,
+      "text": "You say these things",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 116310,
+      "endMs": 117146,
+      "text": "out loud until they",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 117146,
+      "endMs": 117959,
+      "text": "sound true.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5574903897251807,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 117959,
+      "endMs": 118818,
+      "text": "Dinnertime with your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6554354051748317,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 118818,
+      "endMs": 119759,
+      "text": "mom: did you know",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5384851288898379,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 119759,
+      "endMs": 120548,
+      "text": "there’s never been an",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 120548,
+      "endMs": 121361,
+      "text": "actual photo of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5089101437952142,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 121361,
+      "endMs": 122649,
+      "text": "earth? She shakes her",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 122649,
+      "endMs": 123404,
+      "text": "head, tells you to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6166795578450683,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 123404,
+      "endMs": 124437,
+      "text": "finish your peas. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6674610016527123,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 124437,
+      "endMs": 124832,
+      "text": "do.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 124832,
+      "endMs": 125714,
+      "text": "Later you watch",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6826562850627069,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 125714,
+      "endMs": 126713,
+      "text": "videos with titles",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6264742681908716,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 126713,
+      "endMs": 128060,
+      "text": "like “10 Proofs NASA",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6980435544613341,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 128060,
+      "endMs": 129081,
+      "text": "Lied” and “Pilots",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6321576743012913,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 129081,
+      "endMs": 130277,
+      "text": "Expose The Truth.”",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6556790733955095,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 130277,
+      "endMs": 131125,
+      "text": "You stop caring if",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 131125,
+      "endMs": 131949,
+      "text": "the earth is flat or",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 131949,
+      "endMs": 133029,
+      "text": "not. You care that",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5951211202558712,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 133029,
+      "endMs": 133911,
+      "text": "you sound like you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5667000054620437,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 133911,
+      "endMs": 134770,
+      "text": "know something no one",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 134770,
+      "endMs": 136012,
+      "text": "else knows. You care",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5840292086201588,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 136012,
+      "endMs": 136906,
+      "text": "about being the one",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 136906,
+      "endMs": 137452,
+      "text": "with secret",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 137452,
+      "endMs": 138160,
+      "text": "knowledge.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5283420441698403,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 138160,
+      "endMs": 139042,
+      "text": "Your friends stop",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6419342634168723,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 139042,
+      "endMs": 140215,
+      "text": "arguing. They shrug,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 140215,
+      "endMs": 140900,
+      "text": "say it’s your thing",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5115926880409415,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 140900,
+      "endMs": 141364,
+      "text": "now.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5716149343513369,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 141364,
+      "endMs": 142780,
+      "text": "You start a TikTok.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.658856316809346,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 142780,
+      "endMs": 143767,
+      "text": "The first video,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6142660648338536,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 143767,
+      "endMs": 144638,
+      "text": "grainy, late at",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6248005576902572,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 144638,
+      "endMs": 145764,
+      "text": "night: “What if I",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5273954608820979,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 145764,
+      "endMs": 146739,
+      "text": "told you gravity is",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.507936612248648,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 146739,
+      "endMs": 148086,
+      "text": "made up?” Ten people",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6825552130452188,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 148086,
+      "endMs": 149259,
+      "text": "like it. A dozen",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 149259,
+      "endMs": 150071,
+      "text": "comment with brain",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 150071,
+      "endMs": 151488,
+      "text": "emojis and “WOKE.”",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6571544211623331,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 151488,
+      "endMs": 152266,
+      "text": "Someone calls you a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 152266,
+      "endMs": 153775,
+      "text": "genius in DMs. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6442816347418711,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 153775,
+      "endMs": 154599,
+      "text": "believe them, a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 154599,
+      "endMs": 155713,
+      "text": "little. You fall",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5208155443962018,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 155713,
+      "endMs": 156666,
+      "text": "asleep scrolling",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5260313281955509,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 156666,
+      "endMs": 157873,
+      "text": "through likes. Your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 157873,
+      "endMs": 158720,
+      "text": "dreams fill with",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6169227264533766,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 158720,
+      "endMs": 159777,
+      "text": "horizons that never",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 159777,
+      "endMs": 160357,
+      "text": "bend.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6144292691306663,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 160357,
+      "endMs": 161181,
+      "text": "In earth science",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5310604896109267,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 161181,
+      "endMs": 161948,
+      "text": "class, the teacher",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6352285716492903,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 161948,
+      "endMs": 163318,
+      "text": "says, “Any questions",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5412450628745238,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 163318,
+      "endMs": 164444,
+      "text": "about the sphere?”",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 164444,
+      "endMs": 165547,
+      "text": "The room is silent.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5308267302685177,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 165547,
+      "endMs": 166638,
+      "text": "You raise your hand.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5628056794623013,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 166638,
+      "endMs": 167753,
+      "text": "You say, “How do you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6293838051371852,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 167753,
+      "endMs": 168914,
+      "text": "know?” The teacher",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 168914,
+      "endMs": 169935,
+      "text": "goes into orbit,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.501727905948688,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 169935,
+      "endMs": 171479,
+      "text": "axial tilt, satellite",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6433721634837812,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 171479,
+      "endMs": 172849,
+      "text": "images. You counter",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 172849,
+      "endMs": 173790,
+      "text": "with a link you saved",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6006307083011501,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 173790,
+      "endMs": 175474,
+      "text": "in notes. She sighs,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 175474,
+      "endMs": 176843,
+      "text": "asks you to trust the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 176843,
+      "endMs": 178213,
+      "text": "evidence. Evidence is",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 178213,
+      "endMs": 179038,
+      "text": "what got everyone",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5118575388109736,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 179038,
+      "endMs": 180234,
+      "text": "into this mess. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 180234,
+      "endMs": 181151,
+      "text": "bring up ice walls",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6902936772416767,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 181151,
+      "endMs": 182509,
+      "text": "and faked images. The",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 182509,
+      "endMs": 183264,
+      "text": "rest of the class",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6517861086609845,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 183264,
+      "endMs": 184518,
+      "text": "looks uncomfortable,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6749998917586073,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 184518,
+      "endMs": 185319,
+      "text": "eyes dart to the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6312621041078593,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 185319,
+      "endMs": 186549,
+      "text": "clock. You like the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 186549,
+      "endMs": 187699,
+      "text": "attention. You like",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 187699,
+      "endMs": 188256,
+      "text": "the feeling of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5321531288217884,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 188256,
+      "endMs": 189011,
+      "text": "certainty.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5797044944063107,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 189011,
+      "endMs": 190102,
+      "text": "Jamie stops texting",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5672089363830447,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 190102,
+      "endMs": 191449,
+      "text": "as much. You find new",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6915184590193504,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 191449,
+      "endMs": 192715,
+      "text": "people who agree, all",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.541071031415666,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 192715,
+      "endMs": 193585,
+      "text": "online, all",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5712890504001172,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 193585,
+      "endMs": 194561,
+      "text": "anonymous, all",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 194561,
+      "endMs": 195443,
+      "text": "sharing proof in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 195443,
+      "endMs": 196569,
+      "text": "recycled memes and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.54482242122124,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 196569,
+      "endMs": 197208,
+      "text": "untraceable",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.699984805814561,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 197208,
+      "endMs": 198462,
+      "text": "citations. Your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 198462,
+      "endMs": 199623,
+      "text": "certainty grows —",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5226739033615018,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 199623,
+      "endMs": 200447,
+      "text": "calibrated by",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5245127688025204,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 200447,
+      "endMs": 201596,
+      "text": "repetition, boosted",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6099223739403445,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 201596,
+      "endMs": 202641,
+      "text": "by the next post that",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6183060794250379,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 202641,
+      "endMs": 203373,
+      "text": "says what you want to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 203373,
+      "endMs": 203825,
+      "text": "hear.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5220579912643537,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 203825,
+      "endMs": 204742,
+      "text": "You don’t test the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5306241215877093,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 204742,
+      "endMs": 206031,
+      "text": "theory. You don’t buy",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5788789635079916,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 206031,
+      "endMs": 206948,
+      "text": "a ticket to see the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5401955784806699,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 206948,
+      "endMs": 208051,
+      "text": "curve of the earth.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 208051,
+      "endMs": 208887,
+      "text": "You can’t afford a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5915680873867666,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 208887,
+      "endMs": 210013,
+      "text": "weather balloon. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5552806308568824,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 210013,
+      "endMs": 211081,
+      "text": "join arguments under",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6721188112220529,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 211081,
+      "endMs": 212265,
+      "text": "articles, post the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5412571529160031,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 212265,
+      "endMs": 213276,
+      "text": "same sources you were",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6162702795045805,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 213276,
+      "endMs": 214437,
+      "text": "handed, watch the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 214437,
+      "endMs": 215389,
+      "text": "same talking heads",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 215389,
+      "endMs": 216411,
+      "text": "who speak in circles",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6078357416818411,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 216411,
+      "endMs": 217676,
+      "text": "but always land on,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 217676,
+      "endMs": 218872,
+      "text": "“Open your mind.”",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 218872,
+      "endMs": 220404,
+      "text": "Your mind is open. So",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5138357661279708,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 220404,
+      "endMs": 221751,
+      "text": "open things fall out.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6972688593130771,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 221751,
+      "endMs": 223295,
+      "text": "Elections approach.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 223295,
+      "endMs": 224177,
+      "text": "You don’t care who",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5468198562220232,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 224177,
+      "endMs": 225002,
+      "text": "wins as long as they",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5371155954345012,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 225002,
+      "endMs": 225919,
+      "text": "admit the truth about",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 225919,
+      "endMs": 227335,
+      "text": "satellites. You stop",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5746561273530222,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 227335,
+      "endMs": 228427,
+      "text": "going to debate club.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6819739361077456,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 228427,
+      "endMs": 229506,
+      "text": "Too many rules.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 229506,
+      "endMs": 230272,
+      "text": "Instead, you make",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 230272,
+      "endMs": 231584,
+      "text": "slideshows — one with",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6390071558630783,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 231584,
+      "endMs": 232838,
+      "text": "a headline, one with",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5664371732601139,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 232838,
+      "endMs": 233883,
+      "text": "the picture of a cat",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 233883,
+      "endMs": 234614,
+      "text": "in a satellite",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6483390955674936,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 234614,
+      "endMs": 235659,
+      "text": "helmet, one with a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5310606201794024,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 235659,
+      "endMs": 236646,
+      "text": "blinking gif that",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5549440794222421,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 236646,
+      "endMs": 237807,
+      "text": "says “Question",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 237807,
+      "endMs": 239026,
+      "text": "Everything.” You post",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.505198218254591,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 239026,
+      "endMs": 240222,
+      "text": "them everywhere. Most",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 240222,
+      "endMs": 241290,
+      "text": "people ignore you.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6433876079283162,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 241290,
+      "endMs": 242254,
+      "text": "Some people comment",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6415036067269667,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 242254,
+      "endMs": 242764,
+      "text": "with angry",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5084328075463307,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 242764,
+      "endMs": 243949,
+      "text": "paragraphs. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5467811640801247,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 243949,
+      "endMs": 244994,
+      "text": "screenshot these and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6974390222457696,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 244994,
+      "endMs": 245609,
+      "text": "send them to your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 245609,
+      "endMs": 246735,
+      "text": "group chat. You get",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5411334067309481,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 246735,
+      "endMs": 247919,
+      "text": "validation every time",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5854312947399112,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 247919,
+      "endMs": 248581,
+      "text": "someone calls you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5620671458481418,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 248581,
+      "endMs": 249196,
+      "text": "crazy.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5759937368058653,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 249196,
+      "endMs": 249985,
+      "text": "Your mom starts",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.532932350275041,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 249985,
+      "endMs": 250833,
+      "text": "getting emails from",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 250833,
+      "endMs": 252087,
+      "text": "school. Worried",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5949118602013376,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 252087,
+      "endMs": 253271,
+      "text": "teachers. Too many",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 253271,
+      "endMs": 254444,
+      "text": "conspiracy papers for",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 254444,
+      "endMs": 255674,
+      "text": "class assignments.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 255674,
+      "endMs": 256835,
+      "text": "She sits you down.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 256835,
+      "endMs": 257683,
+      "text": "“Do you believe the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6340212659669874,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 257683,
+      "endMs": 259018,
+      "text": "earth is flat?” You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5417832858254299,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 259018,
+      "endMs": 260887,
+      "text": "smile. You shrug. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 260887,
+      "endMs": 262002,
+      "text": "tell her: “I know",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5024637279085001,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 262002,
+      "endMs": 262744,
+      "text": "things other people",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 262744,
+      "endMs": 264149,
+      "text": "are afraid to.” She",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 264149,
+      "endMs": 265542,
+      "text": "sighs. She’s tired.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.652476627303358,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 265542,
+      "endMs": 266448,
+      "text": "She says maybe take a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 266448,
+      "endMs": 266889,
+      "text": "break from the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 266889,
+      "endMs": 267992,
+      "text": "internet. You nod.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 267992,
+      "endMs": 269002,
+      "text": "You don’t. Your phone",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 269002,
+      "endMs": 270221,
+      "text": "is always nearby.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6081688924763131,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 270221,
+      "endMs": 271138,
+      "text": "Your notifications",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6655374984052731,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 271138,
+      "endMs": 272323,
+      "text": "keep coming. You need",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 272323,
+      "endMs": 273031,
+      "text": "to know what people",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 273031,
+      "endMs": 273669,
+      "text": "think of what you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5931671329841788,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 273669,
+      "endMs": 274575,
+      "text": "think. You need",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5771224033193731,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 274575,
+      "endMs": 275342,
+      "text": "someone telling you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 275342,
+      "endMs": 276143,
+      "text": "you’re right. It",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6116158682563217,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 276143,
+      "endMs": 276828,
+      "text": "matters more than",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 276828,
+      "endMs": 277571,
+      "text": "being right.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.654404449633843,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 277571,
+      "endMs": 278581,
+      "text": "You go to a party one",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 278581,
+      "endMs": 279591,
+      "text": "night. Someone hands",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6497047643764864,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 279591,
+      "endMs": 280508,
+      "text": "you a drink. The",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5933601241089506,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 280508,
+      "endMs": 281530,
+      "text": "conversation turns to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5838642986596163,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 281530,
+      "endMs": 282877,
+      "text": "travel. Someone says",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5940399152585042,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 282877,
+      "endMs": 283759,
+      "text": "they flew to Japan",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 283759,
+      "endMs": 284549,
+      "text": "and watched the curve",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5665212649867859,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 284549,
+      "endMs": 285768,
+      "text": "out the window. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 285768,
+      "endMs": 286766,
+      "text": "say, “That’s just",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6728094547419895,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 286766,
+      "endMs": 288020,
+      "text": "optical illusion.”",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6623671686147751,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 288020,
+      "endMs": 289146,
+      "text": "You say, “You only",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 289146,
+      "endMs": 289819,
+      "text": "see it because you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 289819,
+      "endMs": 291073,
+      "text": "were told to see it.”",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5816213046640004,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 291073,
+      "endMs": 292188,
+      "text": "More eyes roll. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6424401726733585,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 292188,
+      "endMs": 293105,
+      "text": "laugh loudest.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6516806564204759,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 293105,
+      "endMs": 293929,
+      "text": "Inside, you want them",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 293929,
+      "endMs": 294452,
+      "text": "to change their",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 294452,
+      "endMs": 295555,
+      "text": "minds. Inside, you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6138408104754208,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 295555,
+      "endMs": 296379,
+      "text": "hope someone else has",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 296379,
+      "endMs": 297308,
+      "text": "a better argument so",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 297308,
+      "endMs": 298237,
+      "text": "you can switch sides",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 298237,
+      "endMs": 298980,
+      "text": "without losing your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6687235427912569,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 298980,
+      "endMs": 300582,
+      "text": "place. No one tries.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 300582,
+      "endMs": 301348,
+      "text": "The conversation",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 301348,
+      "endMs": 302416,
+      "text": "moves on. You fade",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5340364799260658,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 302416,
+      "endMs": 303345,
+      "text": "out of it. For a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5997226008020969,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 303345,
+      "endMs": 303995,
+      "text": "moment, you wish",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 303995,
+      "endMs": 304750,
+      "text": "everyone believed",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 304750,
+      "endMs": 305772,
+      "text": "like you. Then you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 305772,
+      "endMs": 306236,
+      "text": "wish you could",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.674002288351797,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 306236,
+      "endMs": 307095,
+      "text": "believe what everyone",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 307095,
+      "endMs": 308291,
+      "text": "else does. Then you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 308291,
+      "endMs": 308918,
+      "text": "don’t know what you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 308918,
+      "endMs": 309429,
+      "text": "want.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5987328743942848,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 309429,
+      "endMs": 310102,
+      "text": "You start to see",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5274402230715036,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 310102,
+      "endMs": 310741,
+      "text": "yourself the way",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 310741,
+      "endMs": 312517,
+      "text": "others do: unsure,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 312517,
+      "endMs": 313086,
+      "text": "reaching for",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5472507140191498,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 313086,
+      "endMs": 314317,
+      "text": "certainty, holding",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.518598178919651,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 314317,
+      "endMs": 315292,
+      "text": "onto whatever sounds",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5978230848226362,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 315292,
+      "endMs": 316198,
+      "text": "most convincing on a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5766127643786395,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 316198,
+      "endMs": 317695,
+      "text": "given day. But nobody",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6290000699239453,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 317695,
+      "endMs": 318984,
+      "text": "sees that part. They",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 318984,
+      "endMs": 319832,
+      "text": "only see the kid who",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5792004779965655,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 319832,
+      "endMs": 320772,
+      "text": "argues the earth is",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 320772,
+      "endMs": 322316,
+      "text": "flat. People avoid",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 322316,
+      "endMs": 323546,
+      "text": "you after class.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6846020919709688,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 323546,
+      "endMs": 324498,
+      "text": "Teachers don’t call",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.53087180211273,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 324498,
+      "endMs": 325578,
+      "text": "on you. People stop",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 325578,
+      "endMs": 326542,
+      "text": "replying in the group",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 326542,
+      "endMs": 327784,
+      "text": "chat. The friends who",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5981286947433369,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 327784,
+      "endMs": 328666,
+      "text": "agreed with you are",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6001081896746385,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 328666,
+      "endMs": 329328,
+      "text": "the ones who never",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 329328,
+      "endMs": 330605,
+      "text": "show their faces. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 330605,
+      "endMs": 331267,
+      "text": "look around and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 331267,
+      "endMs": 332358,
+      "text": "realize you’ve been",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5164834198745104,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 332358,
+      "endMs": 333496,
+      "text": "following voices that",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5880531717445806,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 333496,
+      "endMs": 334471,
+      "text": "sound certain but",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 334471,
+      "endMs": 335365,
+      "text": "never say anything",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.566971506084354,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 335365,
+      "endMs": 335807,
+      "text": "new.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6646323722826397,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 335807,
+      "endMs": 336747,
+      "text": "One night, lying on",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.684515834398878,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 336747,
+      "endMs": 337943,
+      "text": "your bed, you scroll",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 337943,
+      "endMs": 338651,
+      "text": "back through your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 338651,
+      "endMs": 340068,
+      "text": "earliest posts. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6372090882881214,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 340068,
+      "endMs": 341031,
+      "text": "try to remember when",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5610651450169132,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 341031,
+      "endMs": 341554,
+      "text": "you started",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 341554,
+      "endMs": 342866,
+      "text": "believing. You can’t",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6261737021845718,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 342866,
+      "endMs": 344131,
+      "text": "find the moment. It",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 344131,
+      "endMs": 345083,
+      "text": "feels like you always",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 345083,
+      "endMs": 346233,
+      "text": "have, but you know",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 346233,
+      "endMs": 347580,
+      "text": "that’s not true. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6973976481405809,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 347580,
+      "endMs": 348334,
+      "text": "remember Jamie’s",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5740741290016683,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 348334,
+      "endMs": 349611,
+      "text": "voice, confident,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.628671787810322,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 349611,
+      "endMs": 350749,
+      "text": "talking about debate,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6834448498941377,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 350749,
+      "endMs": 351376,
+      "text": "how to gather",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6030480686320875,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 351376,
+      "endMs": 352456,
+      "text": "evidence. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 352456,
+      "endMs": 353326,
+      "text": "remember how good it",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 353326,
+      "endMs": 354197,
+      "text": "felt to win by",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 354197,
+      "endMs": 355590,
+      "text": "sounding sure. Now",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 355590,
+      "endMs": 356345,
+      "text": "winning is less",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5974551383713133,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 356345,
+      "endMs": 357634,
+      "text": "sweet. Now you don’t",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 357634,
+      "endMs": 358423,
+      "text": "know if it’s even",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 358423,
+      "endMs": 359619,
+      "text": "possible. You close",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 359619,
+      "endMs": 360757,
+      "text": "your eyes. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 360757,
+      "endMs": 361778,
+      "text": "imagine standing at",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5729068485294637,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 361778,
+      "endMs": 362312,
+      "text": "the edge of the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6878008465278977,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 362312,
+      "endMs": 363775,
+      "text": "world, looking out,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 363775,
+      "endMs": 364623,
+      "text": "waiting for someone",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 364623,
+      "endMs": 365656,
+      "text": "to tell you which way",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 365656,
+      "endMs": 366504,
+      "text": "is east.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5504829538321693,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 366504,
+      "endMs": 367328,
+      "text": "You are a flat",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5988829040652373,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 367328,
+      "endMs": 368315,
+      "text": "earther. You didn’t",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 368315,
+      "endMs": 369047,
+      "text": "get there because of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 369047,
+      "endMs": 370010,
+      "text": "science. You got",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 370010,
+      "endMs": 370672,
+      "text": "there because the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 370672,
+      "endMs": 371694,
+      "text": "loudest voices said",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6630275511401353,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 371694,
+      "endMs": 372820,
+      "text": "it with confidence.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6522145517426258,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 372820,
+      "endMs": 373679,
+      "text": "You repeated what you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 373679,
+      "endMs": 374294,
+      "text": "heard because",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5465635258532326,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 374294,
+      "endMs": 375211,
+      "text": "repeating feels like",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6333596918860716,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 375211,
+      "endMs": 376187,
+      "text": "knowing and knowing",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 376187,
+      "endMs": 376860,
+      "text": "feels like being",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 376860,
+      "endMs": 377940,
+      "text": "safe. You want to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5690204805914965,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 377940,
+      "endMs": 379519,
+      "text": "believe so badly that",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6208967153197752,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 379519,
+      "endMs": 380645,
+      "text": "you stop noticing",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 380645,
+      "endMs": 381493,
+      "text": "whose belief you’re",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 381493,
+      "endMs": 382596,
+      "text": "borrowing. You are",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 382596,
+      "endMs": 383757,
+      "text": "certain only because",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6228678459875397,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 383757,
+      "endMs": 384848,
+      "text": "certainty is easier",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6596860765530684,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 384848,
+      "endMs": 385916,
+      "text": "than doubt and the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5776075353085391,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 385916,
+      "endMs": 387042,
+      "text": "world rewards people",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6286328538467126,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 387042,
+      "endMs": 388041,
+      "text": "who pretend not to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5417127058844361,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 388041,
+      "endMs": 389411,
+      "text": "question. You didn’t",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 389411,
+      "endMs": 390654,
+      "text": "test, you didn’t",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 390654,
+      "endMs": 391745,
+      "text": "search, you didn’t",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6778802485174755,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 391745,
+      "endMs": 392441,
+      "text": "ask too many",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6830872553437979,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 392441,
+      "endMs": 393243,
+      "text": "questions because",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6691636636207782,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 393243,
+      "endMs": 394102,
+      "text": "someone else already",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6692425743546747,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 394102,
+      "endMs": 395367,
+      "text": "did. Or they said",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 395367,
+      "endMs": 396331,
+      "text": "they did. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6485457642615937,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 396331,
+      "endMs": 397074,
+      "text": "believed because",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5393200228705406,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 397074,
+      "endMs": 397933,
+      "text": "believing filled the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6195763082155119,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 397933,
+      "endMs": 398943,
+      "text": "space where answers",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 398943,
+      "endMs": 400092,
+      "text": "should be, because",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6375275353612516,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 400092,
+      "endMs": 401091,
+      "text": "fitting in somewhere",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5093604354927406,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 401091,
+      "endMs": 401985,
+      "text": "was easier than",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6709546748695203,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 401985,
+      "endMs": 402890,
+      "text": "standing alone with",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5417390633865208,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 402890,
+      "endMs": 403877,
+      "text": "your hand up waiting",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5452216024002774,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 403877,
+      "endMs": 404864,
+      "text": "for real proof.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 404864,
+      "endMs": 405758,
+      "text": "If this feels too",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5138368292667241,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 405758,
+      "endMs": 407012,
+      "text": "close, if you see",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5605516455141057,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 407012,
+      "endMs": 408010,
+      "text": "some part of yourself",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5130907464848655,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 408010,
+      "endMs": 408602,
+      "text": "in the need to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5178903534249653,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 408602,
+      "endMs": 409914,
+      "text": "belong, in the urge",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.590428339328064,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 409914,
+      "endMs": 411238,
+      "text": "to sound certain, in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 411238,
+      "endMs": 411842,
+      "text": "the times you’d",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5098934585465471,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 411842,
+      "endMs": 412596,
+      "text": "rather just pick a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 412596,
+      "endMs": 413630,
+      "text": "side and argue it",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.575756382489385,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 413630,
+      "endMs": 415592,
+      "text": "loud, drop a comment.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6069523368608134,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 415592,
+      "endMs": 416358,
+      "text": "If you had grown up",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 416358,
+      "endMs": 417414,
+      "text": "surrounded by voices",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6919825428281875,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 417414,
+      "endMs": 418308,
+      "text": "that said flat is",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 418308,
+      "endMs": 419283,
+      "text": "true, would you have",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6407702367751883,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 419283,
+      "endMs": 420607,
+      "text": "believed differently?",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6541432799687995,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 420607,
+      "endMs": 421524,
+      "text": "Because if the answer",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 421524,
+      "endMs": 422801,
+      "text": "is maybe, this story",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6734919912962232,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 422801,
+      "endMs": 423590,
+      "text": "isn’t only about a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5864290454611312,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 423590,
+      "endMs": 424844,
+      "text": "flat earther—it’s",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6025273228498754,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 424844,
+      "endMs": 425785,
+      "text": "about anyone who ever",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6216834903317507,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 425785,
+      "endMs": 426655,
+      "text": "let someone else’s",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5511754218393398,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 426655,
+      "endMs": 427619,
+      "text": "confidence become",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5277391721196185,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 427619,
+      "endMs": 428803,
+      "text": "their certainty.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5767860012707758,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 428803,
+      "endMs": 430185,
+      "text": "Subscribe for more.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6874643807799399,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 430185,
+      "endMs": 431241,
+      "text": "See you next time.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6971456106374863,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "startMs": 0,
+      "endMs": 10356,
+      "audioUrl": "dad802c4-bdfa-43b8-974c-e0dbd88d75cc"
+    },
+    {
+      "startMs": 10356,
+      "endMs": 18251,
+      "audioUrl": "8470c6e3-ed07-428b-88ce-7218899958f9"
+    },
+    {
+      "startMs": 18251,
+      "endMs": 22849,
+      "audioUrl": "0f7191b9-36d9-4149-b9ae-adb34a12d9c4"
+    },
+    {
+      "startMs": 22849,
+      "endMs": 27168,
+      "audioUrl": "0726158a-309f-4998-9439-5a53503d9879"
+    },
+    {
+      "startMs": 27168,
+      "endMs": 33623,
+      "audioUrl": "5e9d393b-f912-4a99-94d1-08ead6363394"
+    },
+    {
+      "startMs": 33623,
+      "endMs": 49785,
+      "audioUrl": "94989058-08c2-4295-987b-dcbbd3f76291"
+    },
+    {
+      "startMs": 49785,
+      "endMs": 57866,
+      "audioUrl": "fcf44eac-eca6-467a-9a7c-b80aa4531a41"
+    },
+    {
+      "startMs": 57866,
+      "endMs": 62882,
+      "audioUrl": "c186f5d8-1952-458f-8e09-8869a47ba1ed"
+    },
+    {
+      "startMs": 62882,
+      "endMs": 75142,
+      "audioUrl": "d3b18afb-c34c-4885-9115-54b99dd4ac5b"
+    },
+    {
+      "startMs": 75142,
+      "endMs": 91814,
+      "audioUrl": "98397806-2537-4b32-bfb1-eb96986124d1"
+    },
+    {
+      "startMs": 91814,
+      "endMs": 100730,
+      "audioUrl": "a00be882-9a3e-43e4-936d-3034854e1b6c"
+    },
+    {
+      "startMs": 100730,
+      "endMs": 108671,
+      "audioUrl": "689ea825-b478-4003-8458-25f63fc04332"
+    },
+    {
+      "startMs": 108671,
+      "endMs": 117959,
+      "audioUrl": "180b66fe-b4ba-46dd-9e19-fe4acbbcc0ac"
+    },
+    {
+      "startMs": 117959,
+      "endMs": 124832,
+      "audioUrl": "0f0a9d59-2d2a-40a0-bfca-6e4a010cdc1e"
+    },
+    {
+      "startMs": 124832,
+      "endMs": 138160,
+      "audioUrl": "64fe81cb-0aa9-4f3c-b8ac-0c82b5eae567"
+    },
+    {
+      "startMs": 138160,
+      "endMs": 141364,
+      "audioUrl": "b075c391-7589-43dc-89bf-4f47f93ca02a"
+    },
+    {
+      "startMs": 141364,
+      "endMs": 160357,
+      "audioUrl": "dd291caf-6254-46c7-8480-4735c2b700d4"
+    },
+    {
+      "startMs": 160357,
+      "endMs": 189011,
+      "audioUrl": "968187ff-c5b8-4fc4-92da-2a70571a282f"
+    },
+    {
+      "startMs": 189011,
+      "endMs": 203825,
+      "audioUrl": "d726f7ba-a9e0-43f6-a827-1979be792e81"
+    },
+    {
+      "startMs": 203825,
+      "endMs": 221751,
+      "audioUrl": "809c68a1-0193-473d-8135-6365309f2b49"
+    },
+    {
+      "startMs": 221751,
+      "endMs": 229506,
+      "audioUrl": "d86f9201-984a-4587-897d-35763818d72c"
+    },
+    {
+      "startMs": 229506,
+      "endMs": 249196,
+      "audioUrl": "309f1540-b890-44d8-8853-7b2fb973b5f0"
+    },
+    {
+      "startMs": 249196,
+      "endMs": 277571,
+      "audioUrl": "10fe14bf-e997-43cd-83c5-a817783c7622"
+    },
+    {
+      "startMs": 277571,
+      "endMs": 309429,
+      "audioUrl": "af537435-90b7-4967-8777-b6ac9cee5355"
+    },
+    {
+      "startMs": 309429,
+      "endMs": 335807,
+      "audioUrl": "f9abf4bb-bea4-424c-8f1f-a0635273d20e"
+    },
+    {
+      "startMs": 335807,
+      "endMs": 366504,
+      "audioUrl": "53f81876-cf16-4ac1-9217-a64032905eaa"
+    },
+    {
+      "startMs": 366504,
+      "endMs": 404864,
+      "audioUrl": "a5905cfb-a3b5-4f54-8024-22e3fa8c5d3f"
+    },
+    {
+      "startMs": 404864,
+      "endMs": 431241,
+      "audioUrl": "e598558f-5569-43b3-91cb-84ca76729236"
+    }
+  ],
+  "shortTitle": "Pov: You're a Flat Earther"
+}

@@ -48,6 +48,203 @@
         "vocabularyStyle": "The vocabulary is largely plain, concrete, and unadorned, with occasional terms of police or SWAT jargon integrated naturally. Repetition of simple words and phrases ('You learn...', 'You understand...') imparts a rhythmic, almost mantra-like feel, while the language generally remains accessible and avoids dense technical lingo except when illustrating key moments."
       },
       "characters": []
+    },
+    "just-some-guy-stories": {
+      "id": "just-some-guy-stories",
+      "name": "Just Some Guy Stories",
+      "videoAspectRatio": "16:9",
+      "targetTranscriptWordCount": 200,
+      "thumbnailUrl": "/channel-styles/just-some-guy-stories/thumbnail.png",
+      "referenceCount": 2,
+      "characterCount": 0,
+      "createdAt": "2026-04-14T08:01:33.284Z",
+      "references": {
+        "images": [
+          "/channel-styles/just-some-guy-stories/references/image-0.png"
+        ],
+        "transcripts": [
+          {
+            "id": "709eaff0-0570-4afd-89e4-b650aee0e5b6",
+            "filename": "Your-Life-as-the-World-s-Most-Wanted-Hac-709eaff0.txt",
+            "path": "/channel-styles/just-some-guy-stories/transcripts/Your-Life-as-the-World-s-Most-Wanted-Hac-709eaff0.txt",
+            "title": "Your Life as the World's Most Wanted Hacker (You're 17)"
+          }
+        ]
+      },
+      "extractedFormat": {
+        "structure": "The video script is structured as a tightly interwoven narrative arc, starting with a relatable, small-scale personal story and expanding into a broader societal and ethical dilemma, before closing with reflection, consequences, and a direct address to the audience. The narrative moves chronologically, following the protagonist's journey from adolescent hacker to high-profile whistleblower, culminating in the personal and public fallout. The story oscillates between intimate detail and sweeping commentary, ensuring each narrative phase segues smoothly into the next.",
+        "tone": "The tone is reflective, somber, and analytical, with flashes of wry humor and emotional vulnerability. It maintains an empathetic, second-person point of view, drawing the viewer into the protagonist’s moral quandary and lived experience.",
+        "pacing": "The pacing is deliberate and immersive, using short, clipped sentences for immediacy and intensity, alternating with longer, more contemplative passages. Dramatic beats are underscored by strategic repetition and escalating stakes, pulling the viewer through each twist of the story.",
+        "hooks": [
+          "Starts with a bold, personal action (hacking school grades)",
+          "Paints vivid, highly relatable scenes (gas station burrito, bedroom details)",
+          "Escalates stakes from trivial mischief to high-stakes government secrets",
+          "Uses repetition to build suspense and reinforce key points",
+          "Introduces ethical and legal dilemmas",
+          "Juxtaposes ordinary teenage life with extraordinary consequences",
+          "Breaks the fourth wall to directly question the audience's judgement",
+          "Closes with a challenge or call to self-reflection"
+        ],
+        "sentencePatterns": [
+          "Second-person direct address ('You...')",
+          "Frequent use of short, simple declarative sentences",
+          "Looping/repeating phrases for emphasis and rhythm",
+          "Periodic long, compound-complex sentences for reflection",
+          "Lists and parallel structures ('You never steal data. You never extort.')",
+          "Juxtaposition and contrast ('Both things are true.')",
+          "Stark, minimalist descriptions ('14 faces that existed Monday morning and didn't exist Monday afternoon.')"
+        ],
+        "vocabularyStyle": "The vocabulary is contemporary and colloquial with minimal jargon, leveraging concrete imagery and a conversational register suitable for a broad audience. There is notable repetition of phrases and motifs for rhetorical effect, with precise, accessible language that avoids technical overcomplication or excessive formality."
+      },
+      "characters": []
+    },
+    "ellis-explains": {
+      "id": "ellis-explains",
+      "name": "Ellis Explains",
+      "videoAspectRatio": "16:9",
+      "targetTranscriptWordCount": 1800,
+      "thumbnailUrl": "/channel-styles/ellis-explains/thumbnail.png",
+      "referenceCount": 2,
+      "characterCount": 0,
+      "createdAt": "2026-04-15T05:58:37.385Z",
+      "references": {
+        "images": [
+          "/channel-styles/ellis-explains/references/image-1a91be9a-9.png"
+        ],
+        "transcripts": [
+          {
+            "id": "aa7f471c-b1c8-4cdd-b738-5b1b3c75e52b",
+            "filename": "10-Theories-That-Suggest-Our-Universe-Is-aa7f471c.txt",
+            "path": "/channel-styles/ellis-explains/transcripts/10-Theories-That-Suggest-Our-Universe-Is-aa7f471c.txt",
+            "title": "10 Theories That Suggest Our Universe Is Not Real"
+          }
+        ]
+      },
+      "extractedFormat": {
+        "structure": "The video script is structured as a countdown list (from number 10 to number 1), with each section dedicated to explaining a specific scientific hypothesis or philosophical theory about the nature of reality. Each segment presents the historical context, a summary of the theory or problem, and concludes with reflections on why the concept is unsettling or significant. Transitions between sections are marked by explicit numbering and serve both to segment the content and to maintain narrative suspense.",
+        "tone": "The tone is serious, intellectually intense, and slightly ominous, with a register that blends academic rigor with accessible explanation. The script maintains a sense of urgency and gravity, frequently using impactful language to evoke unease or awe about the subject matter.",
+        "pacing": "The pacing is measured but relentless, with moderately long sentences and steady information density. The script rarely pauses for levity, moving swiftly from one concept to the next, using connective rhetorical questions and transitions to keep the narrative flowing and the viewer engaged.",
+        "hooks": [
+          "Enumerated countdown from 10 to 1 to build suspense and anticipation",
+          "Frequent use of phrases like 'what makes this particularly unsettling/terrifying/disturbing...'",
+          "Vivid hypothetical examples (e.g., 'You could be a Boltzmann brain...')",
+          "References to well-known scientists and cutting-edge research to boost credibility",
+          "Direct challenges to viewer's perception of reality (e.g., 'You aren't moving through reality, you're a pattern shifting across it.')",
+          "Cliffhanger or chilling statements at the end of each section",
+          "Closes with a challenge or call to self-reflection"
+        ],
+        "sentencePatterns": [
+          "Declarative informational sentences explaining theories or findings",
+          "Short, impactful rhetorical questions and exclamations for emphasis",
+          "Conditional sentences exploring implications ('If X is true, then...')",
+          "Analogies to familiar concepts (e.g., desktop interfaces, game programming)",
+          "Lists and parallel constructions to enumerate evidence or arguments",
+          "Complex sentences with multiple clauses to deliver nuanced points"
+        ],
+        "vocabularyStyle": "The vocabulary is highly academic, featuring substantial scientific jargon and references, but is balanced by clear analogies and explanatory passages for accessibility. The language is formal with little colloquialism; patterns of repetition emphasize key points ('what makes this...') and reinforce the unsettling nature of each idea."
+      },
+      "characters": []
+    },
+    "ellis": {
+      "id": "ellis",
+      "name": "Ellis",
+      "videoAspectRatio": "16:9",
+      "targetTranscriptWordCount": 2100,
+      "thumbnailUrl": "/channel-styles/ellis/thumbnail.png",
+      "referenceCount": 3,
+      "characterCount": 1,
+      "createdAt": "2026-04-16T22:20:24.911Z",
+      "references": {
+        "images": [
+          "/channel-styles/ellis/references/image-0.png",
+          "/channel-styles/ellis/references/image-1.png"
+        ],
+        "transcripts": [
+          {
+            "id": "7a46f199-7153-41e2-8ecc-7890f2fc5ce2",
+            "filename": "10-Theories-That-Suggest-Our-Universe-Is-7a46f199.txt",
+            "path": "/channel-styles/ellis/transcripts/10-Theories-That-Suggest-Our-Universe-Is-7a46f199.txt",
+            "title": "10 Theories That Suggest Our Universe Is Not Real"
+          }
+        ]
+      },
+      "extractedFormat": {
+        "structure": "The video script is organized as a countdown list, presenting theories and puzzles from number 10 down to number 1. Each section introduces a scientific or philosophical concept, explains its core idea, presents supporting evidence or arguments, and highlights unsettling or paradoxical implications. The narrative is linear, moving from one concept to the next, often with tight transitions or segues that sustain viewer engagement.",
+        "tone": "The tone is authoritative, serious, and at times ominous, maintaining a high degree of intellectual rigor. The narrator uses direct address ('you') and vivid imagery to emphasize the disconcerting nature of the subject matter, instilling a sense of wonder and existential unease.",
+        "pacing": "The pacing is brisk and relentless, with dense information packed into concise paragraphs. Sentences are often long and complex, but broken up with key rhetorical questions and periodic signposting (\"Number nine...\") to orient the audience.",
+        "hooks": [
+          "Countdown structure ('Number 10, Number 9...')",
+          "Opening phrases like 'All right, let's go.'",
+          "Revelation of surprising or disturbing implications ('What makes this theory deeply unsettling is ...')",
+          "Directly addressing the viewer as 'you'",
+          "Use of statistics or probability to add impact",
+          "Introducing paradoxes or open questions near section ends",
+          "Metaphors comparing realities to familiar interfaces (e.g., computer desktop)",
+          "Closes with a challenge or call to self-reflection"
+        ],
+        "sentencePatterns": [
+          "Complex compound sentences explaining scientific concepts",
+          "Short, declarative sentences for emphasis ('You would never know.')",
+          "Conditional and hypothetical statements ('If reality is purely mathematical, then ...')",
+          "Direct questions to the audience ('What makes this theory particularly disturbing is ...')",
+          "Parallel or repetitive list constructions ('Every particle, every force, every moment...')",
+          "Transitions with signposting ('Number nine, the...')"
+        ],
+        "vocabularyStyle": "The vocabulary is advanced and technical, with substantial jargon from physics, philosophy, and mathematics, but explained for a general audience. There's a high degree of formality but also repetition of key phrases (e.g., 'what makes this theory unsettling...'), and metaphors are used to clarify abstract concepts."
+      },
+      "characters": [
+        {
+          "id": "9d052837-41e5-4485-9cfc-7cc44aeb76bd",
+          "name": "Ellis",
+          "notes": "",
+          "imageUrl": "/channel-styles/ellis/characters/char-9d052837-3de9ab2d.jpeg"
+        }
+      ]
+    },
+    "pov-you-re": {
+      "id": "pov-you-re",
+      "name": "Pov: You're",
+      "description": "The Wealth Explainer",
+      "videoAspectRatio": "16:9",
+      "targetTranscriptWordCount": 1000,
+      "thumbnailUrl": "/channel-styles/pov-you-re/thumbnail.png",
+      "referenceCount": 2,
+      "characterCount": 0,
+      "createdAt": "2026-04-17T19:53:12.847Z",
+      "references": {
+        "images": [
+          "/channel-styles/pov-you-re/references/image-7aa0a342-d.png"
+        ],
+        "transcripts": [
+          {
+            "id": "5d9fd19b-37d1-40e1-9e1f-ba147cfc36cb",
+            "filename": "POV-You-Are-The-Cartel-s-Deadliest-Hitma-5d9fd19b.txt",
+            "path": "/channel-styles/pov-you-re/transcripts/POV-You-Are-The-Cartel-s-Deadliest-Hitma-5d9fd19b.txt",
+            "title": "POV: You Are The Cartel's Deadliest Hitman"
+          }
+        ]
+      },
+      "extractedFormat": {
+        "structure": "Opens with an intense, immersive scenario that immediately places the audience in the protagonist's shoes. Progresses through successive challenges and escalating dangers, interspersed with moments of introspection and emotional beats. Culminates in a climactic choice or sacrifice, often followed by a reflective or ambiguous resolution.",
+        "tone": "Gritty, immersive, and emotionally charged with a second-person narrative voice. The register is informal, leaning on evocative imagery, and often slips into the protagonist's internal voice or direct statements to the audience.",
+        "pacing": "Pacing is fast and relentless, frequently using vivid and immediate descriptions. There are quick shifts between action and quieter, introspective moments, keeping the viewer on edge and engaged throughout.",
+        "hooks": [
+          "Direct address to the viewer",
+          "Immediate immersion in a high-stakes scenario",
+          "Emotional appeals or existential dilemmas",
+          "Abrupt or shocking transitions",
+          "Strategic use of sensory detail to evoke strong emotions"
+        ],
+        "sentencePatterns": [
+          "Short, punchy action lines followed by longer, descriptive sentences",
+          "Second-person imperative or observation followed by internal reflection",
+          "Lists of rapid events interspersed with single lines that convey feeling or suspense",
+          "Abrupt standalone sentences to punctuate emotion or narrative turns",
+          "Contrast between simple statements and elaborated, image-rich follow-ups"
+        ],
+        "vocabularyStyle": "Uses informal, sometimes raw language, mixing everyday vocabulary with occasional specialized terms as needed for authenticity. Frequently repeats motifs for emphasis, favors sensory and emotional descriptors, and avoids academic or overly complex jargon to maintain immediacy."
+      },
+      "characters": []
     }
   }
 }

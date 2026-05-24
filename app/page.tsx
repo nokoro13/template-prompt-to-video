@@ -14,7 +14,7 @@ export default function DashboardPage() {
 
       <div className="mb-8 grid gap-4 md:grid-cols-3">
         <CreateVideoButton variant="card" />
-        <div className="flex flex-col justify-between rounded-2xl bg-brand-500 p-6 text-white shadow-md">
+        <div className="flex flex-col justify-between rounded-2xl bg-brand-500 p-4 text-white shadow-md">
           <span className="text-lg font-semibold">Buy credits</span>
           <button
             type="button"
@@ -23,7 +23,7 @@ export default function DashboardPage() {
             Purchase credits
           </button>
         </div>
-        <div className="flex flex-col justify-between rounded-2xl bg-slate-400 p-6 text-white shadow-md">
+        <div className="flex flex-col justify-between rounded-2xl bg-slate-400 p-4 text-white shadow-md">
           <span className="text-lg font-semibold">Upgrade plan</span>
           <button
             type="button"

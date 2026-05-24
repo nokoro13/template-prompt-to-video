@@ -15,9 +15,12 @@ import {
   styleDir,
   uniqueStyleId,
 } from "../storage/styles";
+import {
+  MAX_TRANSCRIPT_BYTES,
+  transcriptTooLargeMessage,
+} from "./transcript-limits";
 
 const MAX_IMAGE_BYTES = 10 * 1024 * 1024;
-const MAX_TRANSCRIPT_BYTES = 100 * 1024;
 
 export type CreateStyleInput = {
   name: string;
@@ -45,7 +48,7 @@ export async function createChannelStyle(
     throw new Error("Style name is required");
   }
   if (input.imageBuffers.length < 1) {
-    throw new Error("At least one reference image is required");
+    throw new Error("At least one style reference image is required");
   }
   if (input.transcripts.length < 1) {
     throw new Error("At least one reference transcript is required");
@@ -58,7 +61,7 @@ export async function createChannelStyle(
   }
   for (const t of input.transcripts) {
     if (Buffer.byteLength(t.content, "utf8") > MAX_TRANSCRIPT_BYTES) {
-      throw new Error("Transcript too large (max 100KB each)");
+      throw new Error(transcriptTooLargeMessage());
     }
   }
 
@@ -69,6 +72,7 @@ export async function createChannelStyle(
   const dir = styleDir(id);
   fs.mkdirSync(path.join(dir, "references"), { recursive: true });
   fs.mkdirSync(path.join(dir, "transcripts"), { recursive: true });
+  fs.mkdirSync(path.join(dir, "characters"), { recursive: true });
 
   const imagePublicPaths: string[] = [];
   input.imageBuffers.forEach((img, i) => {

@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { runSimpleGenerate } from "@/lib/generate-simple-story";
+import { parseGeminiImageSize } from "@/lib/generation/generate-with-gemini";
 
 export const maxDuration = 300;
 
@@ -11,7 +12,10 @@ export async function POST(req: NextRequest) {
     geminiApiKey?: string;
     elevenlabsApiKey?: string;
     skipVoice?: boolean;
+    voiceId?: string;
     styleId?: string;
+    useWebSearch?: boolean;
+    imageSize?: string;
   };
   try {
     body = await req.json();
@@ -29,6 +33,10 @@ export async function POST(req: NextRequest) {
   }
 
   const skipVoice = body.skipVoice === true;
+  const voiceId =
+    typeof body.voiceId === "string" && body.voiceId.trim()
+      ? body.voiceId.trim()
+      : undefined;
   const styleId =
     typeof body.styleId === "string" && body.styleId.trim()
       ? body.styleId.trim()
@@ -61,11 +69,16 @@ export async function POST(req: NextRequest) {
     );
   }
 
+  const imageSize =
+    typeof body.imageSize === "string" && body.imageSize.trim()
+      ? parseGeminiImageSize(body.imageSize.trim())
+      : undefined;
+
   if (!skipVoice && !elevenlabsApiKey) {
     return NextResponse.json(
       {
         error:
-          "Missing ElevenLabs key. Set ELEVENLABS_API_KEY in .env, pass elevenlabsApiKey, or enable “Skip voiceover” to test without ElevenLabs.",
+          "Missing ElevenLabs key. Set ELEVENLABS_API_KEY in .env or pass elevenlabsApiKey in the request (unless skipVoice is true).",
       },
       { status: 400 },
     );
@@ -79,7 +92,10 @@ export async function POST(req: NextRequest) {
       geminiApiKey,
       elevenlabsApiKey: skipVoice ? undefined : elevenlabsApiKey,
       skipVoice,
+      elevenLabsVoiceId: skipVoice ? undefined : voiceId,
       styleId,
+      useWebSearch: body.useWebSearch === true,
+      imageSize,
     });
     return NextResponse.json({ ok: true, slug: result.slug });
   } catch (err) {

@@ -1,6 +1,13 @@
 import { loadFont } from "@remotion/google-fonts/BreeSerif";
 import { Audio } from "@remotion/media";
-import { AbsoluteFill, Sequence, staticFile, useVideoConfig } from "remotion";
+import {
+  AbsoluteFill,
+  Html5Audio,
+  Sequence,
+  staticFile,
+  useRemotionEnvironment,
+  useVideoConfig,
+} from "remotion";
 import { z } from "zod";
 import { FPS, INTRO_DURATION } from "../lib/constants";
 import { TimelineSchema } from "../lib/types";
@@ -26,11 +33,12 @@ export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
   timeline,
   projectSlug,
 }) => {
+  const { isRendering } = useRemotionEnvironment();
+  const { id, width: frameWidth } = useVideoConfig();
+
   if (!timeline) {
     throw new Error("Expected timeline to be fetched");
   }
-
-  const { id, width: frameWidth } = useVideoConfig();
   const project =
     projectSlug ?? getProjectSlugFromCompositionId(id);
   const titleFontSize = Math.min(120, Math.round(frameWidth * 0.11));
@@ -75,7 +83,7 @@ export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
 
         return (
           <Sequence
-            key={`element-${index}`}
+            key={`bg-${project}-${element.imageUrl}`}
             from={startFrame}
             durationInFrames={duration}
             premountFor={3 * FPS}
@@ -94,7 +102,7 @@ export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
 
         return (
           <Sequence
-            key={`element-${index}`}
+            key={`sub-${project}-${element.startMs}-${element.endMs}`}
             from={startFrame}
             durationInFrames={duration}
           >
@@ -109,15 +117,24 @@ export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
           element.endMs,
           { addIntroOffset: true },
         );
+        const audioSrc = staticFile(getAudioPath(project, element.audioUrl));
 
         return (
           <Sequence
-            key={`element-${index}`}
+            key={`audio-${project}-${element.audioUrl}`}
             from={startFrame}
             durationInFrames={duration}
-            premountFor={3 * FPS}
+            premountFor={isRendering ? undefined : FPS}
           >
-            <Audio src={staticFile(getAudioPath(project, element.audioUrl))} />
+            {isRendering ? (
+              <Audio name={`Scene ${index + 1}`} src={audioSrc} />
+            ) : (
+              <Html5Audio
+                name={`Scene ${index + 1}`}
+                src={audioSrc}
+                pauseWhenBuffering
+              />
+            )}
           </Sequence>
         );
       })}

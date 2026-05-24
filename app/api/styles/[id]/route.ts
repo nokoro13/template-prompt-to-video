@@ -1,10 +1,12 @@
 import { NextRequest, NextResponse } from "next/server";
+import { z } from "zod";
 import { patchStyleRecord } from "@/lib/channel-styles/patch-style";
 import { deleteStyle, getStyle } from "@/lib/storage/styles";
-import type {
-  ExtractedFormat,
-  StyleCharacter,
-  VideoAspectRatio,
+import {
+  StyleCharacterSchema,
+  type ExtractedFormat,
+  type StyleCharacter,
+  type VideoAspectRatio,
 } from "@/lib/channel-styles/types";
 
 type RouteContext = { params: Promise<{ id: string }> };
@@ -43,7 +45,14 @@ export async function PATCH(req: NextRequest, context: RouteContext) {
     if (!Array.isArray(b.characters)) {
       return NextResponse.json({ error: "characters must be an array" }, { status: 400 });
     }
-    characters = b.characters as StyleCharacter[];
+    try {
+      characters = z.array(StyleCharacterSchema).parse(b.characters);
+    } catch {
+      return NextResponse.json(
+        { error: "Invalid characters payload (id, name, optional notes, optional imageUrl)" },
+        { status: 400 },
+      );
+    }
   }
 
   let videoAspectRatio: VideoAspectRatio | undefined;

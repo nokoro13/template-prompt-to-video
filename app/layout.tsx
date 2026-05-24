@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
 export const metadata: Metadata = {
-  title: "PoioAI",
+  title: "Clipng",
   description: "Create and manage AI-generated story videos",
 };
 
