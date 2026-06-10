@@ -98,3 +98,10 @@
 .__remotion-player img {
   max-width: none;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .orbit-accent-sweep {
+    animation: none !important;
+    opacity: 0.8;
+  }
+}

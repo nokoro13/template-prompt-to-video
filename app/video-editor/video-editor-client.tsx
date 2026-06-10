@@ -23,6 +23,7 @@ import {
 } from "lucide-react";
 
 import { StylePickerDialog } from "@/components/video-editor/StylePickerDialog";
+import { VideoEditorStepBar } from "@/components/video-editor/VideoEditorStepBar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -30,14 +31,6 @@ import { Switch } from "@/components/ui/switch";
 import { cn } from "@/lib/utils";
 import type { ChannelStyleRecord } from "@/lib/channel-styles/types";
 import type { GeminiImageSize } from "@/lib/generation/generate-with-gemini";
-
-const STEPS = [
-  "Setup",
-  "Script",
-  "Voiceover",
-  "Scene images",
-  "Finish",
-] as const;
 
 type ProjectScene = {
   index: number;
@@ -777,23 +770,7 @@ export function VideoEditorClient() {
         </div>
       )} */}
 
-      <div className="mt-8 flex flex-wrap gap-2 border-b border-slate-200 pb-4">
-        {STEPS.map((label, i) => (
-          <div
-            key={label}
-            className={cn(
-              "min-w-[4.5rem] flex-1 rounded-lg px-2 py-2 text-center text-xs font-medium sm:text-sm",
-              i === step
-                ? "bg-brand-600 text-white"
-                : i < step
-                  ? "bg-slate-200 text-slate-700"
-                  : "bg-slate-100 text-slate-500",
-            )}
-          >
-            {i + 1}. {label}
-          </div>
-        ))}
-      </div>
+      <VideoEditorStepBar step={step} className="mt-8" />
 
       <div className="mt-8 space-y-6 rounded-2xl border border-surface-border bg-white p-6 shadow-sm">
         {step === 0 && (
@@ -1431,7 +1408,12 @@ export function VideoEditorClient() {
               </code>
             </p>
             <div className="flex flex-wrap justify-center gap-3">
-              <Button type="button" onClick={() => router.push("/studio")}>
+              <Button
+                type="button"
+                onClick={() =>
+                  router.push(`/studio?slug=${encodeURIComponent(slug)}`)
+                }
+              >
                 Open Studio
               </Button>
               <Button type="button" variant="outline" onClick={resetWizard}>

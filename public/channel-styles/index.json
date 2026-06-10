@@ -245,6 +245,53 @@
         "vocabularyStyle": "Uses informal, sometimes raw language, mixing everyday vocabulary with occasional specialized terms as needed for authenticity. Frequently repeats motifs for emphasis, favors sensory and emotional descriptors, and avoids academic or overly complex jargon to maintain immediacy."
       },
       "characters": []
+    },
+    "hypothetically": {
+      "id": "hypothetically",
+      "name": "Hypothetically",
+      "creatorName": "Hypothetically",
+      "description": "Description",
+      "videoAspectRatio": "16:9",
+      "targetTranscriptWordCount": 400,
+      "thumbnailUrl": "/channel-styles/hypothetically/thumbnail.png",
+      "referenceCount": 2,
+      "characterCount": 0,
+      "createdAt": "2026-05-27T20:46:24.455Z",
+      "references": {
+        "images": [
+          "/channel-styles/hypothetically/references/image-0.png"
+        ],
+        "transcripts": [
+          {
+            "id": "93fd8a4c-cc1a-4d80-97ba-e6154c69d222",
+            "filename": "What-It-s-Like-to-be-a-Dark-Web-Kingpin-93fd8a4c.txt",
+            "path": "/channel-styles/hypothetically/transcripts/What-It-s-Like-to-be-a-Dark-Web-Kingpin-93fd8a4c.txt",
+            "title": "What It's Like to be a Dark Web Kingpin"
+          }
+        ]
+      },
+      "extractedFormat": {
+        "structure": "Starts with a relatable, low-stakes opening that quickly introduces the protagonist and setting, then escalates their involvement through a series of choices and consequences. The script advances through key decision points, each raising the stakes, and climaxes with a twist or revelation, often undermining previous assumptions. Ends with a reflective or ambiguous closer that connects back to the starting point or leaves the audience pondering.",
+        "tone": "Conversational, mildly suspenseful, and informal, using second-person narration to immerse the viewer. Blends intrigue with moments of inward reflection, often evoking empathy or tension.",
+        "pacing": "Alternates between tightly-packed short sentences for urgency and longer passages for explanation or introspection. Escalates quickly through events but regularly slows down for emotional beats or turning points.",
+        "hooks": [
+          "Direct address to viewers",
+          "Second-person perspective",
+          "Vivid, immediate sensory details",
+          "Surprise twists or reversals",
+          "Building curiosity by withholding context",
+          "Dramatic scenario changes (e.g., simulation reveal)"
+        ],
+        "sentencePatterns": [
+          "Short sentence/statement to establish a mood or fact, followed by a longer elaboration.",
+          "Series of brief actions or observations for momentum, then a reflective pause.",
+          "Mix of inner dialogue and rapid external actions to create immersion.",
+          "Occasional one-line paragraphs for emphasis or transition.",
+          "Hypothetical or instructive sentences ('You do X, then Y happens.') layered with explanation."
+        ],
+        "vocabularyStyle": "Casual and accessible, with light technical jargon explained in simple terms. Repeats key thematics or metaphors for cohesion, but avoids dense or overly formal language; relies on concise phrasing for clarity and pace."
+      },
+      "characters": []
     }
   }
 }

@@ -42,6 +42,9 @@ export type CompositionSummary = {
   durationInFrames: number;
   fps: number;
   hasTimeline: true;
+  thumbnailUrl: string | null;
+  sceneCount: number;
+  updatedAt: string;
 };
 
 /**
@@ -66,18 +69,32 @@ export function listCompositionsFromDisk(): CompositionSummary[] {
       const raw = fs.readFileSync(timelinePath, "utf8");
       const parsed = JSON.parse(raw) as unknown;
       const timeline = TimelineSchema.parse(parsed) as Timeline;
+      const firstImageUid = timeline.elements[0]?.imageUrl;
+      const thumbnailUrl =
+        firstImageUid &&
+        fs.existsSync(
+          path.join(contentRoot, id, "images", `${firstImageUid}.png`),
+        )
+          ? `/content/${id}/images/${firstImageUid}.png`
+          : null;
+
       out.push({
         id,
         shortTitle: timeline.shortTitle,
         durationInFrames: getTotalDurationInFrames(timeline),
         fps: FPS,
         hasTimeline: true,
+        thumbnailUrl,
+        sceneCount: timeline.elements.length,
+        updatedAt: fs.statSync(timelinePath).mtime.toISOString(),
       });
     } catch {
       continue;
     }
   }
 
-  out.sort((a, b) => a.shortTitle.localeCompare(b.shortTitle));
+  out.sort(
+    (a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime(),
+  );
   return out;
 }

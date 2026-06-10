@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { AspectRatioToggle } from "@/components/styles/AspectRatioToggle";
+import { YouTubeTranscriptImport } from "@/components/styles/YouTubeTranscriptImport";
 import { cn } from "@/lib/utils";
 
 type TranscriptDraft = { id: string; title: string; content: string };
@@ -314,14 +315,20 @@ export default function NewStylePage() {
         {step === 2 && (
           <div className="space-y-6">
             <p className="text-sm text-muted-foreground">
-              Paste a reference script or upload .txt files. Add a clear title
-              for each (e.g. the original video title).
+              Paste a YouTube URL to import captions, or enter a reference script
+              manually. Add a clear title for each (e.g. the original video title).
             </p>
             {transcripts.map((t) => (
               <div
                 key={t.id}
                 className="space-y-3 rounded-xl border border-border p-4"
               >
+                <YouTubeTranscriptImport
+                  onImported={({ title, content }) =>
+                    updateTranscript(t.id, { title, content })
+                  }
+                  disabled={submitting}
+                />
                 <div className="flex items-start justify-between gap-2">
                   <div className="flex-1">
                     <Label>Transcript title</Label>

@@ -5,11 +5,12 @@ import { useEffect, useState } from "react";
 import { Plus } from "lucide-react";
 
 import { StylePickerDialog } from "@/components/video-editor/StylePickerDialog";
+import { Button } from "@/components/ui/button";
 import { SidebarMenuButton } from "@/components/ui/sidebar";
 import type { ChannelStyleRecord } from "@/lib/channel-styles/types";
 
 type CreateVideoButtonProps = {
-  variant: "sidebar" | "card";
+  variant: "sidebar" | "card" | "button";
 };
 
 /**
@@ -51,6 +52,11 @@ export function CreateVideoButton({ variant }: CreateVideoButtonProps) {
           <Plus />
           <span>Create video</span>
         </SidebarMenuButton>
+      ) : variant === "button" ? (
+        <Button type="button" className="inline-flex gap-2" onClick={() => setOpen(true)}>
+          <Plus className="size-4" />
+          Create video
+        </Button>
       ) : (
         <button
           type="button"

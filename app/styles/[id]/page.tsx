@@ -14,6 +14,7 @@ import type {
   StyleCharacter,
 } from "@/lib/channel-styles/types";
 import { AspectRatioToggle } from "@/components/styles/AspectRatioToggle";
+import { YouTubeTranscriptImport } from "@/components/styles/YouTubeTranscriptImport";
 import { cn } from "@/lib/utils";
 
 type Tab = "overview" | "references" | "format" | "characters";
@@ -590,31 +591,45 @@ export default function StyleDetailPage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-4 space-y-2 rounded-xl border border-dashed p-4">
-                <Label>Add transcript</Label>
-                <Input
-                  placeholder="Title"
-                  value={newTTitle}
-                  onChange={(e) => setNewTTitle(e.target.value)}
-                />
-                <textarea
-                  placeholder="Content"
-                  value={newTContent}
-                  onChange={(e) => setNewTContent(e.target.value)}
-                  rows={4}
-                  className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm"
-                />
-                <Button
-                  type="button"
-                  size="sm"
-                  onClick={() => {
-                    void addTranscriptRow(newTTitle, newTContent);
-                    setNewTTitle("");
-                    setNewTContent("");
+              <div className="mt-4 space-y-4 rounded-xl border border-dashed p-4">
+                <YouTubeTranscriptImport
+                  buttonLabel="Import transcript"
+                  disabled={saving}
+                  onImported={({ title, content }) => {
+                    void addTranscriptRow(title, content);
                   }}
-                >
-                  Add transcript
-                </Button>
+                />
+                <details className="text-sm">
+                  <summary className="cursor-pointer text-muted-foreground">
+                    Or paste transcript manually
+                  </summary>
+                  <div className="mt-3 space-y-2">
+                    <Input
+                      placeholder="Title"
+                      value={newTTitle}
+                      onChange={(e) => setNewTTitle(e.target.value)}
+                    />
+                    <textarea
+                      placeholder="Content"
+                      value={newTContent}
+                      onChange={(e) => setNewTContent(e.target.value)}
+                      rows={4}
+                      className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm"
+                    />
+                    <Button
+                      type="button"
+                      size="sm"
+                      disabled={saving}
+                      onClick={() => {
+                        void addTranscriptRow(newTTitle, newTContent);
+                        setNewTTitle("");
+                        setNewTContent("");
+                      }}
+                    >
+                      Add transcript
+                    </Button>
+                  </div>
+                </details>
               </div>
             </div>
           </div>

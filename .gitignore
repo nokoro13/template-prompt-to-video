@@ -9,3 +9,6 @@ out
 
 # Custom Studio MP4 exports
 public/renders/*.mp4
+
+# clerk configuration (can include secrets)
+/.clerk/

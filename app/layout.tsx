@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
+import { ClerkProvider } from "@clerk/nextjs";
+import { clerkAuthAppearance } from "@/components/auth/clerk-appearance";
 import { AppShell } from "@/components/layout/AppShell";
+import { SyncUser } from "@/components/auth/SyncUser";
 import "./globals.css";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -17,10 +20,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("font-sans", geist.variable)}>
-      <body className="h-svh overflow-hidden">
-        <AppShell>{children}</AppShell>
-      </body>
-    </html>
+    <ClerkProvider
+      appearance={{
+        signIn: clerkAuthAppearance,
+        signUp: clerkAuthAppearance,
+      }}
+    >
+      <html lang="en" className={cn("font-sans", geist.variable)}>
+        <body className="h-svh overflow-hidden">
+          <SyncUser />
+          <AppShell>{children}</AppShell>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
