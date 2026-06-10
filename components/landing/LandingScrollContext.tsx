@@ -5,50 +5,53 @@ import {
   useCallback,
   useContext,
   type ReactNode,
-  type RefObject,
 } from "react";
 
-const LandingScrollContext =
-  createContext<RefObject<HTMLElement | null> | null>(null);
+type LandingScrollContextValue = {
+  scrollElement: HTMLElement | null;
+};
+
+const LandingScrollContext = createContext<LandingScrollContextValue | null>(
+  null,
+);
 
 export function LandingScrollProvider({
-  scrollRef,
+  scrollElement,
   children,
 }: {
-  scrollRef: RefObject<HTMLElement | null>;
+  scrollElement: HTMLElement | null;
   children: ReactNode;
 }) {
   return (
-    <LandingScrollContext.Provider value={scrollRef}>
+    <LandingScrollContext.Provider value={{ scrollElement }}>
       {children}
     </LandingScrollContext.Provider>
   );
 }
 
+export function useLandingScrollElement() {
+  return useContext(LandingScrollContext)?.scrollElement ?? null;
+}
+
 export function useLandingScrollTo() {
-  const scrollRoot = useContext(LandingScrollContext);
+  const scrollElement = useLandingScrollElement();
 
   return useCallback(
     (id: string) => {
-      const root = scrollRoot?.current;
       const target = document.getElementById(id);
-      if (!root || !target) return;
+      if (!scrollElement || !target) return;
 
-      const header = root.querySelector("header");
+      const header = scrollElement.querySelector("header");
       const offset =
         (header?.getBoundingClientRect().height ?? 72) + 8;
-      const rootTop = root.getBoundingClientRect().top;
+      const rootTop = scrollElement.getBoundingClientRect().top;
       const targetTop = target.getBoundingClientRect().top;
 
-      root.scrollTo({
-        top: root.scrollTop + targetTop - rootTop - offset,
+      scrollElement.scrollTo({
+        top: scrollElement.scrollTop + targetTop - rootTop - offset,
         behavior: "smooth",
       });
     },
-    [scrollRoot],
+    [scrollElement],
   );
-}
-
-export function useLandingScrollRoot() {
-  return useContext(LandingScrollContext);
 }

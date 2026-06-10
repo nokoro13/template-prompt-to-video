@@ -1,7 +1,7 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { Suspense, useRef } from "react";
+import { Suspense, useCallback, useState } from "react";
 import { usePathname } from "next/navigation";
 import { LandingScrollProvider } from "@/components/landing/LandingScrollContext";
 import { AppSidebar } from "./app-sidebar";
@@ -16,7 +16,12 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 
 export function AppShell({ children }: { children: ReactNode }) {
   const pathname = usePathname();
-  const landingScrollRef = useRef<HTMLDivElement>(null);
+  const [landingScrollEl, setLandingScrollEl] = useState<HTMLDivElement | null>(
+    null,
+  );
+  const landingScrollRef = useCallback((node: HTMLDivElement | null) => {
+    setLandingScrollEl(node);
+  }, []);
   const isStudio = pathname.startsWith("/studio");
   const isAuthPage =
     pathname.startsWith("/sign-in") || pathname.startsWith("/sign-up");
@@ -24,7 +29,7 @@ export function AppShell({ children }: { children: ReactNode }) {
 
   if (isLanding || isAuthPage) {
     return (
-      <LandingScrollProvider scrollRef={landingScrollRef}>
+      <LandingScrollProvider scrollElement={landingScrollEl}>
         <div
           ref={landingScrollRef}
           className={cn(

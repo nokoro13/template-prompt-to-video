@@ -1,8 +1,9 @@
 "use client";
 
 import { motion, useReducedMotion, type Variants } from "framer-motion";
-import type { ReactNode } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 
+import { useLandingScrollElement } from "@/components/landing/LandingScrollContext";
 import { cn } from "@/lib/utils";
 
 /** Slow, ease-out curve — reads calm and premium on scroll. */
@@ -18,18 +19,36 @@ const STAGGER_GAP = 0.14;
 const STAGGER_ITEM_DURATION = 0.95;
 
 function useLandingViewport() {
+  const scrollElement = useLandingScrollElement();
   const reduceMotion = useReducedMotion();
+  const scrollRootRef = useRef<Element | null>(null);
+  scrollRootRef.current = scrollElement;
 
   if (reduceMotion) {
     return { once: true as const, amount: 0 as const };
   }
 
-  // Default browser viewport — nested landing scroll container breaks custom root IO.
-  return {
+  const base = {
     once: true as const,
     amount: 0.15 as const,
     margin: "-8% 0px -6% 0px" as const,
   };
+
+  // Mobile Safari: window IO misses scroll inside overflow-y-auto; use the landing scroller.
+  if (scrollElement) {
+    return { ...base, root: scrollRootRef };
+  }
+
+  return base;
+}
+
+/** Avoid SSR/hydration leaving motion nodes stuck at opacity: 0 (common on mobile). */
+function useLandingMotionReady() {
+  const [ready, setReady] = useState(false);
+  useEffect(() => {
+    setReady(true);
+  }, []);
+  return ready;
 }
 
 type LandingRevealProps = {
@@ -47,14 +66,17 @@ export function LandingReveal({
   y = REVEAL_Y,
 }: LandingRevealProps) {
   const reduceMotion = useReducedMotion();
+  const motionReady = useLandingMotionReady();
+  const scrollElement = useLandingScrollElement();
   const viewport = useLandingViewport();
 
-  if (reduceMotion) {
+  if (reduceMotion || !motionReady) {
     return <div className={className}>{children}</div>;
   }
 
   return (
     <motion.div
+      key={scrollElement ? "landing-scroll-root" : "landing-viewport-root"}
       initial={{ opacity: 0, y }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={viewport}
@@ -80,8 +102,9 @@ export function LandingHeroReveal({
   step = 0,
 }: LandingHeroRevealProps) {
   const reduceMotion = useReducedMotion();
+  const motionReady = useLandingMotionReady();
 
-  if (reduceMotion) {
+  if (reduceMotion || !motionReady) {
     return <div className={className}>{children}</div>;
   }
 
@@ -128,14 +151,17 @@ export function LandingStagger({
   className?: string;
 }) {
   const reduceMotion = useReducedMotion();
+  const motionReady = useLandingMotionReady();
+  const scrollElement = useLandingScrollElement();
   const viewport = useLandingViewport();
 
-  if (reduceMotion) {
+  if (reduceMotion || !motionReady) {
     return <div className={className}>{children}</div>;
   }
 
   return (
     <motion.div
+      key={scrollElement ? "landing-scroll-root" : "landing-viewport-root"}
       initial="hidden"
       whileInView="show"
       viewport={viewport}
@@ -155,8 +181,9 @@ export function LandingStaggerItem({
   className?: string;
 }) {
   const reduceMotion = useReducedMotion();
+  const motionReady = useLandingMotionReady();
 
-  if (reduceMotion) {
+  if (reduceMotion || !motionReady) {
     return <div className={className}>{children}</div>;
   }
 
