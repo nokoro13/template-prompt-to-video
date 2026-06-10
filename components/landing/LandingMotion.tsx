@@ -3,7 +3,6 @@
 import { motion, useReducedMotion, type Variants } from "framer-motion";
 import type { ReactNode } from "react";
 
-import { useLandingScrollRoot } from "@/components/landing/LandingScrollContext";
 import { cn } from "@/lib/utils";
 
 /** Slow, ease-out curve — reads calm and premium on scroll. */
@@ -19,18 +18,17 @@ const STAGGER_GAP = 0.14;
 const STAGGER_ITEM_DURATION = 0.95;
 
 function useLandingViewport() {
-  const scrollRoot = useLandingScrollRoot();
   const reduceMotion = useReducedMotion();
 
   if (reduceMotion) {
     return { once: true as const, amount: 0 as const };
   }
 
+  // Default browser viewport — nested landing scroll container breaks custom root IO.
   return {
     once: true as const,
     amount: 0.15 as const,
     margin: "-8% 0px -6% 0px" as const,
-    root: scrollRoot ?? undefined,
   };
 }
 
