@@ -33,7 +33,7 @@ export function mergeReferencePathsWithPreviousScene(
     };
   }
 
-  let paths = [...cappedBase];
+  const paths = [...cappedBase];
   while (paths.length >= MAX_GEMINI_REFERENCE_IMAGES && paths.length > sc) {
     paths.pop();
     if (names.length > 0) names.pop();
