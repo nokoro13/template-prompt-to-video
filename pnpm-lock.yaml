@@ -37,34 +37,34 @@ importers:
         version: 3.1062.0
       '@base-ui/react':
         specifier: ^1.3.0
-        version: 1.3.0(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 1.3.0(@types/react@19.2.7)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@clerk/nextjs':
         specifier: ^7.4.3
-        version: 7.4.3(next@15.3.1(@babel/core@7.29.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 7.4.3(next@15.5.18(@babel/core@7.29.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@neondatabase/serverless':
         specifier: ^1.1.0
         version: 1.1.0
       '@remotion/animation-utils':
         specifier: 4.0.448
-        version: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@remotion/cli':
         specifier: 4.0.448
-        version: 4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@remotion/google-fonts':
         specifier: 4.0.448
-        version: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@remotion/layout-utils':
         specifier: 4.0.448
         version: 4.0.448
       '@remotion/media':
         specifier: 4.0.448
-        version: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@remotion/player':
         specifier: 4.0.448
-        version: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@remotion/zod-types':
         specifier: 4.0.448
-        version: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(zod@4.3.6)
+        version: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(zod@4.3.6)
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
@@ -76,25 +76,25 @@ importers:
         version: 0.45.2(@neondatabase/serverless@1.1.0)
       framer-motion:
         specifier: ^12.40.0
-        version: 12.40.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 12.40.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       lucide-react:
         specifier: ^1.8.0
-        version: 1.8.0(react@19.2.3)
+        version: 1.8.0(react@19.2.6)
       next:
-        specifier: 15.3.1
-        version: 15.3.1(@babel/core@7.29.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: 15.5.18
+        version: 15.5.18(@babel/core@7.29.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       react:
-        specifier: 19.2.3
-        version: 19.2.3
+        specifier: 19.2.6
+        version: 19.2.6
       react-dom:
-        specifier: 19.2.3
-        version: 19.2.3(react@19.2.3)
+        specifier: 19.2.6
+        version: 19.2.6(react@19.2.6)
       react-icons:
         specifier: ^5.6.0
-        version: 5.6.0(react@19.2.3)
+        version: 5.6.0(react@19.2.6)
       remotion:
         specifier: 4.0.448
-        version: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        version: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       shadcn:
         specifier: ^4.2.0
         version: 4.2.0(@types/node@25.6.0)(typescript@5.9.3)
@@ -151,8 +151,8 @@ importers:
         specifier: 9.19.0
         version: 9.19.0(jiti@1.21.7)
       eslint-config-next:
-        specifier: 15.1.7
-        version: 15.1.7(eslint@9.19.0(jiti@1.21.7))(typescript@5.9.3)
+        specifier: 15.5.18
+        version: 15.5.18(eslint@9.19.0(jiti@1.21.7))(typescript@5.9.3)
       ora:
         specifier: ^9.0.0
         version: 9.3.0
@@ -1439,56 +1439,56 @@ packages:
     resolution: {integrity: sha512-r3ZZhRjEcfEdKIZnoB1RusNgvHuaBRqfCzV4Gi+5A9yUX0S4HTws/ASWqt13wL4y4I+0rqsWGdA2w7EQXHi3+Q==}
     engines: {node: '>=19.0.0'}
 
-  '@next/env@15.3.1':
-    resolution: {integrity: sha512-cwK27QdzrMblHSn9DZRV+DQscHXRuJv6MydlJRpFSqJWZrTYMLzKDeyueJNN9MGd8NNiUKzDQADAf+dMLXX7YQ==}
+  '@next/env@15.5.18':
+    resolution: {integrity: sha512-hAV85Ckd9QR6RvH04MEKwsfLTksvFpO47j9xwtoIuvuPnlwecpSi+uZTtm8HirVbtlI2Fnz//xpcSTjFdyJk+g==}
 
-  '@next/eslint-plugin-next@15.1.7':
-    resolution: {integrity: sha512-kRP7RjSxfTO13NE317ek3mSGzoZlI33nc/i5hs1KaWpK+egs85xg0DJ4p32QEiHnR0mVjuUfhRIun7awqfL7pQ==}
+  '@next/eslint-plugin-next@15.5.18':
+    resolution: {integrity: sha512-w4MYq8M26a8PNrfto0JosLf5/3ssln1rsyP96g2DkC8uFVymStM5DLSz5ElxxrPRg2XnTMnFo3kREFlhYvxhWw==}
 
-  '@next/swc-darwin-arm64@15.3.1':
-    resolution: {integrity: sha512-hjDw4f4/nla+6wysBL07z52Gs55Gttp5Bsk5/8AncQLJoisvTBP0pRIBK/B16/KqQyH+uN4Ww8KkcAqJODYH3w==}
+  '@next/swc-darwin-arm64@15.5.18':
+    resolution: {integrity: sha512-w0WvQf1n+txiwns/9pwIQteCJpZTbxzO2SE0FLcwuD4v0WEh1JPOjdyxWL21XwJsdpx8cFRjyzxzCS/siP7HcQ==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@15.3.1':
-    resolution: {integrity: sha512-q+aw+cJ2ooVYdCEqZVk+T4Ni10jF6Fo5DfpEV51OupMaV5XL6pf3GCzrk6kSSZBsMKZtVC1Zm/xaNBFpA6bJ2g==}
+  '@next/swc-darwin-x64@15.5.18':
+    resolution: {integrity: sha512-znn71QmDuxm+BOaglihMZfvyySMnNljkVIY5Z2TCssBmm+WqL6c19VhtH5ktFkHa8EZ2bnTUpcNcmNSQsg67og==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-linux-arm64-gnu@15.3.1':
-    resolution: {integrity: sha512-wBQ+jGUI3N0QZyWmmvRHjXjTWFy8o+zPFLSOyAyGFI94oJi+kK/LIZFJXeykvgXUk1NLDAEFDZw/NVINhdk9FQ==}
+  '@next/swc-linux-arm64-gnu@15.5.18':
+    resolution: {integrity: sha512-yPPe5MNL+igZUa+OsqQJisqSfh6oarIuA1Q0BDxljGJhRQyZeP+WRHh7rs/jZUGMh5aY0YdIjXZG0VohkKkUdw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-arm64-musl@15.3.1':
-    resolution: {integrity: sha512-IIxXEXRti/AulO9lWRHiCpUUR8AR/ZYLPALgiIg/9ENzMzLn3l0NSxVdva7R/VDcuSEBo0eGVCe3evSIHNz0Hg==}
+  '@next/swc-linux-arm64-musl@15.5.18':
+    resolution: {integrity: sha512-glaCczEWIrHsokFZ3pP08U4BpKxwIdnT+txdOM32OBgpL9Yw4aqx8NejmgtZQZOdstQ5f0L3CasIZudzCuD+nw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-x64-gnu@15.3.1':
-    resolution: {integrity: sha512-bfI4AMhySJbyXQIKH5rmLJ5/BP7bPwuxauTvVEiJ/ADoddaA9fgyNNCcsbu9SlqfHDoZmfI6g2EjzLwbsVTr5A==}
+  '@next/swc-linux-x64-gnu@15.5.18':
+    resolution: {integrity: sha512-oUfg2EgJmU3R0OCOWiokGFUTvZiPfXtriXiuF3YNxRoROCdgvTedHIzYoeKH34gsZxS/V7mHbfq2hpAHwhH1/A==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-linux-x64-musl@15.3.1':
-    resolution: {integrity: sha512-FeAbR7FYMWR+Z+M5iSGytVryKHiAsc0x3Nc3J+FD5NVbD5Mqz7fTSy8CYliXinn7T26nDMbpExRUI/4ekTvoiA==}
+  '@next/swc-linux-x64-musl@15.5.18':
+    resolution: {integrity: sha512-JLxSP3KTd9iu/bvUMQxH7RJo9xKSHf55/6RPE4a6FTSZygGn7uvZbCej0AHXydwkggQGSD9UddSjwv6Xz5ESfA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-win32-arm64-msvc@15.3.1':
-    resolution: {integrity: sha512-yP7FueWjphQEPpJQ2oKmshk/ppOt+0/bB8JC8svPUZNy0Pi3KbPx2Llkzv1p8CoQa+D2wknINlJpHf3vtChVBw==}
+  '@next/swc-win32-arm64-msvc@15.5.18':
+    resolution: {integrity: sha512-ir1v7enP52K2HNz3tQQvwF+x7VNxBk1ciiZ18WBPvxf4C59IqdfmHPJYK3vH7rSxpuCVw/8C712wTXNAtEp+NA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-x64-msvc@15.3.1':
-    resolution: {integrity: sha512-3PMvF2zRJAifcRNni9uMk/gulWfWS+qVI/pagd+4yLF5bcXPZPPH2xlYRYOsUjmCJOXSTAC2PjRzbhsRzR2fDQ==}
+  '@next/swc-win32-x64-msvc@15.5.18':
+    resolution: {integrity: sha512-LIu5me6QTANCd25E7I5uIEfvgQ06RK7tvHAbYo3zCb3VpxQEPvMcSpd87NwUABDT6MbGPdEGR5VRiK4PPTJhQg==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -1778,9 +1778,6 @@ packages:
 
   '@stablelib/base64@1.0.1':
     resolution: {integrity: sha512-1bnPQqSxSuc3Ii6MhBysoWCg58j97aUjuCSZrGSmDxNqtytIi0k8utUenAwTZN4V5mXXYGsVUI9zeBqy+jBOSQ==}
-
-  '@swc/counter@0.1.3':
-    resolution: {integrity: sha512-e2BR4lsJkkRlKZ/qCHPw9ZaSxc0MVUd7gtbtaB7aMvHeJVYe8sOB8DBZkP2DtISHGSku9sCK6T6cnY0CtXrOCQ==}
 
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
@@ -2239,10 +2236,6 @@ packages:
   bundle-name@4.1.0:
     resolution: {integrity: sha512-tjwM5exMg6BGRI+kNmTntNsvdZS1X8BFYS6tnJ2hdH0kVxM6/eVZ2xy+FqStSWvYmtfFMDLIxurorHwDKfDz5Q==}
     engines: {node: '>=18'}
-
-  busboy@1.6.0:
-    resolution: {integrity: sha512-8SFQbg/0hQ9xy3UNTB0YEnsNBbWfhf7RtnzpL7TkBiTBRfrQ9Fxcnz7VJsleJpyp6rVLvXiuORqjlHi5q+PYuA==}
-    engines: {node: '>=10.16.0'}
 
   bytes@3.1.2:
     resolution: {integrity: sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==}
@@ -2720,8 +2713,8 @@ packages:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
     engines: {node: '>=10'}
 
-  eslint-config-next@15.1.7:
-    resolution: {integrity: sha512-zXoMnYUIy3XHaAoOhrcYkT9UQWvXqWju2K7NNsmb5wd/7XESDwof61eUdW4QhERr3eJ9Ko/vnXqIrj8kk/drYw==}
+  eslint-config-next@15.5.18:
+    resolution: {integrity: sha512-HuoJU6uUPD00eyiud78IBnT4HLhztFj2V+ild2Uon5ZUrYZKe0Olu2QRD99e9IgL4/H1eg5Onka3BsfRW2U0Xw==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0 || ^9.0.0
       typescript: '>=3.3.1'
@@ -3625,14 +3618,13 @@ packages:
   neo-async@2.6.2:
     resolution: {integrity: sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==}
 
-  next@15.3.1:
-    resolution: {integrity: sha512-8+dDV0xNLOgHlyBxP1GwHGVaNXsmp+2NhZEYrXr24GWLHtt27YrBPbPuHvzlhi7kZNYjeJNR93IF5zfFu5UL0g==}
+  next@15.5.18:
+    resolution: {integrity: sha512-eKL8zUJkX9Y5lE+RX/2YJoItVdGlIscyVyboeD9wSpp0PaGqjoA4tTpT2qPqz9ax+5IzGESyLSeZ/RCwbSZ2uQ==}
     engines: {node: ^18.18.0 || ^19.8.0 || >= 20.0.0}
-    deprecated: This version has a security vulnerability. Please upgrade to a patched version. See https://nextjs.org/blog/CVE-2025-66478 for more details.
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
-      '@playwright/test': ^1.41.2
+      '@playwright/test': ^1.51.1
       babel-plugin-react-compiler: '*'
       react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
       react-dom: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
@@ -3957,10 +3949,10 @@ packages:
     resolution: {integrity: sha512-K5zQjDllxWkf7Z5xJdV0/B0WTNqx6vxG70zJE4N0kBs4LovmEYWJzQGxC9bS9RAKu3bgM40lrd5zoLJ12MQ5BA==}
     engines: {node: '>= 0.10'}
 
-  react-dom@19.2.3:
-    resolution: {integrity: sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg==}
+  react-dom@19.2.6:
+    resolution: {integrity: sha512-0prMI+hvBbPjsWnxDLxlCGyM8PN6UuWjEUCYmZhO67xIV9Xasa/r/vDnq+Xyq4Lo27g8QSbO5YzARu0D1Sps3g==}
     peerDependencies:
-      react: ^19.2.3
+      react: ^19.2.6
 
   react-icons@5.6.0:
     resolution: {integrity: sha512-RH93p5ki6LfOiIt0UtDyNg/cee+HLVR6cHHtW3wALfo+eOHTp8RnU2kRkI6E+H19zMIs03DyxUG/GfZMOGvmiA==}
@@ -3974,8 +3966,8 @@ packages:
     resolution: {integrity: sha512-QgT5//D3jfjJb6Gsjxv0Slpj23ip+HtOpnNgnb2S5zU3CB26G/IDPGoy4RJB42wzFE46DRsstbW6tKHoKbhAxw==}
     engines: {node: '>=0.10.0'}
 
-  react@19.2.3:
-    resolution: {integrity: sha512-Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==}
+  react@19.2.6:
+    resolution: {integrity: sha512-sfWGGfavi0xr8Pg0sVsyHMAOziVYKgPLNrS7ig+ivMNb3wbCBw3KxtflsGBAwD3gYQlE/AEZsTLgToRrSCjb0Q==}
     engines: {node: '>=0.10.0'}
 
   read-cache@1.0.0:
@@ -4208,10 +4200,6 @@ packages:
   stop-iteration-iterator@1.1.0:
     resolution: {integrity: sha512-eLoXW/DHyl62zxY4SCaIgnRhuMr6ri4juEYARS8E6sCEqzKpOiE521Ucofdx+KnDZl5xmvGYaaKCk5FEOxJCoQ==}
     engines: {node: '>= 0.4'}
-
-  streamsearch@1.1.0:
-    resolution: {integrity: sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==}
-    engines: {node: '>=10.0.0'}
 
   strict-event-emitter@0.5.1:
     resolution: {integrity: sha512-vMgjE/GGEPEFnhFub6pa4FmJBRBVOLpIII2hvCZ8Kzb7K0hlHo7mQv6xYrBvCL2LtAIBwFUK8wvuJgTVSQ5MFQ==}
@@ -5141,66 +5129,66 @@ snapshots:
       '@babel/helper-string-parser': 7.27.1
       '@babel/helper-validator-identifier': 7.28.5
 
-  '@base-ui/react@1.3.0(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@base-ui/react@1.3.0(@types/react@19.2.7)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       '@babel/runtime': 7.29.2
-      '@base-ui/utils': 0.2.6(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@floating-ui/react-dom': 2.1.8(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@base-ui/utils': 0.2.6(@types/react@19.2.7)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@floating-ui/react-dom': 2.1.8(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@floating-ui/utils': 0.2.11
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
       tabbable: 6.4.0
-      use-sync-external-store: 1.6.0(react@19.2.3)
+      use-sync-external-store: 1.6.0(react@19.2.6)
     optionalDependencies:
       '@types/react': 19.2.7
 
-  '@base-ui/utils@0.2.6(@types/react@19.2.7)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@base-ui/utils@0.2.6(@types/react@19.2.7)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       '@babel/runtime': 7.29.2
       '@floating-ui/utils': 0.2.11
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
       reselect: 5.1.1
-      use-sync-external-store: 1.6.0(react@19.2.3)
+      use-sync-external-store: 1.6.0(react@19.2.6)
     optionalDependencies:
       '@types/react': 19.2.7
 
-  '@clerk/backend@3.5.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@clerk/backend@3.5.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      '@clerk/shared': 4.15.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@clerk/shared': 4.15.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       standardwebhooks: 1.0.0
       tslib: 2.8.1
     transitivePeerDependencies:
       - react
       - react-dom
 
-  '@clerk/nextjs@7.4.3(next@15.3.1(@babel/core@7.29.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@clerk/nextjs@7.4.3(next@15.5.18(@babel/core@7.29.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6))(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      '@clerk/backend': 3.5.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@clerk/react': 6.7.3(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@clerk/shared': 4.15.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      next: 15.3.1(@babel/core@7.29.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
+      '@clerk/backend': 3.5.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@clerk/react': 6.7.3(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@clerk/shared': 4.15.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      next: 15.5.18(@babel/core@7.29.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
       server-only: 0.0.1
       tslib: 2.8.1
 
-  '@clerk/react@6.7.3(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@clerk/react@6.7.3(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      '@clerk/shared': 4.15.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
+      '@clerk/shared': 4.15.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
       tslib: 2.8.1
 
-  '@clerk/shared@4.15.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@clerk/shared@4.15.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       '@tanstack/query-core': 5.101.0
       dequal: 2.0.3
       glob-to-regexp: 0.4.1
       js-cookie: 3.0.7
     optionalDependencies:
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
 
   '@dotenvx/dotenvx@1.61.0':
     dependencies:
@@ -5609,11 +5597,11 @@ snapshots:
       '@floating-ui/core': 1.7.5
       '@floating-ui/utils': 0.2.11
 
-  '@floating-ui/react-dom@2.1.8(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@floating-ui/react-dom@2.1.8(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       '@floating-ui/dom': 1.7.6
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
 
   '@floating-ui/utils@0.2.11': {}
 
@@ -5865,34 +5853,34 @@ snapshots:
 
   '@neondatabase/serverless@1.1.0': {}
 
-  '@next/env@15.3.1': {}
+  '@next/env@15.5.18': {}
 
-  '@next/eslint-plugin-next@15.1.7':
+  '@next/eslint-plugin-next@15.5.18':
     dependencies:
       fast-glob: 3.3.1
 
-  '@next/swc-darwin-arm64@15.3.1':
+  '@next/swc-darwin-arm64@15.5.18':
     optional: true
 
-  '@next/swc-darwin-x64@15.3.1':
+  '@next/swc-darwin-x64@15.5.18':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@15.3.1':
+  '@next/swc-linux-arm64-gnu@15.5.18':
     optional: true
 
-  '@next/swc-linux-arm64-musl@15.3.1':
+  '@next/swc-linux-arm64-musl@15.5.18':
     optional: true
 
-  '@next/swc-linux-x64-gnu@15.3.1':
+  '@next/swc-linux-x64-gnu@15.5.18':
     optional: true
 
-  '@next/swc-linux-x64-musl@15.3.1':
+  '@next/swc-linux-x64-musl@15.5.18':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@15.3.1':
+  '@next/swc-win32-arm64-msvc@15.5.18':
     optional: true
 
-  '@next/swc-win32-x64-msvc@15.3.1':
+  '@next/swc-win32-x64-msvc@15.5.18':
     optional: true
 
   '@noble/ciphers@1.3.0': {}
@@ -5928,27 +5916,27 @@ snapshots:
 
   '@open-draft/until@2.1.0': {}
 
-  '@remotion/animation-utils@4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@remotion/animation-utils@4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
 
-  '@remotion/bundler@4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@remotion/bundler@4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       '@remotion/media-parser': 4.0.448
-      '@remotion/studio': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/studio-shared': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@remotion/studio': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/studio-shared': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       '@rspack/core': 1.7.6(@swc/helpers@0.5.15)
       '@rspack/plugin-react-refresh': 1.6.1(react-refresh@0.18.0)
       esbuild: 0.25.0
       loader-utils: 2.0.4
       postcss: 8.5.1
       postcss-value-parser: 4.2.0
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
       react-refresh: 0.18.0
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       source-map: 0.7.3
       style-loader: 4.0.0(webpack@5.105.0(esbuild@0.25.0))
       webpack: 5.105.0(esbuild@0.25.0)
@@ -5962,21 +5950,21 @@ snapshots:
       - webpack-cli
       - webpack-hot-middleware
 
-  '@remotion/cli@4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@remotion/cli@4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      '@remotion/bundler': 4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/media-utils': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/player': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/renderer': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/studio': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/studio-server': 4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/studio-shared': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@remotion/bundler': 4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/media-utils': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/player': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/renderer': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/studio': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/studio-server': 4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/studio-shared': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       dotenv: 17.3.1
       minimist: 1.2.6
       prompts: 2.4.2
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/helpers'
@@ -6016,9 +6004,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@remotion/google-fonts@4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@remotion/google-fonts@4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
     transitivePeerDependencies:
       - react
       - react-dom
@@ -6029,36 +6017,36 @@ snapshots:
 
   '@remotion/media-parser@4.0.448': {}
 
-  '@remotion/media-utils@4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@remotion/media-utils@4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       mediabunny: 1.39.2
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
 
-  '@remotion/media@4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@remotion/media@4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       mediabunny: 1.39.2
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       zod: 4.3.6
 
-  '@remotion/player@4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@remotion/player@4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
 
-  '@remotion/renderer@4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@remotion/renderer@4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       '@remotion/licensing': 4.0.448
       '@remotion/streaming': 4.0.448
       execa: 5.1.1
       extract-zip: 2.0.1
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       source-map: 0.8.0-beta.0
       ws: 8.17.1
     optionalDependencies:
@@ -6076,18 +6064,18 @@ snapshots:
 
   '@remotion/streaming@4.0.448': {}
 
-  '@remotion/studio-server@4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@remotion/studio-server@4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       '@babel/parser': 7.24.1
       '@babel/types': 7.24.0
-      '@remotion/bundler': 4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/renderer': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/studio-shared': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@remotion/bundler': 4.0.448(@swc/helpers@0.5.15)(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/renderer': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/studio-shared': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       memfs: 3.4.3
       open: 8.4.2
       prettier: 3.8.1
       recast: 0.23.11
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       semver: 7.5.3
       source-map: 0.7.3
     transitivePeerDependencies:
@@ -6102,27 +6090,27 @@ snapshots:
       - webpack-cli
       - webpack-hot-middleware
 
-  '@remotion/studio-shared@4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@remotion/studio-shared@4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
     transitivePeerDependencies:
       - react
       - react-dom
 
-  '@remotion/studio@4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@remotion/studio@4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
-      '@remotion/media-utils': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/player': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/renderer': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/studio-shared': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/web-renderer': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@remotion/zod-types': 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(zod@4.3.6)
+      '@remotion/media-utils': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/player': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/renderer': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/studio-shared': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/web-renderer': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
+      '@remotion/zod-types': 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(zod@4.3.6)
       mediabunny: 1.39.2
       memfs: 3.4.3
       open: 8.4.2
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       semver: 7.5.3
       source-map: 0.7.3
       zod: 4.3.6
@@ -6131,20 +6119,20 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@remotion/web-renderer@4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@remotion/web-renderer@4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)':
     dependencies:
       '@mediabunny/aac-encoder': 1.39.2(mediabunny@1.39.2)
       '@mediabunny/flac-encoder': 1.39.2(mediabunny@1.39.2)
       '@mediabunny/mp3-encoder': 1.39.2(mediabunny@1.39.2)
       '@remotion/licensing': 4.0.448
       mediabunny: 1.39.2
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
 
-  '@remotion/zod-types@4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(zod@4.3.6)':
+  '@remotion/zod-types@4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)(zod@4.3.6)':
     dependencies:
-      remotion: 4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      remotion: 4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6)
       zod: 4.3.6
     transitivePeerDependencies:
       - react
@@ -6268,8 +6256,6 @@ snapshots:
       tslib: 2.8.1
 
   '@stablelib/base64@1.0.1': {}
-
-  '@swc/counter@0.1.3': {}
 
   '@swc/helpers@0.5.15':
     dependencies:
@@ -6778,10 +6764,6 @@ snapshots:
     dependencies:
       run-applescript: 7.1.0
 
-  busboy@1.6.0:
-    dependencies:
-      streamsearch: 1.1.0
-
   bytes@3.1.2: {}
 
   call-bind-apply-helpers@1.0.2:
@@ -7278,9 +7260,9 @@ snapshots:
 
   escape-string-regexp@4.0.0: {}
 
-  eslint-config-next@15.1.7(eslint@9.19.0(jiti@1.21.7))(typescript@5.9.3):
+  eslint-config-next@15.5.18(eslint@9.19.0(jiti@1.21.7))(typescript@5.9.3):
     dependencies:
-      '@next/eslint-plugin-next': 15.1.7
+      '@next/eslint-plugin-next': 15.5.18
       '@rushstack/eslint-patch': 1.16.1
       '@typescript-eslint/eslint-plugin': 8.21.0(@typescript-eslint/parser@8.21.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.9.3))(eslint@9.19.0(jiti@1.21.7))(typescript@5.9.3)
       '@typescript-eslint/parser': 8.21.0(eslint@9.19.0(jiti@1.21.7))(typescript@5.9.3)
@@ -7670,14 +7652,14 @@ snapshots:
 
   fraction.js@5.3.4: {}
 
-  framer-motion@12.40.0(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
+  framer-motion@12.40.0(react-dom@19.2.6(react@19.2.6))(react@19.2.6):
     dependencies:
       motion-dom: 12.40.0
       motion-utils: 12.39.0
       tslib: 2.8.1
     optionalDependencies:
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
 
   fresh@2.0.0: {}
 
@@ -8138,9 +8120,9 @@ snapshots:
     dependencies:
       yallist: 4.0.0
 
-  lucide-react@1.8.0(react@19.2.3):
+  lucide-react@1.8.0(react@19.2.6):
     dependencies:
-      react: 19.2.3
+      react: 19.2.6
 
   math-intrinsics@1.1.0: {}
 
@@ -8247,26 +8229,24 @@ snapshots:
 
   neo-async@2.6.2: {}
 
-  next@15.3.1(@babel/core@7.29.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
+  next@15.5.18(@babel/core@7.29.0)(react-dom@19.2.6(react@19.2.6))(react@19.2.6):
     dependencies:
-      '@next/env': 15.3.1
-      '@swc/counter': 0.1.3
+      '@next/env': 15.5.18
       '@swc/helpers': 0.5.15
-      busboy: 1.6.0
       caniuse-lite: 1.0.30001787
       postcss: 8.4.31
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
-      styled-jsx: 5.1.6(@babel/core@7.29.0)(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
+      styled-jsx: 5.1.6(@babel/core@7.29.0)(react@19.2.6)
     optionalDependencies:
-      '@next/swc-darwin-arm64': 15.3.1
-      '@next/swc-darwin-x64': 15.3.1
-      '@next/swc-linux-arm64-gnu': 15.3.1
-      '@next/swc-linux-arm64-musl': 15.3.1
-      '@next/swc-linux-x64-gnu': 15.3.1
-      '@next/swc-linux-x64-musl': 15.3.1
-      '@next/swc-win32-arm64-msvc': 15.3.1
-      '@next/swc-win32-x64-msvc': 15.3.1
+      '@next/swc-darwin-arm64': 15.5.18
+      '@next/swc-darwin-x64': 15.5.18
+      '@next/swc-linux-arm64-gnu': 15.5.18
+      '@next/swc-linux-arm64-musl': 15.5.18
+      '@next/swc-linux-x64-gnu': 15.5.18
+      '@next/swc-linux-x64-musl': 15.5.18
+      '@next/swc-win32-arm64-msvc': 15.5.18
+      '@next/swc-win32-x64-msvc': 15.5.18
       sharp: 0.34.5
     transitivePeerDependencies:
       - '@babel/core'
@@ -8579,20 +8559,20 @@ snapshots:
       iconv-lite: 0.7.2
       unpipe: 1.0.0
 
-  react-dom@19.2.3(react@19.2.3):
+  react-dom@19.2.6(react@19.2.6):
     dependencies:
-      react: 19.2.3
+      react: 19.2.6
       scheduler: 0.27.0
 
-  react-icons@5.6.0(react@19.2.3):
+  react-icons@5.6.0(react@19.2.6):
     dependencies:
-      react: 19.2.3
+      react: 19.2.6
 
   react-is@16.13.1: {}
 
   react-refresh@0.18.0: {}
 
-  react@19.2.3: {}
+  react@19.2.6: {}
 
   read-cache@1.0.0:
     dependencies:
@@ -8630,10 +8610,10 @@ snapshots:
       gopd: 1.2.0
       set-function-name: 2.0.2
 
-  remotion@4.0.448(react-dom@19.2.3(react@19.2.3))(react@19.2.3):
+  remotion@4.0.448(react-dom@19.2.6(react@19.2.6))(react@19.2.6):
     dependencies:
-      react: 19.2.3
-      react-dom: 19.2.3(react@19.2.3)
+      react: 19.2.6
+      react-dom: 19.2.6(react@19.2.6)
 
   require-directory@2.1.1: {}
 
@@ -8931,8 +8911,6 @@ snapshots:
       es-errors: 1.3.0
       internal-slot: 1.1.0
 
-  streamsearch@1.1.0: {}
-
   strict-event-emitter@0.5.1: {}
 
   string-width@4.2.3:
@@ -9030,10 +9008,10 @@ snapshots:
     dependencies:
       webpack: 5.105.0(esbuild@0.25.0)
 
-  styled-jsx@5.1.6(@babel/core@7.29.0)(react@19.2.3):
+  styled-jsx@5.1.6(@babel/core@7.29.0)(react@19.2.6):
     dependencies:
       client-only: 0.0.1
-      react: 19.2.3
+      react: 19.2.6
     optionalDependencies:
       '@babel/core': 7.29.0
 
@@ -9296,9 +9274,9 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  use-sync-external-store@1.6.0(react@19.2.3):
+  use-sync-external-store@1.6.0(react@19.2.6):
     dependencies:
-      react: 19.2.3
+      react: 19.2.6
 
   util-deprecate@1.0.2: {}
 
