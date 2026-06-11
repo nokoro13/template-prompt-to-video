@@ -404,18 +404,18 @@ export default function StyleDetailPage() {
         All styles
       </Link>
 
-      <div className="mt-6 flex flex-col gap-6 sm:flex-row sm:items-start">
-        <div className="relative h-40 w-full shrink-0 overflow-hidden rounded-xl border bg-muted sm:h-48 sm:w-64">
+      <div className="mt-4 flex flex-col gap-4 sm:mt-6 sm:flex-row sm:items-start sm:gap-6">
+        <div className="relative h-36 w-full shrink-0 overflow-hidden rounded-xl border bg-muted sm:h-48 sm:w-64">
           <Image
             src={style.thumbnailUrl}
             alt=""
             fill
             className="object-cover"
-            sizes="256px"
+            sizes="(max-width: 640px) 100vw, 256px"
           />
         </div>
         <div className="min-w-0 flex-1">
-          <h1 className="text-3xl font-bold tracking-tight">{style.name}</h1>
+          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">{style.name}</h1>
           <p className="mt-1 text-muted-foreground">
             {style.creatorName ?? "No creator name"}
           </p>
@@ -431,27 +431,29 @@ export default function StyleDetailPage() {
         </p>
       )}
 
-      <div className="mt-8 flex flex-wrap gap-2 border-b border-border pb-2">
-        {tabs.map((t) => (
-          <button
-            key={t.id}
-            type="button"
-            onClick={() => setTab(t.id)}
-            className={cn(
-              "rounded-lg px-3 py-1.5 text-sm font-medium",
-              tab === t.id
-                ? "bg-primary text-primary-foreground"
-                : "text-muted-foreground hover:bg-muted",
-            )}
-          >
-            {t.label}
-          </button>
-        ))}
+      <div className="-mx-4 mt-6 border-b border-border px-4 pb-2 sm:mx-0 sm:mt-8 sm:px-0">
+        <div className="scrollbar-none flex snap-x snap-mandatory gap-2 overflow-x-auto sm:flex-wrap sm:overflow-visible">
+          {tabs.map((t) => (
+            <button
+              key={t.id}
+              type="button"
+              onClick={() => setTab(t.id)}
+              className={cn(
+                "min-h-10 shrink-0 snap-start rounded-lg px-3 py-2 text-sm font-medium sm:py-1.5",
+                tab === t.id
+                  ? "bg-primary text-primary-foreground"
+                  : "text-muted-foreground hover:bg-muted",
+              )}
+            >
+              {t.label}
+            </button>
+          ))}
+        </div>
       </div>
 
-      <div className="mt-6 space-y-6">
+      <div className="mt-4 space-y-6 sm:mt-6">
         {tab === "overview" && (
-          <div className="space-y-4 rounded-xl border border-border bg-card p-6">
+          <div className="space-y-4 rounded-xl border border-border bg-card p-4 sm:p-6">
             <div>
               <Label htmlFor="edit-name">Name</Label>
               <Input

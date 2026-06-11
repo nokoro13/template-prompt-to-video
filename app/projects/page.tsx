@@ -88,8 +88,8 @@ export default function ProjectsPage() {
     <div className="mx-auto w-full">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">Projects</h1>
-          <p className="mt-1 text-muted-foreground">
+          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Projects</h1>
+          <p className="mt-1 text-sm text-muted-foreground sm:text-base">
             Your recent videos — preview in Studio or jump back into editing.
           </p>
         </div>
@@ -97,7 +97,7 @@ export default function ProjectsPage() {
       </div>
 
       {projects && projects.length > 0 ? (
-        <div className="relative mt-8 max-w-md">
+        <div className="relative mt-6 max-w-md sm:mt-8">
           <Search className="absolute left-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
           <Input
             value={query}
@@ -108,9 +108,9 @@ export default function ProjectsPage() {
         </div>
       ) : null}
 
-      <section className="mt-8">
-        <div className="flex items-center justify-between gap-3">
-          <h2 className="text-lg font-semibold">Recent projects</h2>
+      <section className="mt-6 sm:mt-8">
+        <div className="flex flex-wrap items-center justify-between gap-2">
+          <h2 className="text-base font-semibold sm:text-lg">Recent projects</h2>
           {projects && projects.length > 0 ? (
             <p className="text-sm text-muted-foreground">
               {filtered.length} project{filtered.length === 1 ? "" : "s"}

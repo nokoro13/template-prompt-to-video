@@ -14,6 +14,12 @@ export const metadata: Metadata = {
   description: "Create and manage AI-generated story videos",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover" as const,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{

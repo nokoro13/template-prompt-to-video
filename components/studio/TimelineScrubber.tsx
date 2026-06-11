@@ -25,7 +25,7 @@ export type TimelineScrubberProps = {
   className?: string;
 };
 
-const ROW_H = "h-6";
+const ROW_H = "h-7 sm:h-6";
 
 export function TimelineScrubber({
   timeline,
@@ -132,8 +132,17 @@ export function TimelineScrubber({
 
   return (
     <div className={cn("space-y-1.5", className)}>
+      <div className="flex items-center justify-between gap-2 sm:hidden">
+        <span className="text-[10px] font-medium text-muted-foreground">Timeline</span>
+        <span className="font-mono text-[10px] tabular-nums text-muted-foreground">
+          {formatTime(Math.min(currentFrame, max), fps)}
+          <span className="text-border"> / </span>
+          {formatTime(max, fps)}
+        </span>
+      </div>
+
       <div className="flex min-h-0 gap-2">
-        <div className="flex w-16 shrink-0 flex-col justify-center gap-1 text-[10px] font-medium leading-none text-muted-foreground">
+        <div className="flex w-11 shrink-0 flex-col justify-center gap-1 text-[10px] font-medium leading-none text-muted-foreground sm:w-16">
           <div className={cn("flex items-center", ROW_H)}>Scene</div>
           <div className={cn("flex items-center", ROW_H)}>Subtitles</div>
           <div className={cn("flex items-center", ROW_H)}>Audio</div>
@@ -187,7 +196,7 @@ export function TimelineScrubber({
           </div>
         </div>
 
-        <div className="flex shrink-0 flex-col justify-center self-stretch">
+        <div className="hidden shrink-0 flex-col justify-center self-stretch sm:flex">
           <span className="font-mono text-[10px] tabular-nums text-muted-foreground">
             {formatTime(Math.min(currentFrame, max), fps)}
             <span className="text-border"> / </span>
@@ -204,7 +213,7 @@ export function TimelineScrubber({
         value={Math.min(currentFrame, max)}
         disabled={disabled}
         onChange={onRangeChange}
-        className="h-1.5 w-full cursor-pointer accent-primary disabled:opacity-50"
+        className="h-2 w-full cursor-pointer accent-primary disabled:opacity-50 sm:h-1.5"
         aria-label="Frame position"
       />
     </div>

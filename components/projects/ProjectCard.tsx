@@ -77,17 +77,17 @@ export function ProjectCard({ project, onDelete, deleting }: ProjectCardProps) {
           {project.id}
         </p>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
           <Link
             href={studioHref}
-            className={cn(buttonVariants({ variant: "default" }), "flex-1")}
+            className={cn(buttonVariants({ variant: "default" }), "w-full sm:flex-1")}
           >
             <MonitorPlay className="mr-1.5 size-4" />
             Open in Studio
           </Link>
           <Link
             href={editHref}
-            className={cn(buttonVariants({ variant: "outline" }), "flex-1")}
+            className={cn(buttonVariants({ variant: "outline" }), "w-full sm:flex-1")}
           >
             <Pencil className="mr-1.5 size-4" />
             Edit
@@ -97,7 +97,7 @@ export function ProjectCard({ project, onDelete, deleting }: ProjectCardProps) {
               type="button"
               variant="outline"
               size="icon"
-              className="shrink-0 text-muted-foreground hover:text-destructive"
+              className="h-11 shrink-0 self-end text-muted-foreground hover:text-destructive sm:h-9 sm:w-9"
               disabled={deleting}
               aria-label={`Delete ${project.shortTitle}`}
               onClick={() => onDelete(project)}

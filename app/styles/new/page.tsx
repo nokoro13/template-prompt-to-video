@@ -160,31 +160,43 @@ export default function NewStylePage() {
         Back to styles
       </Link>
 
-      <h1 className="mt-6 text-3xl font-bold tracking-tight">Create style</h1>
-      <p className="mt-2 text-muted-foreground">
+      <h1 className="mt-4 text-2xl font-bold tracking-tight sm:mt-6 sm:text-3xl">Create style</h1>
+      <p className="mt-2 text-sm text-muted-foreground sm:text-base">
         Add a name, style-only reference images, and at least one transcript.
         We&apos;ll analyze the transcript to capture format and pacing.
       </p>
 
-      <div className="mt-8 flex gap-2 border-b border-border pb-4">
-        {STEPS.map((label, i) => (
-          <div
-            key={label}
-            className={cn(
-              "flex-1 rounded-lg px-2 py-2 text-center text-xs font-medium sm:text-sm",
-              i === step
-                ? "bg-primary text-primary-foreground"
-                : i < step
-                  ? "bg-muted text-muted-foreground"
-                  : "bg-muted/50 text-muted-foreground",
-            )}
-          >
-            {i + 1}. {label}
-          </div>
-        ))}
+      <div className="-mx-4 mt-6 border-b border-border px-4 pb-4 sm:mx-0 sm:mt-8 sm:px-0">
+        <div className="scrollbar-none flex w-full snap-x snap-mandatory gap-2 overflow-x-auto sm:gap-3 sm:overflow-visible">
+          {STEPS.map((label, i) => {
+            const mobileLabels = ["Info", "Images", "Scripts", "Create"] as const;
+            return (
+              <div
+                key={label}
+                className={cn(
+                  "flex min-h-11 min-w-[4.75rem] shrink-0 snap-start items-center justify-center rounded-lg px-2.5 text-xs font-medium leading-none sm:min-h-10 sm:min-w-0 sm:flex-1 sm:px-3 sm:text-sm",
+                  i === step
+                    ? "bg-primary text-primary-foreground"
+                    : i < step
+                      ? "bg-muted text-muted-foreground"
+                      : "bg-muted/50 text-muted-foreground",
+                )}
+              >
+                <span className="whitespace-nowrap">
+                  <span className="sm:hidden">
+                    {i + 1}. {mobileLabels[i]}
+                  </span>
+                  <span className="hidden sm:inline">
+                    {i + 1}. {label}
+                  </span>
+                </span>
+              </div>
+            );
+          })}
+        </div>
       </div>
 
-      <div className="mt-8 space-y-6 rounded-2xl border border-border bg-card p-6 shadow-sm">
+      <div className="mt-6 space-y-6 rounded-2xl border border-border bg-card p-4 shadow-sm sm:mt-8 sm:p-6">
         {step === 0 && (
           <div className="space-y-4">
             <div>
@@ -415,12 +427,13 @@ export default function NewStylePage() {
           </p>
         )}
 
-        <div className="flex flex-wrap items-center justify-between gap-3 pt-2">
+        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <Button
             type="button"
             variant="outline"
             disabled={step === 0 || submitting}
             onClick={() => setStep((s) => Math.max(0, s - 1))}
+            className="w-full sm:w-auto"
           >
             <ArrowLeft className="mr-1 size-4" />
             Back
@@ -428,14 +441,20 @@ export default function NewStylePage() {
           {step < 3 ? (
             <Button
               type="button"
-              disabled={!canNext()}
+              disabled={!canNext() || submitting}
               onClick={() => setStep((s) => s + 1)}
+              className="w-full sm:w-auto"
             >
               Next
               <ArrowRight className="ml-1 size-4" />
             </Button>
           ) : (
-            <Button type="button" disabled={submitting} onClick={() => void submit()}>
+            <Button
+              type="button"
+              disabled={submitting}
+              onClick={() => void submit()}
+              className="w-full sm:w-auto"
+            >
               {submitting ? "Analyzing reference transcript…" : "Create style"}
             </Button>
           )}

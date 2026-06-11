@@ -42,19 +42,19 @@ export const PRICING_TIERS = [
 
 export const FAQ_ITEMS = [
   {
-    question: "Who is cliPNG for?",
+    question: "Who is clipng for?",
     answer:
-      "Faceless, story, and explainer YouTube channels that publish narration plus illustrated scenes on a schedule. cliPNG connects style, script, voice, scenes, and render in one app.",
+      "Faceless, story, and explainer YouTube channels that publish narration plus illustrated scenes on a schedule. clipng connects style, script, voice, scenes, and render in one app.",
   },
   {
     question: "Do I need API keys?",
     answer:
-      "No. cliPNG runs OpenAI, Gemini, and ElevenLabs on our servers. Subscribe and start creating — no API setup required.",
+      "No. clipng runs OpenAI, Gemini, and ElevenLabs on our servers. Subscribe and start creating — no API setup required.",
   },
   {
     question: "How does transcript import work?",
     answer:
-      "When creating a channel style, paste a public YouTube URL. cliPNG fetches the transcript and uses it as a format reference for new scripts.",
+      "When creating a channel style, paste a public YouTube URL. clipng fetches the transcript and uses it as a format reference for new scripts.",
   },
   {
     question: "What can I export?",

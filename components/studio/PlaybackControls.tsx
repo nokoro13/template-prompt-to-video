@@ -107,102 +107,110 @@ export function PlaybackControls({
   return (
     <div
       className={cn(
-        "flex flex-wrap items-center gap-2 border-t border-border bg-muted/20 px-2 py-1.5",
+        "flex flex-col gap-2 border-t border-border bg-muted/20 px-2 py-2 sm:flex-row sm:flex-wrap sm:items-center sm:py-1.5",
         className,
       )}
     >
-      <Button
-        type="button"
-        variant="outline"
-        size="icon-sm"
-        disabled={disabled}
-        onClick={togglePlay}
-        aria-label={playing ? "Pause" : "Play"}
-      >
-        {playing ? (
-          <Pause className="size-4" />
-        ) : (
-          <Play className="size-4" />
-        )}
-      </Button>
-      <Button
-        type="button"
-        variant="ghost"
-        size="icon-sm"
-        disabled={disabled}
-        onClick={frameBack}
-        aria-label="Previous frame"
-      >
-        <ChevronLeft className="size-4" />
-      </Button>
-      <Button
-        type="button"
-        variant="ghost"
-        size="icon-sm"
-        disabled={disabled}
-        onClick={frameForward}
-        aria-label="Next frame"
-      >
-        <ChevronRight className="size-4" />
-      </Button>
-
-      <label className="flex items-center gap-1 text-xs text-muted-foreground">
-        Speed
-        <select
-          className="rounded-md border border-border bg-background px-2 py-1 text-xs"
-          value={playbackRate}
+      <div className="flex items-center justify-center gap-1 sm:justify-start">
+        <Button
+          type="button"
+          variant="outline"
+          size="icon"
           disabled={disabled}
-          onChange={(e) =>
-            onPlaybackRateChange(Number.parseFloat(e.target.value))
-          }
+          onClick={togglePlay}
+          aria-label={playing ? "Pause" : "Play"}
+          className="size-10 sm:size-8"
         >
-          {PLAYBACK_RATES.map((r) => (
-            <option key={r} value={r}>
-              {r}x
-            </option>
-          ))}
-        </select>
-      </label>
-
-      <div className="flex min-w-[120px] items-center gap-1">
+          {playing ? (
+            <Pause className="size-4" />
+          ) : (
+            <Play className="size-4" />
+          )}
+        </Button>
         <Button
           type="button"
           variant="ghost"
-          size="icon-sm"
+          size="icon"
           disabled={disabled}
-          onClick={toggleMute}
-          aria-label={muted ? "Unmute" : "Mute"}
+          onClick={frameBack}
+          aria-label="Previous frame"
+          className="size-10 sm:size-8"
         >
-          {muted ? (
-            <VolumeX className="size-4" />
-          ) : (
-            <Volume2 className="size-4" />
-          )}
+          <ChevronLeft className="size-4" />
         </Button>
-        <input
-          type="range"
-          min={0}
-          max={1}
-          step={0.05}
-          value={volume}
+        <Button
+          type="button"
+          variant="ghost"
+          size="icon"
           disabled={disabled}
-          onChange={onVolumeInput}
-          className="h-2 w-20 accent-brand-600"
-          aria-label="Volume"
-        />
+          onClick={frameForward}
+          aria-label="Next frame"
+          className="size-10 sm:size-8"
+        >
+          <ChevronRight className="size-4" />
+        </Button>
       </div>
 
-      <Button
-        type="button"
-        variant="outline"
-        size="sm"
-        disabled={disabled}
-        onClick={fullscreen}
-        className="gap-1"
-      >
-        <Maximize2 className="size-3.5" />
-        Fullscreen
-      </Button>
+      <div className="flex flex-wrap items-center justify-between gap-2 sm:justify-start">
+        <label className="flex min-h-10 items-center gap-1 text-xs text-muted-foreground">
+          Speed
+          <select
+            className="min-h-10 rounded-md border border-border bg-background px-2 py-1.5 text-xs sm:min-h-0 sm:py-1"
+            value={playbackRate}
+            disabled={disabled}
+            onChange={(e) =>
+              onPlaybackRateChange(Number.parseFloat(e.target.value))
+            }
+          >
+            {PLAYBACK_RATES.map((r) => (
+              <option key={r} value={r}>
+                {r}x
+              </option>
+            ))}
+          </select>
+        </label>
+
+        <div className="flex min-w-0 flex-1 items-center gap-1 sm:min-w-[120px] sm:flex-none">
+          <Button
+            type="button"
+            variant="ghost"
+            size="icon"
+            disabled={disabled}
+            onClick={toggleMute}
+            aria-label={muted ? "Unmute" : "Mute"}
+            className="size-10 shrink-0 sm:size-8"
+          >
+            {muted ? (
+              <VolumeX className="size-4" />
+            ) : (
+              <Volume2 className="size-4" />
+            )}
+          </Button>
+          <input
+            type="range"
+            min={0}
+            max={1}
+            step={0.05}
+            value={volume}
+            disabled={disabled}
+            onChange={onVolumeInput}
+            className="h-2 min-w-0 flex-1 accent-brand-600 sm:w-20 sm:flex-none"
+            aria-label="Volume"
+          />
+        </div>
+
+        <Button
+          type="button"
+          variant="outline"
+          size="sm"
+          disabled={disabled}
+          onClick={fullscreen}
+          className="h-10 w-full gap-1 sm:h-auto sm:w-auto"
+        >
+          <Maximize2 className="size-3.5" />
+          Fullscreen
+        </Button>
+      </div>
     </div>
   );
 }

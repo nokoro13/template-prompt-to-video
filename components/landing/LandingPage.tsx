@@ -352,7 +352,7 @@ export function LandingPage() {
         </LandingReveal>
         <LandingReveal className="mt-8 text-center" y={10}>
           <p className="text-xs text-slate-400">
-            © {new Date().getFullYear()} cliPNG
+            © {new Date().getFullYear()} clipng
           </p>
         </LandingReveal>
       </footer>

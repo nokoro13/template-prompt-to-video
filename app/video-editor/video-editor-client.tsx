@@ -743,10 +743,10 @@ export function VideoEditorClient() {
 
   return (
     <div className="mx-auto w-full">
-      <h1 className="text-3xl font-bold tracking-tight text-slate-900">
+      <h1 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
         Create video
       </h1>
-      <p className="mt-2 text-slate-600">
+      <p className="mt-2 text-sm text-slate-600 sm:text-base">
         Step through script, voiceover, and scene images — then build the
         timeline for Studio.
       </p>
@@ -770,9 +770,9 @@ export function VideoEditorClient() {
         </div>
       )} */}
 
-      <VideoEditorStepBar step={step} className="mt-8" />
+      <VideoEditorStepBar step={step} className="mt-6 sm:mt-8" />
 
-      <div className="mt-8 space-y-6 rounded-2xl border border-surface-border bg-white p-6 shadow-sm">
+      <div className="mt-6 space-y-6 rounded-2xl border border-surface-border bg-white p-4 shadow-sm sm:mt-8 sm:p-6">
         {step === 0 && (
           <div className="space-y-6">
             <div className="rounded-xl border border-surface-border bg-surface-muted p-4">
@@ -1094,7 +1094,7 @@ export function VideoEditorClient() {
               ) : (
                 <ul
                   id="ve-voice-list"
-                  className="mt-1 max-h-64 max-w-xl divide-y divide-slate-200 overflow-y-auto rounded-lg border border-input bg-background shadow-sm"
+                  className="mt-1 max-h-64 w-full divide-y divide-slate-200 overflow-y-auto rounded-lg border border-input bg-background shadow-sm sm:max-w-xl"
                   role="listbox"
                   aria-label="ElevenLabs voices"
                 >
@@ -1353,13 +1353,13 @@ export function VideoEditorClient() {
               ))}
             </div>
 
-            <div className="sticky bottom-0 flex flex-col gap-3 border-t border-slate-200 bg-white/95 py-4 backdrop-blur sm:flex-row sm:flex-wrap sm:items-center">
+            <div className="sticky bottom-0 -mx-4 flex flex-col gap-3 border-t border-slate-200 bg-white/95 px-4 py-3 backdrop-blur sm:mx-0 sm:flex-row sm:flex-wrap sm:items-center sm:px-0 sm:py-4">
               <Button
                 type="button"
                 variant="secondary"
                 disabled={!canRunImages || busy !== null}
                 onClick={() => void runImagesAll()}
-                className="gap-2"
+                className="w-full gap-2 sm:w-auto"
               >
                 {busy === "images-all" ? (
                   <Loader2 className="size-4 animate-spin" />
@@ -1372,7 +1372,7 @@ export function VideoEditorClient() {
                 type="button"
                 disabled={!allImagesDone || !allAudioDone || busy !== null}
                 onClick={() => void runFinalize()}
-                className="gap-2"
+                className="w-full gap-2 sm:w-auto"
               >
                 {busy === "finalize" ? (
                   <Loader2 className="size-4 animate-spin" />

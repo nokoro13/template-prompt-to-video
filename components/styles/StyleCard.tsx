@@ -33,7 +33,7 @@ export function StyleCard({ style }: { style: ChannelStyleRecord }) {
       </div>
 
       <div className="p-4">
-        <h3 className="font-semibold text-lg leading-tight">{style.name}</h3>
+        <h3 className="text-base font-semibold leading-tight sm:text-lg">{style.name}</h3>
         <p className="mt-1 text-sm text-muted-foreground">
           {style.creatorName ?? "—"}
         </p>

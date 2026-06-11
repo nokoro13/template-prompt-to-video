@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
-import { Plus } from "lucide-react";
+import { ArrowRight, Plus } from "lucide-react";
 
 import { StylePickerDialog } from "@/components/video-editor/StylePickerDialog";
 import { Button } from "@/components/ui/button";
@@ -10,7 +10,7 @@ import { SidebarMenuButton } from "@/components/ui/sidebar";
 import type { ChannelStyleRecord } from "@/lib/channel-styles/types";
 
 type CreateVideoButtonProps = {
-  variant: "sidebar" | "card" | "button";
+  variant: "sidebar" | "card" | "button" | "hero";
 };
 
 /**
@@ -53,18 +53,36 @@ export function CreateVideoButton({ variant }: CreateVideoButtonProps) {
           <span>Create video</span>
         </SidebarMenuButton>
       ) : variant === "button" ? (
-        <Button type="button" className="inline-flex gap-2" onClick={() => setOpen(true)}>
+        <Button type="button" className="inline-flex w-full gap-2 sm:w-auto" onClick={() => setOpen(true)}>
           <Plus className="size-4" />
           Create video
         </Button>
+      ) : variant === "hero" ? (
+        <div className="relative flex w-full flex-col overflow-hidden rounded-2xl bg-gradient-to-br from-brand-600 via-brand-600 to-brand-700 p-4 text-left text-white shadow-md sm:p-5">
+          <div className="pointer-events-none absolute -right-8 -top-8 size-32 rounded-full bg-white/10 blur-2xl" />
+          <div className="relative min-w-0">
+            <span className="text-base font-semibold sm:text-lg">Create video</span>
+            <p className="mt-1 text-sm leading-relaxed text-white/80">
+              Script, voiceover, and scene images — then export from Studio.
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            className="relative mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-white py-2.5 text-sm font-semibold text-brand-700 transition hover:bg-white/95"
+          >
+            Choose style
+            <ArrowRight className="size-4" />
+          </button>
+        </div>
       ) : (
         <button
           type="button"
           onClick={() => setOpen(true)}
-          className="flex flex-col justify-between rounded-2xl bg-brand-600 p-4 text-left text-white shadow-lg transition hover:bg-brand-700"
+          className="flex w-full flex-col justify-between rounded-2xl bg-brand-600 p-4 text-left text-white shadow-lg transition hover:bg-brand-700 sm:w-auto"
         >
           <span className="text-lg font-semibold">Create video</span>
-          <span className="mt-4 inline-flex w-fit rounded-full bg-white/20 px-4 py-1.5 text-sm font-medium">
+          <span className="mt-4 inline-flex w-full items-center justify-center rounded-xl bg-white/20 px-4 py-2.5 text-sm font-medium sm:w-fit sm:rounded-full sm:py-1.5">
             Choose style
           </span>
         </button>

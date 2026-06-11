@@ -205,9 +205,9 @@ export function StudioClient() {
 
   return (
     <div className="flex min-h-0 min-w-0 flex-1 flex-col gap-4">
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div>
-          <h1 className="text-xl font-semibold tracking-tight">Studio</h1>
+      <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-start sm:justify-between">
+        <div className="min-w-0">
+          <h1 className="text-lg font-semibold tracking-tight sm:text-xl">Studio</h1>
           <p className="text-sm text-muted-foreground">
             {selectedComposition ? (
               <>
@@ -226,6 +226,7 @@ export function StudioClient() {
           variant="outline"
           size="sm"
           onClick={() => setPickerOpen(true)}
+          className="w-full shrink-0 sm:w-auto"
         >
           <FolderOpen className="mr-1.5 size-4" />
           {selectedId ? "Change project" : "Choose project"}
@@ -239,7 +240,7 @@ export function StudioClient() {
       )}
 
       <div className="flex h-full min-h-0 min-w-0 flex-col gap-2">
-        <div className="flex flex-wrap items-center gap-2">
+        <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center">
           <PropsPanel
             aspectRatio={aspectRatio}
             onAspectRatioChange={setAspectRatio}
@@ -256,7 +257,7 @@ export function StudioClient() {
           <p className="text-sm text-destructive">{timelineError}</p>
         )}
 
-        <div className="relative flex min-h-[280px] min-w-0 flex-1 flex-col items-center justify-center">
+        <div className="relative flex min-h-[200px] min-w-0 flex-1 flex-col items-center justify-center sm:min-h-[280px]">
           {ready && timeline ? (
             <VideoPlayer
               ref={playerRef}

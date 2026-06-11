@@ -51,16 +51,16 @@ export function AppShell({ children }: { children: ReactNode }) {
           <AppSidebar />
         </Suspense>
         <SidebarInset className="flex min-h-0 flex-1 flex-col overflow-hidden bg-background">
-          <header className="sticky top-0 z-50 flex h-14 shrink-0 items-center gap-2 border-b border-border bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/80 md:px-2">
-            <SidebarTrigger />
+          <header className="sticky top-0 z-50 flex h-14 shrink-0 items-center gap-1 border-b border-border bg-background/95 px-3 pt-[env(safe-area-inset-top,0px)] backdrop-blur supports-[backdrop-filter]:bg-background/80 sm:gap-2 sm:px-4 md:px-2">
+            <SidebarTrigger className="shrink-0" />
             <TopBar />
           </header>
           <div
             className={cn(
-              "min-h-0 flex-1",
+              "min-h-0 flex-1 safe-area-bottom",
               isStudio
-                ? "flex flex-col overflow-hidden p-4 lg:p-6"
-                : "overflow-y-auto overflow-x-hidden p-6 lg:p-8",
+                ? "flex flex-col overflow-hidden px-3 py-3 sm:p-4 lg:p-6"
+                : "overflow-y-auto overflow-x-hidden px-4 py-4 sm:p-6 lg:p-8",
             )}
           >
             {children}

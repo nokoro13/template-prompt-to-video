@@ -45,16 +45,16 @@ export default function StylesPage() {
     <div className="mx-auto w-full">
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
-          <h1 className="text-3xl font-bold tracking-tight">Styles</h1>
-          <p className="mt-1 text-muted-foreground">
+          <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">Styles</h1>
+          <p className="mt-1 text-sm text-muted-foreground sm:text-base">
             Create and manage your video styles and voice clones
           </p>
         </div>
         <CreateStyleButton />
       </div>
 
-      <section className="mt-10">
-        <h2 className="text-lg font-semibold">Your Styles</h2>
+      <section className="mt-8 sm:mt-10">
+        <h2 className="text-base font-semibold sm:text-lg">Your Styles</h2>
         {error && (
           <p className="mt-4 text-sm text-destructive">{error}</p>
         )}
@@ -92,12 +92,12 @@ export default function StylesPage() {
         )}
       </section>
 
-      <section className="mt-16">
-        <h2 className="text-lg font-semibold">Custom Avatars</h2>
+      <section className="mt-12 sm:mt-16">
+        <h2 className="text-base font-semibold sm:text-lg">Custom Avatars</h2>
         <p className="mt-2 text-sm text-muted-foreground">
           Coming soon — manage voice clones and avatars for your channel.
         </p>
-        <div className="mt-4 rounded-xl border border-dashed border-border bg-muted/30 p-8 text-center text-sm text-muted-foreground">
+        <div className="mt-4 rounded-xl border border-dashed border-border bg-muted/30 p-6 text-center text-sm text-muted-foreground sm:p-8">
           Placeholder
         </div>
       </section>
