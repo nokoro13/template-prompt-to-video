@@ -17,8 +17,8 @@ export type BillingPlanSlug =
 
 /** Monthly credits included with each plan. Adjust when your credit system is live. */
 export const PLAN_MONTHLY_CREDITS: Record<BillingPlanSlug, number> = {
-  basic: 1_000,
-  premium: 3_000,
+  basic: 25_000,
+  premium: 65_000,
 };
 
 export const PLAN_LABELS: Record<BillingPlanSlug, string> = {

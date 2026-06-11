@@ -289,7 +289,7 @@ export function LandingPage({ hasSubscription = false }: LandingPageProps) {
           <LandingSectionHeader
             eyebrow="Pricing"
             title="Simple monthly plans."
-            description="Basic at $49/mo for the full pipeline. Premium at $69/mo for teams and priority rendering. AI generation is included in both plans."
+            description="Basic ($99.99/mo) includes 25,000 credits. Premium ($199.99/mo) includes 65,000. Same full app access on both plans."
           />
           <div className="mt-14">
             <LandingPricing

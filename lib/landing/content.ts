@@ -8,33 +8,26 @@ export const LANDING_NAV = [
 export const PRICING_TIERS = [
   {
     name: "Basic",
-    price: "$49",
+    price: "$99.99",
     period: "/ mo",
     description:
-      "Full app access for solo operators — script, voice, scenes, and export.",
+      "Full app access — script, voice, scenes, and export.",
     highlighted: true,
     badge: "Popular",
-    features: [
-      "1,000 credits per month",
-      "Unlimited projects & channel styles",
-      "YouTube transcript import",
-      "5-step video editor & Studio export",
-    ],
+    features: ["25,000 credits per month"],
     cta: "Get Basic",
   },
   {
     name: "Premium",
-    price: "$69",
+    price: "$199.99",
     period: "/ mo",
     description:
-      "Same full app access with a higher monthly credit allowance for volume creators.",
+      "Full app access with more monthly credits.",
     highlighted: false,
     badge: "More credits",
     features: [
-      "3,000 credits per month",
+      "65,000 credits per month",
       "Everything in Basic",
-      "Same editor, Studio, and channel tools",
-      "Upgrade anytime from your account",
     ],
     cta: "Get Premium",
   },
@@ -64,6 +57,6 @@ export const FAQ_ITEMS = [
   {
     question: "What's the difference between Basic and Premium?",
     answer:
-      "Both plans unlock the same dashboard, editor, and Studio. Basic ($49/mo) includes 1,000 credits per month; Premium ($69/mo) includes 3,000. Credits are spent on AI generation — scripts, voice, and scenes.",
+      "Both plans include the same app access. The only difference is monthly credits: Basic ($99.99/mo) includes 25,000; Premium ($199.99/mo) includes 65,000. Credits are spent on AI generation — scripts, voice, and scenes.",
   },
 ] as const;
