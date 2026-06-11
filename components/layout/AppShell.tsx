@@ -25,9 +25,10 @@ export function AppShell({ children }: { children: ReactNode }) {
   const isStudio = pathname.startsWith("/studio");
   const isAuthPage =
     pathname.startsWith("/sign-in") || pathname.startsWith("/sign-up");
+  const isPricing = pathname.startsWith("/pricing");
   const isLanding = pathname === "/";
 
-  if (isLanding || isAuthPage) {
+  if (isLanding || isAuthPage || isPricing) {
     return (
       <LandingScrollProvider scrollElement={landingScrollEl}>
         <div
@@ -35,6 +36,7 @@ export function AppShell({ children }: { children: ReactNode }) {
           className={cn(
             "h-svh overflow-y-auto overflow-x-hidden overscroll-y-contain scroll-pt-20 [scrollbar-gutter:stable]",
             isLanding && "bg-slate-50",
+            isPricing && "bg-slate-50",
             isAuthPage && "flex items-center justify-center bg-background p-6",
           )}
         >

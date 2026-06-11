@@ -1,7 +1,9 @@
 import { auth } from "@clerk/nextjs/server";
 
-import { ensureUser, type DbUser } from "./ensure-user";
+import { checkUserHasSubscription } from "@/lib/billing/check-subscription";
 import { isDatabaseConfigured } from "@/lib/db";
+
+import { ensureUser, type DbUser } from "./ensure-user";
 
 export class AuthError extends Error {
   readonly status: number;
@@ -18,9 +20,13 @@ export class AuthError extends Error {
  * Use in API routes and server actions.
  */
 export async function requireUser(): Promise<DbUser> {
-  const { userId } = await auth();
+  const { userId, has } = await auth();
   if (!userId) {
     throw new AuthError("Unauthorized", 401);
+  }
+
+  if (!(await checkUserHasSubscription(userId, has))) {
+    throw new AuthError("Active subscription required", 403);
   }
 
   if (!isDatabaseConfigured()) {

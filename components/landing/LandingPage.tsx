@@ -3,7 +3,9 @@
 import type { ReactNode } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
-import { SignInButton, SignUpButton, useAuth } from "@clerk/nextjs";
+import { SignUpButton, useAuth } from "@clerk/nextjs";
+
+import { LandingAuthActions } from "@/components/landing/LandingAuthActions";
 
 import { ClipngLogoMark } from "@/components/brand/ClipngLogoMark";
 
@@ -75,8 +77,14 @@ function NavAnchor({
   );
 }
 
-function PrimaryCta({ signedIn }: { signedIn: boolean }) {
-  if (signedIn) {
+function PrimaryCta({
+  signedIn,
+  hasSubscription,
+}: {
+  signedIn: boolean;
+  hasSubscription: boolean;
+}) {
+  if (signedIn && hasSubscription) {
     return (
       <Button
         nativeButton={false}
@@ -89,8 +97,21 @@ function PrimaryCta({ signedIn }: { signedIn: boolean }) {
     );
   }
 
+  if (signedIn) {
+    return (
+      <Button
+        nativeButton={false}
+        render={<Link href="/pricing" />}
+        className="h-11 rounded-full bg-slate-900 px-7 text-white shadow-[0_1px_2px_rgba(0,0,0,0.06),0_8px_24px_-6px_rgba(15,23,42,0.35)] hover:bg-slate-800"
+      >
+        Choose a plan
+        <ArrowRight className="size-4" />
+      </Button>
+    );
+  }
+
   return (
-    <SignUpButton mode="modal">
+    <SignUpButton mode="modal" forceRedirectUrl="/pricing">
       <button
         type="button"
         className="group inline-flex h-11 items-center gap-2 rounded-full bg-slate-900 px-7 text-sm font-medium text-white shadow-[0_1px_2px_rgba(0,0,0,0.06),0_8px_24px_-6px_rgba(15,23,42,0.35)] transition hover:bg-slate-800 hover:shadow-[0_12px_32px_-8px_rgba(15,23,42,0.4)]"
@@ -105,9 +126,14 @@ function PrimaryCta({ signedIn }: { signedIn: boolean }) {
 const HERO_BG_GRID =
   "pointer-events-none absolute left-1/2 top-0 h-full w-screen -translate-x-1/2 bg-[linear-gradient(to_right,rgba(15,23,42,0.025)_1px,transparent_1px),linear-gradient(to_bottom,rgba(15,23,42,0.025)_1px,transparent_1px)] bg-[size:32px_32px] bg-center [mask-image:radial-gradient(ellipse_80%_70%_at_50%_35%,black_12%,transparent_72%)]";
 
-export function LandingPage() {
+type LandingPageProps = {
+  hasSubscription?: boolean;
+};
+
+export function LandingPage({ hasSubscription = false }: LandingPageProps) {
   const { isSignedIn: authSignedIn } = useAuth();
   const signedIn = authSignedIn === true;
+  const canUseApp = signedIn && hasSubscription;
 
   return (
     <div className="text-slate-900">
@@ -138,34 +164,7 @@ export function LandingPage() {
           </nav>
 
           <div className="col-start-3 flex min-w-0 items-center justify-self-end gap-1.5 sm:gap-2">
-            {signedIn ? (
-              <Button
-                nativeButton={false}
-                render={<Link href="/dashboard" />}
-                className="h-8 shrink-0 rounded-full bg-slate-900 px-4 text-sm text-white hover:bg-slate-800 sm:h-9"
-              >
-                Dashboard
-              </Button>
-            ) : (
-              <>
-                <SignInButton mode="modal">
-                  <button
-                    type="button"
-                    className="hidden h-8 shrink-0 items-center rounded-full px-3 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 sm:inline-flex sm:h-9 sm:px-4"
-                  >
-                    Sign in
-                  </button>
-                </SignInButton>
-                <SignUpButton mode="modal">
-                  <button
-                    type="button"
-                    className="inline-flex h-8 shrink-0 items-center rounded-full bg-slate-900 px-3.5 text-sm font-medium text-white transition hover:bg-slate-800 sm:h-9 sm:px-4"
-                  >
-                    Sign up
-                  </button>
-                </SignUpButton>
-              </>
-            )}
+            <LandingAuthActions hasSubscription={hasSubscription} />
           </div>
           </div>
         </div>
@@ -189,7 +188,10 @@ export function LandingPage() {
 
         {/* Hero — dedicated mobile layout; orbit canvas on sm+ */}
         <section className="relative overflow-hidden sm:-mt-[4.5rem] sm:min-h-screen sm:flex sm:items-center">
-          <LandingMobileHero signedIn={signedIn} />
+          <LandingMobileHero
+            signedIn={signedIn}
+            hasSubscription={hasSubscription}
+          />
 
           <div className="hidden w-full sm:block">
             <IntegrationOrbit className="min-h-screen w-full">
@@ -223,7 +225,10 @@ export function LandingPage() {
 
                 <LandingHeroReveal step={3}>
                   <div className="mt-7 flex flex-col items-center justify-center gap-3 sm:flex-row">
-                    <PrimaryCta signedIn={signedIn} />
+                    <PrimaryCta
+                      signedIn={signedIn}
+                      hasSubscription={hasSubscription}
+                    />
                     <NavAnchor
                       href="#workflow"
                       className="inline-flex h-11 items-center px-2 text-sm font-medium text-brand-600 transition hover:text-brand-700"
@@ -287,7 +292,10 @@ export function LandingPage() {
             description="Basic at $49/mo for the full pipeline. Premium at $69/mo for teams and priority rendering. AI generation is included in both plans."
           />
           <div className="mt-14">
-            <LandingPricing signedIn={signedIn} />
+            <LandingPricing
+              signedIn={signedIn}
+              hasSubscription={hasSubscription}
+            />
           </div>
         </div>
       </section>
@@ -309,7 +317,7 @@ export function LandingPage() {
             are built in — just pick a plan and start.
           </p>
           <div className="mt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
-            {signedIn ? (
+            {canUseApp ? (
               <Button
                 nativeButton={false}
                 render={<Link href="/video-editor" />}
@@ -318,7 +326,10 @@ export function LandingPage() {
                 Open video editor
               </Button>
             ) : (
-              <PrimaryCta signedIn={false} />
+              <PrimaryCta
+                signedIn={signedIn}
+                hasSubscription={hasSubscription}
+              />
             )}
           </div>
         </LandingReveal>

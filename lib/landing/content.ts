@@ -11,14 +11,14 @@ export const PRICING_TIERS = [
     price: "$49",
     period: "/ mo",
     description:
-      "Full pipeline for solo operators. AI script, voice, and scene generation included.",
+      "Full app access for solo operators — script, voice, scenes, and export.",
     highlighted: true,
     badge: "Popular",
     features: [
+      "1,000 credits per month",
       "Unlimited projects & channel styles",
       "YouTube transcript import",
-      "5-step video editor",
-      "Studio preview & MP4 export",
+      "5-step video editor & Studio export",
     ],
     cta: "Get Basic",
   },
@@ -27,14 +27,14 @@ export const PRICING_TIERS = [
     price: "$69",
     period: "/ mo",
     description:
-      "For teams and high-volume channels that need faster renders and shared workflows.",
+      "Same full app access with a higher monthly credit allowance for volume creators.",
     highlighted: false,
-    badge: "Teams",
+    badge: "More credits",
     features: [
+      "3,000 credits per month",
       "Everything in Basic",
-      "Priority render queue",
-      "Team seats & shared styles",
-      "Dedicated support",
+      "Same editor, Studio, and channel tools",
+      "Upgrade anytime from your account",
     ],
     cta: "Get Premium",
   },
@@ -64,6 +64,6 @@ export const FAQ_ITEMS = [
   {
     question: "What's the difference between Basic and Premium?",
     answer:
-      "Both include the full editor and Studio. Basic is $49/mo for individual operators. Premium is $69/mo and adds priority rendering, team seats, shared channel styles, and dedicated support.",
+      "Both plans unlock the same dashboard, editor, and Studio. Basic ($49/mo) includes 1,000 credits per month; Premium ($69/mo) includes 3,000. Credits are spent on AI generation — scripts, voice, and scenes.",
   },
 ] as const;

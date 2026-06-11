@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { SignInButton, useAuth, UserButton } from "@clerk/nextjs";
 
 export function TopBar() {
@@ -9,13 +10,13 @@ export function TopBar() {
     <div className="flex min-h-14 min-w-0 flex-1 items-center justify-end gap-1 sm:gap-2 md:gap-3">
       {isSignedIn ? (
         <>
-          <button
-            type="button"
+          <Link
+            href="/pricing"
             className="rounded-full bg-brand-600 px-2.5 py-1.5 text-xs font-medium text-white shadow-sm transition hover:bg-brand-700 sm:px-4 sm:text-sm"
           >
             <span className="sm:hidden">Buy</span>
             <span className="hidden sm:inline">Buy credits</span>
-          </button>
+          </Link>
           <div className="rounded-lg border border-surface-border bg-white px-2 py-1 text-xs text-slate-600 sm:px-3 sm:py-1.5 sm:text-sm">
             <span className="tabular-nums">0</span>
             <span className="hidden sm:inline"> credits</span>

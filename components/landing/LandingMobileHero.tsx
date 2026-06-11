@@ -16,8 +16,14 @@ const MOBILE_INTEGRATIONS: BrandId[] = [
   "youtube",
 ];
 
-function MobilePrimaryCta({ signedIn }: { signedIn: boolean }) {
-  if (signedIn) {
+function MobilePrimaryCta({
+  signedIn,
+  hasSubscription,
+}: {
+  signedIn: boolean;
+  hasSubscription: boolean;
+}) {
+  if (signedIn && hasSubscription) {
     return (
       <Button
         nativeButton={false}
@@ -30,8 +36,21 @@ function MobilePrimaryCta({ signedIn }: { signedIn: boolean }) {
     );
   }
 
+  if (signedIn) {
+    return (
+      <Button
+        nativeButton={false}
+        render={<Link href="/pricing" />}
+        className="h-12 w-full rounded-full bg-slate-900 text-base text-white shadow-[0_8px_30px_-8px_rgba(15,23,42,0.45)] hover:bg-slate-800"
+      >
+        Choose a plan
+        <ArrowRight className="size-4" />
+      </Button>
+    );
+  }
+
   return (
-    <SignUpButton mode="modal">
+    <SignUpButton mode="modal" forceRedirectUrl="/pricing">
       <button
         type="button"
         className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-full bg-slate-900 text-base font-medium text-white shadow-[0_8px_30px_-8px_rgba(15,23,42,0.45)]"
@@ -43,7 +62,13 @@ function MobilePrimaryCta({ signedIn }: { signedIn: boolean }) {
   );
 }
 
-export function LandingMobileHero({ signedIn }: { signedIn: boolean }) {
+export function LandingMobileHero({
+  signedIn,
+  hasSubscription = false,
+}: {
+  signedIn: boolean;
+  hasSubscription?: boolean;
+}) {
   const scrollTo = useLandingScrollTo();
 
   return (
@@ -86,7 +111,10 @@ export function LandingMobileHero({ signedIn }: { signedIn: boolean }) {
 
         <LandingHeroReveal step={3}>
           <div className="mt-8 flex flex-col gap-3">
-            <MobilePrimaryCta signedIn={signedIn} />
+            <MobilePrimaryCta
+              signedIn={signedIn}
+              hasSubscription={hasSubscription}
+            />
             <button
               type="button"
               onClick={() => scrollTo("workflow")}

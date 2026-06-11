@@ -14,9 +14,13 @@ import { cn } from "@/lib/utils";
 
 type LandingPricingProps = {
   signedIn: boolean;
+  hasSubscription: boolean;
 };
 
-export function LandingPricing({ signedIn }: LandingPricingProps) {
+export function LandingPricing({
+  signedIn,
+  hasSubscription,
+}: LandingPricingProps) {
   return (
     <LandingStagger className="mx-auto grid max-w-3xl gap-5 lg:max-w-none lg:grid-cols-2">
       {PRICING_TIERS.map((tier) => (
@@ -81,7 +85,7 @@ export function LandingPricing({ signedIn }: LandingPricingProps) {
           </ul>
 
           <div className="mt-10">
-            {signedIn ? (
+            {signedIn && hasSubscription ? (
               <Button
                 nativeButton={false}
                 render={<Link href="/dashboard" />}
@@ -95,8 +99,22 @@ export function LandingPricing({ signedIn }: LandingPricingProps) {
                 Go to dashboard
                 <ArrowRight className="size-4" />
               </Button>
+            ) : signedIn ? (
+              <Button
+                nativeButton={false}
+                render={<Link href="/pricing" />}
+                className={cn(
+                  "h-11 w-full rounded-full",
+                  tier.highlighted
+                    ? "bg-white text-slate-900 hover:bg-white/90"
+                    : "bg-slate-900 text-white hover:bg-slate-800",
+                )}
+              >
+                Subscribe to {tier.name}
+                <ArrowRight className="size-4" />
+              </Button>
             ) : (
-              <SignUpButton mode="modal">
+              <SignUpButton mode="modal" forceRedirectUrl="/pricing">
                 <button
                   type="button"
                   className={cn(

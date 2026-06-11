@@ -1,6 +1,11 @@
+import Link from "next/link";
+import { auth } from "@clerk/nextjs/server";
 import { ArrowUpRight, Clock3, Film, Sparkles, TrendingUp, Zap } from "lucide-react";
 
+import { BillingSessionRefresh } from "@/components/billing/BillingSessionRefresh";
 import { CreateVideoButton } from "@/components/layout/CreateVideoButton";
+import { getUserActivePlan } from "@/lib/billing/check-subscription";
+import { getPlanMonthlyCredits, PLAN_LABELS } from "@/lib/billing/config";
 
 const STATS = [
   {
@@ -23,9 +28,15 @@ const STATS = [
   },
 ] as const;
 
-export default function DashboardPage() {
+export default async function DashboardPage() {
+  const { userId, has } = await auth();
+  const activePlan = userId ? await getUserActivePlan(userId, has) : null;
+  const planLabel = activePlan ? PLAN_LABELS[activePlan] : "Subscribed";
+  const monthlyCredits = activePlan ? getPlanMonthlyCredits(activePlan) : 0;
+
   return (
     <div className="mx-auto w-full max-w-6xl">
+      <BillingSessionRefresh />
       <div className="mb-6 sm:mb-8">
         <p className="text-sm font-medium text-brand-600">Welcome back</p>
         <h1 className="mt-1 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
@@ -40,8 +51,8 @@ export default function DashboardPage() {
         <CreateVideoButton variant="hero" />
 
         <div className="grid grid-cols-2 gap-3 sm:gap-4">
-          <button
-            type="button"
+          <Link
+            href="/pricing"
             className="group flex flex-col rounded-2xl border border-surface-border bg-white p-4 text-left shadow-sm transition hover:border-brand-200 hover:shadow-md sm:p-5"
           >
             <span className="flex size-9 items-center justify-center rounded-xl bg-brand-50 text-brand-600 transition group-hover:bg-brand-100">
@@ -50,29 +61,31 @@ export default function DashboardPage() {
             <span className="mt-3 text-sm font-semibold text-slate-900">
               Buy credits
             </span>
-            <span className="mt-0.5 text-xs text-slate-500">0 remaining</span>
+            <span className="mt-0.5 text-xs text-slate-500">
+              0 remaining · {monthlyCredits.toLocaleString()}/mo on {planLabel}
+            </span>
             <span className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-brand-600">
               Purchase
               <ArrowUpRight className="size-3.5" />
             </span>
-          </button>
+          </Link>
 
-          <button
-            type="button"
+          <Link
+            href="/pricing"
             className="group flex flex-col rounded-2xl border border-surface-border bg-white p-4 text-left shadow-sm transition hover:border-slate-300 hover:shadow-md sm:p-5"
           >
             <span className="flex size-9 items-center justify-center rounded-xl bg-slate-100 text-slate-600 transition group-hover:bg-slate-200">
               <Sparkles className="size-4" />
             </span>
             <span className="mt-3 text-sm font-semibold text-slate-900">
-              Upgrade plan
+              Manage plan
             </span>
-            <span className="mt-0.5 text-xs text-slate-500">Free tier</span>
+            <span className="mt-0.5 text-xs text-slate-500">{planLabel}</span>
             <span className="mt-3 inline-flex items-center gap-1 text-xs font-medium text-slate-600">
               View plans
               <ArrowUpRight className="size-3.5" />
             </span>
-          </button>
+          </Link>
         </div>
 
         <div className="grid grid-cols-3 gap-2 sm:gap-4">
@@ -116,7 +129,7 @@ export default function DashboardPage() {
           <div className="mt-5 flex h-28 flex-col items-center justify-center rounded-xl border border-dashed border-surface-border bg-surface-muted/60 px-4 text-center sm:mt-6 sm:h-36">
             <p className="text-sm font-medium text-slate-500">No usage yet</p>
             <p className="mt-1 max-w-xs text-xs leading-relaxed text-slate-400">
-              Connect billing to see credit activity over time.
+              Usage tracking will appear here once billing credits are connected.
             </p>
           </div>
         </div>
