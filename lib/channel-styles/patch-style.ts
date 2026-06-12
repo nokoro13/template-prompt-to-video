@@ -1,5 +1,3 @@
-import * as fs from "fs";
-import * as path from "path";
 import type {
   ChannelStyleRecord,
   ExtractedFormat,
@@ -8,25 +6,34 @@ import type {
 } from "./types";
 import { ChannelStyleRecordSchema } from "./types";
 import { getStyle, saveStyle } from "../storage/styles";
+import { deleteAsset, parseStorageApiKey } from "../storage/assets";
+import { putStyleFile, resolveStyleImageToLocal } from "../storage/style-storage";
+import * as fs from "fs";
+import * as path from "path";
 
-function publicPathToFs(publicPath: string): string {
+async function deletePublicAsset(publicPath: string): Promise<void> {
+  const storageKey = parseStorageApiKey(publicPath);
   const rel = publicPath.startsWith("/") ? publicPath.slice(1) : publicPath;
-  return path.join(process.cwd(), "public", rel);
+  await deleteAsset({
+    storageKey: storageKey ?? undefined,
+    publicRelativePath: storageKey ? undefined : rel,
+  });
 }
 
-function syncThumbnailFromFirstImage(style: ChannelStyleRecord): void {
-  if (style.references.images.length === 0) {
-    return;
-  }
+async function syncThumbnailFromFirstImage(
+  userId: string,
+  style: ChannelStyleRecord,
+): Promise<void> {
+  if (style.references.images.length === 0) return;
   const first = style.references.images[0]!;
-  const ext = path.extname(first) || ".png";
-  const thumbRel = `channel-styles/${style.id}/thumbnail${ext}`;
-  const thumbFs = path.join(process.cwd(), "public", thumbRel);
-  const srcFs = publicPathToFs(first);
-  if (fs.existsSync(srcFs)) {
-    fs.copyFileSync(srcFs, thumbFs);
-    style.thumbnailUrl = `/${thumbRel.replace(/\\/g, "/")}`;
-  }
+  const local = await resolveStyleImageToLocal(userId, style.id, first);
+  const ext = path.extname(local) || ".png";
+  style.thumbnailUrl = await putStyleFile(
+    userId,
+    style.id,
+    `thumbnail${ext}`,
+    fs.readFileSync(local),
+  );
 }
 
 function recomputeCounts(style: ChannelStyleRecord): void {
@@ -35,22 +42,22 @@ function recomputeCounts(style: ChannelStyleRecord): void {
   style.characterCount = style.characters?.length ?? 0;
 }
 
-export function patchStyleRecord(
+export async function patchStyleRecord(
+  userId: string,
   id: string,
   updates: {
     name?: string;
     creatorName?: string | null;
     description?: string | null;
     videoAspectRatio?: VideoAspectRatio;
-    /** Set to null to clear and use reference-based length again. */
     targetTranscriptWordCount?: number | null;
     characters?: StyleCharacter[];
     extractedFormat?: ExtractedFormat | null;
     removeTranscriptIds?: string[];
     removeImagePaths?: string[];
   },
-): ChannelStyleRecord {
-  const existing = getStyle(id);
+): Promise<ChannelStyleRecord> {
+  const existing = await getStyle(id, userId);
   if (!existing) {
     throw new Error(`Style not found: ${id}`);
   }
@@ -79,10 +86,7 @@ export function patchStyleRecord(
     const newIds = new Set(updates.characters.map((c) => c.id));
     for (const c of existing.characters ?? []) {
       if (!newIds.has(c.id) && c.imageUrl?.trim()) {
-        const fsPath = publicPathToFs(c.imageUrl);
-        if (fs.existsSync(fsPath)) {
-          fs.unlinkSync(fsPath);
-        }
+        await deletePublicAsset(c.imageUrl);
       }
     }
     style.characters = updates.characters;
@@ -95,10 +99,7 @@ export function patchStyleRecord(
     const remove = new Set(updates.removeTranscriptIds);
     for (const t of style.references.transcripts) {
       if (remove.has(t.id)) {
-        const fsPath = publicPathToFs(t.path);
-        if (fs.existsSync(fsPath)) {
-          fs.unlinkSync(fsPath);
-        }
+        await deletePublicAsset(t.path);
       }
     }
     style.references.transcripts = style.references.transcripts.filter(
@@ -110,20 +111,17 @@ export function patchStyleRecord(
     const remove = new Set(updates.removeImagePaths);
     for (const img of style.references.images) {
       if (remove.has(img)) {
-        const fsPath = publicPathToFs(img);
-        if (fs.existsSync(fsPath)) {
-          fs.unlinkSync(fsPath);
-        }
+        await deletePublicAsset(img);
       }
     }
     style.references.images = style.references.images.filter(
       (img) => !remove.has(img),
     );
-    syncThumbnailFromFirstImage(style);
+    await syncThumbnailFromFirstImage(userId, style);
   }
 
   recomputeCounts(style);
   const parsed = ChannelStyleRecordSchema.parse(style);
-  saveStyle(parsed);
+  await saveStyle(parsed, userId);
   return parsed;
 }

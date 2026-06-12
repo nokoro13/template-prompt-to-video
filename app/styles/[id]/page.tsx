@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { StorageImage } from "@/components/ui/storage-image";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
 import { useCallback, useEffect, useState } from "react";
@@ -406,7 +406,7 @@ export default function StyleDetailPage() {
 
       <div className="mt-4 flex flex-col gap-4 sm:mt-6 sm:flex-row sm:items-start sm:gap-6">
         <div className="relative h-36 w-full shrink-0 overflow-hidden rounded-xl border bg-muted sm:h-48 sm:w-64">
-          <Image
+          <StorageImage
             src={style.thumbnailUrl}
             alt=""
             fill
@@ -541,7 +541,7 @@ export default function StyleDetailPage() {
                     className="relative overflow-hidden rounded-lg border bg-muted"
                   >
                     <div className="relative aspect-video w-full">
-                      <Image
+                      <StorageImage
                         src={src}
                         alt=""
                         fill
@@ -715,7 +715,7 @@ export default function StyleDetailPage() {
                     <div className="space-y-4">
                       <div className="relative max-w-md overflow-hidden rounded-lg border bg-muted">
                         <div className="relative aspect-video w-full">
-                          <Image
+                          <StorageImage
                             src={c.imageUrl}
                             alt=""
                             fill

@@ -1,20 +1,21 @@
-import * as fs from "fs";
-import * as path from "path";
 import { randomUUID } from "crypto";
 import type { ChannelStyleRecord, TranscriptEntry } from "./types";
 import { ChannelStyleRecordSchema } from "./types";
-import { getStyle, saveStyle, styleDir } from "../storage/styles";
+import { getStyle, saveStyle } from "../storage/styles";
+import { putStyleFile } from "../storage/style-storage";
 import {
   MAX_TRANSCRIPT_BYTES,
   transcriptTooLargeMessage,
 } from "./transcript-limits";
+
 const MAX_TRANSCRIPTS_PER_STYLE = 5;
 
-export function appendStyleTranscripts(
+export async function appendStyleTranscripts(
+  userId: string,
   id: string,
   transcripts: { title: string; content: string }[],
-): ChannelStyleRecord {
-  const style = getStyle(id);
+): Promise<ChannelStyleRecord> {
+  const style = await getStyle(id, userId);
   if (!style) {
     throw new Error(`Style not found: ${id}`);
   }
@@ -30,29 +31,32 @@ export function appendStyleTranscripts(
     }
   }
 
-  const dir = path.join(styleDir(id), "transcripts");
-  fs.mkdirSync(dir, { recursive: true });
-
-  transcripts.forEach((t, i) => {
+  for (let i = 0; i < transcripts.length; i++) {
+    const t = transcripts[i]!;
     const tid = randomUUID();
     const safeTitle =
       t.title.replace(/[^a-z0-9]+/gi, "-").slice(0, 40) || `transcript-${i}`;
     const fname = `${safeTitle}-${tid.slice(0, 8)}.txt`;
-    const rel = `channel-styles/${id}/transcripts/${fname}`;
-    const full = path.join(process.cwd(), "public", rel);
-    fs.writeFileSync(full, t.content, "utf-8");
+    const rel = `transcripts/${fname}`;
+    const url = await putStyleFile(
+      userId,
+      id,
+      rel,
+      t.content,
+      "text/plain; charset=utf-8",
+    );
     const entry: TranscriptEntry = {
       id: tid,
       filename: fname,
-      path: `/${rel.replace(/\\/g, "/")}`,
+      path: url,
       title: t.title,
     };
     style.references.transcripts.push(entry);
-  });
+  }
 
   style.referenceCount =
     style.references.images.length + style.references.transcripts.length;
   const parsed = ChannelStyleRecordSchema.parse(style);
-  saveStyle(parsed);
+  await saveStyle(parsed, userId);
   return parsed;
 }

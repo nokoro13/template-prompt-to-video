@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { StorageImage } from "@/components/ui/storage-image";
 import { useRouter, useSearchParams } from "next/navigation";
 import {
   useCallback,
@@ -780,7 +780,7 @@ export function VideoEditorClient() {
                 <div className="flex min-w-0 flex-1 gap-3">
                   <div className="relative h-14 w-24 shrink-0 overflow-hidden rounded-md border bg-white">
                     {selectedStyle ? (
-                      <Image
+                      <StorageImage
                         src={selectedStyle.thumbnailUrl}
                         alt=""
                         fill

@@ -1,7 +1,18 @@
 import * as fs from "fs";
 import * as path from "path";
+
 import type { ChannelStyleRecord, StylesIndex } from "../channel-styles/types";
 import { ChannelStyleRecordSchema, StylesIndexSchema } from "../channel-styles/types";
+import {
+  deleteStyleForUser,
+  getStyleForUser,
+  insertStyle,
+  listStyleIdsForUser,
+  listStylesForUser,
+  updateStyleData,
+} from "../db/styles";
+import { useDatabaseStorage, useR2Storage } from "./constants";
+import { readStyleText, resolveStyleImageToLocal } from "./style-storage";
 
 const ROOT = path.join(process.cwd(), "public", "channel-styles");
 export const STYLES_INDEX_PATH = path.join(ROOT, "index.json");
@@ -47,12 +58,33 @@ export function uniqueStyleId(name: string, existing: Set<string>): string {
   return `${base}-${n}`;
 }
 
-export function getStyle(id: string): ChannelStyleRecord | null {
+export async function uniqueStyleIdForUser(
+  userId: string,
+  name: string,
+): Promise<string> {
+  if (useDatabaseStorage()) {
+    const existing = await listStyleIdsForUser(userId);
+    return uniqueStyleId(name, existing);
+  }
+  const index = readStylesIndex();
+  return uniqueStyleId(name, new Set(Object.keys(index.styles)));
+}
+
+export async function getStyle(
+  id: string,
+  userId?: string,
+): Promise<ChannelStyleRecord | null> {
+  if (useDatabaseStorage() && userId) {
+    return getStyleForUser(userId, id);
+  }
   const index = readStylesIndex();
   return index.styles[id] ?? null;
 }
 
-export function listStyles(): ChannelStyleRecord[] {
+export async function listStyles(userId?: string): Promise<ChannelStyleRecord[]> {
+  if (useDatabaseStorage() && userId) {
+    return listStylesForUser(userId);
+  }
   const index = readStylesIndex();
   return Object.values(index.styles).sort(
     (a, b) =>
@@ -60,14 +92,35 @@ export function listStyles(): ChannelStyleRecord[] {
   );
 }
 
-export function saveStyle(record: ChannelStyleRecord): void {
+export async function saveStyle(
+  record: ChannelStyleRecord,
+  userId?: string,
+): Promise<ChannelStyleRecord> {
   const parsed = ChannelStyleRecordSchema.parse(record);
+  if (useDatabaseStorage() && userId) {
+    const existing = await getStyleForUser(userId, parsed.id);
+    if (existing) {
+      return updateStyleData(userId, parsed.id, parsed, useR2Storage());
+    }
+    return insertStyle(userId, parsed, useR2Storage());
+  }
+
   const index = readStylesIndex();
   index.styles[parsed.id] = parsed;
   writeStylesIndex(index);
+  return parsed;
 }
 
-export function deleteStyle(id: string): void {
+export async function deleteStyle(id: string, userId?: string): Promise<void> {
+  if (useDatabaseStorage() && userId) {
+    await deleteStyleForUser(userId, id);
+    const dir = styleDir(id);
+    if (fs.existsSync(dir)) {
+      fs.rmSync(dir, { recursive: true, force: true });
+    }
+    return;
+  }
+
   const index = readStylesIndex();
   delete index.styles[id];
   writeStylesIndex(index);
@@ -77,7 +130,20 @@ export function deleteStyle(id: string): void {
   }
 }
 
-export function readTranscriptFile(publicPath: string): string {
+export async function readTranscriptFile(
+  publicPath: string,
+  userId?: string,
+  styleId?: string,
+): Promise<string> {
+  if (useDatabaseStorage() && userId && styleId) {
+    const rel = publicPath.replace(/^\//, "");
+    const prefix = `channel-styles/${styleId}/`;
+    const idx = rel.indexOf(prefix);
+    const relativePath =
+      idx >= 0 ? rel.slice(idx + prefix.length) : path.basename(rel);
+    return readStyleText(userId, styleId, relativePath, rel);
+  }
+
   const rel = publicPath.startsWith("/") ? publicPath.slice(1) : publicPath;
   const full = path.join(process.cwd(), "public", rel);
   if (!fs.existsSync(full)) {
@@ -87,9 +153,18 @@ export function readTranscriptFile(publicPath: string): string {
 }
 
 /** Absolute filesystem paths for reference images (for generation). */
-export function resolveStyleImagePaths(record: ChannelStyleRecord): string[] {
-  return record.references.images.map((url) => {
-    const rel = url.startsWith("/") ? url.slice(1) : url;
-    return path.join(process.cwd(), "public", rel);
-  });
+export async function resolveStyleImagePaths(
+  record: ChannelStyleRecord,
+  userId?: string,
+): Promise<string[]> {
+  const out: string[] = [];
+  for (const url of record.references.images) {
+    if (useDatabaseStorage() && userId) {
+      out.push(await resolveStyleImageToLocal(userId, record.id, url));
+    } else {
+      const rel = url.startsWith("/") ? url.slice(1) : url;
+      out.push(path.join(process.cwd(), "public", rel));
+    }
+  }
+  return out;
 }

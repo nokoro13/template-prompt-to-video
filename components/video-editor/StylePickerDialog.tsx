@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { StorageImage } from "@/components/ui/storage-image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Sparkles } from "lucide-react";
@@ -128,7 +128,7 @@ export function StylePickerDialog({
                 onSelect={() => setDraftStyleId(style.id)}
               >
                 <div className="relative aspect-video overflow-hidden bg-muted">
-                  <Image
+                  <StorageImage
                     src={style.thumbnailUrl}
                     alt=""
                     fill

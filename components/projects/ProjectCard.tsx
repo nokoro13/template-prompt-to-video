@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { StorageImage } from "@/components/ui/storage-image";
 import Link from "next/link";
 import { Film, MonitorPlay, Pencil, Trash2 } from "lucide-react";
 
@@ -44,7 +44,7 @@ export function ProjectCard({ project, onDelete, deleting }: ProjectCardProps) {
       <Link href={studioHref} className="block">
         <div className="relative aspect-video overflow-hidden bg-muted">
           {project.thumbnailUrl ? (
-            <Image
+            <StorageImage
               src={project.thumbnailUrl}
               alt=""
               fill

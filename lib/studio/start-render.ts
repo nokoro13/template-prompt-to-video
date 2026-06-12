@@ -3,6 +3,9 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 
+import { buildRenderStorageKey, storageApiUrl } from "../storage/assets";
+import { useDatabaseStorage, useR2Storage } from "../storage/constants";
+import { uploadToR2 } from "../storage/r2";
 import { patchRenderJob } from "./render-jobs";
 
 export function startRemotionRenderJob(options: {
@@ -10,8 +13,9 @@ export function startRemotionRenderJob(options: {
   compositionId: string;
   aspectRatio: "9:16" | "16:9";
   projectRoot: string;
+  userId?: string;
 }): void {
-  const { jobId, compositionId, aspectRatio, projectRoot } = options;
+  const { jobId, compositionId, aspectRatio, projectRoot, userId } = options;
 
   const rendersDir = path.join(projectRoot, "public", "renders");
   fs.mkdirSync(rendersDir, { recursive: true });
@@ -76,19 +80,36 @@ export function startRemotionRenderJob(options: {
     }
 
     if (code === 0 && fs.existsSync(outputPath)) {
-      patchRenderJob(jobId, {
-        status: "complete",
-        completedAt: Date.now(),
-        outputUrl: `/renders/${outputFile}`,
-      });
-    } else {
-      patchRenderJob(jobId, {
-        status: "error",
-        completedAt: Date.now(),
-        error:
-          stderr.trim().slice(-2000) ||
-          `Render exited with code ${code ?? "unknown"}`,
-      });
+      void (async () => {
+        let outputUrl = `/renders/${outputFile}`;
+        if (useDatabaseStorage() && userId && useR2Storage()) {
+          try {
+            const key = buildRenderStorageKey(userId, jobId);
+            await uploadToR2({
+              key,
+              body: fs.readFileSync(outputPath),
+              contentType: "video/mp4",
+            });
+            outputUrl = storageApiUrl(key);
+          } catch {
+            /* keep local /renders URL */
+          }
+        }
+        patchRenderJob(jobId, {
+          status: "complete",
+          completedAt: Date.now(),
+          outputUrl,
+        });
+      })();
+      return;
     }
+
+    patchRenderJob(jobId, {
+      status: "error",
+      completedAt: Date.now(),
+      error:
+        stderr.trim().slice(-2000) ||
+        `Render exited with code ${code ?? "unknown"}`,
+    });
   });
 }

@@ -1,5 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 import { z } from "zod";
+
+import { handleAuthError } from "@/lib/auth/handle-auth-error";
+import { requireUser } from "@/lib/auth/require-user";
 import { patchStyleRecord } from "@/lib/channel-styles/patch-style";
 import { deleteStyle, getStyle } from "@/lib/storage/styles";
 import {
@@ -12,99 +15,105 @@ import {
 type RouteContext = { params: Promise<{ id: string }> };
 
 export async function GET(_req: NextRequest, context: RouteContext) {
-  const { id } = await context.params;
-  const style = getStyle(id);
-  if (!style) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 });
+  try {
+    const user = await requireUser();
+    const { id } = await context.params;
+    const style = await getStyle(id, user.id);
+    if (!style) {
+      return NextResponse.json({ error: "Not found" }, { status: 404 });
+    }
+    return NextResponse.json({ style });
+  } catch (err) {
+    return handleAuthError(err);
   }
-  return NextResponse.json({ style });
 }
 
 export async function PATCH(req: NextRequest, context: RouteContext) {
-  const { id } = await context.params;
-  let body: unknown;
   try {
-    body = await req.json();
-  } catch {
-    return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
-  }
-  if (!body || typeof body !== "object") {
-    return NextResponse.json({ error: "Invalid body" }, { status: 400 });
-  }
-  const b = body as Record<string, unknown>;
-
-  const removeTranscriptIds = Array.isArray(b.removeTranscriptIds)
-    ? b.removeTranscriptIds.map((x) => String(x))
-    : undefined;
-  const removeImagePaths = Array.isArray(b.removeImagePaths)
-    ? b.removeImagePaths.map((x) => String(x))
-    : undefined;
-
-  let characters: StyleCharacter[] | undefined;
-  if (b.characters !== undefined) {
-    if (!Array.isArray(b.characters)) {
-      return NextResponse.json({ error: "characters must be an array" }, { status: 400 });
-    }
+    const user = await requireUser();
+    const { id } = await context.params;
+    let body: unknown;
     try {
-      characters = z.array(StyleCharacterSchema).parse(b.characters);
+      body = await req.json();
     } catch {
-      return NextResponse.json(
-        { error: "Invalid characters payload (id, name, optional notes, optional imageUrl)" },
-        { status: 400 },
-      );
+      return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
     }
-  }
-
-  let videoAspectRatio: VideoAspectRatio | undefined;
-  if (b.videoAspectRatio !== undefined) {
-    if (b.videoAspectRatio !== "9:16" && b.videoAspectRatio !== "16:9") {
-      return NextResponse.json(
-        { error: "videoAspectRatio must be 9:16 or 16:9" },
-        { status: 400 },
-      );
+    if (!body || typeof body !== "object") {
+      return NextResponse.json({ error: "Invalid body" }, { status: 400 });
     }
-    videoAspectRatio = b.videoAspectRatio;
-  }
+    const b = body as Record<string, unknown>;
 
-  let targetTranscriptWordCount: number | null | undefined;
-  if (b.targetTranscriptWordCount !== undefined) {
-    if (b.targetTranscriptWordCount === null) {
-      targetTranscriptWordCount = null;
-    } else if (
-      typeof b.targetTranscriptWordCount === "number" &&
-      Number.isInteger(b.targetTranscriptWordCount)
-    ) {
-      if (b.targetTranscriptWordCount < 1 || b.targetTranscriptWordCount > 4000) {
+    const removeTranscriptIds = Array.isArray(b.removeTranscriptIds)
+      ? b.removeTranscriptIds.map((x) => String(x))
+      : undefined;
+    const removeImagePaths = Array.isArray(b.removeImagePaths)
+      ? b.removeImagePaths.map((x) => String(x))
+      : undefined;
+
+    let characters: StyleCharacter[] | undefined;
+    if (b.characters !== undefined) {
+      if (!Array.isArray(b.characters)) {
+        return NextResponse.json({ error: "characters must be an array" }, { status: 400 });
+      }
+      try {
+        characters = z.array(StyleCharacterSchema).parse(b.characters);
+      } catch {
         return NextResponse.json(
-          { error: "targetTranscriptWordCount must be between 1 and 4000" },
+          { error: "Invalid characters payload (id, name, optional notes, optional imageUrl)" },
           { status: 400 },
         );
       }
-      targetTranscriptWordCount = b.targetTranscriptWordCount;
-    } else {
-      return NextResponse.json(
-        { error: "targetTranscriptWordCount must be an integer, or null to clear" },
-        { status: 400 },
-      );
     }
-  }
 
-  let extractedFormat: ExtractedFormat | null | undefined;
-  if (b.extractedFormat !== undefined) {
-    if (b.extractedFormat === null) {
-      extractedFormat = null;
-    } else if (typeof b.extractedFormat === "object" && b.extractedFormat) {
-      extractedFormat = b.extractedFormat as ExtractedFormat;
-    } else {
-      return NextResponse.json(
-        { error: "extractedFormat must be an object or null" },
-        { status: 400 },
-      );
+    let videoAspectRatio: VideoAspectRatio | undefined;
+    if (b.videoAspectRatio !== undefined) {
+      if (b.videoAspectRatio !== "9:16" && b.videoAspectRatio !== "16:9") {
+        return NextResponse.json(
+          { error: "videoAspectRatio must be 9:16 or 16:9" },
+          { status: 400 },
+        );
+      }
+      videoAspectRatio = b.videoAspectRatio;
     }
-  }
 
-  try {
-    const style = patchStyleRecord(id, {
+    let targetTranscriptWordCount: number | null | undefined;
+    if (b.targetTranscriptWordCount !== undefined) {
+      if (b.targetTranscriptWordCount === null) {
+        targetTranscriptWordCount = null;
+      } else if (
+        typeof b.targetTranscriptWordCount === "number" &&
+        Number.isInteger(b.targetTranscriptWordCount)
+      ) {
+        if (b.targetTranscriptWordCount < 1 || b.targetTranscriptWordCount > 4000) {
+          return NextResponse.json(
+            { error: "targetTranscriptWordCount must be between 1 and 4000" },
+            { status: 400 },
+          );
+        }
+        targetTranscriptWordCount = b.targetTranscriptWordCount;
+      } else {
+        return NextResponse.json(
+          { error: "targetTranscriptWordCount must be an integer, or null to clear" },
+          { status: 400 },
+        );
+      }
+    }
+
+    let extractedFormat: ExtractedFormat | null | undefined;
+    if (b.extractedFormat !== undefined) {
+      if (b.extractedFormat === null) {
+        extractedFormat = null;
+      } else if (typeof b.extractedFormat === "object" && b.extractedFormat) {
+        extractedFormat = b.extractedFormat as ExtractedFormat;
+      } else {
+        return NextResponse.json(
+          { error: "extractedFormat must be an object or null" },
+          { status: 400 },
+        );
+      }
+    }
+
+    const style = await patchStyleRecord(user.id, id, {
       name: typeof b.name === "string" ? b.name : undefined,
       creatorName:
         b.creatorName === null
@@ -134,11 +143,16 @@ export async function PATCH(req: NextRequest, context: RouteContext) {
 }
 
 export async function DELETE(_req: NextRequest, context: RouteContext) {
-  const { id } = await context.params;
-  const existing = getStyle(id);
-  if (!existing) {
-    return NextResponse.json({ error: "Not found" }, { status: 404 });
+  try {
+    const user = await requireUser();
+    const { id } = await context.params;
+    const existing = await getStyle(id, user.id);
+    if (!existing) {
+      return NextResponse.json({ error: "Not found" }, { status: 404 });
+    }
+    await deleteStyle(id, user.id);
+    return NextResponse.json({ ok: true });
+  } catch (err) {
+    return handleAuthError(err);
   }
-  deleteStyle(id);
-  return NextResponse.json({ ok: true });
 }

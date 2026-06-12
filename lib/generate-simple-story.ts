@@ -32,6 +32,13 @@ import {
   recordFirstAppearances,
 } from "./generation/consistency-tracker";
 import { mergeReferencePathsWithPreviousScene } from "./generation/merge-continuity-reference";
+import { getProjectForUser, insertProject, updateProject } from "./db/projects";
+import { useDatabaseStorage } from "./storage/constants";
+import {
+  putProjectFile,
+  putProjectJson,
+  readProjectJson,
+} from "./storage/project-storage";
 import { getStyle, readTranscriptFile } from "./storage/styles";
 import {
   ContentItemWithDetails,
@@ -49,6 +56,8 @@ export type GenerateProgress =
   | { stage: "assets"; current: number; total: number; phase: "image" | "voice" };
 
 export interface RunSimpleGenerateOptions {
+  /** Clerk user id — required for DB/R2 persistence in production. */
+  userId?: string;
   title: string;
   topic: string;
   openaiApiKey: string;
@@ -73,7 +82,19 @@ export function getContentProjectDir(slug: string): string {
   return path.join(process.cwd(), "public", "content", slug);
 }
 
-export function loadDescriptorBySlug(slug: string): StoryMetadataWithDetails {
+export async function loadDescriptorBySlug(
+  slug: string,
+  userId?: string,
+): Promise<StoryMetadataWithDetails> {
+  if (useDatabaseStorage() && userId) {
+    const fromStore = await readProjectJson<StoryMetadataWithDetails>(
+      userId,
+      slug,
+      "descriptor.json",
+    );
+    if (fromStore) return fromStore;
+  }
+
   const filePath = path.join(getContentProjectDir(slug), "descriptor.json");
   if (!fs.existsSync(filePath)) {
     throw new Error(`No project found for slug "${slug}" (missing descriptor.json)`);
@@ -82,25 +103,50 @@ export function loadDescriptorBySlug(slug: string): StoryMetadataWithDetails {
   return JSON.parse(raw) as StoryMetadataWithDetails;
 }
 
-export function saveDescriptorBySlug(
+export async function saveDescriptorBySlug(
   slug: string,
   descriptor: StoryMetadataWithDetails,
-): void {
+  userId?: string,
+): Promise<void> {
   const dir = getContentProjectDir(slug);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(
     path.join(dir, "descriptor.json"),
     JSON.stringify(descriptor, null, 2),
   );
+
+  if (useDatabaseStorage() && userId) {
+    await putProjectJson(userId, slug, "descriptor.json", descriptor);
+    await updateProject(userId, slug, { title: descriptor.shortTitle });
+  }
 }
 
-export function saveTimelineBySlug(slug: string, timeline: Timeline): void {
+export async function saveTimelineBySlug(
+  slug: string,
+  timeline: Timeline,
+  userId?: string,
+): Promise<void> {
   const dir = getContentProjectDir(slug);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(
     path.join(dir, "timeline.json"),
     JSON.stringify(timeline, null, 2),
   );
+
+  if (useDatabaseStorage() && userId) {
+    await putProjectJson(userId, slug, "timeline.json", timeline);
+    await updateProject(userId, slug, { status: "ready" });
+  }
+}
+
+async function syncLocalProjectFile(
+  userId: string | undefined,
+  slug: string,
+  relativePath: string,
+  localPath: string,
+): Promise<void> {
+  if (!useDatabaseStorage() || !userId || !fs.existsSync(localPath)) return;
+  await putProjectFile(userId, slug, relativePath, fs.readFileSync(localPath));
 }
 
 function getImagePathForSlug(slug: string, uid: string): string {
@@ -118,18 +164,20 @@ function getAudioPathForSlug(slug: string, uid: string): string {
 class ContentFS {
   title: string;
   slug: string;
+  userId?: string;
 
-  constructor(title: string) {
+  constructor(title: string, userId?: string) {
     this.title = title;
+    this.userId = userId;
     this.slug = this.getSlug();
   }
 
-  saveDescriptor(descriptor: StoryMetadataWithDetails) {
-    saveDescriptorBySlug(this.slug, descriptor);
+  async saveDescriptor(descriptor: StoryMetadataWithDetails) {
+    await saveDescriptorBySlug(this.slug, descriptor, this.userId);
   }
 
-  saveTimeline(timeline: Timeline) {
-    saveTimelineBySlug(this.slug, timeline);
+  async saveTimeline(timeline: Timeline) {
+    await saveTimelineBySlug(this.slug, timeline, this.userId);
   }
 
   getDir(dir?: string): string {
@@ -172,12 +220,12 @@ export type GenerateScriptPhaseOptions = Omit<
 export async function generateScriptPhase(
   options: GenerateScriptPhaseOptions,
 ): Promise<{ slug: string; shortTitle: string }> {
-  const { title, topic, openaiApiKey, styleId, useWebSearch, onProgress } =
+  const { title, topic, openaiApiKey, styleId, useWebSearch, onProgress, userId } =
     options;
 
   setApiKey(openaiApiKey);
 
-  const style = styleId ? getStyle(styleId) : null;
+  const style = styleId ? await getStyle(styleId, userId) : null;
   if (styleId && !style) {
     throw new Error(`Unknown style: ${styleId}`);
   }
@@ -185,7 +233,7 @@ export async function generateScriptPhase(
   let referenceTranscript = "";
   if (style?.references.transcripts.length) {
     const first = style.references.transcripts[0];
-    referenceTranscript = readTranscriptFile(first.path);
+    referenceTranscript = await readTranscriptFile(first.path, userId, styleId);
   } else if (style) {
     throw new Error("Selected style has no reference transcripts");
   }
@@ -258,14 +306,33 @@ export async function generateScriptPhase(
     storyWithDetails.content.push(contentWithDetails);
   }
 
-  const contentFs = new ContentFS(title);
-  contentFs.saveDescriptor(storyWithDetails);
+  const contentFs = new ContentFS(title, userId);
+  if (useDatabaseStorage() && userId) {
+    const existing = await getProjectForUser(userId, contentFs.slug);
+    if (!existing) {
+      await insertProject({
+        userId,
+        slug: contentFs.slug,
+        title,
+        styleId,
+        status: "generating",
+      });
+    } else {
+      await updateProject(userId, contentFs.slug, {
+        title,
+        styleId: styleId ?? null,
+        status: "generating",
+      });
+    }
+  }
+  await contentFs.saveDescriptor(storyWithDetails);
 
   return { slug: contentFs.slug, shortTitle: title };
 }
 
 export type GenerateVoicePhaseOptions = {
   slug: string;
+  userId?: string;
   elevenlabsApiKey?: string;
   skipVoice?: boolean;
   /** ElevenLabs voice id (defaults to ELEVENLABS_DEFAULT_VOICE_ID / built-in default). */
@@ -278,7 +345,7 @@ export type GenerateVoicePhaseOptions = {
 export async function generateVoicePhase(
   options: GenerateVoicePhaseOptions,
 ): Promise<void> {
-  const { slug, elevenlabsApiKey = "", skipVoice = false, voiceId } = options;
+  const { slug, userId, elevenlabsApiKey = "", skipVoice = false, voiceId } = options;
   const resolvedVoiceId =
     voiceId?.trim() || DEFAULT_ELEVENLABS_VOICE_ID;
 
@@ -286,7 +353,7 @@ export async function generateVoicePhase(
     throw new Error("ElevenLabs API key is required unless skipVoice is enabled");
   }
 
-  const storyWithDetails = loadDescriptorBySlug(slug);
+  const storyWithDetails = await loadDescriptorBySlug(slug, userId);
   if (!storyWithDetails.content.length) {
     throw new Error("Descriptor has no scenes — run script generation first");
   }
@@ -312,13 +379,20 @@ export async function generateVoicePhase(
       );
       storyItem.audioTimestamps = timings;
     }
+    await syncLocalProjectFile(
+      userId,
+      slug,
+      `audio/${storyItem.uid}.mp3`,
+      getAudioPathForSlug(slug, storyItem.uid),
+    );
   }
 
-  saveDescriptorBySlug(slug, storyWithDetails);
+  await saveDescriptorBySlug(slug, storyWithDetails, userId);
 }
 
 export type GenerateImagesPhaseOptions = {
   slug: string;
+  userId?: string;
   geminiApiKey: string;
   /** 0-based scene index, or omit / null for all scenes. */
   sceneIndex?: number | null;
@@ -327,7 +401,7 @@ export type GenerateImagesPhaseOptions = {
 };
 
 function styleCharacterNamesForConsistency(
-  style: ReturnType<typeof getStyle>,
+  style: Awaited<ReturnType<typeof getStyle>>,
 ): string[] {
   return style?.characters?.map((c) => c.name.trim()).filter(Boolean) ?? [];
 }
@@ -342,10 +416,11 @@ async function generateSceneImagesForIndices(
   indices: number[],
   imageSize: GeminiImageSize | undefined,
   onProgress?: (current: number, total: number) => void,
+  userId?: string,
 ): Promise<void> {
   const content = storyWithDetails.content;
   const styleId = storyWithDetails.channelStyleId;
-  const style = styleId ? getStyle(styleId) : null;
+  const style = styleId ? await getStyle(styleId, userId) : null;
 
   const analysis = analyzeSceneEntities(
     content,
@@ -357,7 +432,7 @@ async function generateSceneImagesForIndices(
     resetConsistency ? null : storyWithDetails.consistencyData,
   );
 
-  const refBundle = resolveGeminiReferencePathsForStyle(styleId);
+  const refBundle = await resolveGeminiReferencePathsForStyle(styleId, userId);
   if (style && style.references.images.length > 0) {
     if (!refBundle || refBundle.styleImageCount === 0) {
       throw new Error(
@@ -428,7 +503,13 @@ async function generateSceneImagesForIndices(
     });
     recordFirstAppearances(i, storyItem, sceneInfo, state);
     storyWithDetails.consistencyData = state.data;
-    saveDescriptorBySlug(slug, storyWithDetails);
+    await syncLocalProjectFile(
+      userId,
+      slug,
+      `images/${storyItem.uid}.png`,
+      getImagePathForSlug(slug, storyItem.uid),
+    );
+    await saveDescriptorBySlug(slug, storyWithDetails, userId);
   }
 }
 
@@ -438,7 +519,7 @@ async function generateSceneImagesForIndices(
 export async function generateImagesPhase(
   options: GenerateImagesPhaseOptions,
 ): Promise<void> {
-  const { slug, geminiApiKey, sceneIndex, imageSize, onProgress } = options;
+  const { slug, userId, geminiApiKey, sceneIndex, imageSize, onProgress } = options;
 
   if (!geminiApiKey?.trim()) {
     throw new Error(
@@ -448,7 +529,7 @@ export async function generateImagesPhase(
 
   setGeminiApiKey(geminiApiKey);
 
-  const storyWithDetails = loadDescriptorBySlug(slug);
+  const storyWithDetails = await loadDescriptorBySlug(slug, userId);
   if (!storyWithDetails.content.length) {
     throw new Error("Descriptor has no scenes — run script generation first");
   }
@@ -464,14 +545,18 @@ export async function generateImagesPhase(
     indices,
     imageSize,
     onProgress,
+    userId,
   );
 }
 
 /**
  * Step 5: Build `timeline.json` from descriptor (requires voice data on each scene).
  */
-export function finalizeTimelinePhase(slug: string): void {
-  const storyWithDetails = loadDescriptorBySlug(slug);
+export async function finalizeTimelinePhase(
+  slug: string,
+  userId?: string,
+): Promise<void> {
+  const storyWithDetails = await loadDescriptorBySlug(slug, userId);
   for (const item of storyWithDetails.content) {
     const ends = item.audioTimestamps.characterEndTimesSeconds;
     if (!ends?.length) {
@@ -481,7 +566,7 @@ export function finalizeTimelinePhase(slug: string): void {
     }
   }
   const timeline = createTimeLineFromStoryWithDetails(storyWithDetails);
-  saveTimelineBySlug(slug, timeline);
+  await saveTimelineBySlug(slug, timeline, userId);
 }
 
 export async function runSimpleGenerate(
@@ -520,11 +605,12 @@ export async function runSimpleGenerate(
     topic,
     openaiApiKey,
     styleId,
+    userId: options.userId,
     useWebSearch: options.useWebSearch,
     onProgress,
   });
 
-  const storyWithDetails = loadDescriptorBySlug(slug);
+  const storyWithDetails = await loadDescriptorBySlug(slug, options.userId);
   const total = storyWithDetails.content.length;
 
   for (let i = 0; i < total; i++) {
@@ -553,10 +639,16 @@ export async function runSimpleGenerate(
       );
       storyItem.audioTimestamps = timings;
     }
+    await syncLocalProjectFile(
+      options.userId,
+      slug,
+      `audio/${storyItem.uid}.mp3`,
+      getAudioPathForSlug(slug, storyItem.uid),
+    );
   }
-  saveDescriptorBySlug(slug, storyWithDetails);
+  await saveDescriptorBySlug(slug, storyWithDetails, options.userId);
 
-  const refreshed = loadDescriptorBySlug(slug);
+  const refreshed = await loadDescriptorBySlug(slug, options.userId);
   const imageIndices = refreshed.content.map((_, i) => i);
   await generateSceneImagesForIndices(
     slug,
@@ -571,10 +663,11 @@ export async function runSimpleGenerate(
         phase: "image",
       });
     },
+    options.userId,
   );
 
-  saveDescriptorBySlug(slug, refreshed);
-  finalizeTimelinePhase(slug);
+  await saveDescriptorBySlug(slug, refreshed, options.userId);
+  await finalizeTimelinePhase(slug, options.userId);
 
   return { slug, shortTitle };
 }

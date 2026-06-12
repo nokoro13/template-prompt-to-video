@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { StorageImage } from "@/components/ui/storage-image";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 import { Film, Search } from "lucide-react";
@@ -54,7 +54,7 @@ function SelectableProjectCard({
     >
       <div className="relative aspect-video overflow-hidden bg-muted">
         {project.thumbnailUrl ? (
-          <Image
+          <StorageImage
             src={project.thumbnailUrl}
             alt=""
             fill

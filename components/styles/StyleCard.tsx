@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import { StorageImage } from "@/components/ui/storage-image";
 import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import type { ChannelStyleRecord } from "@/lib/channel-styles/types";
@@ -23,7 +23,7 @@ export function StyleCard({ style }: { style: ChannelStyleRecord }) {
   return (
     <div className="group relative overflow-hidden rounded-xl border border-border bg-card shadow-sm transition hover:shadow-md">
       <div className="relative aspect-video overflow-hidden bg-muted">
-        <Image
+        <StorageImage
           src={style.thumbnailUrl}
           alt={style.name}
           fill

@@ -5,6 +5,14 @@ import { FPS } from "@/src/lib/constants";
 import type { Timeline } from "@/src/lib/types";
 import { TimelineSchema } from "@/src/lib/types";
 
+import { listProjectsForUser } from "../db/projects";
+import { useDatabaseStorage } from "../storage/constants";
+import {
+  projectFileExists,
+  projectThumbnailUrl,
+  readProjectJson,
+  syncProjectToPublic,
+} from "../storage/project-storage";
 import { getTotalDurationInFrames } from "./timeline";
 
 /** Slug-style id only (matches folders under `public/content/`). */
@@ -47,6 +55,24 @@ export type CompositionSummary = {
   updatedAt: string;
 };
 
+function summaryFromTimeline(
+  id: string,
+  timeline: Timeline,
+  thumbnailUrl: string | null,
+  updatedAt: string,
+): CompositionSummary {
+  return {
+    id,
+    shortTitle: timeline.shortTitle,
+    durationInFrames: getTotalDurationInFrames(timeline),
+    fps: FPS,
+    hasTimeline: true,
+    thumbnailUrl,
+    sceneCount: timeline.elements.length,
+    updatedAt,
+  };
+}
+
 /**
  * List project folders under `public/content/` that contain `timeline.json`.
  */
@@ -78,16 +104,14 @@ export function listCompositionsFromDisk(): CompositionSummary[] {
           ? `/content/${id}/images/${firstImageUid}.png`
           : null;
 
-      out.push({
-        id,
-        shortTitle: timeline.shortTitle,
-        durationInFrames: getTotalDurationInFrames(timeline),
-        fps: FPS,
-        hasTimeline: true,
-        thumbnailUrl,
-        sceneCount: timeline.elements.length,
-        updatedAt: fs.statSync(timelinePath).mtime.toISOString(),
-      });
+      out.push(
+        summaryFromTimeline(
+          id,
+          timeline,
+          thumbnailUrl,
+          fs.statSync(timelinePath).mtime.toISOString(),
+        ),
+      );
     } catch {
       continue;
     }
@@ -97,4 +121,71 @@ export function listCompositionsFromDisk(): CompositionSummary[] {
     (a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime(),
   );
   return out;
+}
+
+export async function listCompositionsForUser(
+  userId: string,
+): Promise<CompositionSummary[]> {
+  if (!useDatabaseStorage()) {
+    return listCompositionsFromDisk();
+  }
+
+  const projects = await listProjectsForUser(userId);
+  const out: CompositionSummary[] = [];
+
+  for (const project of projects) {
+    const timeline = await readProjectJson<Timeline>(
+      userId,
+      project.slug,
+      "timeline.json",
+    );
+    if (!timeline) continue;
+
+    const firstImageUid = timeline.elements[0]?.imageUrl;
+    const hasThumb =
+      firstImageUid &&
+      (await projectFileExists(
+        userId,
+        project.slug,
+        `images/${firstImageUid}.png`,
+      ));
+    const thumbnailUrl = hasThumb
+      ? projectThumbnailUrl(project.slug, firstImageUid!, userId)
+      : null;
+
+    out.push(
+      summaryFromTimeline(
+        project.slug,
+        timeline,
+        thumbnailUrl,
+        project.updatedAt.toISOString(),
+      ),
+    );
+  }
+
+  return out;
+}
+
+export async function ensureCompositionOnDisk(
+  userId: string,
+  compositionId: string,
+): Promise<void> {
+  if (!useDatabaseStorage()) return;
+  await syncProjectToPublic(userId, compositionId);
+}
+
+export async function compositionExistsForUser(
+  userId: string,
+  compositionId: string,
+): Promise<boolean> {
+  if (!useDatabaseStorage()) {
+    return listCompositionsFromDisk().some((c) => c.id === compositionId);
+  }
+
+  const timeline = await readProjectJson<Timeline>(
+    userId,
+    compositionId,
+    "timeline.json",
+  );
+  return timeline !== null;
 }

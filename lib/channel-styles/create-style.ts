@@ -1,5 +1,3 @@
-import * as fs from "fs";
-import * as path from "path";
 import { randomUUID } from "crypto";
 import type {
   ChannelStyleRecord,
@@ -7,14 +5,8 @@ import type {
   VideoAspectRatio,
 } from "./types";
 import { analyzeReferenceTranscript } from "../generation/format-cloner";
-import {
-  ensureStylesRoot,
-  readStylesIndex,
-  saveStyle,
-  slugifyStyleName,
-  styleDir,
-  uniqueStyleId,
-} from "../storage/styles";
+import { saveStyle, uniqueStyleIdForUser } from "../storage/styles";
+import { putStyleFile } from "../storage/style-storage";
 import {
   MAX_TRANSCRIPT_BYTES,
   transcriptTooLargeMessage,
@@ -23,6 +15,7 @@ import {
 const MAX_IMAGE_BYTES = 10 * 1024 * 1024;
 
 export type CreateStyleInput = {
+  userId: string;
   name: string;
   creatorName?: string;
   description?: string;
@@ -65,50 +58,52 @@ export async function createChannelStyle(
     }
   }
 
-  ensureStylesRoot();
-  const index = readStylesIndex();
-  const existingIds = new Set(Object.keys(index.styles));
-  const id = uniqueStyleId(slugifyStyleName(name), existingIds);
-  const dir = styleDir(id);
-  fs.mkdirSync(path.join(dir, "references"), { recursive: true });
-  fs.mkdirSync(path.join(dir, "transcripts"), { recursive: true });
-  fs.mkdirSync(path.join(dir, "characters"), { recursive: true });
+  const id = await uniqueStyleIdForUser(input.userId, name);
 
   const imagePublicPaths: string[] = [];
-  input.imageBuffers.forEach((img, i) => {
+  for (let i = 0; i < input.imageBuffers.length; i++) {
+    const img = input.imageBuffers[i]!;
     const ext = extFromName(img.filename) || ".png";
-    const safe = `image-${i}${ext}`;
-    const rel = `channel-styles/${id}/references/${safe}`;
-    const full = path.join(process.cwd(), "public", rel);
-    fs.writeFileSync(full, img.buffer);
-    imagePublicPaths.push(`/${rel.replace(/\\/g, "/")}`);
-  });
+    const safe = `references/image-${i}${ext}`;
+    const url = await putStyleFile(
+      input.userId,
+      id,
+      safe,
+      img.buffer,
+      `image/${ext.slice(1) === "jpg" ? "jpeg" : ext.slice(1)}`,
+    );
+    imagePublicPaths.push(url);
+  }
 
   const transcriptEntries: TranscriptEntry[] = [];
-  input.transcripts.forEach((t, i) => {
+  for (let i = 0; i < input.transcripts.length; i++) {
+    const t = input.transcripts[i]!;
     const tid = randomUUID();
-    const safeTitle = t.title.replace(/[^a-z0-9]+/gi, "-").slice(0, 40) || `transcript-${i}`;
+    const safeTitle =
+      t.title.replace(/[^a-z0-9]+/gi, "-").slice(0, 40) || `transcript-${i}`;
     const fname = `${safeTitle}-${tid.slice(0, 8)}.txt`;
-    const rel = `channel-styles/${id}/transcripts/${fname}`;
-    const full = path.join(process.cwd(), "public", rel);
-    fs.writeFileSync(full, t.content, "utf-8");
+    const rel = `transcripts/${fname}`;
+    const url = await putStyleFile(
+      input.userId,
+      id,
+      rel,
+      t.content,
+      "text/plain; charset=utf-8",
+    );
     transcriptEntries.push({
       id: tid,
       filename: fname,
-      path: `/${rel.replace(/\\/g, "/")}`,
+      path: url,
       title: t.title,
     });
-  });
+  }
 
-  const thumbRel = `channel-styles/${id}/thumbnail${extFromName(input.imageBuffers[0]!.filename) || ".png"}`;
-  const thumbFull = path.join(process.cwd(), "public", thumbRel);
-  fs.copyFileSync(
-    path.join(
-      process.cwd(),
-      "public",
-      imagePublicPaths[0]!.replace(/^\//, ""),
-    ),
-    thumbFull,
+  const thumbExt = extFromName(input.imageBuffers[0]!.filename) || ".png";
+  const thumbUrl = await putStyleFile(
+    input.userId,
+    id,
+    `thumbnail${thumbExt}`,
+    input.imageBuffers[0]!.buffer,
   );
 
   const firstTranscriptText = input.transcripts[0]!.content;
@@ -131,9 +126,8 @@ export async function createChannelStyle(
           ),
         }
       : {}),
-    thumbnailUrl: `/${thumbRel.replace(/\\/g, "/")}`,
-    referenceCount:
-      imagePublicPaths.length + transcriptEntries.length,
+    thumbnailUrl: thumbUrl,
+    referenceCount: imagePublicPaths.length + transcriptEntries.length,
     characterCount: 0,
     createdAt: new Date().toISOString(),
     references: {
@@ -144,6 +138,6 @@ export async function createChannelStyle(
     characters: [],
   };
 
-  saveStyle(record);
+  await saveStyle(record, input.userId);
   return record;
 }

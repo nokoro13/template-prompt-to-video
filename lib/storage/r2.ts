@@ -73,6 +73,23 @@ export async function uploadToR2(options: {
   );
 }
 
+export async function getFromR2(key: string): Promise<Buffer | null> {
+  const client = getR2Client();
+  try {
+    const res = await client.send(
+      new GetObjectCommand({
+        Bucket: getR2BucketName(),
+        Key: key,
+      }),
+    );
+    if (!res.Body) return null;
+    const bytes = await res.Body.transformToByteArray();
+    return Buffer.from(bytes);
+  } catch {
+    return null;
+  }
+}
+
 export async function deleteFromR2(key: string): Promise<void> {
   const client = getR2Client();
   await client.send(
