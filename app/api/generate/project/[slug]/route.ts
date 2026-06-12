@@ -10,7 +10,7 @@ import {
 } from "@/lib/generate-simple-story";
 import { assertProjectAccess } from "@/lib/projects/access";
 import { projectFileExists } from "@/lib/storage/project-storage";
-import { useDatabaseStorage } from "@/lib/storage/constants";
+import { isDatabaseStorageEnabled } from "@/lib/storage/constants";
 
 type RouteContext = { params: Promise<{ slug: string }> };
 
@@ -28,7 +28,7 @@ export async function GET(
 
     await assertProjectAccess(user.id, slug);
 
-    if (useDatabaseStorage()) {
+    if (isDatabaseStorageEnabled()) {
       const descriptor = await loadDescriptorBySlug(slug, user.id);
       const scenes = await Promise.all(
         descriptor.content.map(async (c, index) => {

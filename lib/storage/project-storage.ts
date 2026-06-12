@@ -11,7 +11,7 @@ import {
   resolveToLocalPath,
   storageApiUrl,
 } from "./assets";
-import { useDatabaseStorage, useR2Storage } from "./constants";
+import { isDatabaseStorageEnabled, isR2StorageEnabled } from "./constants";
 
 const PUBLIC_ROOT = path.join(process.cwd(), "public");
 
@@ -40,7 +40,7 @@ export async function putProjectFile(
 ): Promise<string> {
   const publicRel = legacyProjectRelative(slug, relativePath);
   const { url } = await putAsset({
-    storageKey: useR2Storage()
+    storageKey: isR2StorageEnabled()
       ? projectStorageKey(userId, slug, relativePath)
       : undefined,
     publicRelativePath: publicRel,
@@ -72,7 +72,7 @@ export async function readProjectJson<T>(
 ): Promise<T | null> {
   const publicRel = legacyProjectRelative(slug, relativePath);
   const buf = await getAsset({
-    storageKey: useR2Storage()
+    storageKey: isR2StorageEnabled()
       ? projectStorageKey(userId, slug, relativePath)
       : undefined,
     publicRelativePath: publicRel,
@@ -88,7 +88,7 @@ export async function projectFileExists(
 ): Promise<boolean> {
   const publicRel = legacyProjectRelative(slug, relativePath);
   const buf = await getAsset({
-    storageKey: useR2Storage()
+    storageKey: isR2StorageEnabled()
       ? projectStorageKey(userId, slug, relativePath)
       : undefined,
     publicRelativePath: publicRel,
@@ -104,7 +104,7 @@ export async function getProjectImagePath(
   const rel = `images/${uid}.png`;
   return resolveToLocalPath({
     url: legacyPublicUrl(legacyProjectRelative(slug, rel)),
-    storageKey: useR2Storage()
+    storageKey: isR2StorageEnabled()
       ? projectStorageKey(userId, slug, rel)
       : undefined,
     publicRelativePath: legacyProjectRelative(slug, rel),
@@ -119,7 +119,7 @@ export async function getProjectAudioPath(
   const rel = `audio/${uid}.mp3`;
   return resolveToLocalPath({
     url: legacyPublicUrl(legacyProjectRelative(slug, rel)),
-    storageKey: useR2Storage()
+    storageKey: isR2StorageEnabled()
       ? projectStorageKey(userId, slug, rel)
       : undefined,
     publicRelativePath: legacyProjectRelative(slug, rel),
@@ -131,7 +131,7 @@ export async function syncProjectToPublic(
   userId: string,
   slug: string,
 ): Promise<void> {
-  if (!useDatabaseStorage()) return;
+  if (!isDatabaseStorageEnabled()) return;
 
   const files = [
     "descriptor.json",
@@ -147,7 +147,7 @@ export async function syncProjectToPublic(
 
   for (const rel of files) {
     const buf = await getAsset({
-      storageKey: useR2Storage()
+      storageKey: isR2StorageEnabled()
         ? projectStorageKey(userId, slug, rel)
         : undefined,
       publicRelativePath: legacyProjectRelative(slug, rel),
@@ -162,7 +162,7 @@ export async function syncProjectToPublic(
   for (const scene of descriptor.content) {
     for (const sub of [`images/${scene.uid}.png`, `audio/${scene.uid}.mp3`]) {
       const buf = await getAsset({
-        storageKey: useR2Storage()
+        storageKey: isR2StorageEnabled()
           ? projectStorageKey(userId, slug, sub)
           : undefined,
         publicRelativePath: legacyProjectRelative(slug, sub),
@@ -182,7 +182,7 @@ export function projectThumbnailUrl(
   userId?: string,
 ): string {
   const rel = `content/${slug}/images/${imageUid}.png`;
-  if (useR2Storage() && userId) {
+  if (isR2StorageEnabled() && userId) {
     return storageApiUrl(projectStorageKey(userId, slug, `images/${imageUid}.png`));
   }
   return legacyPublicUrl(rel);

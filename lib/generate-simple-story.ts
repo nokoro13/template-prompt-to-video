@@ -33,7 +33,7 @@ import {
 } from "./generation/consistency-tracker";
 import { mergeReferencePathsWithPreviousScene } from "./generation/merge-continuity-reference";
 import { getProjectForUser, insertProject, updateProject } from "./db/projects";
-import { useDatabaseStorage } from "./storage/constants";
+import { isDatabaseStorageEnabled } from "./storage/constants";
 import {
   putProjectFile,
   putProjectJson,
@@ -86,7 +86,7 @@ export async function loadDescriptorBySlug(
   slug: string,
   userId?: string,
 ): Promise<StoryMetadataWithDetails> {
-  if (useDatabaseStorage() && userId) {
+  if (isDatabaseStorageEnabled() && userId) {
     const fromStore = await readProjectJson<StoryMetadataWithDetails>(
       userId,
       slug,
@@ -115,7 +115,7 @@ export async function saveDescriptorBySlug(
     JSON.stringify(descriptor, null, 2),
   );
 
-  if (useDatabaseStorage() && userId) {
+  if (isDatabaseStorageEnabled() && userId) {
     await putProjectJson(userId, slug, "descriptor.json", descriptor);
     await updateProject(userId, slug, { title: descriptor.shortTitle });
   }
@@ -133,7 +133,7 @@ export async function saveTimelineBySlug(
     JSON.stringify(timeline, null, 2),
   );
 
-  if (useDatabaseStorage() && userId) {
+  if (isDatabaseStorageEnabled() && userId) {
     await putProjectJson(userId, slug, "timeline.json", timeline);
     await updateProject(userId, slug, { status: "ready" });
   }
@@ -145,7 +145,7 @@ async function syncLocalProjectFile(
   relativePath: string,
   localPath: string,
 ): Promise<void> {
-  if (!useDatabaseStorage() || !userId || !fs.existsSync(localPath)) return;
+  if (!isDatabaseStorageEnabled() || !userId || !fs.existsSync(localPath)) return;
   await putProjectFile(userId, slug, relativePath, fs.readFileSync(localPath));
 }
 
@@ -307,7 +307,7 @@ export async function generateScriptPhase(
   }
 
   const contentFs = new ContentFS(title, userId);
-  if (useDatabaseStorage() && userId) {
+  if (isDatabaseStorageEnabled() && userId) {
     const existing = await getProjectForUser(userId, contentFs.slug);
     if (!existing) {
       await insertProject({

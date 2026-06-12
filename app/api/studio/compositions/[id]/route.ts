@@ -8,7 +8,7 @@ import {
   deleteCompositionFromDisk,
   isValidCompositionId,
 } from "@/lib/studio/compositions";
-import { useDatabaseStorage } from "@/lib/storage/constants";
+import { isDatabaseStorageEnabled } from "@/lib/storage/constants";
 
 export const dynamic = "force-dynamic";
 
@@ -25,7 +25,7 @@ export async function DELETE(
       return NextResponse.json({ error: "Invalid composition id" }, { status: 400 });
     }
 
-    if (useDatabaseStorage()) {
+    if (isDatabaseStorageEnabled()) {
       const exists = await compositionExistsForUser(user.id, id);
       if (!exists) {
         return NextResponse.json({ error: "Composition not found" }, { status: 404 });
@@ -36,7 +36,7 @@ export async function DELETE(
     try {
       deleteCompositionFromDisk(id);
     } catch (e) {
-      if (!useDatabaseStorage()) {
+      if (!isDatabaseStorageEnabled()) {
         const message = e instanceof Error ? e.message : "Failed to delete";
         const status =
           message === "Composition not found"

@@ -11,7 +11,7 @@ import {
   listStylesForUser,
   updateStyleData,
 } from "../db/styles";
-import { useDatabaseStorage, useR2Storage } from "./constants";
+import { isDatabaseStorageEnabled, isR2StorageEnabled } from "./constants";
 import { readStyleText, resolveStyleImageToLocal } from "./style-storage";
 
 const ROOT = path.join(process.cwd(), "public", "channel-styles");
@@ -62,7 +62,7 @@ export async function uniqueStyleIdForUser(
   userId: string,
   name: string,
 ): Promise<string> {
-  if (useDatabaseStorage()) {
+  if (isDatabaseStorageEnabled()) {
     const existing = await listStyleIdsForUser(userId);
     return uniqueStyleId(name, existing);
   }
@@ -74,7 +74,7 @@ export async function getStyle(
   id: string,
   userId?: string,
 ): Promise<ChannelStyleRecord | null> {
-  if (useDatabaseStorage() && userId) {
+  if (isDatabaseStorageEnabled() && userId) {
     return getStyleForUser(userId, id);
   }
   const index = readStylesIndex();
@@ -82,7 +82,7 @@ export async function getStyle(
 }
 
 export async function listStyles(userId?: string): Promise<ChannelStyleRecord[]> {
-  if (useDatabaseStorage() && userId) {
+  if (isDatabaseStorageEnabled() && userId) {
     return listStylesForUser(userId);
   }
   const index = readStylesIndex();
@@ -97,12 +97,12 @@ export async function saveStyle(
   userId?: string,
 ): Promise<ChannelStyleRecord> {
   const parsed = ChannelStyleRecordSchema.parse(record);
-  if (useDatabaseStorage() && userId) {
+  if (isDatabaseStorageEnabled() && userId) {
     const existing = await getStyleForUser(userId, parsed.id);
     if (existing) {
-      return updateStyleData(userId, parsed.id, parsed, useR2Storage());
+      return updateStyleData(userId, parsed.id, parsed, isR2StorageEnabled());
     }
-    return insertStyle(userId, parsed, useR2Storage());
+    return insertStyle(userId, parsed, isR2StorageEnabled());
   }
 
   const index = readStylesIndex();
@@ -112,7 +112,7 @@ export async function saveStyle(
 }
 
 export async function deleteStyle(id: string, userId?: string): Promise<void> {
-  if (useDatabaseStorage() && userId) {
+  if (isDatabaseStorageEnabled() && userId) {
     await deleteStyleForUser(userId, id);
     const dir = styleDir(id);
     if (fs.existsSync(dir)) {
@@ -135,7 +135,7 @@ export async function readTranscriptFile(
   userId?: string,
   styleId?: string,
 ): Promise<string> {
-  if (useDatabaseStorage() && userId && styleId) {
+  if (isDatabaseStorageEnabled() && userId && styleId) {
     const rel = publicPath.replace(/^\//, "");
     const prefix = `channel-styles/${styleId}/`;
     const idx = rel.indexOf(prefix);
@@ -159,7 +159,7 @@ export async function resolveStyleImagePaths(
 ): Promise<string[]> {
   const out: string[] = [];
   for (const url of record.references.images) {
-    if (useDatabaseStorage() && userId) {
+    if (isDatabaseStorageEnabled() && userId) {
       out.push(await resolveStyleImageToLocal(userId, record.id, url));
     } else {
       const rel = url.startsWith("/") ? url.slice(1) : url;

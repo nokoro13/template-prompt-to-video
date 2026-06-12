@@ -6,7 +6,7 @@ import {
   putAsset,
   resolveToLocalPath,
 } from "./assets";
-import { useR2Storage } from "./constants";
+import { isR2StorageEnabled } from "./constants";
 
 function stylePublicRelative(styleId: string, rel: string): string {
   return `channel-styles/${styleId}/${rel.replace(/^\//, "")}`;
@@ -29,7 +29,7 @@ export async function putStyleFile(
 ): Promise<string> {
   const publicRel = stylePublicRelative(styleId, relativePath);
   const { url } = await putAsset({
-    storageKey: useR2Storage()
+    storageKey: isR2StorageEnabled()
       ? styleStorageKey(userId, styleId, relativePath)
       : undefined,
     publicRelativePath: publicRel,
@@ -49,7 +49,7 @@ export async function readStyleText(
     legacyPublicPath?.replace(/^\//, "") ??
     stylePublicRelative(styleId, relativePath);
   const buf = await getAsset({
-    storageKey: useR2Storage()
+    storageKey: isR2StorageEnabled()
       ? styleStorageKey(userId, styleId, relativePath)
       : undefined,
     publicRelativePath: publicRel,
@@ -73,7 +73,7 @@ export async function resolveStyleImageToLocal(
 
   return resolveToLocalPath({
     url,
-    storageKey: useR2Storage()
+    storageKey: isR2StorageEnabled()
       ? styleStorageKey(userId, styleId, relativePath)
       : undefined,
     publicRelativePath: rel,

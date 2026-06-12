@@ -6,7 +6,7 @@ import type { Timeline } from "@/src/lib/types";
 import { TimelineSchema } from "@/src/lib/types";
 
 import { listProjectsForUser } from "../db/projects";
-import { useDatabaseStorage } from "../storage/constants";
+import { isDatabaseStorageEnabled } from "../storage/constants";
 import {
   projectFileExists,
   projectThumbnailUrl,
@@ -126,7 +126,7 @@ export function listCompositionsFromDisk(): CompositionSummary[] {
 export async function listCompositionsForUser(
   userId: string,
 ): Promise<CompositionSummary[]> {
-  if (!useDatabaseStorage()) {
+  if (!isDatabaseStorageEnabled()) {
     return listCompositionsFromDisk();
   }
 
@@ -170,7 +170,7 @@ export async function ensureCompositionOnDisk(
   userId: string,
   compositionId: string,
 ): Promise<void> {
-  if (!useDatabaseStorage()) return;
+  if (!isDatabaseStorageEnabled()) return;
   await syncProjectToPublic(userId, compositionId);
 }
 
@@ -178,7 +178,7 @@ export async function compositionExistsForUser(
   userId: string,
   compositionId: string,
 ): Promise<boolean> {
-  if (!useDatabaseStorage()) {
+  if (!isDatabaseStorageEnabled()) {
     return listCompositionsFromDisk().some((c) => c.id === compositionId);
   }
 

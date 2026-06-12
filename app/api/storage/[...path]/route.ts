@@ -5,7 +5,7 @@ import { requireUser } from "@/lib/auth/require-user";
 import { getProjectForUser } from "@/lib/db/projects";
 import { getStyleForUser } from "@/lib/db/styles";
 import { getAsset } from "@/lib/storage/assets";
-import { useDatabaseStorage } from "@/lib/storage/constants";
+import { isDatabaseStorageEnabled } from "@/lib/storage/constants";
 
 type RouteContext = { params: Promise<{ path: string[] }> };
 
@@ -54,7 +54,7 @@ async function assertUserOwnsStorageKey(
 export async function GET(_req: Request, context: RouteContext) {
   try {
     const user = await requireUser();
-    if (!useDatabaseStorage()) {
+    if (!isDatabaseStorageEnabled()) {
       return NextResponse.json(
         { error: "Storage API requires DATABASE_URL" },
         { status: 503 },

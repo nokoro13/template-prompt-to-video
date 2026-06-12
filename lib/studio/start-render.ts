@@ -4,7 +4,7 @@ import os from "node:os";
 import path from "node:path";
 
 import { buildRenderStorageKey, storageApiUrl } from "../storage/assets";
-import { useDatabaseStorage, useR2Storage } from "../storage/constants";
+import { isDatabaseStorageEnabled, isR2StorageEnabled } from "../storage/constants";
 import { uploadToR2 } from "../storage/r2";
 import { patchRenderJob } from "./render-jobs";
 
@@ -82,7 +82,7 @@ export function startRemotionRenderJob(options: {
     if (code === 0 && fs.existsSync(outputPath)) {
       void (async () => {
         let outputUrl = `/renders/${outputFile}`;
-        if (useDatabaseStorage() && userId && useR2Storage()) {
+        if (isDatabaseStorageEnabled() && userId && isR2StorageEnabled()) {
           try {
             const key = buildRenderStorageKey(userId, jobId);
             await uploadToR2({
