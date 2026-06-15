@@ -30,6 +30,7 @@ export function StudioClient() {
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const [pickerOpen, setPickerOpen] = useState(false);
   const [timeline, setTimeline] = useState<Timeline | null>(null);
+  const [assetBaseUrl, setAssetBaseUrl] = useState<string | null>(null);
   const [timelineError, setTimelineError] = useState<string | null>(null);
   const [aspectRatio, setAspectRatio] = useState<VideoAspectRatio>("9:16");
   const [playbackRate, setPlaybackRate] = useState(1);
@@ -78,26 +79,36 @@ export function StudioClient() {
   useEffect(() => {
     if (!selectedId) {
       setTimeline(null);
+      setAssetBaseUrl(null);
       return;
     }
     let cancelled = false;
     setTimelineError(null);
-    fetch(`/content/${selectedId}/timeline.json`)
-      .then((r) => {
-        if (!r.ok) throw new Error(r.statusText);
-        return r.json();
+    fetch(`/api/studio/projects/${encodeURIComponent(selectedId)}`)
+      .then(async (r) => {
+        const data = (await r.json()) as {
+          timeline?: Timeline;
+          assetBaseUrl?: string | null;
+          error?: string;
+        };
+        if (!r.ok) {
+          throw new Error(data.error ?? r.statusText);
+        }
+        return data;
       })
-      .then((json) => {
+      .then((data) => {
         if (cancelled) return;
-        const parsed = TimelineSchema.safeParse(json);
+        const parsed = TimelineSchema.safeParse(data.timeline);
         if (!parsed.success) {
           setTimelineError("Invalid timeline data");
           setTimeline(null);
+          setAssetBaseUrl(null);
           return;
         }
         const tl = parsed.data;
         tl.elements.sort((a, b) => a.startMs - b.startMs);
         setTimeline(tl);
+        setAssetBaseUrl(data.assetBaseUrl ?? null);
         setCurrentFrame(0);
         playerRef.current?.seekTo(0);
       })
@@ -107,6 +118,7 @@ export function StudioClient() {
             e instanceof Error ? e.message : "Failed to load timeline",
           );
           setTimeline(null);
+          setAssetBaseUrl(null);
         }
       });
     return () => {
@@ -267,6 +279,7 @@ export function StudioClient() {
               durationInFrames={durationInFrames}
               fps={FPS}
               playbackRate={playbackRate}
+              assetBaseUrl={assetBaseUrl}
             />
           ) : (
             <div className="flex min-h-[280px] w-full flex-1 flex-col items-center justify-center gap-4 rounded-xl border border-dashed border-border bg-muted/20 px-6 text-center text-sm text-muted-foreground">

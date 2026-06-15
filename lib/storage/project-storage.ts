@@ -176,6 +176,17 @@ export async function syncProjectToPublic(
   }
 }
 
+/** Base URL for project assets in the browser (`/api/storage/users/.../projects/{slug}`). */
+export function projectAssetApiBase(
+  userId: string,
+  slug: string,
+): string | null {
+  if (isR2StorageEnabled() && isDatabaseStorageEnabled()) {
+    return storageApiUrl(buildProjectStoragePrefix(userId, slug));
+  }
+  return null;
+}
+
 export function projectThumbnailUrl(
   slug: string,
   imageUid: string,

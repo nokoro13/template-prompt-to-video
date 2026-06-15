@@ -12,7 +12,7 @@ import {
   updateStyleData,
 } from "../db/styles";
 import { isDatabaseStorageEnabled, isR2StorageEnabled } from "./constants";
-import { readStyleText, resolveStyleImageToLocal } from "./style-storage";
+import { readStyleTextFromUrl, resolveStyleImageToLocal } from "./style-storage";
 
 const ROOT = path.join(process.cwd(), "public", "channel-styles");
 export const STYLES_INDEX_PATH = path.join(ROOT, "index.json");
@@ -136,12 +136,7 @@ export async function readTranscriptFile(
   styleId?: string,
 ): Promise<string> {
   if (isDatabaseStorageEnabled() && userId && styleId) {
-    const rel = publicPath.replace(/^\//, "");
-    const prefix = `channel-styles/${styleId}/`;
-    const idx = rel.indexOf(prefix);
-    const relativePath =
-      idx >= 0 ? rel.slice(idx + prefix.length) : path.basename(rel);
-    return readStyleText(userId, styleId, relativePath, rel);
+    return readStyleTextFromUrl(userId, styleId, publicPath);
   }
 
   const rel = publicPath.startsWith("/") ? publicPath.slice(1) : publicPath;

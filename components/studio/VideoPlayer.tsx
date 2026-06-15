@@ -36,6 +36,7 @@ export type VideoPlayerProps = {
   durationInFrames: number;
   fps: number;
   playbackRate?: number;
+  assetBaseUrl?: string | null;
   className?: string;
   style?: CSSProperties;
 };
@@ -49,6 +50,7 @@ export const VideoPlayer = forwardRef<PlayerRef, VideoPlayerProps>(
       durationInFrames,
       fps,
       playbackRate = 1,
+      assetBaseUrl,
       className,
       style,
     },
@@ -60,8 +62,9 @@ export const VideoPlayer = forwardRef<PlayerRef, VideoPlayerProps>(
         timeline,
         aspectRatio,
         projectSlug: compositionId,
+        ...(assetBaseUrl ? { assetBaseUrl } : {}),
       }),
-      [timeline, aspectRatio, compositionId],
+      [timeline, aspectRatio, compositionId, assetBaseUrl],
     );
 
     const containerRef = useRef<HTMLDivElement>(null);

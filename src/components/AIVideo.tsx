@@ -4,7 +4,6 @@ import {
   AbsoluteFill,
   Html5Audio,
   Sequence,
-  staticFile,
   useRemotionEnvironment,
   useVideoConfig,
 } from "remotion";
@@ -13,8 +12,8 @@ import { FPS, INTRO_DURATION } from "../lib/constants";
 import { TimelineSchema } from "../lib/types";
 import {
   calculateFrameTiming,
-  getAudioPath,
   getProjectSlugFromCompositionId,
+  resolveAudioSrc,
 } from "../lib/utils";
 import { Background } from "./Background";
 import Subtitle from "./Subtitle";
@@ -25,6 +24,8 @@ export const aiVideoSchema = z.object({
   aspectRatio: z.enum(["9:16", "16:9"]),
   /** When using @remotion/player, pass the content slug so asset paths resolve. */
   projectSlug: z.string().optional(),
+  /** When set, image/audio load from `/api/storage/...` instead of `staticFile`. */
+  assetBaseUrl: z.string().optional(),
 });
 
 const { fontFamily } = loadFont();
@@ -32,6 +33,7 @@ const { fontFamily } = loadFont();
 export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
   timeline,
   projectSlug,
+  assetBaseUrl,
 }) => {
   const { isRendering } = useRemotionEnvironment();
   const { id, width: frameWidth } = useVideoConfig();
@@ -88,7 +90,11 @@ export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
             durationInFrames={duration}
             premountFor={3 * FPS}
           >
-            <Background project={project} item={element} />
+            <Background
+              project={project}
+              item={element}
+              assetBaseUrl={assetBaseUrl}
+            />
           </Sequence>
         );
       })}
@@ -117,7 +123,11 @@ export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
           element.endMs,
           { addIntroOffset: true },
         );
-        const audioSrc = staticFile(getAudioPath(project, element.audioUrl));
+        const audioSrc = resolveAudioSrc(
+          project,
+          element.audioUrl,
+          assetBaseUrl,
+        );
 
         return (
           <Sequence
