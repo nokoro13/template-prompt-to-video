@@ -36,7 +36,7 @@ export function buildScriptClonePrompt(
   options?: { targetWordCount?: number },
 ): string {
   const wordCount = referenceTranscript.trim().split(/\s+/).filter(Boolean).length;
-  const autoTarget = Math.max(80, Math.min(1200, Math.round(wordCount * 0.9)));
+  const autoTarget = Math.max(80, Math.min(500, Math.round(wordCount * 0.9)));
   const targetWords =
     options?.targetWordCount !== undefined
       ? Math.max(1, Math.min(4000, Math.round(options.targetWordCount)))
@@ -54,7 +54,8 @@ export function buildScriptClonePrompt(
 - If your first draft would be under ${minBand} words, you must expand: add concrete detail, examples, transitions, and full beats until you reach the band. Do not finish "early" with a short script.
 - If over ${maxBand} words, tighten by merging sentences and cutting filler while keeping structure and tone.`
     : `LENGTH:
-- Aim for about ${targetWords} words total (acceptable range roughly ${minBand}–${maxBand} words). This length is inferred from the reference transcript.`;
+- Aim for about ${targetWords} words total (acceptable range roughly ${minBand}–${maxBand} words). This length is inferred from the reference transcript.
+- This is a short-form video; keep the total script under 500 words so each scene can be covered by one image.`;
 
   return `You are writing a **100% original** voiceover script for a new video. Your job is to match the **channel's writing style** (pacing, density, how sentences feel) using the EXTRACTED FORMAT below — not to retell, paraphrase, or lightly rewrite the reference transcript.
 

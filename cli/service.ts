@@ -218,6 +218,15 @@ HOW TO CHOOSE SCENE BOUNDARIES (narrative logic — not word counts):
 - Do not target a fixed number of words per scene. Short scripts may have few scenes; dense, eventful scripts may have many.
 - Cover the full story through the final sentence — do not stop early, summarize, or drop the ending.
 
+SCENE SIZE LIMITS:
+- Each scene's "text" must be 40 words or fewer. Split aggressively at sentence boundaries.
+- If the story is long, prefer more short scenes over fewer long scenes.
+
+IMAGE DESCRIPTION RULES:
+- Each "imageDescription" must describe ONE static frame — a single moment, single camera angle.
+- Do NOT write descriptions that combine multiple events (no "first X, then Y", no "montage of", no "panels showing").
+- Keep each imageDescription to 60 words or fewer. One action, one framing, one subject focus.
+
 TECHNICAL LIMIT: at most ${MAX_SCENE_PROMPT_ITEMS} scenes total. If the story would need more, merge only adjacent fragments that are truly the same uninterrupted moment (keep wording intact when merging).
 
 RULES:

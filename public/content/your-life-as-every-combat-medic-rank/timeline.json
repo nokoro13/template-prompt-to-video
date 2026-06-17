@@ -1,0 +1,4618 @@
+{
+  "elements": [
+    {
+      "startMs": 0,
+      "endMs": 13560,
+      "imageUrl": "7fe17f36-f39e-4be5-b338-1a8a3075ad20",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 13560,
+      "endMs": 25820,
+      "imageUrl": "462ce392-f0cd-4b9f-887f-c432a8d34e5d",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 25820,
+      "endMs": 34922,
+      "imageUrl": "d6c0e84d-fe1a-42d7-ad34-67e29b85955c",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 34922,
+      "endMs": 40495,
+      "imageUrl": "9af5b3e6-f99a-4f71-a346-9d86e932b1e1",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 40495,
+      "endMs": 46718,
+      "imageUrl": "4ec116e0-a611-4bce-a5b4-147040cfd0e2",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 46718,
+      "endMs": 58328,
+      "imageUrl": "05fed556-a856-4bf6-8f7b-584db64cd492",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 58328,
+      "endMs": 68034,
+      "imageUrl": "eeeb4fd7-d6ca-443a-8362-29a377828926",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 68034,
+      "endMs": 78529,
+      "imageUrl": "815021fb-2a78-4ea1-a437-6459c9b2c7b4",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 78529,
+      "endMs": 81966,
+      "imageUrl": "701d2256-22b4-4726-a7d6-4f33d2f53f52",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 81966,
+      "endMs": 86006,
+      "imageUrl": "8324cb18-5950-4e53-92ab-5933e224c87b",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 86006,
+      "endMs": 92647,
+      "imageUrl": "f8b30ee1-183d-4ad9-a4e1-3af64dfa1de7",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 92647,
+      "endMs": 101749,
+      "imageUrl": "ec5544f9-240f-4b53-860a-c7cad9490aae",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 101749,
+      "endMs": 106625,
+      "imageUrl": "495b29da-aa12-4d0b-9920-7691b8eb941e",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 106625,
+      "endMs": 111966,
+      "imageUrl": "5fa64b66-7895-4bd5-84d5-16e1b948afde",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 111966,
+      "endMs": 119675,
+      "imageUrl": "cf0d662d-905c-4942-a0b2-95b2b7db954a",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 119675,
+      "endMs": 125619,
+      "imageUrl": "614e313e-53b6-4b2d-b406-5cb5753f7544",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 125619,
+      "endMs": 133096,
+      "imageUrl": "c338738a-a677-4f11-86e1-787db85d7ad5",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 133096,
+      "endMs": 142152,
+      "imageUrl": "13a0ed05-4a09-454f-8730-e0839edfbf34",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 142152,
+      "endMs": 148932,
+      "imageUrl": "48c8d932-51aa-4c48-8771-60df840d2992",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 148932,
+      "endMs": 155294,
+      "imageUrl": "2564efca-ae18-4d0d-acba-4a9b6fba793b",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 155294,
+      "endMs": 161378,
+      "imageUrl": "c7bd5b4a-d6ee-4ae2-b1a0-be6bbff93e4f",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 161378,
+      "endMs": 169737,
+      "imageUrl": "0add69db-7cd1-462d-bd89-3357ac912751",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 169737,
+      "endMs": 180325,
+      "imageUrl": "5b517f45-4e8b-49f9-b4f3-a04ad1d35803",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 180325,
+      "endMs": 189892,
+      "imageUrl": "4ccb71e8-07dd-4309-83d2-745a1d43a890",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 189892,
+      "endMs": 200852,
+      "imageUrl": "8d2c9247-7ead-446f-b395-61076c65cc1b",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 200852,
+      "endMs": 206332,
+      "imageUrl": "8c4071dc-bae1-4d8c-9457-92920bbaecd2",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 206332,
+      "endMs": 216874,
+      "imageUrl": "9b51b0d9-6329-4fab-bbaa-71835af56ffb",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 216874,
+      "endMs": 222354,
+      "imageUrl": "2d62ed29-b76a-4e81-a07f-42d12037d45c",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 222354,
+      "endMs": 232385,
+      "imageUrl": "76cfcd6a-12a8-4877-ba42-de837a9687cb",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 232385,
+      "endMs": 237447,
+      "imageUrl": "0be1f4a0-d7c2-4b5e-9972-a0bfe8851069",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 237447,
+      "endMs": 241116,
+      "imageUrl": "a21b98da-a767-4e11-a49a-54db113abbc0",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 241116,
+      "endMs": 252494,
+      "imageUrl": "589e3e15-4031-4239-9bbd-dac431f00a56",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 252494,
+      "endMs": 256163,
+      "imageUrl": "74853fb9-1992-4dc9-8635-9e1c87a3b843",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 256163,
+      "endMs": 261179,
+      "imageUrl": "921fe7cd-c93d-43f3-9378-7368991cbf2f",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 261179,
+      "endMs": 264894,
+      "imageUrl": "0bcae0fc-dfc8-40ef-b236-ce0c80af9614",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 264894,
+      "endMs": 270513,
+      "imageUrl": "e986888b-90f4-4b7f-b94c-31b9da826ee2",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 270513,
+      "endMs": 275482,
+      "imageUrl": "26c8034f-8914-483f-a4d2-6abb20a9a7ab",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 275482,
+      "endMs": 285652,
+      "imageUrl": "07025a06-1c05-4c60-9386-6a461b446ced",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    },
+    {
+      "startMs": 285652,
+      "endMs": 289367,
+      "imageUrl": "0128b824-eec2-47f4-830f-ffee46422950",
+      "enterTransition": "blur",
+      "exitTransition": "blur",
+      "animations": []
+    }
+  ],
+  "text": [
+    {
+      "startMs": 0,
+      "endMs": 789,
+      "text": "You remember the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 789,
+      "endMs": 1811,
+      "text": "first time you walked",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5223291018025992,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 1811,
+      "endMs": 2589,
+      "text": "into the medical",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.602281208985642,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 2589,
+      "endMs": 4005,
+      "text": "tent. Nerves",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5576819340204049,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 4005,
+      "endMs": 5317,
+      "text": "disguising themselves",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 5317,
+      "endMs": 7175,
+      "text": "as confidence. Fresh",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5365673596204917,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 7175,
+      "endMs": 9067,
+      "text": "uniform, patch sewn",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.656474191848312,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 9067,
+      "endMs": 10379,
+      "text": "on that morning,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 10379,
+      "endMs": 11726,
+      "text": "hands shaking enough",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5342515251807618,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 11726,
+      "endMs": 12725,
+      "text": "that they fumble with",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5041291579859778,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 12725,
+      "endMs": 13560,
+      "text": "gauze.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5032738642905605,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 13560,
+      "endMs": 14524,
+      "text": "You want to believe",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5343916536981617,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 14524,
+      "endMs": 15638,
+      "text": "training prepared",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 15638,
+      "endMs": 17832,
+      "text": "you. It didn't. The",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.651577211084626,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 17832,
+      "endMs": 19133,
+      "text": "noise is sharp,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 19133,
+      "endMs": 21710,
+      "text": "metallic, unreal.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5691975618956806,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 21710,
+      "endMs": 22987,
+      "text": "Boots splashing",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5223923620694465,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 22987,
+      "endMs": 24067,
+      "text": "through puddles whose",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5381426689300428,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 24067,
+      "endMs": 25031,
+      "text": "color you never",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6728350323975516,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 25031,
+      "endMs": 25820,
+      "text": "forget.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5136674362446538,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 25820,
+      "endMs": 26865,
+      "text": "Someone shouts for a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.635311394997636,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 26865,
+      "endMs": 28978,
+      "text": "medic. It's you.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 28978,
+      "endMs": 30348,
+      "text": "Suddenly, theory",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 30348,
+      "endMs": 31973,
+      "text": "becomes flesh. The",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5747773123433545,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 31973,
+      "endMs": 33099,
+      "text": "wound is worse than",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6577282635331154,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 33099,
+      "endMs": 33901,
+      "text": "any dummy in the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5892009914086325,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 33901,
+      "endMs": 34922,
+      "text": "classroom.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 34922,
+      "endMs": 36257,
+      "text": "The patient stares at",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 36257,
+      "endMs": 38730,
+      "text": "you, trust and terror",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 38730,
+      "endMs": 40030,
+      "text": "balanced on every",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5122779420354652,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 40030,
+      "endMs": 40495,
+      "text": "breath.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 40495,
+      "endMs": 42422,
+      "text": "You act. Bandages,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6197319615304524,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 42422,
+      "endMs": 44013,
+      "text": "pressure, a halting",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6611237299566118,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 44013,
+      "endMs": 45069,
+      "text": "reassurance that you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6631381975515691,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 45069,
+      "endMs": 46718,
+      "text": "hope sounds steady.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5989544801869495,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 46718,
+      "endMs": 47902,
+      "text": "If he lives, you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 47902,
+      "endMs": 48657,
+      "text": "learn what relief",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 48657,
+      "endMs": 50224,
+      "text": "tastes like. If he",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 50224,
+      "endMs": 51478,
+      "text": "doesn't, you learn",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5480209289739996,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 51478,
+      "endMs": 52558,
+      "text": "what grief feels",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6238194736706275,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 52558,
+      "endMs": 54752,
+      "text": "like. Either way, the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 54752,
+      "endMs": 56482,
+      "text": "job doesn't pause.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 56482,
+      "endMs": 57167,
+      "text": "The radio is",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5984429739096863,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 57167,
+      "endMs": 58328,
+      "text": "crackling again.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6144915127404442,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 58328,
+      "endMs": 59791,
+      "text": "A few months later,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 59791,
+      "endMs": 62020,
+      "text": "your chevrons change.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 62020,
+      "endMs": 63007,
+      "text": "You're no longer the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 63007,
+      "endMs": 64934,
+      "text": "youngest in the room.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 64934,
+      "endMs": 67175,
+      "text": "Now, new faces look",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 67175,
+      "endMs": 68034,
+      "text": "to you.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5146270938577642,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 68034,
+      "endMs": 68800,
+      "text": "Your voice is",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 68800,
+      "endMs": 70786,
+      "text": "steadier. You teach",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.563107443727423,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 70786,
+      "endMs": 70925,
+      "text": "the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 70925,
+      "endMs": 73119,
+      "text": "basics—tourniquets,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 73119,
+      "endMs": 74791,
+      "text": "IV lines, the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 74791,
+      "endMs": 76312,
+      "text": "thousand small things",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5028388685010481,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 76312,
+      "endMs": 77090,
+      "text": "that are never as",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6426848008538877,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 77090,
+      "endMs": 78529,
+      "text": "simple in the field.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.692301832895353,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 78529,
+      "endMs": 79237,
+      "text": "You watch their",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 79237,
+      "endMs": 80247,
+      "text": "hands, see the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 80247,
+      "endMs": 81234,
+      "text": "mistakes before they",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5254367415737639,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 81234,
+      "endMs": 81966,
+      "text": "happen.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 81966,
+      "endMs": 82895,
+      "text": "You start collecting",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5188458472884884,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 82895,
+      "endMs": 84172,
+      "text": "stories, some you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6587897062192246,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 84172,
+      "endMs": 85356,
+      "text": "share, most you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 85356,
+      "endMs": 86006,
+      "text": "don't.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6381832093259105,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 86006,
+      "endMs": 87330,
+      "text": "The field blurs into",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6063483818502957,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 87330,
+      "endMs": 88839,
+      "text": "endless rotations:",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5100840031330317,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 88839,
+      "endMs": 90487,
+      "text": "heat, dust, the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6580701608412785,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 90487,
+      "endMs": 91811,
+      "text": "sticky sweet smell of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 91811,
+      "endMs": 92647,
+      "text": "trauma.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 92647,
+      "endMs": 94040,
+      "text": "On the worst days,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6160115161678933,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 94040,
+      "endMs": 94841,
+      "text": "it's the small",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 94841,
+      "endMs": 95549,
+      "text": "victories that",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6580626894429087,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 95549,
+      "endMs": 96780,
+      "text": "matter—keeping",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6506628834376508,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 96780,
+      "endMs": 98069,
+      "text": "someone talking,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 98069,
+      "endMs": 98824,
+      "text": "holding off the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6645953540515579,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 98824,
+      "endMs": 99857,
+      "text": "shadows until the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5156589470280374,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 99857,
+      "endMs": 100855,
+      "text": "bird comes to lift",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 100855,
+      "endMs": 101749,
+      "text": "them away.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5576989848236875,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 101749,
+      "endMs": 102422,
+      "text": "You write more",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 102422,
+      "endMs": 104094,
+      "text": "letters home, careful",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6690306035748161,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 104094,
+      "endMs": 105046,
+      "text": "to leave out every",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 105046,
+      "endMs": 106625,
+      "text": "detail that matters.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5290170275584044,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 106625,
+      "endMs": 107391,
+      "text": "Then you get your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 107391,
+      "endMs": 108877,
+      "text": "stripes. Shift",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 108877,
+      "endMs": 110781,
+      "text": "leader. Orders ring",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6145776125932432,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 110781,
+      "endMs": 111966,
+      "text": "heavier now.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 111966,
+      "endMs": 112976,
+      "text": "You track supply",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.673198926488447,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 112976,
+      "endMs": 114079,
+      "text": "runs, ration",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 114079,
+      "endMs": 115728,
+      "text": "morphine, study every",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 115728,
+      "endMs": 116993,
+      "text": "name on the roster",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 116993,
+      "endMs": 118096,
+      "text": "and pray you won't",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 118096,
+      "endMs": 119675,
+      "text": "have to mark any off.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 119675,
+      "endMs": 120615,
+      "text": "The team expects",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 120615,
+      "endMs": 121951,
+      "text": "certainty, but you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5654014912097309,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 121951,
+      "endMs": 122427,
+      "text": "trade in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 122427,
+      "endMs": 123738,
+      "text": "probabilities.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5795116756455011,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 123738,
+      "endMs": 125619,
+      "text": "Decisions cost sleep.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.622364496033274,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 125619,
+      "endMs": 126641,
+      "text": "Every time the call",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 126641,
+      "endMs": 128092,
+      "text": "comes in—another",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 128092,
+      "endMs": 129799,
+      "text": "blast, another convoy",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5658100865679876,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 129799,
+      "endMs": 131842,
+      "text": "hit—you measure risks",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 131842,
+      "endMs": 133096,
+      "text": "in seconds.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5374907089291229,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 133096,
+      "endMs": 134327,
+      "text": "You double-check each",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 134327,
+      "endMs": 135221,
+      "text": "medic before they",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5129322409103565,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 135221,
+      "endMs": 136892,
+      "text": "head out, memorizing",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 136892,
+      "endMs": 137554,
+      "text": "the look in their",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6298625127920366,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 137554,
+      "endMs": 139052,
+      "text": "eyes. Some are",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 139052,
+      "endMs": 140016,
+      "text": "already carrying",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5506250984226025,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 140016,
+      "endMs": 141490,
+      "text": "scars no one else can",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 141490,
+      "endMs": 142152,
+      "text": "see.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 142152,
+      "endMs": 142941,
+      "text": "You run field",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 142941,
+      "endMs": 144520,
+      "text": "exercises, run after",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5947966759274713,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 144520,
+      "endMs": 145914,
+      "text": "disaster, run on",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5043971879668838,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 145914,
+      "endMs": 147272,
+      "text": "empty days when every",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5821741780468913,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 147272,
+      "endMs": 148085,
+      "text": "moment feels",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5841294489680099,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 148085,
+      "endMs": 148932,
+      "text": "borrowed.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 148932,
+      "endMs": 150070,
+      "text": "You call families",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5329591682049113,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 150070,
+      "endMs": 151684,
+      "text": "when you have to. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5829895453992676,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 151684,
+      "endMs": 153228,
+      "text": "hang up, and your own",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5154312212852897,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 153228,
+      "endMs": 154458,
+      "text": "hands tremble in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 154458,
+      "endMs": 155294,
+      "text": "secret.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 155294,
+      "endMs": 156989,
+      "text": "Medic First Class.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 156989,
+      "endMs": 157837,
+      "text": "Two deployments",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5798184172312095,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 157837,
+      "endMs": 159346,
+      "text": "behind you, a dozen",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6661916639952986,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 159346,
+      "endMs": 160646,
+      "text": "lives stitched or",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6196639049849404,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 160646,
+      "endMs": 161378,
+      "text": "lost.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5414283959322281,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 161378,
+      "endMs": 162713,
+      "text": "You train new squads",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5415345084154635,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 162713,
+      "endMs": 164501,
+      "text": "now. You speak and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 164501,
+      "endMs": 165918,
+      "text": "men listen because",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.569200893251758,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 165918,
+      "endMs": 167020,
+      "text": "they know you do not",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5828689496336881,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 167020,
+      "endMs": 168808,
+      "text": "waste words. You push",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5550694227511374,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 168808,
+      "endMs": 169737,
+      "text": "them hard.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 169737,
+      "endMs": 170794,
+      "text": "You watch how they",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6416771471224396,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 170794,
+      "endMs": 172303,
+      "text": "break. You keep a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 172303,
+      "endMs": 173963,
+      "text": "list in your mind:",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 173963,
+      "endMs": 175078,
+      "text": "who needs a gentle",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 175078,
+      "endMs": 176831,
+      "text": "word, who’s hiding",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6995701169935844,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 176831,
+      "endMs": 178537,
+      "text": "behind jokes, who’s",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.533900145707907,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 178537,
+      "endMs": 179652,
+      "text": "trying to prove too",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5803723052144778,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 179652,
+      "endMs": 180325,
+      "text": "much.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 180325,
+      "endMs": 181916,
+      "text": "You write protocols,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5592587894682892,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 181916,
+      "endMs": 183239,
+      "text": "find workarounds when",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 183239,
+      "endMs": 184400,
+      "text": "supply trucks never",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 184400,
+      "endMs": 186014,
+      "text": "arrive, learn the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 186014,
+      "endMs": 187326,
+      "text": "value of contraband",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5339465713438015,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 187326,
+      "endMs": 188580,
+      "text": "chocolate shared on",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 188580,
+      "endMs": 189892,
+      "text": "thankless nights.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5483230520205714,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 189892,
+      "endMs": 191111,
+      "text": "It’s your job to look",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6239260385937097,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 191111,
+      "endMs": 192980,
+      "text": "calm, but some nights",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 192980,
+      "endMs": 193828,
+      "text": "you stare at the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 193828,
+      "endMs": 195349,
+      "text": "ceiling, counting the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 195349,
+      "endMs": 196347,
+      "text": "beats of your own",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 196347,
+      "endMs": 198065,
+      "text": "heart, replaying",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 198065,
+      "endMs": 199296,
+      "text": "every choice you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6319839896969627,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 199296,
+      "endMs": 200074,
+      "text": "wished you could",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5674438592061772,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 200074,
+      "endMs": 200852,
+      "text": "unmake.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5913230588861305,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 200852,
+      "endMs": 202234,
+      "text": "Sacrifice is a word",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6025856235109297,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 202234,
+      "endMs": 203743,
+      "text": "everyone uses but few",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.510486377910836,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 203743,
+      "endMs": 205624,
+      "text": "understand. You do",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6559626431783598,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 205624,
+      "endMs": 206332,
+      "text": "now.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5938608682368713,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 206332,
+      "endMs": 207621,
+      "text": "Senior Medic.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5668861323027448,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 207621,
+      "endMs": 209385,
+      "text": "Sergeant. The weight",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5066858046726368,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 209385,
+      "endMs": 211545,
+      "text": "is real. Newcomers",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 211545,
+      "endMs": 212532,
+      "text": "think you have all",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5840114771818843,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 212532,
+      "endMs": 214494,
+      "text": "the answers. You know",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6290802639223487,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 214494,
+      "endMs": 216177,
+      "text": "the truth—no one",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5628734160780882,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 216177,
+      "endMs": 216874,
+      "text": "does.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 216874,
+      "endMs": 218070,
+      "text": "Your badge means you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 218070,
+      "endMs": 219846,
+      "text": "outlasted others. It",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5232279902858956,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 219846,
+      "endMs": 220845,
+      "text": "means you know the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.527520854337127,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 220845,
+      "endMs": 222354,
+      "text": "questions to ask.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6368545454487139,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 222354,
+      "endMs": 223190,
+      "text": "When the incoming",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.535194957941881,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 223190,
+      "endMs": 224769,
+      "text": "alarms sound, you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6025256307462474,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 224769,
+      "endMs": 226290,
+      "text": "move fast but your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 226290,
+      "endMs": 228008,
+      "text": "thoughts slow:",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6259732997490056,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 228008,
+      "endMs": 230376,
+      "text": "triage, order, keep",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5851615526933365,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 230376,
+      "endMs": 231642,
+      "text": "the panic out of your",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5976030067066895,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 231642,
+      "endMs": 232385,
+      "text": "voice.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6812117748400388,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 232385,
+      "endMs": 233825,
+      "text": "You lose friends. You",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 233825,
+      "endMs": 235264,
+      "text": "keep going. You give",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 235264,
+      "endMs": 236147,
+      "text": "the orders someone",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.567026938981809,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 236147,
+      "endMs": 237447,
+      "text": "else once gave you.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5343142082950819,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 237447,
+      "endMs": 238411,
+      "text": "You teach them how to",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5855583503787778,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 238411,
+      "endMs": 239699,
+      "text": "hold a hand even as",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 239699,
+      "endMs": 240640,
+      "text": "they fight to save",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5920277220775325,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 240640,
+      "endMs": 241116,
+      "text": "it.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.552520252835886,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 241116,
+      "endMs": 242381,
+      "text": "You learn the cost of",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 242381,
+      "endMs": 244506,
+      "text": "memory, the way faces",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 244506,
+      "endMs": 245923,
+      "text": "linger after the tour",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 245923,
+      "endMs": 248361,
+      "text": "ends. You carry every",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.51729424669792,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 248361,
+      "endMs": 250532,
+      "text": "mistake with you. So",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6596934422716403,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 250532,
+      "endMs": 251530,
+      "text": "does everyone who",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 251530,
+      "endMs": 252494,
+      "text": "lasts.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6235685675011338,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 252494,
+      "endMs": 253504,
+      "text": "The day you pin on",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 253504,
+      "endMs": 254828,
+      "text": "your final rank, the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5133259029109005,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 254828,
+      "endMs": 256163,
+      "text": "barracks are quiet.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.536990719790291,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 256163,
+      "endMs": 257440,
+      "text": "You watch new medics",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 257440,
+      "endMs": 259089,
+      "text": "with fresh patches,",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6811641364005546,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 259089,
+      "endMs": 260238,
+      "text": "nervous the way you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5972753867630698,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 260238,
+      "endMs": 261179,
+      "text": "once were.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 261179,
+      "endMs": 262317,
+      "text": "You think of everyone",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5973907718719993,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 262317,
+      "endMs": 263466,
+      "text": "you tried to save and",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5472731460925552,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 263466,
+      "endMs": 264128,
+      "text": "everyone you",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5756643085186282,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 264128,
+      "endMs": 264894,
+      "text": "couldn't.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6910926012171921,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 264894,
+      "endMs": 265962,
+      "text": "You pass on what",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6775782795931168,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 265962,
+      "endMs": 267518,
+      "text": "matters—courage in",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5763836025303616,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 267518,
+      "endMs": 269271,
+      "text": "the chaos, compassion",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5822135980300022,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 269271,
+      "endMs": 270513,
+      "text": "in the aftermath.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6349310986149566,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 270513,
+      "endMs": 271535,
+      "text": "The cycle begins",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6080715316080291,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 271535,
+      "endMs": 273915,
+      "text": "again. You leave, but",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 273915,
+      "endMs": 275482,
+      "text": "the job never does.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6156236480831525,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 275482,
+      "endMs": 277200,
+      "text": "Every scar, every",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6111439864311554,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 277200,
+      "endMs": 278756,
+      "text": "lesson, walks out the",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 278756,
+      "endMs": 280219,
+      "text": "gate with you, a",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 280219,
+      "endMs": 281577,
+      "text": "reminder that rising",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 1,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 281577,
+      "endMs": 282425,
+      "text": "through the ranks",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6074997388505506,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 282425,
+      "endMs": 284189,
+      "text": "means carrying more",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6735248442510746,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 284189,
+      "endMs": 285652,
+      "text": "than just yourself.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5063614397188622,
+          "to": 1.25,
+          "startMs": 0,
+          "endMs": 300
+        },
+        {
+          "type": "scale",
+          "from": 1.25,
+          "to": 1,
+          "startMs": 300,
+          "endMs": 500
+        }
+      ]
+    },
+    {
+      "startMs": 285652,
+      "endMs": 286650,
+      "text": "It means carrying",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6660138018454473,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 286650,
+      "endMs": 287881,
+      "text": "others, even when",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.6491359122648833,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 287881,
+      "endMs": 288671,
+      "text": "you’re no longer",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5438711241843187,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    },
+    {
+      "startMs": 288671,
+      "endMs": 289367,
+      "text": "there.",
+      "position": "center",
+      "animations": [
+        {
+          "type": "scale",
+          "from": 0.5414225202005969,
+          "to": 1,
+          "startMs": 0,
+          "endMs": 300
+        }
+      ]
+    }
+  ],
+  "audio": [
+    {
+      "startMs": 0,
+      "endMs": 13560,
+      "audioUrl": "7fe17f36-f39e-4be5-b338-1a8a3075ad20"
+    },
+    {
+      "startMs": 13560,
+      "endMs": 25820,
+      "audioUrl": "462ce392-f0cd-4b9f-887f-c432a8d34e5d"
+    },
+    {
+      "startMs": 25820,
+      "endMs": 34922,
+      "audioUrl": "d6c0e84d-fe1a-42d7-ad34-67e29b85955c"
+    },
+    {
+      "startMs": 34922,
+      "endMs": 40495,
+      "audioUrl": "9af5b3e6-f99a-4f71-a346-9d86e932b1e1"
+    },
+    {
+      "startMs": 40495,
+      "endMs": 46718,
+      "audioUrl": "4ec116e0-a611-4bce-a5b4-147040cfd0e2"
+    },
+    {
+      "startMs": 46718,
+      "endMs": 58328,
+      "audioUrl": "05fed556-a856-4bf6-8f7b-584db64cd492"
+    },
+    {
+      "startMs": 58328,
+      "endMs": 68034,
+      "audioUrl": "eeeb4fd7-d6ca-443a-8362-29a377828926"
+    },
+    {
+      "startMs": 68034,
+      "endMs": 78529,
+      "audioUrl": "815021fb-2a78-4ea1-a437-6459c9b2c7b4"
+    },
+    {
+      "startMs": 78529,
+      "endMs": 81966,
+      "audioUrl": "701d2256-22b4-4726-a7d6-4f33d2f53f52"
+    },
+    {
+      "startMs": 81966,
+      "endMs": 86006,
+      "audioUrl": "8324cb18-5950-4e53-92ab-5933e224c87b"
+    },
+    {
+      "startMs": 86006,
+      "endMs": 92647,
+      "audioUrl": "f8b30ee1-183d-4ad9-a4e1-3af64dfa1de7"
+    },
+    {
+      "startMs": 92647,
+      "endMs": 101749,
+      "audioUrl": "ec5544f9-240f-4b53-860a-c7cad9490aae"
+    },
+    {
+      "startMs": 101749,
+      "endMs": 106625,
+      "audioUrl": "495b29da-aa12-4d0b-9920-7691b8eb941e"
+    },
+    {
+      "startMs": 106625,
+      "endMs": 111966,
+      "audioUrl": "5fa64b66-7895-4bd5-84d5-16e1b948afde"
+    },
+    {
+      "startMs": 111966,
+      "endMs": 119675,
+      "audioUrl": "cf0d662d-905c-4942-a0b2-95b2b7db954a"
+    },
+    {
+      "startMs": 119675,
+      "endMs": 125619,
+      "audioUrl": "614e313e-53b6-4b2d-b406-5cb5753f7544"
+    },
+    {
+      "startMs": 125619,
+      "endMs": 133096,
+      "audioUrl": "c338738a-a677-4f11-86e1-787db85d7ad5"
+    },
+    {
+      "startMs": 133096,
+      "endMs": 142152,
+      "audioUrl": "13a0ed05-4a09-454f-8730-e0839edfbf34"
+    },
+    {
+      "startMs": 142152,
+      "endMs": 148932,
+      "audioUrl": "48c8d932-51aa-4c48-8771-60df840d2992"
+    },
+    {
+      "startMs": 148932,
+      "endMs": 155294,
+      "audioUrl": "2564efca-ae18-4d0d-acba-4a9b6fba793b"
+    },
+    {
+      "startMs": 155294,
+      "endMs": 161378,
+      "audioUrl": "c7bd5b4a-d6ee-4ae2-b1a0-be6bbff93e4f"
+    },
+    {
+      "startMs": 161378,
+      "endMs": 169737,
+      "audioUrl": "0add69db-7cd1-462d-bd89-3357ac912751"
+    },
+    {
+      "startMs": 169737,
+      "endMs": 180325,
+      "audioUrl": "5b517f45-4e8b-49f9-b4f3-a04ad1d35803"
+    },
+    {
+      "startMs": 180325,
+      "endMs": 189892,
+      "audioUrl": "4ccb71e8-07dd-4309-83d2-745a1d43a890"
+    },
+    {
+      "startMs": 189892,
+      "endMs": 200852,
+      "audioUrl": "8d2c9247-7ead-446f-b395-61076c65cc1b"
+    },
+    {
+      "startMs": 200852,
+      "endMs": 206332,
+      "audioUrl": "8c4071dc-bae1-4d8c-9457-92920bbaecd2"
+    },
+    {
+      "startMs": 206332,
+      "endMs": 216874,
+      "audioUrl": "9b51b0d9-6329-4fab-bbaa-71835af56ffb"
+    },
+    {
+      "startMs": 216874,
+      "endMs": 222354,
+      "audioUrl": "2d62ed29-b76a-4e81-a07f-42d12037d45c"
+    },
+    {
+      "startMs": 222354,
+      "endMs": 232385,
+      "audioUrl": "76cfcd6a-12a8-4877-ba42-de837a9687cb"
+    },
+    {
+      "startMs": 232385,
+      "endMs": 237447,
+      "audioUrl": "0be1f4a0-d7c2-4b5e-9972-a0bfe8851069"
+    },
+    {
+      "startMs": 237447,
+      "endMs": 241116,
+      "audioUrl": "a21b98da-a767-4e11-a49a-54db113abbc0"
+    },
+    {
+      "startMs": 241116,
+      "endMs": 252494,
+      "audioUrl": "589e3e15-4031-4239-9bbd-dac431f00a56"
+    },
+    {
+      "startMs": 252494,
+      "endMs": 256163,
+      "audioUrl": "74853fb9-1992-4dc9-8635-9e1c87a3b843"
+    },
+    {
+      "startMs": 256163,
+      "endMs": 261179,
+      "audioUrl": "921fe7cd-c93d-43f3-9378-7368991cbf2f"
+    },
+    {
+      "startMs": 261179,
+      "endMs": 264894,
+      "audioUrl": "0bcae0fc-dfc8-40ef-b236-ce0c80af9614"
+    },
+    {
+      "startMs": 264894,
+      "endMs": 270513,
+      "audioUrl": "e986888b-90f4-4b7f-b94c-31b9da826ee2"
+    },
+    {
+      "startMs": 270513,
+      "endMs": 275482,
+      "audioUrl": "26c8034f-8914-483f-a4d2-6abb20a9a7ab"
+    },
+    {
+      "startMs": 275482,
+      "endMs": 285652,
+      "audioUrl": "07025a06-1c05-4c60-9386-6a461b446ced"
+    },
+    {
+      "startMs": 285652,
+      "endMs": 289367,
+      "audioUrl": "0128b824-eec2-47f4-830f-ffee46422950"
+    }
+  ],
+  "shortTitle": "Your life as Every Combat Medic Rank"
+}
