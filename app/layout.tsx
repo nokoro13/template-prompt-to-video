@@ -6,6 +6,7 @@ import { SyncUser } from "@/components/auth/SyncUser";
 import "./globals.css";
 import { Geist } from "next/font/google";
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/next"
 
 const geist = Geist({subsets:['latin'],variable:'--font-sans'});
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         <body className="h-svh overflow-hidden">
           <SyncUser />
           <AppShell>{children}</AppShell>
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>

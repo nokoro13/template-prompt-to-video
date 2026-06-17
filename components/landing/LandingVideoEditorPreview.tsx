@@ -343,7 +343,7 @@ export function LandingVideoEditorPreview({ className }: { className?: string })
           />
 
           <DemoShell>
-            <div className="mt-6 space-y-6 rounded-2xl border border-surface-border bg-white p-5 shadow-sm sm:p-6">
+            <div className="mt-6">
               <StepView />
             </div>
           </DemoShell>

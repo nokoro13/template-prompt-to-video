@@ -1,7 +1,3 @@
-"use client";
-
-import { CreateVideoButton } from "@/components/layout/CreateVideoButton";
-
 export function EmptyProjectsState() {
   return (
     <div className="flex min-h-[280px] flex-col items-center justify-center rounded-xl border-2 border-dashed border-border p-6 sm:min-h-[400px] sm:p-12">
@@ -11,9 +7,6 @@ export function EmptyProjectsState() {
           Create your first video to generate scenes, narration, and a timeline
           you can preview in Studio.
         </p>
-        <div className="mt-6 flex justify-center">
-          <CreateVideoButton variant="card" />
-        </div>
       </div>
     </div>
   );

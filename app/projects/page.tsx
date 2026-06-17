@@ -108,7 +108,7 @@ export default function ProjectsPage() {
         </div>
       ) : null}
 
-      <section className="mt-6 sm:mt-8">
+      <section className="mt-8 sm:mt-10">
         <div className="flex flex-wrap items-center justify-between gap-2">
           <h2 className="text-base font-semibold sm:text-lg">Recent projects</h2>
           {projects && projects.length > 0 ? (
@@ -128,7 +128,11 @@ export default function ProjectsPage() {
           <p className="mt-6 text-sm text-muted-foreground">Loading…</p>
         )}
 
-        {projects && projects.length === 0 && !error && <EmptyProjectsState />}
+        {projects && projects.length === 0 && !error && (
+          <div className="mt-6">
+            <EmptyProjectsState />
+          </div>
+        )}
 
         {projects && projects.length > 0 && filtered.length === 0 ? (
           <p className="mt-6 rounded-xl border border-dashed border-border bg-muted/30 px-4 py-10 text-center text-sm text-muted-foreground">
