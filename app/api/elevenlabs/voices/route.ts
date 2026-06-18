@@ -1,32 +1,18 @@
-import { NextRequest, NextResponse } from "next/server";
+import { NextResponse } from "next/server";
 
 import { DEFAULT_ELEVENLABS_VOICE_ID } from "@/lib/elevenlabs/constants";
 import { listElevenLabsVoices } from "@/lib/elevenlabs/list-voices";
 
-/**
- * POST body: `{ "elevenlabsApiKey"?: string }` — uses server env when omitted.
- * Returns `{ voices: { voice_id, name, category? }[] }` for UI selects.
- */
-export async function POST(req: NextRequest) {
-  let body: { elevenlabsApiKey?: string };
-  try {
-    body = (await req.json()) as { elevenlabsApiKey?: string };
-  } catch {
-    body = {};
-  }
-
-  const apiKey =
-    typeof body.elevenlabsApiKey === "string" && body.elevenlabsApiKey.trim()
-      ? body.elevenlabsApiKey.trim()
-      : process.env.ELEVENLABS_API_KEY || "";
+/** Returns `{ voices: { voice_id, name, category? }[] }` using server-side keys. */
+export async function POST() {
+  const apiKey = process.env.ELEVENLABS_API_KEY?.trim() || "";
 
   if (!apiKey) {
     return NextResponse.json(
       {
-        error:
-          "Missing ElevenLabs API key. Set ELEVENLABS_API_KEY or pass elevenlabsApiKey in the body.",
+        error: "Voice previews are temporarily unavailable. Please try again later.",
       },
-      { status: 400 },
+      { status: 503 },
     );
   }
 

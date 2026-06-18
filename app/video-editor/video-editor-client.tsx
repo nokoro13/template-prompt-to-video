@@ -79,9 +79,6 @@ export function VideoEditorClient() {
   const [topic, setTopic] = useState("");
   const [styles, setStyles] = useState<ChannelStyleRecord[]>([]);
   const [selectedStyleId, setSelectedStyleId] = useState("");
-  const [openaiKey, setOpenaiKey] = useState("");
-  const [geminiKey, setGeminiKey] = useState("");
-  const [elevenKey, setElevenKey] = useState("");
   const [slug, setSlug] = useState<string | null>(null);
   const [project, setProject] = useState<ProjectPayload | null>(null);
   /**
@@ -252,7 +249,6 @@ export function VideoEditorClient() {
             body: JSON.stringify({
               voiceId: v.voice_id,
               sampleId: v.sampleId,
-              elevenlabsApiKey: elevenKey.trim() || undefined,
             }),
           });
           if (!res.ok) {
@@ -298,7 +294,7 @@ export function VideoEditorClient() {
         }
       }
     },
-    [elevenKey, stopVoicePreview, stopGeneratedVoiceover],
+    [stopVoicePreview, stopGeneratedVoiceover],
   );
 
   const fetchProject = useCallback(async (s: string): Promise<ProjectPayload> => {
@@ -464,9 +460,7 @@ export function VideoEditorClient() {
         const res = await fetch("/api/elevenlabs/voices", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({
-            elevenlabsApiKey: elevenKey.trim() || undefined,
-          }),
+          body: JSON.stringify({}),
         });
         const data = (await res.json()) as {
           voices?: ElevenLabsVoiceRow[];
@@ -505,19 +499,12 @@ export function VideoEditorClient() {
     return () => {
       cancelled = true;
     };
-  }, [step, elevenKey]);
+  }, [step]);
 
   const keysForScript = Boolean(envReady?.openai);
   const keysForVoice =
-    Boolean(envReady?.openai) &&
-    (Boolean(envReady?.elevenlabs) || Boolean(elevenKey.trim()));
+    Boolean(envReady?.openai) && Boolean(envReady?.elevenlabs);
   const keysForImages = Boolean(envReady?.nanoBanana);
-
-  const keyBody = {
-    ...(openaiKey.trim() ? { openaiApiKey: openaiKey.trim() } : {}),
-    ...(geminiKey.trim() ? { geminiApiKey: geminiKey.trim() } : {}),
-    ...(elevenKey.trim() ? { elevenlabsApiKey: elevenKey.trim() } : {}),
-  };
 
   const selectedStyle = styles.find((s) => s.id === selectedStyleId);
 
@@ -531,8 +518,7 @@ export function VideoEditorClient() {
     slug && project && project.scenes.length > 0,
   );
 
-  const hasOpenAiForSetup =
-    Boolean(envReady?.openai) || Boolean(openaiKey.trim());
+  const hasOpenAiForSetup = Boolean(envReady?.openai);
   const canSuggestTopic =
     Boolean(selectedStyleId.trim()) &&
     Boolean(selectedStyle?.extractedFormat) &&
@@ -563,7 +549,6 @@ export function VideoEditorClient() {
           topic: topic.trim(),
           ...(selectedStyleId.trim() ? { styleId: selectedStyleId.trim() } : {}),
           ...(useWebSearchForScript ? { useWebSearch: true } : {}),
-          ...keyBody,
         }),
       });
       const data = (await res.json()) as { ok?: boolean; error?: string; slug?: string };
@@ -598,7 +583,6 @@ export function VideoEditorClient() {
           ...(selectedVoiceId.trim()
             ? { voiceId: selectedVoiceId.trim() }
             : {}),
-          ...keyBody,
         }),
       });
       const data = (await res.json()) as { ok?: boolean; error?: string };
@@ -626,7 +610,6 @@ export function VideoEditorClient() {
         body: JSON.stringify({
           slug,
           imageSize: geminiImageSize,
-          ...keyBody,
         }),
       });
       const data = (await res.json()) as { ok?: boolean; error?: string };
@@ -653,7 +636,6 @@ export function VideoEditorClient() {
           slug,
           sceneIndex,
           imageSize: geminiImageSize,
-          ...keyBody,
         }),
       });
       const data = (await res.json()) as { ok?: boolean; error?: string };
@@ -721,7 +703,6 @@ export function VideoEditorClient() {
         body: JSON.stringify({
           title: title.trim(),
           styleId: selectedStyleId.trim(),
-          ...keyBody,
         }),
       });
       const data = (await res.json()) as {
@@ -750,25 +731,6 @@ export function VideoEditorClient() {
         Step through script, voiceover, and scene images — then build the
         timeline for Studio.
       </p>
-
-      {/* {envReady && (
-        <div
-          className={cn(
-            "mt-4 rounded-xl border px-4 py-3 text-sm",
-            envReady.openai && envReady.nanoBanana
-              ? "border-emerald-200 bg-emerald-50 text-emerald-900"
-              : "border-amber-200 bg-amber-50 text-amber-900",
-          )}
-        >
-          <p>
-            <strong>Server keys:</strong> OpenAI{" "}
-            {envReady.openai ? "✓" : "✗"}, Gemini (images){" "}
-            {envReady.nanoBanana ? "✓" : "✗"}
-            , ElevenLabs {envReady.elevenlabs ? "✓" : "✗"}
-            . Use Advanced overrides if needed.
-          </p>
-        </div>
-      )} */}
 
       <VideoEditorStepBar step={step} className="mt-6 sm:mt-8" />
 
@@ -857,7 +819,7 @@ export function VideoEditorClient() {
                         : !title.trim()
                           ? "Enter a story title first"
                           : !hasOpenAiForSetup
-                            ? "Add an OpenAI key (server env or Advanced)"
+                            ? "AI generation is temporarily unavailable — contact support"
                             : "Generate a topic from your title and this style’s format analysis"
                     }
                   >
@@ -1073,8 +1035,7 @@ export function VideoEditorClient() {
               <p className="text-xs text-slate-500">
                 Choose a row to select the voice. Use the play button to hear a
                 sample (preview URL from ElevenLabs, or the first attached
-                sample via our server). Add an API key under Advanced if the
-                server key is not configured.
+                sample via our server).
               </p>
               {voicesLoading ? (
                 <p className="flex items-center gap-2 text-sm text-slate-600">
@@ -1084,12 +1045,12 @@ export function VideoEditorClient() {
               ) : voicesError ? (
                 <p className="text-sm text-amber-900">
                   Could not load the voice list ({voicesError}). You can still
-                  generate — the server default voice will be used unless you
-                  fix the key and refresh this step.
+                  generate — the default voice will be used. Refresh this step
+                  to try again.
                 </p>
               ) : voices.length === 0 ? (
                 <p className="text-sm text-slate-600">
-                  No voices returned for this API key.
+                  No voices available right now.
                 </p>
               ) : (
                 <ul
@@ -1423,56 +1384,6 @@ export function VideoEditorClient() {
           </div>
         )}
       </div>
-
-      <details className="mt-6 rounded-lg border border-dashed border-surface-border bg-surface-muted p-4 text-sm">
-        <summary className="cursor-pointer font-medium text-slate-700">
-          Advanced — override API keys
-        </summary>
-        <div className="mt-3 grid gap-3 sm:grid-cols-3">
-          <div>
-            <Label htmlFor="ve-openai" className="text-xs">
-              OpenAI
-            </Label>
-            <Input
-              id="ve-openai"
-              type="password"
-              autoComplete="new-password"
-              value={openaiKey}
-              onChange={(e) => setOpenaiKey(e.target.value)}
-              className="mt-1"
-              placeholder=".env default"
-            />
-          </div>
-          <div>
-            <Label htmlFor="ve-gemini" className="text-xs">
-              Gemini (images)
-            </Label>
-            <Input
-              id="ve-gemini"
-              type="password"
-              autoComplete="new-password"
-              value={geminiKey}
-              onChange={(e) => setGeminiKey(e.target.value)}
-              className="mt-1"
-              placeholder=".env default"
-            />
-          </div>
-          <div>
-            <Label htmlFor="ve-eleven" className="text-xs">
-              ElevenLabs
-            </Label>
-            <Input
-              id="ve-eleven"
-              type="password"
-              autoComplete="new-password"
-              value={elevenKey}
-              onChange={(e) => setElevenKey(e.target.value)}
-              className="mt-1"
-              placeholder=".env default"
-            />
-          </div>
-        </div>
-      </details>
 
       {error && (
         <p className="mt-4 rounded-lg border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800">

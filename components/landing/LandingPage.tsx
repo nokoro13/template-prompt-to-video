@@ -23,7 +23,7 @@ import { LandingFaq } from "@/components/landing/LandingFaq";
 import { LandingPricing } from "@/components/landing/LandingPricing";
 import { useLandingScrollTo } from "@/components/landing/LandingScrollContext";
 import { Button } from "@/components/ui/button";
-import { LANDING_NAV } from "@/lib/landing/content";
+import { LANDING_HERO, LANDING_NAV } from "@/lib/landing/content";
 
 const WORKFLOW = [
   {
@@ -203,23 +203,24 @@ export function LandingPage({ hasSubscription = false }: LandingPageProps) {
                       <span className="relative inline-flex size-1.5 rounded-full bg-brand-600" />
                     </span>
                     <span className="text-[11px] font-medium uppercase tracking-[0.14em] text-slate-500">
-                      Automated youtube production
+                      {LANDING_HERO.eyebrow}
                     </span>
                   </div>
                 </LandingHeroReveal>
 
                 <LandingHeroReveal step={1}>
-                  <h1 className="text-5xl font-semibold leading-[1.08] tracking-[-0.03em] text-slate-900 lg:text-[3.25rem]">
-                    <span className="block">AI tools in one place</span>
-                    <span className="mt-1 block bg-gradient-to-r from-slate-900 via-brand-600 to-brand-700 bg-clip-text text-transparent">
-                      to create story videos
+                  <h1 className="text-5xl font-semibold leading-[1.12] tracking-[-0.03em] text-slate-900 lg:text-[3.25rem]">
+                    {LANDING_HERO.headlineLine1}
+                    <br />
+                    <span className="bg-gradient-to-r from-slate-900 via-brand-600 to-brand-700 bg-clip-text pb-0.5 text-transparent">
+                      {LANDING_HERO.headlineLine2}
                     </span>
                   </h1>
                 </LandingHeroReveal>
 
                 <LandingHeroReveal step={2}>
                   <p className="mx-auto mt-5 max-w-md text-base leading-7 text-slate-500">
-                    Clone a proven format. Generate scripts, voiceovers, scenes, and thumbnails.
+                    {LANDING_HERO.subhead}
                   </p>
                 </LandingHeroReveal>
 
@@ -233,7 +234,7 @@ export function LandingPage({ hasSubscription = false }: LandingPageProps) {
                       href="#workflow"
                       className="inline-flex h-11 items-center px-2 text-sm font-medium text-brand-600 transition hover:text-brand-700"
                     >
-                      See the workflow
+                      {LANDING_HERO.secondaryCta}
                       <ArrowRight className="ml-1 size-4" />
                     </NavAnchor>
                   </div>

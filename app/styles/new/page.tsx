@@ -9,14 +9,13 @@ import { Label } from "@/components/ui/label";
 import Link from "next/link";
 import { AspectRatioToggle } from "@/components/styles/AspectRatioToggle";
 import { YouTubeTranscriptImport } from "@/components/styles/YouTubeTranscriptImport";
+import { MAX_REFERENCE_IMAGES_PER_STYLE } from "@/lib/channel-styles/image-limits";
 import { cn } from "@/lib/utils";
-
-type TranscriptDraft = { id: string; title: string; content: string };
 
 const STEPS = [
   "Basic info",
   "Style reference images",
-  "Transcripts",
+  "Reference transcript",
   "Create",
 ] as const;
 
@@ -31,9 +30,8 @@ export default function NewStylePage() {
   );
   const [targetWordInput, setTargetWordInput] = useState("");
   const [images, setImages] = useState<File[]>([]);
-  const [transcripts, setTranscripts] = useState<TranscriptDraft[]>([
-    { id: crypto.randomUUID(), title: "", content: "" },
-  ]);
+  const [transcriptTitle, setTranscriptTitle] = useState("");
+  const [transcriptContent, setTranscriptContent] = useState("");
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -43,14 +41,18 @@ export default function NewStylePage() {
       f.type.startsWith("image/"),
     );
     if (files.length) {
-      setImages((prev) => [...prev, ...files]);
+      setImages((prev) =>
+        [...prev, ...files].slice(0, MAX_REFERENCE_IMAGES_PER_STYLE),
+      );
     }
   }, []);
 
   const onPickImages = (e: React.ChangeEvent<HTMLInputElement>) => {
     const files = e.target.files;
     if (!files?.length) return;
-    setImages((prev) => [...prev, ...Array.from(files)]);
+    setImages((prev) =>
+      [...prev, ...Array.from(files)].slice(0, MAX_REFERENCE_IMAGES_PER_STYLE),
+    );
     e.target.value = "";
   };
 
@@ -58,54 +60,44 @@ export default function NewStylePage() {
     setImages((prev) => prev.filter((_, i) => i !== index));
   };
 
-  const addTranscript = () => {
-    setTranscripts((prev) => [
-      ...prev,
-      { id: crypto.randomUUID(), title: "", content: "" },
-    ]);
-  };
-
-  const updateTranscript = (
-    id: string,
-    patch: Partial<Pick<TranscriptDraft, "title" | "content">>,
-  ) => {
-    setTranscripts((prev) =>
-      prev.map((t) => (t.id === id ? { ...t, ...patch } : t)),
-    );
-  };
-
-  const removeTranscript = (id: string) => {
-    setTranscripts((prev) => (prev.length <= 1 ? prev : prev.filter((t) => t.id !== id)));
-  };
-
-  const loadTxtFile = async (id: string, file: File) => {
+  const loadTxtFile = async (file: File) => {
     const text = await file.text();
-    updateTranscript(id, { content: text });
+    setTranscriptContent(text);
   };
 
   const canNext = () => {
     if (step === 0) return name.trim().length > 0;
     if (step === 1) return images.length >= 1;
     if (step === 2) {
-      return transcripts.some(
-        (t) => t.title.trim() && t.content.trim().length > 0,
-      );
+      return transcriptTitle.trim().length > 0 && transcriptContent.trim().length > 0;
     }
     return true;
   };
 
   const submit = async () => {
     setError(null);
-    const validTranscripts = transcripts
-      .filter((t) => t.title.trim() && t.content.trim())
-      .map((t) => ({ title: t.title.trim(), content: t.content.trim() }));
+    const validTranscripts =
+      transcriptTitle.trim() && transcriptContent.trim()
+        ? [
+            {
+              title: transcriptTitle.trim(),
+              content: transcriptContent.trim(),
+            },
+          ]
+        : [];
 
     if (images.length < 1) {
       setError("Add at least one style reference image.");
       return;
     }
+    if (images.length > MAX_REFERENCE_IMAGES_PER_STYLE) {
+      setError(
+        `Each style supports up to ${MAX_REFERENCE_IMAGES_PER_STYLE} reference images.`,
+      );
+      return;
+    }
     if (validTranscripts.length < 1) {
-      setError("Add at least one transcript with title and content.");
+      setError("Add a reference transcript with title and content.");
       return;
     }
 
@@ -162,14 +154,14 @@ export default function NewStylePage() {
 
       <h1 className="mt-4 text-2xl font-bold tracking-tight sm:mt-6 sm:text-3xl">Create style</h1>
       <p className="mt-2 text-sm text-muted-foreground sm:text-base">
-        Add a name, style-only reference images, and at least one transcript.
-        We&apos;ll analyze the transcript to capture format and pacing.
+        Add a name, style-only reference images, and one reference transcript.
+        We&apos;ll analyze it to capture format and pacing.
       </p>
 
       <div className="-mx-4 mt-6 border-b border-border px-4 pb-4 sm:mx-0 sm:mt-8 sm:px-0">
         <div className="scrollbar-none flex w-full snap-x snap-mandatory gap-2 overflow-x-auto sm:gap-3 sm:overflow-visible">
           {STEPS.map((label, i) => {
-            const mobileLabels = ["Info", "Images", "Scripts", "Create"] as const;
+            const mobileLabels = ["Info", "Images", "Transcript", "Create"] as const;
             return (
               <div
                 key={label}
@@ -269,33 +261,43 @@ export default function NewStylePage() {
         {step === 1 && (
           <div>
             <p className="text-sm text-muted-foreground">
-              Upload images that show <strong>only how the art should look</strong>{" "}
+              Upload 1–2 images that show <strong>only how the art should look</strong>{" "}
               (line work, color, texture, stylization). Use neutral or varied
               subjects—do not rely on these frames to define who appears or what
               happens; character consistency uses the Characters tab after the
               style exists. Prefer images without watermarks or logos (up to 10MB
               each).
             </p>
-            <div
-              onDragOver={(e) => e.preventDefault()}
-              onDrop={onDrop}
-              className="mt-4 flex min-h-[160px] cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-border bg-muted/30 p-6 text-center"
-            >
-              <Upload className="mb-2 size-8 text-muted-foreground" />
-              <p className="text-sm font-medium">Drag & drop images here</p>
-              <label className="mt-2">
-                <span className="cursor-pointer text-sm text-primary underline">
-                  or browse
-                </span>
-                <input
-                  type="file"
-                  accept="image/*"
-                  multiple
-                  className="hidden"
-                  onChange={onPickImages}
-                />
-              </label>
-            </div>
+            {images.length < MAX_REFERENCE_IMAGES_PER_STYLE ? (
+              <div
+                onDragOver={(e) => e.preventDefault()}
+                onDrop={onDrop}
+                className="mt-4 flex min-h-[160px] cursor-pointer flex-col items-center justify-center rounded-xl border-2 border-dashed border-border bg-muted/30 p-6 text-center"
+              >
+                <Upload className="mb-2 size-8 text-muted-foreground" />
+                <p className="text-sm font-medium">Drag & drop images here</p>
+                <p className="mt-1 text-xs text-muted-foreground">
+                  {images.length}/{MAX_REFERENCE_IMAGES_PER_STYLE} added
+                </p>
+                <label className="mt-2">
+                  <span className="cursor-pointer text-sm text-primary underline">
+                    or browse
+                  </span>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    className="hidden"
+                    onChange={onPickImages}
+                  />
+                </label>
+              </div>
+            ) : (
+              <p className="mt-4 text-sm text-muted-foreground">
+                Maximum of {MAX_REFERENCE_IMAGES_PER_STYLE} reference images
+                reached. Remove one below to replace it.
+              </p>
+            )}
             {images.length > 0 && (
               <ul className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
                 {images.map((file, i) => (
@@ -328,75 +330,52 @@ export default function NewStylePage() {
           <div className="space-y-6">
             <p className="text-sm text-muted-foreground">
               Paste a YouTube URL to import captions, or enter a reference script
-              manually. Add a clear title for each (e.g. the original video title).
+              manually. Use a clear title (e.g. the original video title). Each
+              style supports one reference transcript.
             </p>
-            {transcripts.map((t) => (
-              <div
-                key={t.id}
-                className="space-y-3 rounded-xl border border-border p-4"
-              >
-                <YouTubeTranscriptImport
-                  onImported={({ title, content }) =>
-                    updateTranscript(t.id, { title, content })
-                  }
-                  disabled={submitting}
+            <div className="space-y-3 rounded-xl border border-border p-4">
+              <YouTubeTranscriptImport
+                onImported={({ title, content }) => {
+                  setTranscriptTitle(title);
+                  setTranscriptContent(content);
+                }}
+                disabled={submitting}
+              />
+              <div>
+                <Label>Transcript title</Label>
+                <Input
+                  value={transcriptTitle}
+                  onChange={(e) => setTranscriptTitle(e.target.value)}
+                  placeholder="e.g. POV: Your life as EVERY NAVY SEAL RANK"
+                  className="mt-1"
                 />
-                <div className="flex items-start justify-between gap-2">
-                  <div className="flex-1">
-                    <Label>Transcript title</Label>
-                    <Input
-                      value={t.title}
-                      onChange={(e) =>
-                        updateTranscript(t.id, { title: e.target.value })
-                      }
-                      placeholder="e.g. POV: Your life as EVERY NAVY SEAL RANK"
-                      className="mt-1"
-                    />
-                  </div>
-                  {transcripts.length > 1 && (
-                    <Button
-                      type="button"
-                      variant="ghost"
-                      size="icon"
-                      className="mt-6 shrink-0"
-                      onClick={() => removeTranscript(t.id)}
-                    >
-                      <Trash2 className="size-4" />
-                    </Button>
-                  )}
-                </div>
-                <div>
-                  <Label>Content</Label>
-                  <textarea
-                    value={t.content}
-                    onChange={(e) =>
-                      updateTranscript(t.id, { content: e.target.value })
-                    }
-                    rows={8}
-                    className="mt-1 w-full rounded-lg border border-input bg-background px-3 py-2 font-mono text-sm"
-                    placeholder="Paste transcript text…"
-                  />
-                </div>
-                <div>
-                  <Label className="text-xs text-muted-foreground">
-                    Or upload .txt
-                  </Label>
-                  <input
-                    type="file"
-                    accept=".txt,text/plain"
-                    className="mt-1 block text-sm"
-                    onChange={(e) => {
-                      const f = e.target.files?.[0];
-                      if (f) void loadTxtFile(t.id, f);
-                      e.target.value = "";
-                    }}
-                  />
-                </div>
               </div>
-            ))}
-            <Button type="button" variant="secondary" onClick={addTranscript}>
-              + Add another transcript
-            </Button>
+              <div>
+                <Label>Content</Label>
+                <textarea
+                  value={transcriptContent}
+                  onChange={(e) => setTranscriptContent(e.target.value)}
+                  rows={8}
+                  className="mt-1 w-full rounded-lg border border-input bg-background px-3 py-2 font-mono text-sm"
+                  placeholder="Paste transcript text…"
+                />
+              </div>
+              <div>
+                <Label className="text-xs text-muted-foreground">
+                  Or upload .txt
+                </Label>
+                <input
+                  type="file"
+                  accept=".txt,text/plain"
+                  className="mt-1 block text-sm"
+                  onChange={(e) => {
+                    const f = e.target.files?.[0];
+                    if (f) void loadTxtFile(f);
+                    e.target.value = "";
+                  }}
+                />
+              </div>
+            </div>
           </div>
         )}
 
@@ -404,19 +383,12 @@ export default function NewStylePage() {
           <div className="space-y-4 text-sm">
             <p>
               Ready to create <strong>{name.trim() || "this style"}</strong> with{" "}
-              <strong>{images.length}</strong> image(s) and{" "}
-              <strong>
-                {
-                  transcripts.filter((t) => t.title.trim() && t.content.trim())
-                    .length
-                }
-              </strong>{" "}
-              transcript(s).
+              <strong>{images.length}</strong> image(s) and one reference transcript.
             </p>
             <p className="text-muted-foreground">
               We&apos;ll save files under{" "}
               <code className="rounded bg-muted px-1">public/channel-styles/</code>{" "}
-              and run AI analysis on the first transcript.
+              and run AI format analysis on the transcript.
             </p>
           </div>
         )}

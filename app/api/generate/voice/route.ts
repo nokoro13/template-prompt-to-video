@@ -13,7 +13,6 @@ export async function POST(req: NextRequest) {
 
     let body: {
       slug?: string;
-      elevenlabsApiKey?: string;
       skipVoice?: boolean;
       voiceId?: string;
     };
@@ -35,16 +34,14 @@ export async function POST(req: NextRequest) {
       typeof body.voiceId === "string" && body.voiceId.trim()
         ? body.voiceId.trim()
         : undefined;
-    const elevenlabsApiKey =
-      body.elevenlabsApiKey?.trim() || process.env.ELEVENLABS_API_KEY || "";
+    const elevenlabsApiKey = process.env.ELEVENLABS_API_KEY?.trim() || "";
 
     if (!skipVoice && !elevenlabsApiKey) {
       return NextResponse.json(
         {
-          error:
-            "Missing ElevenLabs key. Set ELEVENLABS_API_KEY in .env, pass elevenlabsApiKey, or set skipVoice: true.",
+          error: "Voice generation is temporarily unavailable. Please try again later.",
         },
-        { status: 400 },
+        { status: 503 },
       );
     }
 

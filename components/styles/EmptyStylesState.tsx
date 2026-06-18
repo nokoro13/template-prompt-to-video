@@ -10,7 +10,7 @@ export function EmptyStylesState() {
       <div className="text-center">
         <h3 className="text-lg font-semibold">No styles yet</h3>
         <p className="mt-2 text-sm text-muted-foreground">
-          Create your first channel style with style reference images and transcripts
+          Create your first channel style with reference art and a reference transcript
         </p>
         <Link
           href="/styles/new"

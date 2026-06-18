@@ -8,6 +8,7 @@ import { BRAND_META, type BrandId } from "@/components/landing/BrandIcons";
 import { LandingHeroReveal } from "@/components/landing/LandingMotion";
 import { useLandingScrollTo } from "@/components/landing/LandingScrollContext";
 import { Button } from "@/components/ui/button";
+import { LANDING_HERO } from "@/lib/landing/content";
 
 const MOBILE_INTEGRATIONS: BrandId[] = [
   "openai",
@@ -88,24 +89,24 @@ export function LandingMobileHero({
               <span className="relative inline-flex size-1.5 rounded-full bg-brand-600" />
             </span>
             <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-slate-500">
-              YouTube automation
+              {LANDING_HERO.eyebrow}
             </span>
           </div>
         </LandingHeroReveal>
 
         <LandingHeroReveal step={1}>
-          <h1 className="mt-5 text-[2rem] font-semibold leading-[1.1] tracking-[-0.03em] text-slate-900">
-            AI tools to create{" "}
-            <span className="bg-gradient-to-r from-slate-900 via-brand-600 to-brand-700 bg-clip-text text-transparent">
-              story videos
+          <h1 className="mt-5 text-[2rem] font-semibold leading-[1.12] tracking-[-0.03em] text-slate-900">
+            {LANDING_HERO.headlineLine1}
+            <br />
+            <span className="bg-gradient-to-r from-slate-900 via-brand-600 to-brand-700 bg-clip-text pb-0.5 text-transparent">
+              {LANDING_HERO.headlineLine2}
             </span>
           </h1>
         </LandingHeroReveal>
 
         <LandingHeroReveal step={2}>
           <p className="mt-4 text-[15px] leading-7 text-slate-500">
-            Clone a proven format. Generate scripts, voiceovers, scenes, and
-            thumbnails — all in one editor.
+            {LANDING_HERO.subhead}
           </p>
         </LandingHeroReveal>
 
@@ -120,7 +121,7 @@ export function LandingMobileHero({
               onClick={() => scrollTo("workflow")}
               className="inline-flex h-11 items-center justify-center gap-1 text-sm font-medium text-brand-600"
             >
-              See how it works
+              {LANDING_HERO.secondaryCta}
               <ArrowRight className="size-4" />
             </button>
           </div>

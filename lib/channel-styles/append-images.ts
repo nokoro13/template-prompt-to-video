@@ -4,9 +4,11 @@ import type { ChannelStyleRecord } from "./types";
 import { ChannelStyleRecordSchema } from "./types";
 import { getStyle, saveStyle } from "../storage/styles";
 import { putStyleFile, resolveStyleImageToLocal } from "../storage/style-storage";
-
-const MAX_IMAGE_BYTES = 10 * 1024 * 1024;
-const MAX_IMAGES_PER_STYLE = 10;
+import {
+  MAX_REFERENCE_IMAGES_PER_STYLE,
+  MAX_STYLE_IMAGE_BYTES,
+  tooManyReferenceImagesMessage,
+} from "./image-limits";
 
 function extFromName(filename: string): string {
   const m = filename.match(/(\.[a-zA-Z0-9]+)$/);
@@ -22,12 +24,15 @@ export async function appendStyleImages(
   if (!style) {
     throw new Error(`Style not found: ${id}`);
   }
-  if (style.references.images.length + imageBuffers.length > MAX_IMAGES_PER_STYLE) {
-    throw new Error(`Maximum ${MAX_IMAGES_PER_STYLE} reference images per style`);
+  if (
+    style.references.images.length + imageBuffers.length >
+    MAX_REFERENCE_IMAGES_PER_STYLE
+  ) {
+    throw new Error(tooManyReferenceImagesMessage());
   }
   for (const img of imageBuffers) {
-    if (img.buffer.length > MAX_IMAGE_BYTES) {
-      throw new Error(`Image too large (max ${MAX_IMAGE_BYTES} bytes)`);
+    if (img.buffer.length > MAX_STYLE_IMAGE_BYTES) {
+      throw new Error(`Image too large (max ${MAX_STYLE_IMAGE_BYTES} bytes)`);
     }
   }
 

@@ -3,6 +3,14 @@ import { NextRequest, NextResponse } from "next/server";
 import { handleAuthError } from "@/lib/auth/handle-auth-error";
 import { requireUser } from "@/lib/auth/require-user";
 import { createChannelStyle } from "@/lib/channel-styles/create-style";
+import {
+  MAX_REFERENCE_IMAGES_PER_STYLE,
+  tooManyReferenceImagesMessage,
+} from "@/lib/channel-styles/image-limits";
+import {
+  MAX_REFERENCE_TRANSCRIPTS_PER_STYLE,
+  tooManyReferenceTranscriptsMessage,
+} from "@/lib/channel-styles/transcript-limits";
 import { listStyles } from "@/lib/storage/styles";
 
 export async function GET() {
@@ -71,6 +79,19 @@ export async function POST(req: NextRequest) {
       );
     }
 
+    if (transcripts.length < 1) {
+      return NextResponse.json(
+        { error: "A reference transcript with title and content is required" },
+        { status: 400 },
+      );
+    }
+    if (transcripts.length > MAX_REFERENCE_TRANSCRIPTS_PER_STYLE) {
+      return NextResponse.json(
+        { error: tooManyReferenceTranscriptsMessage() },
+        { status: 400 },
+      );
+    }
+
     const files = form.getAll("images");
     const imageBuffers: { filename: string; buffer: Buffer }[] = [];
     for (const f of files) {
@@ -78,6 +99,19 @@ export async function POST(req: NextRequest) {
         const buf = Buffer.from(await f.arrayBuffer());
         imageBuffers.push({ filename: f.name || "image.png", buffer: buf });
       }
+    }
+
+    if (imageBuffers.length < 1) {
+      return NextResponse.json(
+        { error: "At least one style reference image is required" },
+        { status: 400 },
+      );
+    }
+    if (imageBuffers.length > MAX_REFERENCE_IMAGES_PER_STYLE) {
+      return NextResponse.json(
+        { error: tooManyReferenceImagesMessage() },
+        { status: 400 },
+      );
     }
 
     const record = await createChannelStyle({

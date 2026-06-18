@@ -17,7 +17,6 @@ export async function POST(req: NextRequest) {
 
     let body: {
       slug?: string;
-      geminiApiKey?: string;
       sceneIndex?: number | null;
       imageSize?: string;
     };
@@ -34,16 +33,14 @@ export async function POST(req: NextRequest) {
 
     await assertProjectAccess(user.id, slug);
 
-    const geminiApiKey =
-      body.geminiApiKey?.trim() || process.env.NANO_BANANA_API_KEY || "";
+    const geminiApiKey = process.env.NANO_BANANA_API_KEY?.trim() || "";
 
     if (!geminiApiKey) {
       return NextResponse.json(
         {
-          error:
-            "Missing Gemini key. Set NANO_BANANA_API_KEY in .env or pass geminiApiKey in the request.",
+          error: "Image generation is temporarily unavailable. Please try again later.",
         },
-        { status: 400 },
+        { status: 503 },
       );
     }
 

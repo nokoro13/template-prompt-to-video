@@ -14,9 +14,6 @@ export async function POST(req: NextRequest) {
     let body: {
       title?: string;
       topic?: string;
-      openaiApiKey?: string;
-      geminiApiKey?: string;
-      elevenlabsApiKey?: string;
       skipVoice?: boolean;
       voiceId?: string;
       styleId?: string;
@@ -48,30 +45,25 @@ export async function POST(req: NextRequest) {
         ? body.styleId.trim()
         : undefined;
 
-    const openaiApiKey =
-      body.openaiApiKey?.trim() || process.env.OPENAI_API_KEY || "";
-    const geminiApiKey =
-      body.geminiApiKey?.trim() || process.env.NANO_BANANA_API_KEY || "";
-    const elevenlabsApiKey =
-      body.elevenlabsApiKey?.trim() || process.env.ELEVENLABS_API_KEY || "";
+    const openaiApiKey = process.env.OPENAI_API_KEY?.trim() || "";
+    const geminiApiKey = process.env.NANO_BANANA_API_KEY?.trim() || "";
+    const elevenlabsApiKey = process.env.ELEVENLABS_API_KEY?.trim() || "";
 
     if (!openaiApiKey) {
       return NextResponse.json(
         {
-          error:
-            "Missing OpenAI key. Set OPENAI_API_KEY in .env or pass openaiApiKey in the request.",
+          error: "AI generation is temporarily unavailable. Please try again later.",
         },
-        { status: 400 },
+        { status: 503 },
       );
     }
 
     if (!geminiApiKey) {
       return NextResponse.json(
         {
-          error:
-            "Missing Gemini key. Set NANO_BANANA_API_KEY in .env or pass geminiApiKey in the request.",
+          error: "Image generation is temporarily unavailable. Please try again later.",
         },
-        { status: 400 },
+        { status: 503 },
       );
     }
 
@@ -83,10 +75,9 @@ export async function POST(req: NextRequest) {
     if (!skipVoice && !elevenlabsApiKey) {
       return NextResponse.json(
         {
-          error:
-            "Missing ElevenLabs key. Set ELEVENLABS_API_KEY in .env or pass elevenlabsApiKey in the request (unless skipVoice is true).",
+          error: "Voice generation is temporarily unavailable. Please try again later.",
         },
-        { status: 400 },
+        { status: 503 },
       );
     }
 

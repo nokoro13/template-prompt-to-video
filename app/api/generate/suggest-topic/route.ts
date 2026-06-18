@@ -14,7 +14,6 @@ export async function POST(req: NextRequest) {
     let body: {
       title?: string;
       styleId?: string;
-      openaiApiKey?: string;
     };
     try {
       body = await req.json();
@@ -38,15 +37,13 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const openaiApiKey =
-      body.openaiApiKey?.trim() || process.env.OPENAI_API_KEY || "";
+    const openaiApiKey = process.env.OPENAI_API_KEY?.trim() || "";
     if (!openaiApiKey) {
       return NextResponse.json(
         {
-          error:
-            "Missing OpenAI key. Set OPENAI_API_KEY in .env or pass openaiApiKey in the request.",
+          error: "AI generation is temporarily unavailable. Please try again later.",
         },
-        { status: 400 },
+        { status: 503 },
       );
     }
 

@@ -4,11 +4,11 @@ import { ChannelStyleRecordSchema } from "./types";
 import { getStyle, saveStyle } from "../storage/styles";
 import { putStyleFile } from "../storage/style-storage";
 import {
+  MAX_REFERENCE_TRANSCRIPTS_PER_STYLE,
   MAX_TRANSCRIPT_BYTES,
+  tooManyReferenceTranscriptsMessage,
   transcriptTooLargeMessage,
 } from "./transcript-limits";
-
-const MAX_TRANSCRIPTS_PER_STYLE = 5;
 
 export async function appendStyleTranscripts(
   userId: string,
@@ -19,40 +19,37 @@ export async function appendStyleTranscripts(
   if (!style) {
     throw new Error(`Style not found: ${id}`);
   }
-  if (
-    style.references.transcripts.length + transcripts.length >
-    MAX_TRANSCRIPTS_PER_STYLE
-  ) {
-    throw new Error(`Maximum ${MAX_TRANSCRIPTS_PER_STYLE} transcripts per style`);
+  if (transcripts.length !== 1) {
+    throw new Error("Expected exactly one transcript to add");
   }
-  for (const t of transcripts) {
-    if (Buffer.byteLength(t.content, "utf8") > MAX_TRANSCRIPT_BYTES) {
-      throw new Error(transcriptTooLargeMessage());
-    }
+  if (style.references.transcripts.length >= MAX_REFERENCE_TRANSCRIPTS_PER_STYLE) {
+    throw new Error(tooManyReferenceTranscriptsMessage());
   }
 
-  for (let i = 0; i < transcripts.length; i++) {
-    const t = transcripts[i]!;
-    const tid = randomUUID();
-    const safeTitle =
-      t.title.replace(/[^a-z0-9]+/gi, "-").slice(0, 40) || `transcript-${i}`;
-    const fname = `${safeTitle}-${tid.slice(0, 8)}.txt`;
-    const rel = `transcripts/${fname}`;
-    const url = await putStyleFile(
-      userId,
-      id,
-      rel,
-      t.content,
-      "text/plain; charset=utf-8",
-    );
-    const entry: TranscriptEntry = {
-      id: tid,
-      filename: fname,
-      path: url,
-      title: t.title,
-    };
-    style.references.transcripts.push(entry);
+  const t = transcripts[0]!;
+  if (Buffer.byteLength(t.content, "utf8") > MAX_TRANSCRIPT_BYTES) {
+    throw new Error(transcriptTooLargeMessage());
   }
+
+  const tid = randomUUID();
+  const safeTitle =
+    t.title.replace(/[^a-z0-9]+/gi, "-").slice(0, 40) || "transcript";
+  const fname = `${safeTitle}-${tid.slice(0, 8)}.txt`;
+  const rel = `transcripts/${fname}`;
+  const url = await putStyleFile(
+    userId,
+    id,
+    rel,
+    t.content,
+    "text/plain; charset=utf-8",
+  );
+  const entry: TranscriptEntry = {
+    id: tid,
+    filename: fname,
+    path: url,
+    title: t.title,
+  };
+  style.references.transcripts.push(entry);
 
   style.referenceCount =
     style.references.images.length + style.references.transcripts.length;

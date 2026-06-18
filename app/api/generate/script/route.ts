@@ -13,7 +13,6 @@ export async function POST(req: NextRequest) {
     let body: {
       title?: string;
       topic?: string;
-      openaiApiKey?: string;
       styleId?: string;
       useWebSearch?: boolean;
     };
@@ -37,16 +36,14 @@ export async function POST(req: NextRequest) {
         ? body.styleId.trim()
         : undefined;
 
-    const openaiApiKey =
-      body.openaiApiKey?.trim() || process.env.OPENAI_API_KEY || "";
+    const openaiApiKey = process.env.OPENAI_API_KEY?.trim() || "";
 
     if (!openaiApiKey) {
       return NextResponse.json(
         {
-          error:
-            "Missing OpenAI key. Set OPENAI_API_KEY in .env or pass openaiApiKey in the request.",
+          error: "AI generation is temporarily unavailable. Please try again later.",
         },
-        { status: 400 },
+        { status: 503 },
       );
     }
 

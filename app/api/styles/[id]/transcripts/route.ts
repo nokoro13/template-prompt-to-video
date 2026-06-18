@@ -19,7 +19,7 @@ export async function POST(req: NextRequest, context: RouteContext) {
     const transcripts = (body as { transcripts?: unknown }).transcripts;
     if (!Array.isArray(transcripts)) {
       return NextResponse.json(
-        { error: "Expected { transcripts: [{ title, content }, ...] }" },
+        { error: "Expected { transcripts: [{ title, content }] }" },
         { status: 400 },
       );
     }
@@ -27,6 +27,12 @@ export async function POST(req: NextRequest, context: RouteContext) {
       title: String((t as { title?: string }).title ?? "").trim(),
       content: String((t as { content?: string }).content ?? ""),
     }));
+    if (normalized.length !== 1) {
+      return NextResponse.json(
+        { error: "Expected exactly one transcript: { title, content }" },
+        { status: 400 },
+      );
+    }
 
     const style = await appendStyleTranscripts(user.id, id, normalized);
     return NextResponse.json({ ok: true, style });

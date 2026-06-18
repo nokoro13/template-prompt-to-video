@@ -1,3 +1,12 @@
+export const LANDING_HERO = {
+  eyebrow: "For faceless YouTube creators",
+  headlineLine1: "All your AI tools,",
+  headlineLine2: "working together",
+  subhead:
+    "Script, voice, and illustrated scenes in one guided editor — clone a proven channel format and export upload-ready videos.",
+  secondaryCta: "See how it works",
+} as const;
+
 export const LANDING_NAV = [
   { label: "Workflow", href: "#workflow" },
   { label: "Editor", href: "#editor" },

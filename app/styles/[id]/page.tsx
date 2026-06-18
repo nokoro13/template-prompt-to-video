@@ -3,7 +3,7 @@
 import { StorageImage } from "@/components/ui/storage-image";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { ArrowLeft, Loader2, RefreshCw, Trash2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -15,9 +15,46 @@ import type {
 } from "@/lib/channel-styles/types";
 import { AspectRatioToggle } from "@/components/styles/AspectRatioToggle";
 import { YouTubeTranscriptImport } from "@/components/styles/YouTubeTranscriptImport";
+import {
+  MAX_REFERENCE_IMAGES_PER_STYLE,
+  MIN_REFERENCE_IMAGES_PER_STYLE,
+  tooManyReferenceImagesMessage,
+  referenceImagesPendingHint,
+} from "@/lib/channel-styles/image-limits";
 import { cn } from "@/lib/utils";
 
 type Tab = "overview" | "references" | "format" | "characters";
+
+type DraftReferenceImage =
+  | { kind: "existing"; url: string }
+  | { kind: "new"; file: File; previewUrl: string };
+
+function referenceImagesFromStyle(
+  style: ChannelStyleRecord,
+): DraftReferenceImage[] {
+  return style.references.images.map((url) => ({ kind: "existing", url }));
+}
+
+function revokeNewDraftPreviews(draft: DraftReferenceImage[]): void {
+  for (const item of draft) {
+    if (item.kind === "new") {
+      URL.revokeObjectURL(item.previewUrl);
+    }
+  }
+}
+
+function isReferenceImagesDirty(
+  style: ChannelStyleRecord,
+  draft: DraftReferenceImage[],
+): boolean {
+  if (draft.some((item) => item.kind === "new")) return true;
+  const kept = draft
+    .filter((item) => item.kind === "existing")
+    .map((item) => item.url);
+  if (kept.length !== style.references.images.length) return true;
+  const saved = new Set(style.references.images);
+  return kept.some((url) => !saved.has(url));
+}
 
 export default function StyleDetailPage() {
   const params = useParams();
@@ -40,6 +77,22 @@ export default function StyleDetailPage() {
   const [analyzing, setAnalyzing] = useState(false);
   const [formatJson, setFormatJson] = useState("");
   const [chars, setChars] = useState<StyleCharacter[]>([]);
+  const [draftImages, setDraftImages] = useState<DraftReferenceImage[]>([]);
+  const draftImagesRef = useRef<DraftReferenceImage[]>([]);
+  const styleRef = useRef<ChannelStyleRecord | null>(null);
+  const persistImagesInFlightRef = useRef(false);
+  const persistImagesQueuedRef = useRef(false);
+  const [savingImages, setSavingImages] = useState(false);
+  const [referenceImagesHint, setReferenceImagesHint] = useState<string | null>(
+    null,
+  );
+
+  const resetReferenceImageDraft = useCallback((record: ChannelStyleRecord) => {
+    revokeNewDraftPreviews(draftImagesRef.current);
+    const next = referenceImagesFromStyle(record);
+    draftImagesRef.current = next;
+    setDraftImages(next);
+  }, []);
 
   const load = useCallback(async () => {
     if (!id) return;
@@ -66,17 +119,143 @@ export default function StyleDetailPage() {
         JSON.stringify(data.style.extractedFormat ?? {}, null, 2),
       );
       setChars(data.style.characters ?? []);
+      resetReferenceImageDraft(data.style);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Failed to load");
       setStyle(null);
     } finally {
       setLoading(false);
     }
-  }, [id]);
+  }, [id, resetReferenceImageDraft]);
 
   useEffect(() => {
     void load();
   }, [load]);
+
+  useEffect(() => {
+    styleRef.current = style;
+  }, [style]);
+
+  useEffect(() => {
+    return () => {
+      revokeNewDraftPreviews(draftImagesRef.current);
+    };
+  }, []);
+
+  const persistReferenceImages = useCallback(async () => {
+    if (!id) return;
+    const savedStyle = styleRef.current;
+    if (!savedStyle) return;
+
+    const draft = draftImagesRef.current;
+    if (!isReferenceImagesDirty(savedStyle, draft)) return;
+
+    const keptUrls = draft
+      .filter((item): item is Extract<DraftReferenceImage, { kind: "existing" }> =>
+        item.kind === "existing",
+      )
+      .map((item) => item.url);
+    const newFiles = draft
+      .filter((item): item is Extract<DraftReferenceImage, { kind: "new" }> =>
+        item.kind === "new",
+      )
+      .map((item) => item.file);
+    const total = draft.length;
+
+    if (total < MIN_REFERENCE_IMAGES_PER_STYLE) {
+      setReferenceImagesHint(referenceImagesPendingHint());
+      return;
+    }
+    if (total > MAX_REFERENCE_IMAGES_PER_STYLE) {
+      setReferenceImagesHint(tooManyReferenceImagesMessage());
+      return;
+    }
+
+    if (persistImagesInFlightRef.current) {
+      persistImagesQueuedRef.current = true;
+      return;
+    }
+
+    setReferenceImagesHint(null);
+    persistImagesInFlightRef.current = true;
+    setSavingImages(true);
+
+    const toRemove = savedStyle.references.images.filter(
+      (path) => !keptUrls.includes(path),
+    );
+
+    try {
+      let currentStyle = savedStyle;
+      if (toRemove.length > 0) {
+        const res = await fetch(`/api/styles/${id}`, {
+          method: "PATCH",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ removeImagePaths: toRemove }),
+        });
+        const data = (await res.json()) as {
+          style?: ChannelStyleRecord;
+          error?: string;
+        };
+        if (!res.ok) throw new Error(data.error || "Update failed");
+        if (!data.style) throw new Error("Update failed");
+        currentStyle = data.style;
+        styleRef.current = currentStyle;
+        setStyle(currentStyle);
+      }
+      if (newFiles.length > 0) {
+        const form = new FormData();
+        newFiles.forEach((file) => form.append("images", file));
+        const res = await fetch(`/api/styles/${id}/images`, {
+          method: "POST",
+          body: form,
+        });
+        const data = (await res.json()) as {
+          style?: ChannelStyleRecord;
+          error?: string;
+        };
+        if (!res.ok) throw new Error(data.error || "Upload failed");
+        if (!data.style) throw new Error("Upload failed");
+        currentStyle = data.style;
+        styleRef.current = currentStyle;
+        setStyle(currentStyle);
+      }
+      resetReferenceImageDraft(currentStyle);
+    } catch (e) {
+      setError(e instanceof Error ? e.message : "Update failed");
+    } finally {
+      persistImagesInFlightRef.current = false;
+      setSavingImages(false);
+      if (persistImagesQueuedRef.current) {
+        persistImagesQueuedRef.current = false;
+        void persistReferenceImages();
+      }
+    }
+  }, [id, resetReferenceImageDraft]);
+
+  useEffect(() => {
+    if (!style || loading) return;
+
+    if (!isReferenceImagesDirty(style, draftImages)) {
+      setReferenceImagesHint(null);
+      return;
+    }
+
+    const total = draftImages.length;
+    if (total < MIN_REFERENCE_IMAGES_PER_STYLE) {
+      setReferenceImagesHint(referenceImagesPendingHint());
+      return;
+    }
+    if (total > MAX_REFERENCE_IMAGES_PER_STYLE) {
+      setReferenceImagesHint(tooManyReferenceImagesMessage());
+      return;
+    }
+
+    setReferenceImagesHint(null);
+    const timer = window.setTimeout(() => {
+      void persistReferenceImages();
+    }, 400);
+    return () => window.clearTimeout(timer);
+  }, [draftImages, style, loading, persistReferenceImages]);
 
   const saveMeta = async () => {
     if (!id) return;
@@ -195,24 +374,34 @@ export default function StyleDetailPage() {
     }
   };
 
-  const removeImage = async (imagePath: string) => {
-    if (!id || !confirm("Remove this style reference image?")) return;
-    setSaving(true);
-    setError(null);
-    try {
-      const res = await fetch(`/api/styles/${id}`, {
-        method: "PATCH",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ removeImagePaths: [imagePath] }),
-      });
-      const data = (await res.json()) as { style?: ChannelStyleRecord; error?: string };
-      if (!res.ok) throw new Error(data.error || "Remove failed");
-      if (data.style) setStyle(data.style);
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "Remove failed");
-    } finally {
-      setSaving(false);
-    }
+  const removeDraftImage = (index: number) => {
+    setDraftImages((prev) => {
+      const item = prev[index];
+      if (item?.kind === "new") {
+        URL.revokeObjectURL(item.previewUrl);
+      }
+      const next = prev.filter((_, i) => i !== index);
+      draftImagesRef.current = next;
+      return next;
+    });
+  };
+
+  const addDraftImages = (files: FileList | null) => {
+    if (!files?.length) return;
+    setDraftImages((prev) => {
+      const room = MAX_REFERENCE_IMAGES_PER_STYLE - prev.length;
+      if (room <= 0) return prev;
+      const newItems: DraftReferenceImage[] = Array.from(files)
+        .slice(0, room)
+        .map((file) => ({
+          kind: "new",
+          file,
+          previewUrl: URL.createObjectURL(file),
+        }));
+      const next = [...prev, ...newItems];
+      draftImagesRef.current = next;
+      return next;
+    });
   };
 
   const removeTranscript = async (tid: string) => {
@@ -230,27 +419,6 @@ export default function StyleDetailPage() {
       if (data.style) setStyle(data.style);
     } catch (e) {
       setError(e instanceof Error ? e.message : "Remove failed");
-    } finally {
-      setSaving(false);
-    }
-  };
-
-  const addImages = async (files: FileList | null) => {
-    if (!id || !files?.length) return;
-    const form = new FormData();
-    Array.from(files).forEach((f) => form.append("images", f));
-    setSaving(true);
-    setError(null);
-    try {
-      const res = await fetch(`/api/styles/${id}/images`, {
-        method: "POST",
-        body: form,
-      });
-      const data = (await res.json()) as { style?: ChannelStyleRecord; error?: string };
-      if (!res.ok) throw new Error(data.error || "Upload failed");
-      if (data.style) setStyle(data.style);
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "Upload failed");
     } finally {
       setSaving(false);
     }
@@ -532,49 +700,88 @@ export default function StyleDetailPage() {
                 These images teach the model <strong>art style only</strong> (how
                 things are drawn). They are not used for character likeness—add
                 characters separately. Use clean images without watermarks or site
-                branding when possible.
+                branding when possible. Each style supports 1–
+                {MAX_REFERENCE_IMAGES_PER_STYLE} reference images.
               </p>
+              {referenceImagesHint ? (
+                <p className="mt-2 text-sm text-amber-600 dark:text-amber-500">
+                  {referenceImagesHint}
+                </p>
+              ) : null}
               <div className="mt-3 grid gap-3 sm:grid-cols-2">
-                {style.references.images.map((src) => (
+                {draftImages.map((item, index) => (
                   <div
-                    key={src}
+                    key={item.kind === "existing" ? item.url : item.previewUrl}
                     className="relative overflow-hidden rounded-lg border bg-muted"
                   >
                     <div className="relative aspect-video w-full">
-                      <StorageImage
-                        src={src}
-                        alt=""
-                        fill
-                        className="object-cover"
-                        sizes="(max-width:640px) 100vw, 50vw"
-                      />
+                      {item.kind === "existing" ? (
+                        <StorageImage
+                          src={item.url}
+                          alt=""
+                          fill
+                          className="object-cover"
+                          sizes="(max-width:640px) 100vw, 50vw"
+                        />
+                      ) : (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={item.previewUrl}
+                          alt=""
+                          className="size-full object-cover"
+                        />
+                      )}
                     </div>
+                    {item.kind === "new" ? (
+                      <span className="absolute left-2 top-2 rounded bg-background/90 px-2 py-0.5 text-xs font-medium">
+                        New
+                      </span>
+                    ) : null}
                     <Button
                       type="button"
                       variant="destructive"
                       size="sm"
                       className="absolute right-2 top-2"
-                      onClick={() => void removeImage(src)}
+                      disabled={savingImages}
+                      onClick={() => removeDraftImage(index)}
                     >
                       <Trash2 className="size-4" />
                     </Button>
                   </div>
                 ))}
               </div>
-              <div className="mt-4">
-                <Label>Add style reference images</Label>
-                <input
-                  type="file"
-                  accept="image/*"
-                  multiple
-                  className="mt-1 block text-sm"
-                  onChange={(e) => void addImages(e.target.files)}
-                />
-              </div>
+              {draftImages.length < MAX_REFERENCE_IMAGES_PER_STYLE ? (
+                <div className="mt-4">
+                  <Label>Add style reference images</Label>
+                  <p className="mt-1 text-xs text-muted-foreground">
+                    {draftImages.length}/{MAX_REFERENCE_IMAGES_PER_STYLE} used
+                  </p>
+                  <input
+                    type="file"
+                    accept="image/*"
+                    multiple
+                    className="mt-1 block text-sm"
+                    disabled={savingImages}
+                    onChange={(e) => {
+                      addDraftImages(e.target.files);
+                      e.target.value = "";
+                    }}
+                  />
+                </div>
+              ) : (
+                <p className="mt-4 text-sm text-muted-foreground">
+                  Maximum of {MAX_REFERENCE_IMAGES_PER_STYLE} reference images
+                  reached. Remove one to upload a replacement.
+                </p>
+              )}
             </div>
 
             <div>
-              <h3 className="font-semibold">Transcripts</h3>
+              <h3 className="font-semibold">Reference transcript</h3>
+              <p className="mt-1 text-sm text-muted-foreground">
+                One script that defines format and pacing for videos using this
+                style. Remove it before importing a different reference.
+              </p>
               <ul className="mt-3 space-y-2">
                 {style.references.transcripts.map((t) => (
                   <li
@@ -593,46 +800,48 @@ export default function StyleDetailPage() {
                   </li>
                 ))}
               </ul>
-              <div className="mt-4 space-y-4 rounded-xl border border-dashed p-4">
-                <YouTubeTranscriptImport
-                  buttonLabel="Import transcript"
-                  disabled={saving}
-                  onImported={({ title, content }) => {
-                    void addTranscriptRow(title, content);
-                  }}
-                />
-                <details className="text-sm">
-                  <summary className="cursor-pointer text-muted-foreground">
-                    Or paste transcript manually
-                  </summary>
-                  <div className="mt-3 space-y-2">
-                    <Input
-                      placeholder="Title"
-                      value={newTTitle}
-                      onChange={(e) => setNewTTitle(e.target.value)}
-                    />
-                    <textarea
-                      placeholder="Content"
-                      value={newTContent}
-                      onChange={(e) => setNewTContent(e.target.value)}
-                      rows={4}
-                      className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm"
-                    />
-                    <Button
-                      type="button"
-                      size="sm"
-                      disabled={saving}
-                      onClick={() => {
-                        void addTranscriptRow(newTTitle, newTContent);
-                        setNewTTitle("");
-                        setNewTContent("");
-                      }}
-                    >
-                      Add transcript
-                    </Button>
-                  </div>
-                </details>
-              </div>
+              {style.references.transcripts.length === 0 ? (
+                <div className="mt-4 space-y-4 rounded-xl border border-dashed p-4">
+                  <YouTubeTranscriptImport
+                    buttonLabel="Import transcript"
+                    disabled={saving}
+                    onImported={({ title, content }) => {
+                      void addTranscriptRow(title, content);
+                    }}
+                  />
+                  <details className="text-sm">
+                    <summary className="cursor-pointer text-muted-foreground">
+                      Or paste transcript manually
+                    </summary>
+                    <div className="mt-3 space-y-2">
+                      <Input
+                        placeholder="Title"
+                        value={newTTitle}
+                        onChange={(e) => setNewTTitle(e.target.value)}
+                      />
+                      <textarea
+                        placeholder="Content"
+                        value={newTContent}
+                        onChange={(e) => setNewTContent(e.target.value)}
+                        rows={4}
+                        className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm"
+                      />
+                      <Button
+                        type="button"
+                        size="sm"
+                        disabled={saving}
+                        onClick={() => {
+                          void addTranscriptRow(newTTitle, newTContent);
+                          setNewTTitle("");
+                          setNewTContent("");
+                        }}
+                      >
+                        Add transcript
+                      </Button>
+                    </div>
+                  </details>
+                </div>
+              ) : null}
             </div>
           </div>
         )}
@@ -654,7 +863,7 @@ export default function StyleDetailPage() {
                 Re-analyze
               </Button>
               <span className="text-xs text-muted-foreground">
-                Uses the first reference transcript and OpenAI.
+                Uses the reference transcript and OpenAI.
               </span>
             </div>
             <div>

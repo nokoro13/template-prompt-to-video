@@ -2,14 +2,13 @@ import { NextRequest, NextResponse } from "next/server";
 
 /**
  * Proxies GET /v1/voices/{voice_id}/samples/{sample_id}/audio so the API key
- * stays server-side (or from optional body override).
+ * stays server-side.
  * @see https://elevenlabs.io/docs/api-reference/voices/samples/get
  */
 export async function POST(req: NextRequest) {
   let body: {
     voiceId?: string;
     sampleId?: string;
-    elevenlabsApiKey?: string;
   };
   try {
     body = (await req.json()) as typeof body;
@@ -26,18 +25,14 @@ export async function POST(req: NextRequest) {
     );
   }
 
-  const apiKey =
-    typeof body.elevenlabsApiKey === "string" && body.elevenlabsApiKey.trim()
-      ? body.elevenlabsApiKey.trim()
-      : process.env.ELEVENLABS_API_KEY || "";
+  const apiKey = process.env.ELEVENLABS_API_KEY?.trim() || "";
 
   if (!apiKey) {
     return NextResponse.json(
       {
-        error:
-          "Missing ElevenLabs API key. Set ELEVENLABS_API_KEY or pass elevenlabsApiKey in the body.",
+        error: "Voice previews are temporarily unavailable. Please try again later.",
       },
-      { status: 400 },
+      { status: 503 },
     );
   }
 

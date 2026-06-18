@@ -8,11 +8,16 @@ import { analyzeReferenceTranscript } from "../generation/format-cloner";
 import { saveStyle, uniqueStyleIdForUser } from "../storage/styles";
 import { putStyleFile } from "../storage/style-storage";
 import {
+  MAX_REFERENCE_IMAGES_PER_STYLE,
+  MAX_STYLE_IMAGE_BYTES,
+  tooManyReferenceImagesMessage,
+} from "./image-limits";
+import {
+  MAX_REFERENCE_TRANSCRIPTS_PER_STYLE,
   MAX_TRANSCRIPT_BYTES,
+  tooManyReferenceTranscriptsMessage,
   transcriptTooLargeMessage,
 } from "./transcript-limits";
-
-const MAX_IMAGE_BYTES = 10 * 1024 * 1024;
 
 export type CreateStyleInput = {
   userId: string;
@@ -43,13 +48,19 @@ export async function createChannelStyle(
   if (input.imageBuffers.length < 1) {
     throw new Error("At least one style reference image is required");
   }
+  if (input.imageBuffers.length > MAX_REFERENCE_IMAGES_PER_STYLE) {
+    throw new Error(tooManyReferenceImagesMessage());
+  }
   if (input.transcripts.length < 1) {
-    throw new Error("At least one reference transcript is required");
+    throw new Error("A reference transcript is required");
+  }
+  if (input.transcripts.length > MAX_REFERENCE_TRANSCRIPTS_PER_STYLE) {
+    throw new Error(tooManyReferenceTranscriptsMessage());
   }
 
   for (const img of input.imageBuffers) {
-    if (img.buffer.length > MAX_IMAGE_BYTES) {
-      throw new Error(`Image too large (max ${MAX_IMAGE_BYTES} bytes)`);
+    if (img.buffer.length > MAX_STYLE_IMAGE_BYTES) {
+      throw new Error(`Image too large (max ${MAX_STYLE_IMAGE_BYTES} bytes)`);
     }
   }
   for (const t of input.transcripts) {
