@@ -12,7 +12,6 @@ import {
 } from "react";
 import {
   Film,
-  Globe2,
   ImageIcon,
   Loader2,
   Mic,
@@ -23,6 +22,7 @@ import {
 } from "lucide-react";
 
 import { StylePickerDialog } from "@/components/video-editor/StylePickerDialog";
+import { VideoEditorStepActions } from "@/components/video-editor/VideoEditorStepActions";
 import { VideoEditorStepBar } from "@/components/video-editor/VideoEditorStepBar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -734,11 +734,10 @@ export function VideoEditorClient() {
 
       <VideoEditorStepBar step={step} className="mt-6 sm:mt-8" />
 
-      <div className="mt-6 space-y-6 rounded-2xl border border-surface-border bg-white p-4 shadow-sm sm:mt-8 sm:p-6">
+      <div className="mt-6 space-y-6 sm:mt-8">
         {step === 0 && (
           <div className="space-y-6">
-            <div className="rounded-xl border border-surface-border bg-surface-muted p-4">
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                 <div className="flex min-w-0 flex-1 gap-3">
                   <div className="relative h-14 w-24 shrink-0 overflow-hidden rounded-md border bg-white">
                     {selectedStyle ? (
@@ -784,7 +783,6 @@ export function VideoEditorClient() {
                 >
                   {selectedStyle ? "Change" : "Choose style"}
                 </Button>
-              </div>
             </div>
 
             <div>
@@ -809,8 +807,7 @@ export function VideoEditorClient() {
                   <Button
                     type="button"
                     variant="outline"
-                    size="sm"
-                    className="shrink-0 gap-1.5"
+                    className="shrink-0 gap-2"
                     disabled={!canSuggestTopic}
                     onClick={() => void runSuggestTopic()}
                     title={
@@ -850,75 +847,25 @@ export function VideoEditorClient() {
               />
             </div>
 
-            <div className="flex flex-wrap gap-2">
-              <Button
-                type="button"
-                disabled={!canSetupNext || Boolean(busy)}
-                onClick={() => {
-                  setError(null);
-                  setStep(1);
-                }}
-              >
-                Continue to script
-              </Button>
-            </div>
+            <VideoEditorStepActions
+              continue={
+                <Button
+                  type="button"
+                  disabled={!canSetupNext || Boolean(busy)}
+                  onClick={() => {
+                    setError(null);
+                    setStep(1);
+                  }}
+                >
+                  Continue to script
+                </Button>
+              }
+            />
           </div>
         )}
 
         {step === 1 && (
           <div className="space-y-5">
-            <div
-              className="flex flex-col gap-3 rounded-xl border-2 border-brand-200 bg-brand-50/40 px-4 py-4 shadow-sm sm:flex-row sm:items-center sm:justify-between"
-              role="group"
-              aria-labelledby="ve-script-web-search-label"
-            >
-              <div className="flex min-w-0 gap-3">
-                <div className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-white text-brand-700 shadow-sm ring-1 ring-brand-200">
-                  <Globe2 className="size-5 shrink-0" aria-hidden />
-                </div>
-                <div className="min-w-0 space-y-1">
-                  <p
-                    id="ve-script-web-search-label"
-                    className="text-xs font-semibold uppercase tracking-wide text-brand-800"
-                  >
-                    Script · research
-                  </p>
-                  <Label
-                    htmlFor="ve-script-web-search"
-                    className="block text-base font-semibold text-slate-900"
-                  >
-                    Web search for script
-                  </Label>
-                  <p className="text-xs leading-relaxed text-slate-700">
-                    When on, OpenAI runs hosted web search for the narration
-                    only (default{" "}
-                    <code className="rounded bg-white px-1 py-0.5 text-[11px] ring-1 ring-slate-200">
-                      gpt-4.1
-                    </code>
-                    , optional env{" "}
-                    <code className="rounded bg-white px-1 py-0.5 text-[11px] ring-1 ring-slate-200">
-                      OPENAI_SCRIPT_WEB_MODEL
-                    </code>
-                    ). Slower; tool pricing. Scene split still uses chat
-                    completions without search.
-                  </p>
-                </div>
-              </div>
-              <div className="flex shrink-0 items-center gap-3 sm:flex-col sm:items-end">
-                <span className="text-xs font-medium text-slate-600 sm:hidden">
-                  Enable
-                </span>
-                <Switch
-                  id="ve-script-web-search"
-                  checked={useWebSearchForScript}
-                  onCheckedChange={(on) => setUseWebSearchForScript(on)}
-                  disabled={Boolean(busy)}
-                  className="shrink-0"
-                  aria-label="Enable web search when generating script"
-                />
-              </div>
-            </div>
-
             <p className="text-sm text-slate-600">
               We generate a full narration script (and per-scene beats) using
               your style&apos;s reference transcript when a style is selected
@@ -928,7 +875,7 @@ export function VideoEditorClient() {
             </p>
 
             {hasScriptDraft && fullNarrationScript ? (
-              <div className="space-y-3 rounded-xl border border-brand-200 bg-gradient-to-b from-brand-50/80 to-white p-5 shadow-sm ring-1 ring-brand-100">
+              <div className="space-y-3">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <h2 className="text-base font-semibold text-slate-900">
                     Generated narration
@@ -936,7 +883,7 @@ export function VideoEditorClient() {
                   <p className="text-xs text-slate-500">
                     {project!.scenes.length} scene
                     {project!.scenes.length === 1 ? "" : "s"} · project{" "}
-                    <code className="rounded bg-white px-1.5 py-0.5 text-[11px] text-slate-700 ring-1 ring-slate-200">
+                    <code className="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">
                       {slug}
                     </code>
                   </p>
@@ -946,30 +893,25 @@ export function VideoEditorClient() {
                   read). Scene boundaries are preserved in the breakdown below.
                 </p>
                 <div
-                  className="max-h-[min(52vh,32rem)] overflow-y-auto rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm leading-relaxed text-slate-800 shadow-inner"
+                  className="max-h-[min(52vh,32rem)] overflow-y-auto text-sm leading-relaxed text-slate-800"
                   tabIndex={0}
                   role="region"
                   aria-label="Generated narration transcript"
                 >
                   {fullNarrationScript}
                 </div>
-                <details className="group rounded-lg border border-slate-200 bg-slate-50/80 text-sm">
-                  <summary className="cursor-pointer select-none px-3 py-2 font-medium text-slate-700 hover:bg-slate-100">
+                <details className="group text-sm">
+                  <summary className="cursor-pointer select-none py-2 font-medium text-slate-700 hover:text-slate-900">
                     Scene-by-scene breakdown
                   </summary>
-                  <ol className="space-y-3 border-t border-slate-200 p-3">
+                  <ol className="space-y-4 pt-2">
                     {project!.scenes.map((scene) => (
-                      <li
-                        key={scene.uid}
-                        className="rounded-md border border-slate-100 bg-white p-3"
-                      >
+                      <li key={scene.uid} className="space-y-1.5">
                         <span className="text-xs font-semibold uppercase tracking-wide text-brand-700">
                           Scene {scene.index + 1}
                         </span>
-                        <p className="mt-1.5 text-sm text-slate-800">
-                          {scene.text}
-                        </p>
-                        <p className="mt-2 text-xs leading-snug text-slate-500">
+                        <p className="text-sm text-slate-800">{scene.text}</p>
+                        <p className="text-xs leading-snug text-slate-500">
                           <span className="font-medium text-slate-600">
                             Visual:
                           </span>{" "}
@@ -982,55 +924,89 @@ export function VideoEditorClient() {
               </div>
             ) : null}
 
-            <div className="flex flex-wrap items-center gap-2">
+            <VideoEditorStepActions
+              options={
+                <>
+                  <Label
+                    htmlFor="ve-script-web-search"
+                    className="cursor-pointer text-sm font-medium text-slate-700"
+                  >
+                    Web search
+                  </Label>
+                  <Switch
+                    id="ve-script-web-search"
+                    checked={useWebSearchForScript}
+                    onCheckedChange={(on) => setUseWebSearchForScript(on)}
+                    disabled={Boolean(busy)}
+                    aria-label="Web search"
+                  />
+                </>
+              }
+              back={
+                !studioEditLock ? (
+                  <Button
+                    type="button"
+                    variant="ghost"
+                    size="sm"
+                    className="text-slate-600"
+                    onClick={() => setStep(0)}
+                  >
+                    Back to setup
+                  </Button>
+                ) : undefined
+              }
+              continue={
+                hasScriptDraft ? (
+                  <Button
+                    type="button"
+                    onClick={() => {
+                      setError(null);
+                      setStep(2);
+                    }}
+                  >
+                    Continue to voiceover
+                  </Button>
+                ) : (
+                  <Button
+                    type="button"
+                    disabled={!canRunScript}
+                    onClick={() => void runScriptRegenerate()}
+                    className="gap-2"
+                  >
+                    {busy === "script" ? (
+                      <Loader2 className="size-4 animate-spin" />
+                    ) : (
+                      <Sparkles className="size-4" />
+                    )}
+                    Generate script
+                  </Button>
+                )
+              }
+            >
               {hasScriptDraft ? (
                 <Button
                   type="button"
+                  disabled={!canRunScript}
+                  onClick={() => void runScriptRegenerate()}
+                  variant="outline"
                   className="gap-2"
-                  onClick={() => {
-                    setError(null);
-                    setStep(2);
-                  }}
                 >
-                  <Mic className="size-4" />
-                  Continue to voiceover
+                  {busy === "script" ? (
+                    <Loader2 className="size-4 animate-spin" />
+                  ) : (
+                    <Sparkles className="size-4" />
+                  )}
+                  Regenerate script
                 </Button>
               ) : null}
-              <Button
-                type="button"
-                disabled={!canRunScript}
-                onClick={() => void runScriptRegenerate()}
-                variant={hasScriptDraft ? "outline" : "default"}
-                className="gap-2"
-              >
-                {busy === "script" ? (
-                  <Loader2 className="size-4 animate-spin" />
-                ) : (
-                  <Sparkles className="size-4" />
-                )}
-                {hasScriptDraft ? "Regenerate script" : "Generate script"}
-              </Button>
-            </div>
-
-            {!studioEditLock ? (
-              <Button type="button" variant="ghost" onClick={() => setStep(0)}>
-                ← Back to setup
-              </Button>
-            ) : null}
+            </VideoEditorStepActions>
           </div>
         )}
 
         {step === 2 && (
           <div className="space-y-4">
-            <p className="text-sm text-slate-600">
-              ElevenLabs creates voice audio and character timings for each
-              scene. Required before building the timeline. Your script stays
-              saved on the previous step — use{" "}
-              <strong className="font-medium text-slate-800">← Review script</strong>{" "}
-              anytime without regenerating.
-            </p>
 
-            <div className="space-y-2 rounded-xl border border-surface-border bg-surface-muted p-4">
+            <div className="space-y-2">
               <Label htmlFor="ve-voice-list">Voice</Label>
               <p className="text-xs text-slate-500">
                 Choose a row to select the voice. Use the play button to hear a
@@ -1128,83 +1104,96 @@ export function VideoEditorClient() {
               )}
             </div>
 
-            {allAudioDone ? (
-              <div className="space-y-3 rounded-lg border border-emerald-200 bg-emerald-50/80 px-4 py-3 text-sm text-emerald-900">
-                <p>
-                  Voiceover is ready for every scene. You can still review the
-                  script on the previous step, then continue here to generate
-                  images.
-                </p>
-                <div className="flex flex-wrap items-center gap-2">
+            <VideoEditorStepActions
+              options={
+                allAudioDone ? (
+                  <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3">
+                    <p className="text-sm text-emerald-900">
+                      Voiceover is ready for every scene.
+                    </p>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      className="gap-2"
+                      disabled={busy === "voice"}
+                      onClick={() =>
+                        voiceoverPlaying
+                          ? stopGeneratedVoiceover()
+                          : playGeneratedVoiceover()
+                      }
+                    >
+                      {voiceoverPlaying ? (
+                        <>
+                          <Square className="size-3.5 fill-current" />
+                          Stop preview
+                        </>
+                      ) : (
+                        <>
+                          <Play className="size-4" />
+                          Preview voiceover
+                        </>
+                      )}
+                    </Button>
+                  </div>
+                ) : undefined
+              }
+              back={
+                !studioEditLock ? (
                   <Button
                     type="button"
-                    variant="secondary"
+                    variant="ghost"
                     size="sm"
-                    className="gap-2"
-                    disabled={busy === "voice"}
-                    onClick={() =>
-                      voiceoverPlaying
-                        ? stopGeneratedVoiceover()
-                        : playGeneratedVoiceover()
-                    }
+                    className="text-slate-600"
+                    onClick={() => setStep(1)}
                   >
-                    {voiceoverPlaying ? (
-                      <>
-                        <Square className="size-3.5 fill-current" />
-                        Stop preview
-                      </>
-                    ) : (
-                      <>
-                        <Play className="size-4" />
-                        Preview full voiceover
-                      </>
-                    )}
+                    Review script
                   </Button>
-                  <span className="text-xs text-emerald-800/90">
-                    Plays all scene audio in order (same files used for the
-                    video timeline).
-                  </span>
-                </div>
-              </div>
-            ) : null}
-            <div className="flex flex-wrap gap-2">
-              <Button
-                type="button"
-                disabled={!canRunVoice}
-                onClick={() => void runVoice()}
-                className="gap-2"
-              >
-                {busy === "voice" ? (
-                  <Loader2 className="size-4 animate-spin" />
+                ) : undefined
+              }
+              continue={
+                slug && project && allAudioDone ? (
+                  <Button type="button" onClick={() => setStep(3)}>
+                    Continue to scene images
+                  </Button>
                 ) : (
-                  <Mic className="size-4" />
-                )}
-                {allAudioDone ? "Regenerate voiceover" : "Generate voiceover"}
-              </Button>
-              {slug && project && allAudioDone ? (
+                  <Button
+                    type="button"
+                    disabled={!canRunVoice}
+                    onClick={() => void runVoice()}
+                    className="gap-2"
+                  >
+                    {busy === "voice" ? (
+                      <Loader2 className="size-4 animate-spin" />
+                    ) : (
+                      <Mic className="size-4" />
+                    )}
+                    Generate voiceover
+                  </Button>
+                )
+              }
+            >
+              {allAudioDone ? (
                 <Button
                   type="button"
-                  variant="secondary"
+                  disabled={!canRunVoice}
+                  onClick={() => void runVoice()}
+                  variant="outline"
                   className="gap-2"
-                  onClick={() => setStep(3)}
                 >
-                  <ImageIcon className="size-4" />
-                  Continue to scene images
+                  {busy === "voice" ? (
+                    <Loader2 className="size-4 animate-spin" />
+                  ) : (
+                    <Mic className="size-4" />
+                  )}
+                  Regenerate voiceover
                 </Button>
               ) : null}
-            </div>
-            {!studioEditLock ? (
-              <div className="flex flex-wrap gap-2">
-                <Button type="button" variant="ghost" onClick={() => setStep(1)}>
-                  ← Review script
-                </Button>
-              </div>
-            ) : null}
+            </VideoEditorStepActions>
           </div>
         )}
 
         {step === 3 && slug && !project && !error ? (
-          <div className="flex flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-slate-50/80 px-6 py-16 text-center">
+          <div className="flex flex-col items-center justify-center gap-3 py-16 text-center">
             <Loader2
               className="size-10 animate-spin text-brand-600"
               aria-hidden
@@ -1219,7 +1208,7 @@ export function VideoEditorClient() {
         {step === 3 && slug && project && (
           <div className="space-y-6">
             {studioEditLock ? (
-              <p className="rounded-lg border border-amber-200 bg-amber-50/90 px-3 py-2 text-sm text-amber-950">
+              <p className="text-sm text-amber-950">
                 Opened from Studio — only scene images and the timeline can be
                 changed here. To edit script or voiceover, use{" "}
                 <strong className="font-medium">Start another video</strong> on
@@ -1253,13 +1242,10 @@ export function VideoEditorClient() {
               </select>
             </div>
 
-            <div className="space-y-4">
+            <div className="space-y-8">
               {project.scenes.map((scene) => (
-                <div
-                  key={scene.uid}
-                  className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50/50 shadow-sm"
-                >
-                  <div className="flex flex-col gap-1 border-b border-slate-200 bg-white px-4 py-2 sm:flex-row sm:items-center sm:justify-between">
+                <div key={scene.uid} className="space-y-4">
+                  <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
                     <span className="text-sm font-semibold text-slate-800">
                       Scene {scene.index + 1}
                     </span>
@@ -1267,7 +1253,7 @@ export function VideoEditorClient() {
                       Duration ({formatSceneDuration(scene.durationMs)})
                     </span>
                   </div>
-                  <div className="grid gap-4 p-4 md:grid-cols-2 md:items-start">
+                  <div className="grid gap-4 md:grid-cols-2 md:items-start">
                     <div className="space-y-3">
                       <blockquote className="border-l-4 border-brand-500 pl-3 text-sm italic leading-relaxed text-slate-800">
                         &ldquo;{scene.text}&rdquo;
@@ -1314,7 +1300,7 @@ export function VideoEditorClient() {
               ))}
             </div>
 
-            <div className="sticky bottom-0 -mx-4 flex flex-col gap-3 border-t border-slate-200 bg-white/95 px-4 py-3 backdrop-blur sm:mx-0 sm:flex-row sm:flex-wrap sm:items-center sm:px-0 sm:py-4">
+            <div className="sticky bottom-0 flex flex-col gap-3 border-t border-slate-200 bg-white/95 py-4 backdrop-blur sm:flex-row sm:flex-wrap sm:items-center">
               <Button
                 type="button"
                 variant="secondary"

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { useState } from "react";
 import {
   Film,
-  Globe2,
   ImageIcon,
   Mic,
   Play,
@@ -12,6 +11,7 @@ import {
   Wand2,
 } from "lucide-react";
 
+import { VideoEditorStepActions } from "@/components/video-editor/VideoEditorStepActions";
 import { VideoEditorStepBar } from "@/components/video-editor/VideoEditorStepBar";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -38,8 +38,7 @@ function SetupStepPreview() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-xl border border-surface-border bg-surface-muted p-4">
-        <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div className="flex min-w-0 flex-1 gap-3">
             <div className="relative h-14 w-24 shrink-0 overflow-hidden rounded-md border bg-white">
               <Image
@@ -61,7 +60,6 @@ function SetupStepPreview() {
           <Button type="button" variant="outline" className="shrink-0">
             Change
           </Button>
-        </div>
       </div>
 
       <div>
@@ -79,7 +77,7 @@ function SetupStepPreview() {
           <Label htmlFor="landing-demo-topic" className="block">
             New topic (following {demo.style.name} format)
           </Label>
-          <Button type="button" variant="outline" size="sm" className="shrink-0 gap-1.5">
+          <Button type="button" variant="outline" className="shrink-0 gap-2">
             <Sparkles className="size-4" />
             Suggest topic
           </Button>
@@ -93,9 +91,9 @@ function SetupStepPreview() {
         />
       </div>
 
-      <div className="flex flex-wrap gap-2">
-        <Button type="button">Continue to script</Button>
-      </div>
+      <VideoEditorStepActions
+        continue={<Button type="button">Continue to script</Button>}
+      />
     </div>
   );
 }
@@ -105,51 +103,40 @@ function ScriptStepPreview() {
 
   return (
     <div className="space-y-5">
-      <div className="flex flex-col gap-3 rounded-xl border-2 border-brand-200 bg-brand-50/40 px-4 py-4 shadow-sm sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex min-w-0 gap-3">
-          <div className="flex size-11 shrink-0 items-center justify-center rounded-lg bg-white text-brand-700 shadow-sm ring-1 ring-brand-200">
-            <Globe2 className="size-5 shrink-0" aria-hidden />
-          </div>
-          <div className="min-w-0 space-y-1">
-            <p className="text-xs font-semibold uppercase tracking-wide text-brand-800">
-              Script · research
-            </p>
-            <Label className="block text-base font-semibold text-slate-900">
-              Web search for script
-            </Label>
-            <p className="text-xs leading-relaxed text-slate-700">
-              When on, OpenAI runs hosted web search for the narration only.
-            </p>
-          </div>
-        </div>
-        <Switch checked={false} aria-label="Web search for script" className="shrink-0" />
-      </div>
-
-      <div className="space-y-3 rounded-xl border border-brand-200 bg-gradient-to-b from-brand-50/80 to-white p-5 shadow-sm ring-1 ring-brand-100">
+      <div className="space-y-3">
         <div className="flex flex-wrap items-baseline justify-between gap-2">
           <h3 className="text-base font-semibold text-slate-900">Generated narration</h3>
           <p className="text-xs text-slate-500">
             {demo.sceneCount} scenes · project{" "}
-            <code className="rounded bg-white px-1.5 py-0.5 text-[11px] text-slate-700 ring-1 ring-slate-200">
+            <code className="rounded bg-slate-100 px-1.5 py-0.5 text-[11px] text-slate-700">
               {demo.slug}
             </code>
           </p>
         </div>
-        <div className="max-h-48 overflow-hidden rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm leading-relaxed text-slate-800 shadow-inner">
+        <div className="max-h-48 overflow-hidden text-sm leading-relaxed text-slate-800">
           {demo.narration}
         </div>
       </div>
 
-      <div className="flex flex-wrap items-center gap-2">
-        <Button type="button" className="gap-2">
-          <Mic className="size-4" />
-          Continue to voiceover
-        </Button>
+      <VideoEditorStepActions
+        options={
+          <>
+            <Label className="text-sm font-medium text-slate-700">Web search</Label>
+            <Switch checked={false} aria-label="Web search" />
+          </>
+        }
+        back={
+          <Button type="button" variant="ghost" size="sm" className="text-slate-600">
+            Back to setup
+          </Button>
+        }
+        continue={<Button type="button">Continue to voiceover</Button>}
+      >
         <Button type="button" variant="outline" className="gap-2">
           <Sparkles className="size-4" />
           Regenerate script
         </Button>
-      </div>
+      </VideoEditorStepActions>
     </div>
   );
 }
@@ -159,11 +146,8 @@ function VoiceoverStepPreview() {
 
   return (
     <div className="space-y-4">
-      <p className="text-sm text-slate-600">
-        ElevenLabs creates voice audio and character timings for each scene.
-      </p>
 
-      <div className="space-y-2 rounded-xl border border-surface-border bg-surface-muted p-4">
+      <div className="space-y-2">
         <Label>Voice</Label>
         <ul className="divide-y divide-slate-200 rounded-lg border border-slate-200 bg-white">
           <li className="flex items-center gap-3 px-3 py-2.5">
@@ -184,24 +168,28 @@ function VoiceoverStepPreview() {
         </ul>
       </div>
 
-      <div className="space-y-3 rounded-lg border border-emerald-200 bg-emerald-50/80 px-4 py-3 text-sm text-emerald-900">
-        <p>Voiceover is ready for every scene.</p>
-        <Button type="button" variant="secondary" size="sm" className="gap-2">
-          <Play className="size-4" />
-          Preview full voiceover
-        </Button>
-      </div>
-
-      <div className="flex flex-wrap gap-2">
-        <Button type="button" className="gap-2">
+      <VideoEditorStepActions
+        options={
+          <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3">
+            <p className="text-sm text-emerald-900">Voiceover is ready for every scene.</p>
+            <Button type="button" variant="outline" className="gap-2">
+              <Play className="size-4" />
+              Preview voiceover
+            </Button>
+          </div>
+        }
+        back={
+          <Button type="button" variant="ghost" size="sm" className="text-slate-600">
+            Review script
+          </Button>
+        }
+        continue={<Button type="button">Continue to scene images</Button>}
+      >
+        <Button type="button" variant="outline" className="gap-2">
           <Mic className="size-4" />
           Regenerate voiceover
         </Button>
-        <Button type="button" variant="secondary" className="gap-2">
-          <ImageIcon className="size-4" />
-          Continue to scene images
-        </Button>
-      </div>
+      </VideoEditorStepActions>
     </div>
   );
 }
@@ -226,13 +214,10 @@ function SceneImagesStepPreview() {
         </select>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-8">
         {demo.scenes.map((scene) => (
-          <div
-            key={scene.uid}
-            className="overflow-hidden rounded-xl border border-slate-200 bg-slate-50/50 shadow-sm"
-          >
-            <div className="flex flex-col gap-1 border-b border-slate-200 bg-white px-4 py-2 sm:flex-row sm:items-center sm:justify-between">
+          <div key={scene.uid} className="space-y-4">
+            <div className="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between">
               <span className="text-sm font-semibold text-slate-800">
                 Scene {scene.index + 1}
               </span>
@@ -240,7 +225,7 @@ function SceneImagesStepPreview() {
                 Duration ({formatSceneDuration(scene.durationMs)})
               </span>
             </div>
-            <div className="grid gap-4 p-4 md:grid-cols-2 md:items-start">
+            <div className="grid gap-4 md:grid-cols-2 md:items-start">
               <div className="space-y-3">
                 <blockquote className="border-l-4 border-brand-500 pl-3 text-sm italic leading-relaxed text-slate-800">
                   &ldquo;{scene.text}&rdquo;
@@ -311,7 +296,7 @@ const STEP_VIEWS = [
 ] as const;
 
 export function LandingVideoEditorPreview({ className }: { className?: string }) {
-  const [step, setStep] = useState(3);
+  const [step, setStep] = useState(0);
   const StepView = STEP_VIEWS[step];
 
   return (
@@ -330,10 +315,6 @@ export function LandingVideoEditorPreview({ className }: { className?: string })
           <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
             Create video
           </h2>
-          <p className="mt-2 text-sm text-slate-600 sm:text-base">
-            Step through script, voiceover, and scene images — then build the timeline for
-            Studio.
-          </p>
 
           <VideoEditorStepBar
             step={step}
