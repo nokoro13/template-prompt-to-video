@@ -1,10 +1,14 @@
 "use client";
 
 import { Download, Loader2, Video } from "lucide-react";
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
-import { fetchAndSaveExportVideo } from "@/lib/download/save-video-blob";
+import {
+  downloadExportVideo,
+  isMobileDownloadContext,
+  prefetchExportVideoBlob,
+} from "@/lib/download/save-video-blob";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { cn } from "@/lib/utils";
 import type { VideoAspectRatio } from "@/src/lib/aspect-compositions";
@@ -36,17 +40,46 @@ export function ExportVideoButton({
   const [jobId, setJobId] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
   const [downloading, setDownloading] = useState(false);
+  const mobileBlobRef = useRef<Blob | null>(null);
 
   const reset = useCallback(() => {
     setStatus("idle");
     setError(null);
     setJobId(null);
     setProgress(0);
+    mobileBlobRef.current = null;
   }, []);
 
   useEffect(() => {
     reset();
   }, [projectSlug, aspectRatio, reset]);
+
+  /** On mobile, prefetch in the background so the share sheet can open on tap. */
+  useEffect(() => {
+    if (status !== "complete" || !jobId) {
+      mobileBlobRef.current = null;
+      return;
+    }
+
+    if (typeof window === "undefined" || !isMobileDownloadContext()) {
+      return;
+    }
+
+    let cancelled = false;
+    mobileBlobRef.current = null;
+
+    void prefetchExportVideoBlob(jobId)
+      .then((blob) => {
+        if (!cancelled) mobileBlobRef.current = blob;
+      })
+      .catch(() => {
+        /* direct browser download still works without prefetch */
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [status, jobId]);
 
   useEffect(() => {
     if (!jobId || status !== "polling") return;
@@ -111,6 +144,7 @@ export function ExportVideoButton({
     setError(null);
     setJobId(null);
     setProgress(0);
+    mobileBlobRef.current = null;
     try {
       const res = await fetch(
         `/api/projects/${encodeURIComponent(projectSlug)}/export`,
@@ -145,13 +179,24 @@ export function ExportVideoButton({
     }
   };
 
+  const handleDownload = async () => {
+    if (!jobId) return;
+    setDownloading(true);
+    setError(null);
+    try {
+      await downloadExportVideo(jobId, fileName, {
+        cachedBlob: mobileBlobRef.current,
+      });
+    } catch {
+      setError("Download failed. Try again.");
+    } finally {
+      setDownloading(false);
+    }
+  };
+
   const handleClick = () => {
     if (status === "complete" && jobId) {
-      setDownloading(true);
-      setError(null);
-      void fetchAndSaveExportVideo(jobId, fileName)
-        .catch(() => setError("Could not save the video. Try again."))
-        .finally(() => setDownloading(false));
+      void handleDownload();
       return;
     }
     void startExport(status === "error");
@@ -168,9 +213,7 @@ export function ExportVideoButton({
       : variant;
 
   const label = downloading
-    ? isMobile
-      ? "Preparing…"
-      : "Saving…"
+    ? "Downloading…"
     : exporting
       ? status === "starting"
         ? "Starting export…"
@@ -178,9 +221,7 @@ export function ExportVideoButton({
           ? `Exporting… ${Math.round(progress * 100)}%`
           : "Exporting…"
       : readyToDownload
-        ? isMobile
-          ? "Save or share"
-          : "Download MP4"
+        ? "Download MP4"
         : status === "error"
           ? "Try again"
           : "Export MP4";
@@ -206,17 +247,24 @@ export function ExportVideoButton({
       </Button>
 
       {!compact && readyToDownload && !busy ? (
-        <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
-          <p className="text-xs text-muted-foreground">Export complete.</p>
-          <Button
-            type="button"
-            variant="link"
-            size="sm"
-            className="h-auto px-0 text-xs"
-            onClick={() => void startExport(true)}
-          >
-            Export again
-          </Button>
+        <div className="flex flex-col gap-1">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
+            <p className="text-xs text-muted-foreground">Export complete.</p>
+            <Button
+              type="button"
+              variant="link"
+              size="sm"
+              className="h-auto px-0 text-xs"
+              onClick={() => void startExport(true)}
+            >
+              Export again
+            </Button>
+          </div>
+          {isMobile ? (
+            <p className="text-xs text-muted-foreground">
+              On iPhone, tap Download — then pick Save to Files, Photos, or Share.
+            </p>
+          ) : null}
         </div>
       ) : null}
 
