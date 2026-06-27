@@ -1,14 +1,14 @@
 "use client";
 
 import { Download, Loader2, Video } from "lucide-react";
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import {
-  downloadExportVideo,
-  isMobileDownloadContext,
-  prefetchExportVideoBlob,
-} from "@/lib/download/save-video-blob";
+  getExportDownloadHref,
+  saveExportedVideo,
+  shouldUseShareSheetForExport,
+} from "@/lib/export/export-video-download";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { cn } from "@/lib/utils";
 import type { VideoAspectRatio } from "@/src/lib/aspect-compositions";
@@ -33,53 +33,30 @@ export function ExportVideoButton({
   variant = "outline",
   compact = false,
 }: ExportVideoButtonProps) {
-  const isMobile = useIsMobile();
+  const isMobileLayout = useIsMobile();
+  const useShareSheet =
+    isMobileLayout ||
+    (typeof window !== "undefined" && shouldUseShareSheetForExport());
+
   const [status, setStatus] = useState<ExportStatus>("idle");
   const [error, setError] = useState<string | null>(null);
+  const [info, setInfo] = useState<string | null>(null);
   const [fileName, setFileName] = useState<string>("video.mp4");
   const [jobId, setJobId] = useState<string | null>(null);
   const [progress, setProgress] = useState(0);
   const [downloading, setDownloading] = useState(false);
-  const mobileBlobRef = useRef<Blob | null>(null);
 
   const reset = useCallback(() => {
     setStatus("idle");
     setError(null);
+    setInfo(null);
     setJobId(null);
     setProgress(0);
-    mobileBlobRef.current = null;
   }, []);
 
   useEffect(() => {
     reset();
   }, [projectSlug, aspectRatio, reset]);
-
-  /** On mobile, prefetch in the background so the share sheet can open on tap. */
-  useEffect(() => {
-    if (status !== "complete" || !jobId) {
-      mobileBlobRef.current = null;
-      return;
-    }
-
-    if (typeof window === "undefined" || !isMobileDownloadContext()) {
-      return;
-    }
-
-    let cancelled = false;
-    mobileBlobRef.current = null;
-
-    void prefetchExportVideoBlob(jobId)
-      .then((blob) => {
-        if (!cancelled) mobileBlobRef.current = blob;
-      })
-      .catch(() => {
-        /* direct browser download still works without prefetch */
-      });
-
-    return () => {
-      cancelled = true;
-    };
-  }, [status, jobId]);
 
   useEffect(() => {
     if (!jobId || status !== "polling") return;
@@ -142,9 +119,9 @@ export function ExportVideoButton({
   const startExport = async (force = false) => {
     setStatus("starting");
     setError(null);
+    setInfo(null);
     setJobId(null);
     setProgress(0);
-    mobileBlobRef.current = null;
     try {
       const res = await fetch(
         `/api/projects/${encodeURIComponent(projectSlug)}/export`,
@@ -179,16 +156,25 @@ export function ExportVideoButton({
     }
   };
 
-  const handleDownload = async () => {
+  const handleSaveOrDownload = async () => {
     if (!jobId) return;
     setDownloading(true);
     setError(null);
+    setInfo(null);
     try {
-      await downloadExportVideo(jobId, fileName, {
-        cachedBlob: mobileBlobRef.current,
+      const result = await saveExportedVideo(getExportDownloadHref(jobId), {
+        filename: fileName,
+        text: fileName,
       });
+      if (!result.ok) {
+        setError(result.error);
+        return;
+      }
+      if (result.message) {
+        setInfo(result.message);
+      }
     } catch {
-      setError("Download failed. Try again.");
+      setError("Could not save the video. Try again.");
     } finally {
       setDownloading(false);
     }
@@ -196,7 +182,7 @@ export function ExportVideoButton({
 
   const handleClick = () => {
     if (status === "complete" && jobId) {
-      void handleDownload();
+      void handleSaveOrDownload();
       return;
     }
     void startExport(status === "error");
@@ -204,24 +190,28 @@ export function ExportVideoButton({
 
   const exporting = status === "starting" || status === "polling";
   const busy = exporting || downloading;
-  const readyToDownload = status === "complete" && Boolean(jobId);
+  const readyToSave = status === "complete" && Boolean(jobId);
 
-  const buttonVariant = readyToDownload
+  const buttonVariant = readyToSave
     ? "default"
     : status === "error"
       ? "destructive"
       : variant;
 
+  const saveLabel = useShareSheet ? "Save video" : "Download";
+
   const label = downloading
-    ? "Downloading…"
+    ? useShareSheet
+      ? "Preparing…"
+      : "Downloading…"
     : exporting
       ? status === "starting"
         ? "Starting export…"
         : progress > 0
           ? `Exporting… ${Math.round(progress * 100)}%`
           : "Exporting…"
-      : readyToDownload
-        ? "Download MP4"
+      : readyToSave
+        ? saveLabel
         : status === "error"
           ? "Try again"
           : "Export MP4";
@@ -238,7 +228,7 @@ export function ExportVideoButton({
       >
         {busy ? (
           <Loader2 className="animate-spin" />
-        ) : readyToDownload ? (
+        ) : readyToSave ? (
           <Download />
         ) : (
           <Video />
@@ -246,7 +236,7 @@ export function ExportVideoButton({
         {label}
       </Button>
 
-      {!compact && readyToDownload && !busy ? (
+      {!compact && readyToSave && !busy ? (
         <div className="flex flex-col gap-1">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-1">
             <p className="text-xs text-muted-foreground">Export complete.</p>
@@ -260,9 +250,10 @@ export function ExportVideoButton({
               Export again
             </Button>
           </div>
-          {isMobile ? (
+          {useShareSheet ? (
             <p className="text-xs text-muted-foreground">
-              On iPhone, tap Download — then pick Save to Files, Photos, or Share.
+              Opens your device share menu — save to Files, Photos, or send to
+              another app.
             </p>
           ) : null}
         </div>
@@ -274,6 +265,7 @@ export function ExportVideoButton({
         </p>
       ) : null}
 
+      {info ? <p className="text-xs text-muted-foreground">{info}</p> : null}
       {error ? <p className="text-xs text-destructive">{error}</p> : null}
     </div>
   );

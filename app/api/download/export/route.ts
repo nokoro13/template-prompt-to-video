@@ -8,17 +8,11 @@ import {
 
 export const maxDuration = 300;
 
-type RouteContext = { params: Promise<{ id: string }> };
-
-/** Legacy path — prefer `/api/download/export?id=…` for new client code. */
-export async function GET(
-  _request: Request,
-  context: RouteContext,
-): Promise<NextResponse> {
+export async function GET(request: Request): Promise<NextResponse> {
   try {
     const user = await requireUser();
-    const { id } = await context.params;
-    return serveExportDownload(user.id, id?.trim() ?? "");
+    const jobId = new URL(request.url).searchParams.get("id")?.trim() ?? "";
+    return serveExportDownload(user.id, jobId);
   } catch (e) {
     return handleServeExportDownloadError(e);
   }
