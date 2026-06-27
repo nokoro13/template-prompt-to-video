@@ -104,16 +104,50 @@ export async function deleteFromR2(key: string): Promise<void> {
 export async function getR2SignedReadUrl(
   key: string,
   expiresInSeconds = 3600,
+  options?: { downloadFileName?: string },
 ): Promise<string> {
   const client = getR2Client();
+  const downloadFileName = options?.downloadFileName?.trim();
   return getSignedUrl(
     client,
     new GetObjectCommand({
       Bucket: getR2BucketName(),
       Key: key,
+      ...(downloadFileName
+        ? {
+            ResponseContentDisposition: `attachment; filename="${downloadFileName.replace(/"/g, "")}"`,
+            ResponseContentType: "video/mp4",
+          }
+        : {}),
     }),
     { expiresIn: expiresInSeconds },
   );
+}
+
+export async function getR2ObjectStream(
+  key: string,
+): Promise<{
+  body: ReadableStream<Uint8Array>;
+  contentType: string;
+  contentLength: number | undefined;
+} | null> {
+  const client = getR2Client();
+  try {
+    const res = await client.send(
+      new GetObjectCommand({
+        Bucket: getR2BucketName(),
+        Key: key,
+      }),
+    );
+    if (!res.Body) return null;
+    return {
+      body: res.Body.transformToWebStream(),
+      contentType: res.ContentType ?? "video/mp4",
+      contentLength: res.ContentLength,
+    };
+  } catch {
+    return null;
+  }
 }
 
 export function getR2PublicUrl(key: string): string | null {

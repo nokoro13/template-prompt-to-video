@@ -5,9 +5,9 @@ import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { FolderOpen } from "lucide-react";
 
 import { ProjectPickerDialog } from "@/components/projects/ProjectPickerDialog";
+import { ExportVideoButton } from "@/components/export/ExportVideoButton";
 import { PlaybackControls } from "@/components/studio/PlaybackControls";
 import { PropsPanel } from "@/components/studio/PropsPanel";
-import { RenderPanel } from "@/components/studio/RenderPanel";
 import { TimelineScrubber } from "@/components/studio/TimelineScrubber";
 import { VideoPlayer } from "@/components/studio/VideoPlayer";
 import { Button } from "@/components/ui/button";
@@ -75,6 +75,12 @@ export function StudioClient() {
     }
     setSelectedId(slugFromUrl);
   }, [slugFromUrl]);
+
+  useEffect(() => {
+    if (selectedComposition?.aspectRatio) {
+      setAspectRatio(selectedComposition.aspectRatio);
+    }
+  }, [selectedComposition?.aspectRatio, selectedId]);
 
   useEffect(() => {
     if (!selectedId) {
@@ -258,10 +264,11 @@ export function StudioClient() {
             onAspectRatioChange={setAspectRatio}
             disabled={!ready}
           />
-          <RenderPanel
-            compositionId={selectedId}
+          <ExportVideoButton
+            projectSlug={selectedId ?? ""}
             aspectRatio={aspectRatio}
-            disabled={!ready}
+            variant="secondary"
+            disabled={!ready || !selectedId}
           />
         </div>
 

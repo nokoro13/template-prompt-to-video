@@ -2,7 +2,10 @@ import { Composition, getStaticFiles } from "remotion";
 import { AIVideo, aiVideoSchema } from "./components/AIVideo";
 import { getDimensionsForAspect } from "./lib/aspect-compositions";
 import { FPS, INTRO_DURATION } from "./lib/constants";
+import { getTotalDurationInFrames } from "../lib/studio/timeline";
 import { getTimelinePath, loadTimelineFromFile } from "./lib/utils";
+
+export const CLIPNG_EXPORT_COMPOSITION_ID = "ClipngExport";
 
 export const RemotionRoot: React.FC = () => {
   const staticFiles = getStaticFiles();
@@ -12,6 +15,35 @@ export const RemotionRoot: React.FC = () => {
 
   return (
     <>
+      <Composition
+        id={CLIPNG_EXPORT_COMPOSITION_ID}
+        component={AIVideo}
+        fps={FPS}
+        width={1080}
+        height={1920}
+        schema={aiVideoSchema}
+        defaultProps={{
+          timeline: null,
+          aspectRatio: "9:16" as const,
+        }}
+        calculateMetadata={async ({ props }) => {
+          const aspect = props.aspectRatio ?? "9:16";
+          const dims = getDimensionsForAspect(aspect);
+          const timeline = props.timeline;
+          if (!timeline) {
+            throw new Error(
+              `${CLIPNG_EXPORT_COMPOSITION_ID} requires timeline in inputProps`,
+            );
+          }
+          return {
+            durationInFrames: getTotalDurationInFrames(timeline),
+            width: dims.width,
+            height: dims.height,
+            props,
+          };
+        }}
+      />
+
       {timelines.map((storyName) => {
         const { width, height } = getDimensionsForAspect("9:16");
         return (

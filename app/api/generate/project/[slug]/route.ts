@@ -8,6 +8,7 @@ import {
   getContentProjectDir,
   loadDescriptorBySlug,
 } from "@/lib/generate-simple-story";
+import { getProjectVideoAspectRatio } from "@/lib/project/video-aspect-ratio";
 import { assertProjectAccess } from "@/lib/projects/access";
 import { projectFileExists } from "@/lib/storage/project-storage";
 import { isDatabaseStorageEnabled } from "@/lib/storage/constants";
@@ -30,6 +31,7 @@ export async function GET(
 
     if (isDatabaseStorageEnabled()) {
       const descriptor = await loadDescriptorBySlug(slug, user.id);
+      const videoAspectRatio = await getProjectVideoAspectRatio(user.id, slug);
       const scenes = await Promise.all(
         descriptor.content.map(async (c, index) => {
           const ends = c.audioTimestamps.characterEndTimesSeconds;
@@ -67,6 +69,7 @@ export async function GET(
         ok: true,
         shortTitle: descriptor.shortTitle,
         channelStyleId: descriptor.channelStyleId ?? null,
+        videoAspectRatio,
         hasTimeline,
         scenes,
       });
@@ -78,6 +81,7 @@ export async function GET(
     }
 
     const descriptor = await loadDescriptorBySlug(slug);
+    const videoAspectRatio = await getProjectVideoAspectRatio(user.id, slug);
     const scenes = descriptor.content.map((c, index) => {
       const imgPath = path.join(base, "images", `${c.uid}.png`);
       const audioPath = path.join(base, "audio", `${c.uid}.mp3`);
@@ -103,6 +107,7 @@ export async function GET(
       ok: true,
       shortTitle: descriptor.shortTitle,
       channelStyleId: descriptor.channelStyleId ?? null,
+      videoAspectRatio,
       hasTimeline,
       scenes,
     });

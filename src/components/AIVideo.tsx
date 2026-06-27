@@ -26,6 +26,16 @@ export const aiVideoSchema = z.object({
   projectSlug: z.string().optional(),
   /** When set, image/audio load from `/api/storage/...` instead of `staticFile`. */
   assetBaseUrl: z.string().optional(),
+  /** Presigned URLs for Lambda export (uid → image/audio). */
+  sceneAssetUrls: z
+    .record(
+      z.string(),
+      z.object({
+        image: z.string(),
+        audio: z.string(),
+      }),
+    )
+    .optional(),
 });
 
 const { fontFamily } = loadFont();
@@ -34,6 +44,7 @@ export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
   timeline,
   projectSlug,
   assetBaseUrl,
+  sceneAssetUrls,
 }) => {
   const { isRendering } = useRemotionEnvironment();
   const { id, width: frameWidth } = useVideoConfig();
@@ -94,6 +105,7 @@ export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
               project={project}
               item={element}
               assetBaseUrl={assetBaseUrl}
+              sceneAssetUrls={sceneAssetUrls}
             />
           </Sequence>
         );
@@ -127,6 +139,7 @@ export const AIVideo: React.FC<z.infer<typeof aiVideoSchema>> = ({
           project,
           element.audioUrl,
           assetBaseUrl,
+          sceneAssetUrls,
         );
 
         return (

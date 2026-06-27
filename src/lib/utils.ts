@@ -91,24 +91,37 @@ export const getImagePath = (proj: string, uid: string) =>
 export const getAudioPath = (proj: string, uid: string) =>
   `content/${proj}/audio/${uid}.mp3`;
 
-/** Resolve image src for Remotion: remote storage API or local `staticFile`. */
+export type SceneAssetUrls = Record<
+  string,
+  { image: string; audio: string }
+>;
+
+/** Resolve image src for Remotion: presigned URL, remote storage API, or local `staticFile`. */
 export function resolveImageSrc(
   project: string,
   uid: string,
   assetBaseUrl?: string,
+  sceneAssetUrls?: SceneAssetUrls,
 ): string {
+  if (sceneAssetUrls?.[uid]?.image) {
+    return sceneAssetUrls[uid].image;
+  }
   if (assetBaseUrl) {
     return `${assetBaseUrl.replace(/\/$/, "")}/images/${uid}.png`;
   }
   return staticFile(getImagePath(project, uid));
 }
 
-/** Resolve audio src for Remotion: remote storage API or local `staticFile`. */
+/** Resolve audio src for Remotion: presigned URL, remote storage API, or local `staticFile`. */
 export function resolveAudioSrc(
   project: string,
   uid: string,
   assetBaseUrl?: string,
+  sceneAssetUrls?: SceneAssetUrls,
 ): string {
+  if (sceneAssetUrls?.[uid]?.audio) {
+    return sceneAssetUrls[uid].audio;
+  }
   if (assetBaseUrl) {
     return `${assetBaseUrl.replace(/\/$/, "")}/audio/${uid}.mp3`;
   }

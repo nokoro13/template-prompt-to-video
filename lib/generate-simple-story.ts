@@ -39,6 +39,7 @@ import {
   putProjectJson,
   readProjectJson,
 } from "./storage/project-storage";
+import { resolveAspectRatioFromStyle } from "./project/video-aspect-ratio";
 import { getStyle, readTranscriptFile } from "./storage/styles";
 import {
   ContentItemWithDetails,
@@ -241,6 +242,7 @@ export async function generateScriptPhase(
   const storyWithDetails: StoryMetadataWithDetails = {
     shortTitle: title,
     content: [],
+    videoAspectRatio: resolveAspectRatioFromStyle(style),
     ...(styleId ? { channelStyleId: styleId } : {}),
   };
 
@@ -421,6 +423,11 @@ async function generateSceneImagesForIndices(
   const content = storyWithDetails.content;
   const styleId = storyWithDetails.channelStyleId;
   const style = styleId ? await getStyle(styleId, userId) : null;
+  const videoAspectRatio =
+    storyWithDetails.videoAspectRatio ?? resolveAspectRatioFromStyle(style);
+  if (!storyWithDetails.videoAspectRatio) {
+    storyWithDetails.videoAspectRatio = videoAspectRatio;
+  }
 
   const analysis = analyzeSceneEntities(
     content,
@@ -495,9 +502,7 @@ async function generateSceneImagesForIndices(
       onRetry: () => {},
       referenceImagePaths: merged.paths,
       referenceMeta: merged.referenceMeta,
-      videoAspectRatio: style
-        ? (style.videoAspectRatio ?? "9:16")
-        : undefined,
+      videoAspectRatio,
       imageSize,
       consistencyBlock,
     });

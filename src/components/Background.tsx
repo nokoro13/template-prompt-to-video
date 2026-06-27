@@ -14,7 +14,8 @@ export const Background: React.FC<{
   item: BackgroundElement;
   project: string;
   assetBaseUrl?: string;
-}> = ({ item, project, assetBaseUrl }) => {
+  sceneAssetUrls?: import("../lib/utils").SceneAssetUrls;
+}> = ({ item, project, assetBaseUrl, sceneAssetUrls }) => {
   const { isRendering } = useRemotionEnvironment();
   const frame = useCurrentFrame();
   const localMs = (frame / FPS) * 1000;
@@ -44,7 +45,7 @@ export const Background: React.FC<{
   return (
     <AbsoluteFill style={{ overflow: "hidden" }}>
       <Img
-        src={resolveImageSrc(project, item.imageUrl, assetBaseUrl)}
+        src={resolveImageSrc(project, item.imageUrl, assetBaseUrl, sceneAssetUrls)}
         pauseWhenLoading={!isRendering}
         style={{
           position: "absolute",

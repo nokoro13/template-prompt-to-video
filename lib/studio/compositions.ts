@@ -2,11 +2,13 @@ import fs from "node:fs";
 import path from "node:path";
 
 import { FPS } from "@/src/lib/constants";
+import type { VideoAspectRatio } from "@/src/lib/aspect-compositions";
 import type { Timeline } from "@/src/lib/types";
 import { TimelineSchema } from "@/src/lib/types";
 
 import { listProjectsForUser } from "../db/projects";
 import { isDatabaseStorageEnabled } from "../storage/constants";
+import { getProjectVideoAspectRatio } from "../project/video-aspect-ratio";
 import {
   projectFileExists,
   projectThumbnailUrl,
@@ -53,6 +55,7 @@ export type CompositionSummary = {
   thumbnailUrl: string | null;
   sceneCount: number;
   updatedAt: string;
+  aspectRatio: VideoAspectRatio;
 };
 
 function summaryFromTimeline(
@@ -60,6 +63,7 @@ function summaryFromTimeline(
   timeline: Timeline,
   thumbnailUrl: string | null,
   updatedAt: string,
+  aspectRatio: VideoAspectRatio = "9:16",
 ): CompositionSummary {
   return {
     id,
@@ -70,6 +74,7 @@ function summaryFromTimeline(
     thumbnailUrl,
     sceneCount: timeline.elements.length,
     updatedAt,
+    aspectRatio,
   };
 }
 
@@ -152,6 +157,7 @@ export async function listCompositionsForUser(
     const thumbnailUrl = hasThumb
       ? projectThumbnailUrl(project.slug, firstImageUid!, userId)
       : null;
+    const aspectRatio = await getProjectVideoAspectRatio(userId, project.slug);
 
     out.push(
       summaryFromTimeline(
@@ -159,6 +165,7 @@ export async function listCompositionsForUser(
         timeline,
         thumbnailUrl,
         project.updatedAt.toISOString(),
+        aspectRatio,
       ),
     );
   }

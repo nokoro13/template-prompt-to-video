@@ -3,6 +3,7 @@ import { randomUUID } from "node:crypto";
 import { and, desc, eq } from "drizzle-orm";
 
 import { buildProjectStoragePrefix } from "@/lib/storage/assets";
+import { purgeExportsBeforeProjectRevision } from "@/lib/export/purge-project-exports";
 
 import { getDb, schema } from "./index";
 
@@ -88,13 +89,21 @@ export async function updateProject(
       and(eq(schema.projects.userId, userId), eq(schema.projects.slug, slug)),
     )
     .returning();
-  return rows[0] ?? null;
+  const updated = rows[0] ?? null;
+  if (updated) {
+    await purgeExportsBeforeProjectRevision(userId, slug, updated.updatedAt);
+  }
+  return updated;
 }
 
 export async function deleteProjectForUser(
   userId: string,
   slug: string,
 ): Promise<void> {
+  const { purgeProjectExportFiles } = await import(
+    "@/lib/export/purge-project-exports"
+  );
+  await purgeProjectExportFiles(userId, slug);
   const db = getDb();
   await db
     .delete(schema.projects)

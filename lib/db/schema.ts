@@ -3,6 +3,7 @@ import {
   jsonb,
   pgEnum,
   pgTable,
+  real,
   text,
   timestamp,
   uniqueIndex,
@@ -27,6 +28,13 @@ export const projectStatusEnum = pgEnum("project_status", [
   "generating",
   "ready",
   "failed",
+]);
+
+export const renderJobStatusEnum = pgEnum("render_job_status", [
+  "pending",
+  "running",
+  "complete",
+  "error",
 ]);
 
 /**
@@ -81,9 +89,36 @@ export const styles = pgTable(
   (table) => [uniqueIndex("styles_user_id_id_unique").on(table.userId, table.id)],
 );
 
+/** Remotion Lambda export jobs (MP4 download). */
+export const renderJobs = pgTable("render_jobs", {
+  id: text("id").primaryKey(),
+  userId: text("user_id")
+    .notNull()
+    .references(() => users.id, { onDelete: "cascade" }),
+  projectSlug: text("project_slug").notNull(),
+  aspectRatio: text("aspect_ratio").notNull(),
+  status: renderJobStatusEnum("status").default("pending").notNull(),
+  remotionRenderId: text("remotion_render_id"),
+  remotionBucketName: text("remotion_bucket_name"),
+  /** R2 object key, e.g. users/{userId}/renders/{jobId}.mp4 */
+  outputStorageKey: text("output_storage_key"),
+  outputFileName: text("output_file_name"),
+  error: text("error"),
+  progress: real("progress").default(0).notNull(),
+  /** Snapshot of project.updatedAt when export started (cache invalidation). */
+  projectUpdatedAt: timestamp("project_updated_at", { withTimezone: true }),
+  createdAt: timestamp("created_at", { withTimezone: true })
+    .defaultNow()
+    .notNull(),
+  completedAt: timestamp("completed_at", { withTimezone: true }),
+});
+
 export type User = typeof users.$inferSelect;
 export type NewUser = typeof users.$inferInsert;
 export type Project = typeof projects.$inferSelect;
 export type NewProject = typeof projects.$inferInsert;
 export type Style = typeof styles.$inferSelect;
 export type NewStyle = typeof styles.$inferInsert;
+export type RenderJob = typeof renderJobs.$inferSelect;
+export type NewRenderJob = typeof renderJobs.$inferInsert;
+export type RenderJobStatus = RenderJob["status"];

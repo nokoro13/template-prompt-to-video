@@ -105,6 +105,8 @@ export interface StoryMetadataWithDetails {
   content: ContentItemWithDetails[];
   /** Set when video was created with a channel style (used for later image generation). */
   channelStyleId?: string;
+  /** Locked at generation — scene images and export use this aspect ratio. */
+  videoAspectRatio?: "9:16" | "16:9";
   /** Built during image generation; reused on partial scene regenerates. */
   consistencyData?: ConsistencyData;
 }

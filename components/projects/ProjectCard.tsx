@@ -4,6 +4,7 @@ import { StorageImage } from "@/components/ui/storage-image";
 import Link from "next/link";
 import { Film, MonitorPlay, Pencil, Trash2 } from "lucide-react";
 
+import { ExportVideoButton } from "@/components/export/ExportVideoButton";
 import { Button, buttonVariants } from "@/components/ui/button";
 import type { CompositionSummary } from "@/lib/studio/compositions";
 import { formatDuration, formatRelativeDate } from "@/lib/studio/format";
@@ -70,26 +71,31 @@ export function ProjectCard({ project, onDelete, deleting }: ProjectCardProps) {
           <Badge>
             {project.sceneCount} scene{project.sceneCount === 1 ? "" : "s"}
           </Badge>
+          <Badge>{project.aspectRatio}</Badge>
           <Badge>{formatRelativeDate(project.updatedAt)}</Badge>
         </div>
 
-        <p className="mt-3 truncate font-mono text-[11px] text-muted-foreground">
-          {project.id}
-        </p>
+        <ExportVideoButton
+          projectSlug={project.id}
+          aspectRatio={project.aspectRatio}
+          variant="outline"
+          compact
+          className="mt-4 w-full"
+        />
 
-        <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+        <div className="mt-2 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
           <Link
             href={studioHref}
             className={cn(buttonVariants({ variant: "default" }), "w-full sm:flex-1")}
           >
-            <MonitorPlay className="mr-1.5 size-4" />
+            <MonitorPlay />
             Open in Studio
           </Link>
           <Link
             href={editHref}
             className={cn(buttonVariants({ variant: "outline" }), "w-full sm:flex-1")}
           >
-            <Pencil className="mr-1.5 size-4" />
+            <Pencil />
             Edit
           </Link>
           {onDelete ? (
@@ -97,12 +103,12 @@ export function ProjectCard({ project, onDelete, deleting }: ProjectCardProps) {
               type="button"
               variant="outline"
               size="icon"
-              className="h-11 shrink-0 self-end text-muted-foreground hover:text-destructive sm:h-9 sm:w-9"
+              className="shrink-0 self-end text-muted-foreground hover:text-destructive sm:self-auto"
               disabled={deleting}
               aria-label={`Delete ${project.shortTitle}`}
               onClick={() => onDelete(project)}
             >
-              <Trash2 className="size-4" />
+              <Trash2 />
             </Button>
           ) : null}
         </div>

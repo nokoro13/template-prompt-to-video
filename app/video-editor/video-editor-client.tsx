@@ -24,6 +24,7 @@ import {
 import { StylePickerDialog } from "@/components/video-editor/StylePickerDialog";
 import { VideoEditorStepActions } from "@/components/video-editor/VideoEditorStepActions";
 import { VideoEditorStepBar } from "@/components/video-editor/VideoEditorStepBar";
+import { ExportVideoButton } from "@/components/export/ExportVideoButton";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -45,6 +46,7 @@ type ProjectScene = {
 type ProjectPayload = {
   shortTitle: string;
   channelStyleId: string | null;
+  videoAspectRatio: "9:16" | "16:9";
   hasTimeline: boolean;
   scenes: ProjectScene[];
 };
@@ -304,6 +306,7 @@ export function VideoEditorClient() {
       error?: string;
       shortTitle?: string;
       channelStyleId?: string | null;
+      videoAspectRatio?: "9:16" | "16:9";
       hasTimeline?: boolean;
       scenes?: ProjectScene[];
     };
@@ -313,6 +316,7 @@ export function VideoEditorClient() {
     const payload: ProjectPayload = {
       shortTitle: data.shortTitle ?? "",
       channelStyleId: data.channelStyleId ?? null,
+      videoAspectRatio: data.videoAspectRatio ?? "9:16",
       hasTimeline: Boolean(data.hasTimeline),
       scenes: data.scenes ?? [],
     };
@@ -1349,21 +1353,31 @@ export function VideoEditorClient() {
               Video project is ready
             </p>
             <p className="text-sm text-slate-600">
-              Composition id:{" "}
-              <code className="rounded bg-slate-100 px-2 py-0.5 text-xs">
-                {slug}
-              </code>
+              Preview in Studio or export an MP4 to download and upload.
             </p>
+            <div className="flex flex-col items-center gap-4">
+              <ExportVideoButton
+                projectSlug={slug}
+                aspectRatio={
+                  project?.videoAspectRatio ??
+                  selectedStyle?.videoAspectRatio ??
+                  "9:16"
+                }
+                variant="default"
+                className="items-center"
+              />
+            </div>
             <div className="flex flex-wrap justify-center gap-3">
               <Button
                 type="button"
+                variant="outline"
                 onClick={() =>
                   router.push(`/studio?slug=${encodeURIComponent(slug)}`)
                 }
               >
                 Open Studio
               </Button>
-              <Button type="button" variant="outline" onClick={resetWizard}>
+              <Button type="button" variant="ghost" onClick={resetWizard}>
                 Start another video
               </Button>
             </div>
