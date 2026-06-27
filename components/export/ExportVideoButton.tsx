@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from "react";
 
 import { Button } from "@/components/ui/button";
 import { fetchAndSaveExportVideo } from "@/lib/download/save-video-blob";
+import { useIsMobile } from "@/hooks/use-mobile";
 import { cn } from "@/lib/utils";
 import type { VideoAspectRatio } from "@/src/lib/aspect-compositions";
 
@@ -28,6 +29,7 @@ export function ExportVideoButton({
   variant = "outline",
   compact = false,
 }: ExportVideoButtonProps) {
+  const isMobile = useIsMobile();
   const [status, setStatus] = useState<ExportStatus>("idle");
   const [error, setError] = useState<string | null>(null);
   const [fileName, setFileName] = useState<string>("video.mp4");
@@ -166,7 +168,9 @@ export function ExportVideoButton({
       : variant;
 
   const label = downloading
-    ? "Saving…"
+    ? isMobile
+      ? "Preparing…"
+      : "Saving…"
     : exporting
       ? status === "starting"
         ? "Starting export…"
@@ -174,7 +178,9 @@ export function ExportVideoButton({
           ? `Exporting… ${Math.round(progress * 100)}%`
           : "Exporting…"
       : readyToDownload
-        ? "Download MP4"
+        ? isMobile
+          ? "Save or share"
+          : "Download MP4"
         : status === "error"
           ? "Try again"
           : "Export MP4";

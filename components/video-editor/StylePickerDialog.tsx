@@ -76,7 +76,7 @@ export function StylePickerDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="max-w-3xl gap-0 p-0">
+      <DialogContent className="max-h-[min(90vh,calc(100dvh-2rem))] max-w-[calc(100vw-2rem)] gap-0 p-0 sm:max-w-3xl">
         <div className="border-b border-border px-6 py-5">
           <DialogHeader>
             <DialogTitle>Choose a style</DialogTitle>

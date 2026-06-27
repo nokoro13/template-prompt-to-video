@@ -145,12 +145,12 @@ function VoiceoverStepPreview() {
   const demo = LANDING_EDITOR_DEMO;
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-5">
 
       <div className="space-y-2">
         <Label>Voice</Label>
         <ul className="divide-y divide-slate-200 rounded-lg border border-slate-200 bg-white">
-          <li className="flex items-center gap-3 px-3 py-2.5">
+          <li className="flex items-center gap-2 px-3 py-3 sm:gap-3 sm:py-2.5">
             <span
               className="size-4 shrink-0 rounded-full border-[5px] border-brand-600"
               aria-hidden
@@ -159,9 +159,17 @@ function VoiceoverStepPreview() {
               <p className="truncate text-sm font-medium text-slate-900">
                 {demo.voice.name}
               </p>
-              <p className="text-xs text-slate-500">{demo.voice.category}</p>
+              <p className="truncate text-xs text-slate-500">
+                {demo.voice.category}
+              </p>
             </div>
-            <Button type="button" size="icon-sm" variant="outline" aria-label="Preview voice">
+            <Button
+              type="button"
+              size="icon"
+              variant="outline"
+              className="size-10 shrink-0"
+              aria-label="Preview voice"
+            >
               <Play className="size-4" />
             </Button>
           </li>
@@ -170,9 +178,15 @@ function VoiceoverStepPreview() {
 
       <VideoEditorStepActions
         options={
-          <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3">
-            <p className="text-sm text-emerald-900">Voiceover is ready for every scene.</p>
-            <Button type="button" variant="outline" className="gap-2">
+          <div className="w-full rounded-lg border border-emerald-200 bg-emerald-50/80 px-3 py-3 sm:flex sm:flex-wrap sm:items-center sm:gap-3">
+            <p className="text-sm font-medium text-emerald-900">
+              Voiceover is ready for every scene.
+            </p>
+            <Button
+              type="button"
+              variant="outline"
+              className="mt-2 w-full gap-2 bg-white sm:mt-0 sm:w-auto"
+            >
               <Play className="size-4" />
               Preview voiceover
             </Button>

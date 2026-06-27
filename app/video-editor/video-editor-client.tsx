@@ -1035,7 +1035,7 @@ export function VideoEditorClient() {
               ) : (
                 <ul
                   id="ve-voice-list"
-                  className="mt-1 max-h-64 w-full divide-y divide-slate-200 overflow-y-auto rounded-lg border border-input bg-background shadow-sm sm:max-w-xl"
+                  className="mt-1 max-h-64 w-full divide-y divide-slate-200 overflow-y-auto rounded-lg border border-input bg-background shadow-sm"
                   role="listbox"
                   aria-label="ElevenLabs voices"
                 >
@@ -1070,12 +1070,12 @@ export function VideoEditorClient() {
                             </span>
                           ) : null}
                         </button>
-                        <div className="flex shrink-0 items-center pr-2">
+                        <div className="flex shrink-0 items-center pr-2 sm:pr-3">
                           <Button
                             type="button"
                             variant="outline"
                             size="icon"
-                            className="size-9"
+                            className="size-10"
                             disabled={
                               busy === "voice" || !canPreview || rowBusy
                             }
@@ -1111,14 +1111,14 @@ export function VideoEditorClient() {
             <VideoEditorStepActions
               options={
                 allAudioDone ? (
-                  <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3">
-                    <p className="text-sm text-emerald-900">
+                  <div className="w-full rounded-lg border border-emerald-200 bg-emerald-50/80 px-3 py-3 sm:flex sm:flex-wrap sm:items-center sm:gap-3">
+                    <p className="text-sm font-medium text-emerald-900">
                       Voiceover is ready for every scene.
                     </p>
                     <Button
                       type="button"
                       variant="outline"
-                      className="gap-2"
+                      className="mt-2 w-full gap-2 bg-white sm:mt-0 sm:w-auto"
                       disabled={busy === "voice"}
                       onClick={() =>
                         voiceoverPlaying

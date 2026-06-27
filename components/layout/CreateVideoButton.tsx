@@ -6,7 +6,7 @@ import { ArrowRight, Plus } from "lucide-react";
 
 import { StylePickerDialog } from "@/components/video-editor/StylePickerDialog";
 import { Button } from "@/components/ui/button";
-import { SidebarMenuButton } from "@/components/ui/sidebar";
+import { SidebarMenuButton, useSidebar } from "@/components/ui/sidebar";
 import type { ChannelStyleRecord } from "@/lib/channel-styles/types";
 
 type CreateVideoButtonProps = {
@@ -18,6 +18,7 @@ type CreateVideoButtonProps = {
  */
 export function CreateVideoButton({ variant }: CreateVideoButtonProps) {
   const router = useRouter();
+  const { isMobile, setOpenMobile } = useSidebar();
   const [open, setOpen] = useState(false);
   const [styles, setStyles] = useState<ChannelStyleRecord[]>([]);
 
@@ -32,6 +33,9 @@ export function CreateVideoButton({ variant }: CreateVideoButtonProps) {
 
   function handleConfirm(styleId: string) {
     setOpen(false);
+    if (isMobile) {
+      setOpenMobile(false);
+    }
     if (styleId.trim()) {
       router.push(
         `/video-editor?styleId=${encodeURIComponent(styleId.trim())}`,
@@ -46,6 +50,7 @@ export function CreateVideoButton({ variant }: CreateVideoButtonProps) {
       {variant === "sidebar" ? (
         <SidebarMenuButton
           type="button"
+          closeMobileOnClick={false}
           className="bg-sidebar-primary text-sidebar-primary-foreground hover:bg-sidebar-primary/90 hover:text-sidebar-primary-foreground"
           onClick={() => setOpen(true)}
         >

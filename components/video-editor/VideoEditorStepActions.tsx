@@ -12,6 +12,25 @@ type VideoEditorStepActionsProps = {
   continue?: React.ReactNode;
 };
 
+function ActionSlot({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <div
+      className={cn(
+        "w-full sm:w-auto [&_button]:h-10 [&_button]:w-full sm:[&_button]:w-auto",
+        className,
+      )}
+    >
+      {children}
+    </div>
+  );
+}
+
 export function VideoEditorStepActions({
   className,
   options,
@@ -27,18 +46,22 @@ export function VideoEditorStepActions({
       )}
     >
       {options ? (
-        <div className="flex flex-wrap items-center gap-3">{options}</div>
+        <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-3">
+          {options}
+        </div>
       ) : null}
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        {back ? <div className="flex shrink-0">{back}</div> : null}
+      <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+        {back ? <ActionSlot>{back}</ActionSlot> : null}
         <div
           className={cn(
-            "flex flex-wrap items-center justify-end gap-2",
-            back ? "sm:ml-auto" : "ml-auto w-full sm:w-auto",
+            "flex w-full flex-col gap-2 sm:ml-auto sm:w-auto sm:flex-row sm:flex-wrap sm:items-center sm:justify-end",
+            !back && "sm:ml-auto",
           )}
         >
-          {children}
-          {continueAction}
+          {children ? <ActionSlot>{children}</ActionSlot> : null}
+          {continueAction ? (
+            <ActionSlot>{continueAction}</ActionSlot>
+          ) : null}
         </div>
       </div>
     </div>

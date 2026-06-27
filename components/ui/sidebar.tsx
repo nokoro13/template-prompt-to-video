@@ -510,10 +510,13 @@ function SidebarMenuButton({
   tooltip,
   className,
   onClick,
+  closeMobileOnClick = true,
   ...props
 }: useRender.ComponentProps<"button"> &
   React.ComponentProps<"button"> & {
     isActive?: boolean
+    /** When false, keeps the mobile sheet open (e.g. opening a dialog from the button). */
+    closeMobileOnClick?: boolean
     tooltip?: string | React.ComponentProps<typeof TooltipContent>
   } & VariantProps<typeof sidebarMenuButtonVariants>) {
   const { isMobile, state, setOpenMobile } = useSidebar()
@@ -524,7 +527,7 @@ function SidebarMenuButton({
         className: cn(sidebarMenuButtonVariants({ variant, size }), className),
         onClick: (event: React.MouseEvent<HTMLButtonElement>) => {
           onClick?.(event)
-          if (isMobile) {
+          if (isMobile && closeMobileOnClick) {
             setOpenMobile(false)
           }
         },
